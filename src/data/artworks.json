@@ -3,52 +3,92 @@
     "id": "A01",
     "group": "core",
     "title": "兩國橋宵月",
-    "titleJa": null,
-    "titleEn": null,
+    "titleJa": "両國之宵月",
+    "titleEn": "Twilight Moon at Ryōgoku Bridge",
     "artist": "歌川廣重",
-    "series": null,
+    "series": "東都名所",
     "seriesNo": null,
     "year": null,
     "curatorialTime": "18:00",
     "timeLabel": "黃昏",
     "parallel": false,
     "region": "ryogoku",
-    "location": { "historicalName": "兩國橋", "modernName": "兩國橋（東京都中央區／墨田區）", "lat": 35.69356, "lng": 139.78875, "confidence": "approximate", "note": "座標暫用兩國橋位置，待確認作品版本後再校正。" },
-    "image": null,
+    "location": {
+      "historicalName": "兩國橋",
+      "modernName": "兩國橋（東京都中央區／墨田區）",
+      "lat": 35.69356,
+      "lng": 139.78875,
+      "confidence": "approximate",
+      "note": "座標暫用兩國橋位置，待確認作品版本後再校正。"
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP123224.jpg",
+      "width": 3863,
+      "height": 2475,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1312",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/45294",
+      "license": "公有領域（The Met Open Access）"
+    },
     "summary": "日落時分，橋上行人與河面船影交錯，城市準備迎接夜晚。",
     "sections": {},
-    "perspectives": ["night-visitors", "night-workers"],
+    "perspectives": [
+      "night-visitors",
+      "night-workers"
+    ],
     "details": [],
-    "status": "待查證：作品系列、年份、收藏館與圖像來源"
+    "status": "草稿：文案待查證",
+    "apa": "Utagawa, H. (n.d.). *Twilight moon at Ryōgoku Bridge* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/45294"
   },
   {
     "id": "A02",
     "group": "core",
     "title": "柳橋夜景・萬八",
-    "titleJa": null,
-    "titleEn": null,
+    "titleJa": "柳ばし夜景　萬八",
+    "titleEn": "The Manpachi at Evening in Yanagibashi",
     "artist": "歌川廣重",
-    "series": null,
+    "series": "江戶高名會亭盡",
     "seriesNo": null,
-    "year": null,
+    "year": "約 1835–1842",
     "curatorialTime": "19:00",
     "timeLabel": "入夜",
     "parallel": false,
     "region": "ryogoku",
-    "location": { "historicalName": "柳橋", "modernName": "柳橋（東京都台東區）", "lat": null, "lng": null, "confidence": "approximate", "note": null },
-    "image": null,
+    "location": {
+      "historicalName": "柳橋",
+      "modernName": "柳橋（東京都台東區）",
+      "lat": null,
+      "lng": null,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP123561.jpg",
+      "width": 1937,
+      "height": 1326,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1158",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/45306",
+      "license": "公有領域（The Met Open Access）"
+    },
     "summary": "河岸料亭點起燈火，宴席從這裡開始。",
     "sections": {},
-    "perspectives": ["merchants", "night-visitors"],
+    "perspectives": [
+      "merchants",
+      "night-visitors"
+    ],
     "details": [],
-    "status": "待查證：作品系列、年份、收藏館與圖像來源"
+    "status": "草稿：文案待查證",
+    "apa": "Utagawa, H. (ca. 1835–1842). *The Manpachi at evening in Yanagibashi* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/45306"
   },
   {
     "id": "A03",
     "group": "core",
     "title": "兩國花火",
     "titleJa": "両国花火",
-    "titleEn": "Fireworks by Ryōgoku Bridge",
+    "titleEn": "Fireworks at Ryōgoku Bridge, from the series One Hundred Famous Views of Edo",
     "artist": "歌川廣重",
     "series": "名所江戶百景",
     "seriesNo": 98,
@@ -57,46 +97,104 @@
     "timeLabel": "夜間娛樂",
     "parallel": false,
     "region": "ryogoku",
-    "location": { "historicalName": "兩國橋", "modernName": "兩國橋（東京都中央區／墨田區）", "lat": 35.69356, "lng": 139.78875, "confidence": "approximate", "note": null },
-    "image": { "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_098.jpg", "width": 780, "height": 1200, "collection": "Brooklyn Museum", "source": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_098.jpg", "license": "公有領域" },
+    "location": {
+      "historicalName": "兩國橋",
+      "modernName": "兩國橋（東京都中央區／墨田區）",
+      "lat": 35.69356,
+      "lng": 139.78875,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP121524.jpg",
+      "width": 2617,
+      "height": 3921,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP642",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/37093",
+      "license": "公有領域（The Met Open Access）"
+    },
     "summary": "煙火在夜空綻開，橋下擠滿遊船，整條河成了看台。",
     "sections": {},
-    "perspectives": ["night-visitors", "night-workers"],
-    "details": [
-      { "x": 0.72, "y": 0.25, "scale": 2.8, "title": "夜空中的煙火", "text": "畫面右上方，煙火像星點一樣散開。" },
-      { "x": 0.42, "y": 0.4, "scale": 2.6, "title": "升空的軌跡", "text": "一道細長的光痕從河面升起。" },
-      { "x": 0.49, "y": 0.83, "scale": 3, "title": "掛著燈籠的遊船", "text": "橋下的屋形船點著燈籠，人們在船上看煙火。" }
+    "perspectives": [
+      "night-visitors",
+      "night-workers"
     ],
-    "status": "草稿：文案待查證"
+    "details": [
+      {
+        "x": 0.74,
+        "y": 0.21,
+        "scale": 2.8,
+        "title": "夜空中的煙火",
+        "text": "畫面右上方，煙火像星點一樣散開。"
+      },
+      {
+        "x": 0.42,
+        "y": 0.32,
+        "scale": 2.6,
+        "title": "升空的軌跡",
+        "text": "一道細長的光痕從河面升起。"
+      },
+      {
+        "x": 0.49,
+        "y": 0.84,
+        "scale": 3,
+        "title": "掛著燈籠的遊船",
+        "text": "橋下的屋形船點著燈籠，人們在船上看煙火。"
+      }
+    ],
+    "status": "草稿：文案待查證",
+    "apa": "Utagawa, H. (1858). *Fireworks at Ryōgoku Bridge, from the series One hundred famous views of Edo* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/37093"
   },
   {
     "id": "A04",
     "group": "core",
     "title": "吉原夜櫻之圖",
-    "titleJa": null,
-    "titleEn": null,
+    "titleJa": "吉原夜櫻圖",
+    "titleEn": "Yoshiwara Yo Zakura no Zu",
     "artist": "歌川廣重",
-    "series": null,
+    "series": "東都名所",
     "seriesNo": null,
-    "year": null,
+    "year": "約 1841",
     "curatorialTime": "21:00",
     "timeLabel": "吉原夜生活",
     "parallel": false,
     "region": "yoshiwara",
-    "location": { "historicalName": "新吉原", "modernName": "千束（東京都台東區）", "lat": 35.72422, "lng": 139.79608, "confidence": "approximate", "note": "暫用新吉原區域座標。" },
-    "image": null,
+    "location": {
+      "historicalName": "新吉原",
+      "modernName": "千束（東京都台東區）",
+      "lat": 35.72422,
+      "lng": 139.79608,
+      "confidence": "approximate",
+      "note": "暫用新吉原區域座標。"
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP123286.jpg",
+      "width": 3886,
+      "height": 2658,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP608",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/37059",
+      "license": "公有領域（The Met Open Access）"
+    },
     "summary": "吉原仲之町的夜櫻與燈籠，是遊里最熱鬧的時刻。",
     "sections": {},
-    "perspectives": ["night-visitors", "merchants"],
+    "perspectives": [
+      "night-visitors",
+      "merchants"
+    ],
     "details": [],
-    "status": "待查證：作品系列、年份、收藏館與圖像來源"
+    "status": "草稿：文案待查證",
+    "apa": "Utagawa, H. (ca. 1841). *Yoshiwara yo zakura no zu* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/37059"
   },
   {
     "id": "A05",
     "group": "core",
     "title": "月之岬",
     "titleJa": "月の岬",
-    "titleEn": "Moon Viewing",
+    "titleEn": "Moon-Viewing Location (Tsuki no Misaki), from the series One Hundred Famous Views of Edo (Meisho Edo Hyakkei)",
     "artist": "歌川廣重",
     "series": "名所江戶百景",
     "seriesNo": 82,
@@ -105,69 +203,155 @@
     "timeLabel": "深夜宴席",
     "parallel": false,
     "region": "shinagawa",
-    "location": { "historicalName": "月之岬（推定）", "modernName": "品川・高輪一帶", "lat": 35.62194, "lng": 139.74042, "confidence": "hypothetical", "note": "月之岬的確切位置有爭議，地圖上以範圍標示。" },
-    "image": { "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/100_views_edo_082.jpg", "width": 744, "height": 1104, "collection": "Brooklyn Museum", "source": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_082.jpg", "license": "公有領域" },
+    "location": {
+      "historicalName": "月之岬（推定）",
+      "modernName": "品川・高輪一帶",
+      "lat": 35.62194,
+      "lng": 139.74042,
+      "confidence": "hypothetical",
+      "note": "月之岬的確切位置有爭議，地圖上以範圍標示。"
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP121535.jpg",
+      "width": 2626,
+      "height": 3810,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1185",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/55095",
+      "license": "公有領域（The Met Open Access）"
+    },
     "summary": "宴席散落一地，窗外滿月懸在海灣上。",
     "sections": {},
-    "perspectives": ["night-visitors", "merchants"],
+    "perspectives": [
+      "night-visitors",
+      "merchants"
+    ],
     "details": [],
-    "status": "草稿：文案待查證"
+    "status": "草稿：文案待查證",
+    "apa": "Utagawa, H. (1857b). *Moon-viewing location (Tsuki no Misaki), from the series One hundred famous views of Edo (Meisho Edo Hyakkei)* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/55095"
   },
   {
     "id": "A06",
     "group": "core",
     "title": "御廄河岸",
-    "titleJa": "浅草川首尾の松御厩河岸",
-    "titleEn": "The \"Pine of Success\" and Oumayagashi on the Asakusa River",
+    "titleJa": "御厩河岸",
+    "titleEn": "Ommayagashi, Sumida River",
     "artist": "歌川廣重",
     "series": "名所江戶百景",
-    "seriesNo": 61,
-    "year": "1856",
+    "seriesNo": 105,
+    "year": "約 1857",
     "curatorialTime": "23:00",
     "timeLabel": "深夜交通",
     "parallel": false,
     "region": "ryogoku",
-    "location": { "historicalName": "御廄河岸", "modernName": "藏前・廄橋一帶（東京都台東區）", "lat": 35.70056, "lng": 139.79217, "confidence": "approximate", "note": null },
-    "image": { "src": "https://upload.wikimedia.org/wikipedia/commons/a/a9/100_views_edo_oumaya.jpg", "width": 1022, "height": 1536, "collection": "Brooklyn Museum", "source": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_oumaya.jpg", "license": "公有領域" },
+    "location": {
+      "historicalName": "御廄河岸",
+      "modernName": "藏前・廄橋一帶（東京都台東區）",
+      "lat": 35.70367,
+      "lng": 139.79381,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP122113.jpg",
+      "width": 2689,
+      "height": 3939,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1547",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/55712",
+      "license": "公有領域（The Met Open Access）"
+    },
     "summary": "渡船仍在河上往返，夜裡的城市靠勞動者維持運轉。",
     "sections": {},
-    "perspectives": ["night-workers"],
+    "perspectives": [
+      "night-workers"
+    ],
     "details": [],
-    "status": "候選：需確認是否為原計畫中的《御廄河岸》"
+    "status": "草稿：文案待查證",
+    "apa": "Utagawa, H. (ca. 1857). *Ommayagashi, Sumida River* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/55712"
   },
   {
     "id": "A07",
     "group": "core",
     "title": "淺草田甫酉之町詣",
     "titleJa": "浅草田甫酉の町詣",
-    "titleEn": "Asakusa Ricefields and Torinomachi Festival",
+    "titleEn": "Pilgrimage to the Torinomachi Festival across the Ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One Hundred Famous  Views of Edo (Meisho Edo hyakkei)",
     "artist": "歌川廣重",
     "series": "名所江戶百景",
     "seriesNo": 101,
-    "year": "1857",
+    "year": "1857（安政四年十一月）",
     "curatorialTime": "00:00",
     "timeLabel": "午夜祭典",
     "parallel": false,
     "region": "yoshiwara",
-    "location": { "historicalName": "新吉原（觀察位置）", "modernName": "千束（東京都台東區）", "lat": 35.7225, "lng": 139.79194, "confidence": "approximate", "note": "畫面視角在吉原；參拜目的地鷲神社在畫外，兩者需分開標示。" },
-    "image": { "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/100_views_edo_101.jpg", "width": 790, "height": 1200, "collection": "Brooklyn Museum", "source": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_101.jpg", "license": "公有領域" },
+    "location": {
+      "historicalName": "新吉原（觀察位置）",
+      "modernName": "千束（東京都台東區）",
+      "lat": 35.7225,
+      "lng": 139.79194,
+      "confidence": "approximate",
+      "note": "畫面視角在吉原；參拜目的地鷲神社在畫外，兩者需分開標示。"
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP121510.jpg",
+      "width": 2627,
+      "height": 3905,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP60",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36539",
+      "license": "公有領域（The Met Open Access）"
+    },
     "summary": "窗邊的貓望向田間，參拜酉之市的人潮正在遠方移動。",
     "sections": {},
-    "perspectives": ["religious-visitors", "night-visitors"],
-    "details": [
-      { "x": 0.36, "y": 0.585, "scale": 3.2, "title": "窗台上的白貓", "text": "貓背對著我們，望向窗外的田野。房間的主人沒有出現在畫面裡，只留下了她的物品。" },
-      { "x": 0.72, "y": 0.455, "scale": 3, "title": "遠方的參拜人潮", "text": "田間小路上，一列細小的人影正前往鷲神社參加酉之市。", "note": "觀察位置在吉原，參拜目的地在畫外——兩者在地圖上要分開標示。" },
-      { "x": 0.36, "y": 0.37, "scale": 3.4, "title": "晚霞中的富士", "text": "地平線上是富士山與橘紅的晚霞。畫中的天色其實是黃昏。", "note": "時間軸是策展導覽，不等於畫中的真實時刻。" },
-      { "x": 0.18, "y": 0.87, "scale": 3.2, "title": "熊手形狀的髮簪", "text": "地上的懷紙裡，髮簪做成熊手的樣子——熊手是酉之市的招福吉祥物，暗示有人剛從祭典回來。", "note": "常見解讀，正式上線前需查證出處。" }
+    "perspectives": [
+      "religious-visitors",
+      "night-visitors"
     ],
-    "status": "草稿：文案待查證"
+    "details": [
+      {
+        "x": 0.34,
+        "y": 0.6,
+        "scale": 3.2,
+        "title": "窗台上的白貓",
+        "text": "貓背對著我們，望向窗外的田野。房間的主人沒有出現在畫面裡，只留下了她的物品。"
+      },
+      {
+        "x": 0.73,
+        "y": 0.47,
+        "scale": 3,
+        "title": "遠方的參拜人潮",
+        "text": "田間小路上，一列細小的人影正前往鷲神社參加酉之市。",
+        "note": "觀察位置在吉原，參拜目的地在畫外——兩者在地圖上要分開標示。"
+      },
+      {
+        "x": 0.37,
+        "y": 0.35,
+        "scale": 3.4,
+        "title": "晚霞中的富士",
+        "text": "地平線上是富士山與橘紅的晚霞。畫中的天色其實是黃昏。",
+        "note": "時間軸是策展導覽，不等於畫中的真實時刻。"
+      },
+      {
+        "x": 0.18,
+        "y": 0.88,
+        "scale": 3.2,
+        "title": "熊手形狀的髮簪",
+        "text": "地上的懷紙裡，髮簪做成熊手的樣子——熊手是酉之市的招福吉祥物，暗示有人剛從祭典回來。",
+        "note": "常見解讀，正式上線前需查證出處。"
+      }
+    ],
+    "status": "草稿：文案待查證",
+    "apa": "Utagawa, H. (1857c). *Pilgrimage to the Torinomachi Festival across the ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One hundred famous views of Edo (Meisho Edo hyakkei)* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/36539"
   },
   {
     "id": "A08",
     "group": "core",
     "title": "廓中東雲",
     "titleJa": "廓中東雲",
-    "titleEn": "Dawn Inside the Yoshiwara",
+    "titleEn": "The Entrance to the Yoshiwara at Dawn",
     "artist": "歌川廣重",
     "series": "名所江戶百景",
     "seriesNo": 38,
@@ -176,13 +360,33 @@
     "timeLabel": "黎明",
     "parallel": false,
     "region": "yoshiwara",
-    "location": { "historicalName": "新吉原", "modernName": "千束（東京都台東區）", "lat": 35.72422, "lng": 139.79608, "confidence": "approximate", "note": null },
-    "image": { "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/100_views_edo_038.jpg", "width": 789, "height": 1200, "collection": "Brooklyn Museum", "source": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_038.jpg", "license": "公有領域" },
+    "location": {
+      "historicalName": "新吉原",
+      "modernName": "千束（東京都台東區）",
+      "lat": 35.72422,
+      "lng": 139.79608,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP122115.jpg",
+      "width": 2610,
+      "height": 3870,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1024",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/54931",
+      "license": "公有領域（The Met Open Access）"
+    },
     "summary": "天色微亮，送客的身影走出大門，江戶的夜結束了。",
     "sections": {},
-    "perspectives": ["night-visitors", "night-workers"],
+    "perspectives": [
+      "night-visitors",
+      "night-workers"
+    ],
     "details": [],
-    "status": "草稿：文案待查證"
+    "status": "草稿：文案待查證",
+    "apa": "Utagawa, H. (1857a). *The entrance to the Yoshiwara at dawn* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/54931"
   },
   {
     "id": "B01",
@@ -198,11 +402,29 @@
     "timeLabel": "深夜宴席",
     "parallel": true,
     "region": "asakusa",
-    "location": { "historicalName": "猿若町", "modernName": "淺草六丁目一帶（東京都台東區）", "lat": 35.7175, "lng": 139.80094, "confidence": "approximate", "note": null },
-    "image": { "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Hiroshige%2C_Night_View_of_Saruwaka-machi.jpg", "width": 706, "height": 1050, "collection": "待查證", "source": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg", "license": "公有領域" },
+    "location": {
+      "historicalName": "猿若町",
+      "modernName": "淺草六丁目一帶（東京都台東區）",
+      "lat": 35.7175,
+      "lng": 139.80094,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Hiroshige%2C_Night_View_of_Saruwaka-machi.jpg",
+      "width": 706,
+      "height": 1050,
+      "collection": "待查證",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+      "license": "公有領域"
+    },
     "summary": "劇場街在月光下仍有人潮，街道、建築與人群構成夜的城市。",
     "sections": {},
-    "perspectives": ["night-visitors", "merchants"],
+    "perspectives": [
+      "night-visitors",
+      "merchants"
+    ],
     "details": [],
     "status": "草稿：收藏館待查證"
   },
@@ -220,11 +442,29 @@
     "timeLabel": "吉原夜生活",
     "parallel": true,
     "region": "yoshiwara",
-    "location": { "historicalName": "日本堤", "modernName": "日本堤（東京都台東區）", "lat": 35.72458, "lng": 139.79728, "confidence": "approximate", "note": null },
-    "image": { "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_100.jpg", "width": 789, "height": 1200, "collection": "Brooklyn Museum", "source": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg", "license": "公有領域" },
+    "location": {
+      "historicalName": "日本堤",
+      "modernName": "日本堤（東京都台東區）",
+      "lat": 35.72458,
+      "lng": 139.79728,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_100.jpg",
+      "width": 789,
+      "height": 1200,
+      "collection": "Brooklyn Museum",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+      "license": "公有領域"
+    },
     "summary": "通往吉原的堤道上，轎子與行人在月下前行。",
     "sections": {},
-    "perspectives": ["night-visitors", "night-workers"],
+    "perspectives": [
+      "night-visitors",
+      "night-workers"
+    ],
     "details": [],
     "status": "草稿：文案待查證"
   },
@@ -242,11 +482,28 @@
     "timeLabel": "序章・白晝",
     "parallel": false,
     "region": "nihonbashi",
-    "location": { "historicalName": "駿河町", "modernName": "日本橋室町（東京都中央區）", "lat": 35.68625, "lng": 139.77394, "confidence": "approximate", "note": null },
-    "image": { "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/100_views_edo_008.jpg", "width": 790, "height": 1200, "collection": "Brooklyn Museum", "source": "Wikimedia Commons", "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg", "license": "公有領域" },
+    "location": {
+      "historicalName": "駿河町",
+      "modernName": "日本橋室町（東京都中央區）",
+      "lat": 35.68625,
+      "lng": 139.77394,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/100_views_edo_008.jpg",
+      "width": 790,
+      "height": 1200,
+      "collection": "Brooklyn Museum",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+      "license": "公有領域"
+    },
     "summary": "白天的商業大街，兩側是吳服店，遠方是富士山——夜晚來臨前的江戶。",
     "sections": {},
-    "perspectives": ["merchants"],
+    "perspectives": [
+      "merchants"
+    ],
     "details": [],
     "status": "草稿：文案待查證"
   }

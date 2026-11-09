@@ -30,7 +30,7 @@ const stations = times.map((t) => ({
       {prologue.map((a) => (
         <section class="panel station prologue" data-time="序章" data-label="白晝">
           <div class="big display">序</div>
-          {a.image ? <figure><img src={thumb(a.image.src, 960)} alt={a.title} loading="lazy" /></figure> : <figure class="empty"><span>作品圖待補</span></figure>}
+          {a.image ? <figure><img src={thumb(a.image.src, 960)} width={a.image.width} height={a.image.height} alt={a.title} /></figure> : <figure class="empty"><span>作品圖待補</span></figure>}
           <div class="cap">
             <span class="loc">{a.location.historicalName}</span>
             <h2><a href={u(`artworks/${a.id}/`)}>{a.title}</a></h2>
@@ -43,7 +43,7 @@ const stations = times.map((t) => ({
       {stations.map((s) => (
         <section class="panel station" data-time={s.time} data-label={s.label}>
           <div class="big num">{s.time}</div>
-          {s.main?.image ? <figure><img src={thumb(s.main.image.src, 960)} alt={s.main.title} loading="lazy" /></figure> : <figure class="empty"><span>作品圖待補</span></figure>}
+          {s.main?.image ? <figure class:list={{ land: s.main.image.width > s.main.image.height }}><img src={thumb(s.main.image.src, 960)} width={s.main.image.width} height={s.main.image.height} alt={s.main.title} /></figure> : <figure class="empty"><span>作品圖待補</span></figure>}
           {s.main && (
             <div class="cap">
               <span class="loc">{s.main.location.historicalName}</span>
@@ -56,7 +56,7 @@ const stations = times.map((t) => ({
               <span class="seal">同一時刻・平行場景</span>
               {s.parallel.map((p) => (
                 <a class="pcard" href={u(`artworks/${p.id}/`)}>
-                  {p.image && <img src={thumb(p.image.src, 330)} alt="" loading="lazy" />}
+                  {p.image && <img src={thumb(p.image.src, 330)} alt="" />}
                   <div><strong>{p.title}</strong><small>{regionName(p.region)}</small></div>
                 </a>
               ))}
@@ -99,9 +99,12 @@ const stations = times.map((t) => ({
   .intro .go { position: absolute; right: 6vw; bottom: 14vh; font-size: 13px; letter-spacing: 0.25em; color: rgba(239, 230, 210, 0.7); }
   .station { padding: 0 5vw 0 4vw; gap: 3vw; }
   .big { position: absolute; top: 10vh; left: 2vw; font-size: clamp(90px, 16vw, 230px); line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(239, 230, 210, 0.28); pointer-events: none; }
-  figure { position: relative; height: 64vh; aspect-ratio: 66/100; background: #e9dfc8; padding: 14px 14px 40px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6); flex: 0 0 auto; }
+  figure { position: relative; height: 64vh; background: #e9dfc8; padding: 14px 14px 40px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6); flex: 0 0 auto; }
   figure::before { content: ''; position: absolute; left: -12px; right: -12px; top: -10px; height: 10px; background: #3a2a1c; border-radius: 5px; }
-  figure img { width: 100%; height: 100%; object-fit: cover; }
+  figure img { height: 100%; width: auto; }
+  figure.land { height: auto; width: min(58vw, 92vh); padding: 14px 14px 34px; }
+  figure.land img { width: 100%; height: auto; }
+  figure.empty { aspect-ratio: 66/100; }
   figure.empty { display: flex; align-items: center; justify-content: center; background: rgba(239, 230, 210, 0.08); border: 1px dashed rgba(239, 230, 210, 0.45); box-shadow: none; }
   figure.empty::before { display: none; }
   figure.empty span { writing-mode: vertical-rl; letter-spacing: 0.3em; font-size: 14px; color: rgba(239, 230, 210, 0.7); }
@@ -125,6 +128,7 @@ const stations = times.map((t) => ({
   @media (max-width: 700px) {
     .station { padding: 0 8vw; }
     figure { height: 54vh; }
+    figure.land { height: auto; width: 80vw; }
     .cap p { display: none; }
     .parallel { width: 180px; margin-bottom: 24vh; }
   }

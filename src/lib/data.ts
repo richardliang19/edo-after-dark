@@ -29,10 +29,12 @@ export type Artwork = {
     width: number;
     height: number;
     collection: string;
+    accession?: string;
     source: string;
     sourceUrl: string;
     license: string;
   } | null;
+  apa?: string;
   summary: string;
   sections: Record<string, string>;
   perspectives: string[];
@@ -61,12 +63,18 @@ export const perspectiveName = (id: string) => perspectives.find((p) => p.id ===
 // Commons thumbnails: request a smaller rendition for grids/cards.
 // Commons serves standard widths only (e.g. 330, 500, 960, 1280).
 export function thumb(src: string, width: 330 | 500 | 960 | 1280 = 500): string {
+  // The Met: "web-large" (~600px long edge, ~100KB) for lists and the timeline;
+  // the original (~3MB) only when 1280 is asked for (zoomable detail views use image.src directly).
+  if (src.includes('images.metmuseum.org')) return width <= 960 ? src.replace('/original/', '/web-large/') : src;
   const m = src.match(/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/([0-9a-f])\/([0-9a-f]{2})\/(.+)$/);
   if (!m) return src;
   return `https://upload.wikimedia.org/wikipedia/commons/thumb/${m[1]}/${m[2]}/${m[3]}/${width}px-${m[3]}`;
 }
 
+export const isLandscape = (a: Artwork) => !!a.image && a.image.width > a.image.height;
+
 export function artworkApa(a: Artwork): string | null {
+  if (a.apa) return a.apa;
   if (!a.image) return null;
   const title = a.titleJa ?? a.title;
   const en = a.titleEn ? ` [${a.titleEn}]` : '';
