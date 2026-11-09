@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>概念三・凝視細節｜江戶不打烊</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Chiron+Sung+HK:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0c14;--paper:#efe6d2;--gold:#d8b46a;--vermilion:#c8553d;--mute:#8f8b80}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ink);color:var(--paper);font-family:"Chiron Sung HK",serif}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.08;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+nav{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;justify-content:space-between;padding:20px 28px;font-size:13px;letter-spacing:.14em;color:var(--mute)}
+nav b{color:var(--paper);font-weight:400}
+.story{position:relative}
+.stage{position:sticky;top:0;height:100vh;overflow:hidden}
+.canvas{position:absolute;transform-origin:0 0;will-change:transform}
+.canvas img{width:100%;height:100%;display:block}
+.vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 62% 50%,transparent 35%,rgba(11,12,20,.85) 100%);opacity:0;transition:opacity 1s}
+.stage.zoomed .vignette{opacity:1}
+.steps{position:relative;z-index:5;margin-top:-100vh;pointer-events:none}
+.step{height:110vh;display:flex;align-items:center;padding-left:6vw}
+.step:first-child{height:100vh}
+.card{pointer-events:auto;max-width:380px;background:rgba(11,12,20,.82);backdrop-filter:blur(8px);border-left:2px solid var(--vermilion);padding:28px 30px;opacity:.25;transition:opacity .6s}
+.step.active .card{opacity:1}
+.card .k{font-family:"IM Fell English",serif;color:var(--gold);letter-spacing:.15em;font-size:15px}
+.card h2{font-size:26px;font-weight:700;letter-spacing:.12em;margin:8px 0 14px}
+.card p{font-size:15px;line-height:2;color:#cdc5b3}
+.card .note{margin-top:14px;font-size:12px;color:var(--mute);letter-spacing:.1em;border-top:1px solid rgba(239,230,210,.12);padding-top:10px}
+.dots{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;gap:12px}
+.dots i{width:7px;height:7px;border-radius:50%;border:1px solid var(--paper);opacity:.5;transition:all .4s}
+.dots i.on{background:var(--gold);border-color:var(--gold);opacity:1}
+.after{padding:20vh 28px;text-align:center;color:var(--mute);line-height:2;letter-spacing:.15em}
+.after a{color:var(--paper)}
+@media (max-width:700px){.step{align-items:flex-end;padding:0 16px 8vh}.card{max-width:none}.vignette{background:radial-gradient(ellipse at 50% 35%,transparent 30%,rgba(11,12,20,.85) 100%)}}
+h1,h2,h3,.title,.logo,.seal{font-family:"Cactus Classical Serif","Chiron Sung HK",serif;font-weight:400}
+.seal{display:inline-block;background:#b8432f;color:#f3e8d4;font-size:13px;padding:4px 7px;line-height:1.3;border-radius:2px;letter-spacing:.05em}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<nav><b>江戶不打烊</b><span>作品細讀・概念稿</span></nav>
+<div class="dots" id="dots"></div>
+
+<div class="story">
+  <div class="stage" id="stage">
+    <div class="canvas" id="canvas"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/100_views_edo_101.jpg" alt="歌川廣重《名所江戶百景・淺草田甫酉之町詣》"></div>
+    <div class="vignette"></div>
+  </div>
+  <div class="steps" id="steps">
+    <div class="step" data-f="0.5,0.5,1"><div class="card"><span class="seal">零時・午夜祭典</span><h2>淺草田甫酉之町詣</h2><p>歌川廣重《名所江戶百景》之一。我們站在吉原一間屋子的窗內，和畫中的貓一起望向窗外。<br>向下捲動，靠近看看。</p></div></div>
+    <div class="step" data-f="0.36,0.585,3.2"><div class="card"><span class="seal">細部・壹</span><h2>窗台上的白貓</h2><p>貓背對著我們，望向窗外的田野。房間的主人沒有出現在畫面裡，只留下了她的物品。</p></div></div>
+    <div class="step" data-f="0.72,0.455,3"><div class="card"><span class="seal">細部・貳</span><h2>遠方的參拜人潮</h2><p>田間小路上，一列細小的人影正前往鷲神社參加酉之市。</p><p class="note">觀察位置在吉原，參拜目的地在畫外——兩者在地圖上要分開標示。</p></div></div>
+    <div class="step" data-f="0.36,0.37,3.4"><div class="card"><span class="seal">細部・參</span><h2>晚霞中的富士</h2><p>地平線上是富士山與橘紅的晚霞。畫中的天色其實是黃昏。</p><p class="note">這提醒觀眾：時間軸是策展導覽，不等於畫中的真實時刻。</p></div></div>
+    <div class="step" data-f="0.18,0.87,3.2"><div class="card"><span class="seal">細部・肆</span><h2>熊手形狀的髮簪</h2><p>地上的懷紙裡，髮簪做成熊手的樣子——熊手是酉之市的招福吉祥物，暗示有人剛從祭典回來。</p><p class="note">常見解讀，正式上線前需查證出處。</p></div></div>
+    <div class="step" data-f="0.5,0.5,1"><div class="card"><span class="seal">全景</span><h2>一扇窗，兩種夜</h2><p>窗外是祭典的熱鬧，窗內是安靜等待的房間。同一個夜晚，不同的人過著不同的生活。</p></div></div>
+  </div>
+</div>
+<div class="after">概念稿・圖像：歌川廣重《名所江戶百景》，Brooklyn Museum 藏，經 Wikimedia Commons（公有領域）<br><a href="index.html">← 回到概念總覽</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+const stage=document.getElementById('stage'),cv=document.getElementById('canvas'),steps=[...document.querySelectorAll('.step')];
+const dots=document.getElementById('dots');steps.forEach(()=>dots.appendChild(document.createElement('i')));
+let W,H,L,T,cur=0;
+function layout(){const sh=innerHeight,sw=innerWidth;H=Math.min(sh*.9,sw*1.4);W=H*790/1200;L=(sw-W)/2;T=(sh-H)/2;
+  Object.assign(cv.style,{width:W+'px',height:H+'px',left:L+'px',top:T+'px'});go(cur,0)}
+function go(i,d=1.6){cur=i;const [fx,fy,s]=steps[i].dataset.f.split(',').map(Number);
+  const mobile=innerWidth<=700,cx=s>1&&!mobile?innerWidth*.64:innerWidth/2,cy=mobile&&s>1?innerHeight*.35:innerHeight/2;
+  const x=s===1?0:cx-L-fx*W*s,y=s===1?0:cy-T-fy*H*s;
+  gsap.to(cv,{x,y,scale:s,duration:d,ease:'power3.inOut'});
+  stage.classList.toggle('zoomed',s>1);
+  steps.forEach((st,k)=>st.classList.toggle('active',k===i));
+  [...dots.children].forEach((t,k)=>t.classList.toggle('on',k===i))}
+steps.forEach((st,i)=>ScrollTrigger.create({trigger:st,start:'top 55%',end:'bottom 55%',onEnter:()=>go(i),onEnterBack:()=>go(i)}));
+addEventListener('resize',layout);layout();
+</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>概念二・隅田川繪卷｜江戶不打烊</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Chiron+Sung+HK:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#efe6d2;--gold:#e0bd73;--vermilion:#c8553d;--mute:rgba(239,230,210,.6)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#c8694a;color:var(--paper);font-family:"Chiron Sung HK",serif;overflow-x:hidden}
+.sky{position:fixed;inset:0;background:#c8694a;z-index:0}
+.stars{position:fixed;inset:0;z-index:1;opacity:0;background-image:radial-gradient(1.2px 1.2px at 12% 18%,#fff 50%,transparent),radial-gradient(1px 1px at 28% 8%,#fff 50%,transparent),radial-gradient(1.4px 1.4px at 46% 22%,#fff 50%,transparent),radial-gradient(1px 1px at 63% 12%,#fff 50%,transparent),radial-gradient(1.3px 1.3px at 78% 26%,#fff 50%,transparent),radial-gradient(1px 1px at 90% 6%,#fff 50%,transparent),radial-gradient(1px 1px at 6% 34%,#fff 50%,transparent),radial-gradient(1.2px 1.2px at 54% 4%,#fff 50%,transparent),radial-gradient(1px 1px at 36% 30%,#fff 50%,transparent),radial-gradient(1px 1px at 84% 38%,#fff 50%,transparent)}
+.moon{position:fixed;z-index:1;width:70px;height:70px;border-radius:50%;background:#f3e6bf;box-shadow:0 0 60px 18px rgba(243,230,191,.25);left:-10vw;top:30vh}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.1;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hud{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:flex-start;padding:20px 28px;pointer-events:none}
+.hud .logo{font-size:13px;letter-spacing:.14em}
+.hud .now{text-align:center}
+.hud .now strong{display:block;font-family:"IM Fell English",serif;font-weight:500;font-size:46px;line-height:1;color:var(--gold)}
+.hud .now span{font-size:13px;letter-spacing:.14em;color:var(--mute)}
+.hud .r{font-size:12px;letter-spacing:.08em;color:var(--mute);text-align:right}
+.ticks{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:30;display:flex;gap:6px;align-items:center}
+.ticks i{display:block;width:34px;height:2px;background:rgba(239,230,210,.25);transition:background .4s}
+.ticks i.on{background:var(--gold)}
+.wrap{position:relative;z-index:5;height:100vh;overflow:hidden}
+.track{display:flex;height:100%;width:max-content;position:relative}
+.river{position:absolute;left:0;right:0;bottom:0;height:22vh;pointer-events:none}
+.river path{fill:none;stroke:rgba(239,230,210,.35);stroke-width:1.2}
+.panel{flex:0 0 auto;height:100%;position:relative;display:flex;align-items:center}
+.intro{width:100vw;justify-content:center;gap:6vw}
+.intro h1{writing-mode:vertical-rl;font-weight:900;font-size:clamp(52px,8vw,110px);letter-spacing:.08em;line-height:1.1}
+.intro .lead{writing-mode:vertical-rl;font-size:17px;letter-spacing:.14em;line-height:2.4;color:var(--paper);max-height:62vh}
+.intro .go{position:absolute;right:6vw;bottom:14vh;font-size:13px;letter-spacing:.14em;color:var(--mute)}
+.station{width:78vw;max-width:1000px;padding:0 4vw;gap:3vw}
+.station .big{position:absolute;top:10vh;left:2vw;font-family:"IM Fell English",serif;font-size:clamp(90px,16vw,230px);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(239,230,210,.28);pointer-events:none}
+figure{position:relative;height:66vh;aspect-ratio:780/1200;background:#e9dfc8;padding:14px 14px 40px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);flex:0 0 auto}
+figure::before{content:"";position:absolute;left:-12px;right:-12px;top:-10px;height:10px;background:#3a2a1c;border-radius:5px}
+figure img{width:100%;height:100%;object-fit:cover;display:block}
+figure.todo{display:flex;align-items:center;justify-content:center;background:rgba(239,230,210,.08);border:1px dashed rgba(239,230,210,.45);box-shadow:none}
+figure.todo::before{display:none}
+figure.todo span{writing-mode:vertical-rl;letter-spacing:.14em;font-size:14px;color:var(--mute)}
+.cap{writing-mode:vertical-rl;display:flex;flex-direction:column;gap:18px;height:66vh}
+.cap h2{font-size:clamp(24px,2.6vw,34px);font-weight:700;letter-spacing:.08em}
+.cap .loc{font-size:13px;letter-spacing:.14em;color:var(--gold)}
+.cap p{font-size:15px;line-height:2.1;letter-spacing:.12em;color:rgba(239,230,210,.85);max-height:52vh}
+.cap .tag{font-size:12px;color:var(--vermilion);letter-spacing:.08em;background:rgba(0,0,0,.25);padding:8px 4px}
+.end{width:70vw;justify-content:center;flex-direction:column;text-align:center;gap:20px}
+.end h2{font-size:clamp(28px,3.6vw,46px);letter-spacing:.08em}
+.end p{color:var(--mute);letter-spacing:.08em}
+.end a{color:var(--paper)}
+@media (max-width:700px){.station{width:100vw}figure{height:56vh}.cap p{display:none}.hud .r{display:none}}
+h1,h2,h3,.title,.logo,.seal{font-family:"Cactus Classical Serif","Chiron Sung HK",serif;font-weight:400}
+.seal{display:inline-block;background:#b8432f;color:#f3e8d4;font-size:13px;padding:4px 7px;line-height:1.3;border-radius:2px;letter-spacing:.05em}
+</style>
+</head>
+<body>
+<div class="sky" id="sky"></div>
+<div class="stars" id="stars"></div>
+<div class="moon" id="moon"></div>
+<div class="grain"></div>
+<div class="hud"><span class="logo">江戶不打烊</span><div class="now"><strong id="now">18:00</strong><span id="nowLabel">黃昏</span></div><span class="r">夜之時間軸<br>概念稿</span></div>
+<div class="ticks" id="ticks"></div>
+
+<div class="wrap" id="wrap">
+<div class="track" id="track">
+  <svg class="river" id="river" preserveAspectRatio="none"></svg>
+
+  <section class="panel intro">
+    <p class="lead">沿著隅田川一路向前<br>從黃昏走到黎明</p>
+    <h1>江戶不打烊</h1>
+    <div class="go">向下捲動・沿河前行 →</div>
+  </section>
+
+  <section class="panel station" data-time="18:00" data-label="黃昏">
+    <div class="big">18:00</div>
+    <figure class="todo"><span>作品圖待補</span></figure>
+    <div class="cap"><span class="loc">兩國橋</span><h2>兩國橋宵月</h2><p>日落時分，橋上行人與河面船影交錯，城市準備迎接夜晚。</p></div>
+  </section>
+
+  <section class="panel station" data-time="19:00" data-label="入夜">
+    <div class="big">19:00</div>
+    <figure class="todo"><span>作品圖待補</span></figure>
+    <div class="cap"><span class="loc">柳橋</span><h2>柳橋夜景・萬八</h2><p>河岸料亭點起燈火，宴席從這裡開始。</p></div>
+  </section>
+
+  <section class="panel station" data-time="20:00" data-label="夜間娛樂">
+    <div class="big">20:00</div>
+    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_098.jpg" alt="兩國花火"></figure>
+    <div class="cap"><span class="loc">兩國橋</span><h2>兩國花火</h2><p>煙火在夜空綻開，橋下擠滿遊船，整條河成了看台。</p></div>
+  </section>
+
+  <section class="panel station" data-time="21:00" data-label="吉原夜生活">
+    <div class="big">21:00</div>
+    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_100.jpg" alt="吉原日本堤"></figure>
+    <div class="cap"><span class="loc">日本堤</span><h2>吉原日本堤</h2><span class="tag">平行場景・補充作品</span><p>通往吉原的堤道上，轎子與行人在月下前行。</p></div>
+  </section>
+
+  <section class="panel station" data-time="22:00" data-label="深夜宴席">
+    <div class="big">22:00</div>
+    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/100_views_edo_082.jpg" alt="月之岬"></figure>
+    <div class="cap"><span class="loc">品川・推定位置</span><h2>月之岬</h2><p>宴席散落一地，窗外滿月懸在海灣上。</p></div>
+  </section>
+
+  <section class="panel station" data-time="23:00" data-label="深夜交通">
+    <div class="big">23:00</div>
+    <figure class="todo"><span>作品圖待補</span></figure>
+    <div class="cap"><span class="loc">御廄河岸</span><h2>御廄河岸</h2><p>渡船仍在河上往返，夜裡的城市靠勞動者維持運轉。</p></div>
+  </section>
+
+  <section class="panel station" data-time="00:00" data-label="午夜祭典">
+    <div class="big">00:00</div>
+    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/100_views_edo_101.jpg" alt="淺草田甫酉之町詣"></figure>
+    <div class="cap"><span class="loc">吉原・觀察位置</span><h2>淺草田甫酉之町詣</h2><p>窗邊的貓望向田間，參拜酉之市的人潮正在遠方移動。</p></div>
+  </section>
+
+  <section class="panel station" data-time="05:00" data-label="黎明">
+    <div class="big">05:00</div>
+    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/100_views_edo_038.jpg" alt="廓中東雲"></figure>
+    <div class="cap"><span class="loc">新吉原</span><h2>廓中東雲</h2><p>天色微亮，送客的身影走出大門，江戶的夜結束了。</p></div>
+  </section>
+
+  <section class="panel end"><h2>天亮了</h2><p>江戶的夜，由許多地方、許多人共同構成。</p><p><a href="index.html">← 回到概念總覽</a></p></section>
+</div>
+</div>
+<div style="height:1px"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+const track=document.getElementById('track'),stations=[...document.querySelectorAll('.station')];
+const ticks=document.getElementById('ticks');stations.forEach(()=>ticks.appendChild(document.createElement('i')));
+const river=document.getElementById('river');
+function drawRiver(){const w=track.scrollWidth,h=river.clientHeight;river.setAttribute('viewBox',`0 0 ${w} ${h}`);let s='';
+  for(let k=0;k<4;k++){let d=`M0 ${h*(.3+k*.18)}`;for(let x=0;x<=w;x+=120)d+=` Q${x+60} ${h*(.3+k*.18)+(k%2?10:-10)} ${x+120} ${h*(.3+k*.18)}`;s+=`<path d="${d}" style="opacity:${1-k*.2}"/>`}
+  river.innerHTML=s}
+drawRiver();
+const skyColors=['#c8694a','#b8604f','#7a4660','#3a3666','#232856','#171c44','#0c1030','#0a0d26','#4a5677','#9fb0c6'];
+const skyAt=gsap.utils.interpolate(skyColors);
+const sky=document.getElementById('sky'),stars=document.getElementById('stars'),moon=document.getElementById('moon');
+const dist=()=>track.scrollWidth-innerWidth;
+const move=gsap.to(track,{x:()=>-dist(),ease:'none',scrollTrigger:{trigger:'#wrap',pin:true,scrub:1,end:()=>'+='+dist(),invalidateOnRefresh:true,
+  onUpdate:s=>{const p=s.progress,c=skyAt(p);sky.style.background=c;document.body.style.background=c;
+    stars.style.opacity=Math.max(0,Math.sin(Math.PI*Math.min(1,Math.max(0,(p-.15)/.75))));
+    moon.style.left=(p*110-10)+'vw';moon.style.top=(40-Math.sin(p*Math.PI)*28)+'vh'}}});
+let shown=-2;
+gsap.ticker.add(()=>{let best=-1;stations.forEach((st,i)=>{if(st.getBoundingClientRect().left<innerWidth*.55)best=i});
+  if(best===shown)return;shown=best;
+  document.getElementById('now').textContent=best<0?'18:00':stations[best].dataset.time;
+  document.getElementById('nowLabel').textContent=best<0?'黃昏':stations[best].dataset.label;
+  [...ticks.children].forEach((t,i)=>t.classList.toggle('on',i<=best))});
+stations.forEach(st=>{
+  gsap.from(st.querySelector('figure'),{y:80,rotate:-2,opacity:0,ease:'none',scrollTrigger:{trigger:st,containerAnimation:move,start:'left 95%',end:'left 45%',scrub:true}});
+  gsap.from(st.querySelector('.cap'),{y:-60,opacity:0,ease:'none',scrollTrigger:{trigger:st,containerAnimation:move,start:'left 80%',end:'left 35%',scrub:true}});
+  gsap.to(st.querySelector('.big'),{x:-140,ease:'none',scrollTrigger:{trigger:st,containerAnimation:move,start:'left right',end:'right left',scrub:true}});
+});
+addEventListener('resize',()=>{drawRiver();ScrollTrigger.refresh()});
+</script>
+</body>
+</html>

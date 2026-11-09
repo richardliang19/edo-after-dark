@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>概念一・提燈夜行｜江戶不打烊</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Chiron+Sung+HK:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#07091a;--paper:#efe6d2;--gold:#d8b46a;--vermilion:#c8553d;--mute:#8d8a9c;--x:50vw;--y:50vh;--r:180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ink);color:var(--paper);font-family:"Chiron Sung HK",serif;overflow-x:hidden}
+a{color:inherit}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.09;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:20px 28px;z-index:40;font-size:13px;letter-spacing:.08em;color:var(--mute)}
+nav .logo{color:var(--paper);letter-spacing:.14em}
+nav .links{display:flex;gap:26px}
+nav .links a{text-decoration:none;transition:color .3s}
+nav .links a:hover{color:var(--gold)}
+.hero{position:relative;height:100vh;overflow:hidden;cursor:none}
+.ambient{position:absolute;inset:-40px;background:url(https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_098.jpg) center/cover;filter:blur(40px) brightness(.25) saturate(.6);transform:scale(1.1)}
+.print{position:absolute;left:50%;top:50%;height:min(88vh,150vw);aspect-ratio:780/1200;transform:translate(-50%,-48%)}
+.print img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.print .dim{filter:brightness(.16) saturate(.3) contrast(1.1)}
+.print .lit{-webkit-mask-image:radial-gradient(circle var(--r) at var(--px) var(--py),#000 0%,#000 35%,transparent 100%);mask-image:radial-gradient(circle var(--r) at var(--px) var(--py),#000 0%,#000 35%,transparent 100%);filter:saturate(1.15) contrast(1.05)}
+.glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle calc(var(--r)*1.6) at var(--x) var(--y),rgba(255,170,80,.22),rgba(255,140,60,.06) 45%,transparent 70%);mix-blend-mode:screen}
+.lantern{position:absolute;left:var(--x);top:var(--y);width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:#ffd79a;box-shadow:0 0 18px 6px rgba(255,190,110,.7);pointer-events:none}
+canvas#embers{position:absolute;inset:0;pointer-events:none}
+.title{position:absolute;right:max(5vw,24px);top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font-weight:900;font-size:clamp(44px,7vw,96px);letter-spacing:.08em;line-height:1.1;text-shadow:0 0 30px rgba(0,0,0,.8)}
+.title span{display:inline-block;opacity:0}
+.sub{position:absolute;left:max(5vw,24px);top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font-size:clamp(14px,1.4vw,18px);letter-spacing:.14em;color:var(--mute)}
+.sub b{color:var(--vermilion);font-weight:400}
+.clock{position:absolute;left:28px;bottom:28px;font-family:"IM Fell English",serif;font-size:15px;letter-spacing:.08em;color:var(--mute)}
+.clock strong{display:block;font-size:44px;color:var(--gold);font-weight:500;letter-spacing:.05em}
+.hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);font-size:12px;letter-spacing:.14em;color:var(--mute);text-align:center;animation:breathe 3s ease-in-out infinite}
+@keyframes breathe{50%{opacity:.35}}
+section.intro{max-width:760px;margin:0 auto;padding:22vh 28px 12vh;text-align:center}
+.intro .eyebrow{font-family:"IM Fell English",serif;color:var(--gold);letter-spacing:.08em;font-size:18px}
+.intro h2{font-size:clamp(26px,3.4vw,42px);font-weight:700;margin:18px 0 26px;line-height:1.5}
+.intro p{color:#bdb6a6;line-height:2.1;font-size:17px}
+.gates{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;max-width:1200px;margin:0 auto 20vh;padding:0 28px}
+.gate{position:relative;height:62vh;min-height:380px;overflow:hidden;text-decoration:none;background:#0d1024}
+.gate img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.32) saturate(.5);transition:filter .8s,transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.gate:hover img{filter:brightness(.75) saturate(1);transform:scale(1.06)}
+.gate .lbl{position:absolute;left:26px;bottom:26px;right:26px}
+.gate .num{font-family:"IM Fell English",serif;font-size:14px;letter-spacing:.14em;color:var(--gold)}
+.gate h3{font-size:30px;font-weight:700;margin:6px 0;letter-spacing:.15em}
+.gate p{font-size:14px;color:#cfc7b4;line-height:1.8}
+.reveal{opacity:0;transform:translateY(40px)}
+footer{text-align:center;color:var(--mute);font-size:12px;padding:40px 20px 60px;line-height:2}
+@media (max-width:700px){nav .links{display:none}.title{right:16px}.sub{display:none}.print{height:78vh}}
+h1,h2,h3,.title,.logo,.seal{font-family:"Cactus Classical Serif","Chiron Sung HK",serif;font-weight:400}
+.seal{display:inline-block;background:#b8432f;color:#f3e8d4;font-size:13px;padding:4px 7px;line-height:1.3;border-radius:2px;letter-spacing:.05em}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<nav><span class="logo">江戶不打烊</span><div class="links"><a href="#">策展理念</a><a href="#">時空探索</a><a href="#">夜之時間軸</a><a href="#">作品</a><a href="#">活動</a></div></nav>
+
+<header class="hero" id="hero">
+  <div class="ambient"></div>
+  <div class="print" id="print">
+    <img class="dim" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_098.jpg" alt="">
+    <img class="lit" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_098.jpg" alt="歌川廣重《名所江戶百景・兩國花火》">
+  </div>
+  <div class="glow"></div>
+  <canvas id="embers"></canvas>
+  <div class="lantern"></div>
+  <div class="sub">從黃昏到黎明的<b>城市夜生活</b></div>
+  <h1 class="title" id="title"><span>江</span><span>戶</span><span>不</span><span>打</span><span>烊</span></h1>
+  <div class="clock">今宵<strong id="clock">20:00</strong></div>
+  <div class="hint">移動提燈・照亮江戶<br>↓</div>
+</header>
+
+<section class="intro">
+  <p class="reveal"><span class="seal">序</span></p>
+  <h2 class="reveal">江戶的夜晚，不是一個場景，<br>而是一整座城市。</h2>
+  <p class="reveal">當日落後，兩國橋上煙火升起，吉原的燈籠一盞盞亮起，淺草的參拜人潮走過田間小路。透過歌川廣重的浮世繪，從三個入口走進江戶的夜。</p>
+</section>
+
+<div class="gates">
+  <a class="gate reveal" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/100_views_edo_082.jpg" alt=""><div class="lbl"><span class="seal">壹</span><h3>時間</h3><p>從 18:00 黃昏到 05:00 黎明，看城市如何換上夜的樣貌。</p></div></a>
+  <a class="gate reveal" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_100.jpg" alt=""><div class="lbl"><span class="seal">貳</span><h3>空間</h3><p>在江戶古地圖與今日東京之間，找到畫中的地點。</p></div></a>
+  <a class="gate reveal" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/100_views_edo_101.jpg" alt=""><div class="lbl"><span class="seal">參</span><h3>人物</h3><p>夜遊者、商人、船夫、參拜者——誰構成了江戶的夜？</p></div></a>
+</div>
+
+<footer>概念稿・圖像：歌川廣重《名所江戶百景》，Brooklyn Museum 藏，經 Wikimedia Commons（公有領域）<br><a href="index.html">← 回到概念總覽</a></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+const hero=document.getElementById('hero'),print=document.getElementById('print'),root=document.documentElement;
+const pos={x:innerWidth*.5,y:innerHeight*.45},target={x:pos.x,y:pos.y};
+let lastMove=0,r={v:170};
+hero.addEventListener('pointermove',e=>{target.x=e.clientX;target.y=e.clientY;lastMove=performance.now()});
+function loop(t){
+  if(performance.now()-lastMove>2500){target.x=innerWidth*(.5+.22*Math.sin(t/2600));target.y=innerHeight*(.45+.2*Math.sin(t/1900))}
+  pos.x+=(target.x-pos.x)*.08;pos.y+=(target.y-pos.y)*.08;
+  const b=print.getBoundingClientRect();
+  root.style.setProperty('--x',pos.x+'px');root.style.setProperty('--y',pos.y+'px');
+  root.style.setProperty('--px',(pos.x-b.left)+'px');root.style.setProperty('--py',(pos.y-b.top)+'px');
+  root.style.setProperty('--r',(r.v*(1+.03*Math.sin(t/180)))+'px');
+  requestAnimationFrame(loop)}
+requestAnimationFrame(loop);
+
+gsap.to('#title span',{opacity:1,y:0,duration:1.6,stagger:.25,ease:'power2.out',delay:.4});
+gsap.from('#title span',{y:-20,duration:1.6,stagger:.25,ease:'power2.out',delay:.4});
+gsap.to(r,{v:Math.max(innerWidth,innerHeight),ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:1}});
+const times=['18:00','19:00','20:00','21:00','22:00','23:00','00:00','05:00'];
+ScrollTrigger.create({start:0,end:'max',onUpdate:s=>{document.getElementById('clock').textContent=times[Math.min(7,Math.floor(s.progress*8))]}});
+gsap.utils.toArray('.reveal').forEach(el=>gsap.to(el,{opacity:1,y:0,duration:1.2,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 85%'}}));
+
+const c=document.getElementById('embers'),ctx=c.getContext('2d');let P=[];
+function size(){c.width=hero.clientWidth;c.height=hero.clientHeight}size();addEventListener('resize',size);
+for(let i=0;i<60;i++)P.push({x:Math.random()*c.width,y:Math.random()*c.height,v:.2+Math.random()*.6,s:.6+Math.random()*1.8,p:Math.random()*6});
+(function draw(t){ctx.clearRect(0,0,c.width,c.height);
+  for(const e of P){e.y-=e.v;e.x+=Math.sin(t/900+e.p)*.3;if(e.y<-10){e.y=c.height+10;e.x=Math.random()*c.width}
+    const d=Math.hypot(e.x-pos.x,e.y-pos.y),a=Math.max(.08,1-d/420);
+    ctx.fillStyle=`rgba(255,${170+Math.floor(e.p*10)},90,${a*.8})`;ctx.beginPath();ctx.arc(e.x,e.y,e.s,0,7);ctx.fill()}
+  requestAnimationFrame(draw)})(0);
+</script>
+</body>
+</html>
