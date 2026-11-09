@@ -1,0 +1,46 @@
+---
+import Base from '../../layouts/Base.astro';
+import refs from '../../data/references.json';
+import { ordered, artworkApa } from '../../lib/data';
+
+const em = (s: string) => s.replace(/\*(.+?)\*/g, '<em>$1</em>');
+const artworkRefs = ordered.map((a) => ({ a, apa: artworkApa(a) }));
+---
+<Base title="參考資料">
+  <div class="page">
+    <div class="page-head">
+      <span class="seal">參考資料</span>
+      <h1>參考資料</h1>
+      <p>依 APA 第七版格式整理。標示「待確認」者需組員進一步查證。</p>
+    </div>
+
+    <section class="cat">
+      <h2>作品圖像</h2>
+      <ul>
+        {artworkRefs.map(({ a, apa }) => (
+          <li>{apa ? <span set:html={em(apa)} /> : <span class="pending">《{a.title}》：作品來源待查證</span>}</li>
+        ))}
+      </ul>
+    </section>
+
+    {refs.map((c) => (
+      <section class="cat">
+        <h2>{c.category}</h2>
+        <ul>
+          {c.items.map((r) => (
+            <li><span set:html={em(r.apa)} />{r.note && <small>{r.note}</small>}</li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .cat { margin-bottom: 8vh; }
+  .cat h2 { font-size: 26px; margin-bottom: 16px; }
+  ul { list-style: none; }
+  li { padding: 14px 0 14px 2em; text-indent: -2em; border-top: 1px solid var(--line); color: var(--paper-2); font-size: 15px; line-height: 1.8; word-break: break-word; }
+  li small { display: block; text-indent: 0; color: var(--gold); font-size: 12px; margin-top: 4px; }
+  .pending { color: var(--mute); }
+</style>

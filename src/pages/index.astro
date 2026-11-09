@@ -1,0 +1,178 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
+import { byId, artworks, regions, times, thumb } from '../lib/data';
+import news from '../data/news.json';
+
+const hero = byId('A03')!;
+const gates = [
+  { seal: '壹', title: '時間', text: '從 18:00 黃昏到 05:00 黎明，看城市如何換上夜的樣貌。', href: 'timeline/', img: byId('A05')!.image!.src },
+  { seal: '貳', title: '空間', text: '在江戶古地圖與今日東京之間，找到畫中的地點。', href: 'explore/', img: byId('B02')!.image!.src },
+  { seal: '參', title: '人物', text: '夜遊者、商人、船夫、參拜者——誰構成了江戶的夜？', href: 'explore/#perspective', img: byId('A07')!.image!.src },
+];
+---
+<Base navOverlay>
+  <header class="hero" id="hero">
+    <div class="ambient" style={`background-image:url(${thumb(hero.image!.src, 500)})`}></div>
+    <div class="print" id="print" style={`aspect-ratio:${hero.image!.width}/${hero.image!.height}`}>
+      <img class="dim" src={hero.image!.src} alt="" />
+      <img class="lit" src={hero.image!.src} alt={`歌川廣重《${hero.series}・${hero.title}》`} />
+    </div>
+    <div class="glow"></div>
+    <canvas id="embers"></canvas>
+    <div class="lantern"></div>
+    <p class="sub">從黃昏到黎明的<b>城市夜生活</b></p>
+    <h1 class="title" id="title">{'江戶不打烊'.split('').map((c) => <span>{c}</span>)}</h1>
+    <div class="clock">今宵<strong class="num" id="clock">20:00</strong></div>
+    <div class="hint">移動提燈・照亮江戶<br />↓</div>
+  </header>
+
+  <section class="intro">
+    <p class="reveal"><span class="seal">序</span></p>
+    <h2 class="reveal">江戶的夜晚，不是一個場景，<br />而是一整座城市。</h2>
+    <p class="reveal">日落之後，兩國橋上煙火升起，吉原的燈籠一盞盞亮起，淺草的參拜人潮走過田間小路。透過歌川廣重的浮世繪，從三個入口走進江戶的夜。</p>
+    <a class="btn reveal" href={u('curation/')}>閱讀策展理念 →</a>
+  </section>
+
+  <div class="gates">
+    {gates.map((g) => (
+      <a class="gate reveal" href={u(g.href)}>
+        <img src={thumb(g.img, 960)} alt="" loading="lazy" />
+        <div class="lbl"><span class="seal">{g.seal}</span><h3>{g.title}</h3><p>{g.text}</p></div>
+      </a>
+    ))}
+  </div>
+
+  <section class="facts">
+    <div class="fact reveal"><strong class="num">{artworks.length}</strong><span>件浮世繪</span></div>
+    <div class="fact reveal"><strong class="num">{times.length}</strong><span>個夜間時刻</span></div>
+    <div class="fact reveal"><strong class="num">{regions.length}</strong><span>個城市區域</span></div>
+    <div class="fact reveal"><strong class="num">4</strong><span>種人物視角</span></div>
+  </section>
+
+  <section class="news">
+    <div class="news-head reveal"><h2>最新消息</h2><a href={u('events/')}>全部活動與消息 →</a></div>
+    <ul>
+      {news.slice(0, 3).map((n) => (
+        <li class="reveal"><time class="num">{n.date}</time><div><h3>{n.title}</h3><p>{n.body}</p></div></li>
+      ))}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .hero { position: relative; height: 100vh; min-height: 560px; overflow: hidden; cursor: none; }
+  .ambient { position: absolute; inset: -40px; background-position: center; background-size: cover; filter: blur(40px) brightness(0.25) saturate(0.6); transform: scale(1.1); }
+  .print { position: absolute; left: 50%; top: 50%; height: min(86vh, 150vw); transform: translate(-50%, -47%); }
+  .print img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .print .dim { filter: brightness(0.16) saturate(0.3) contrast(1.1); }
+  .print .lit {
+    -webkit-mask-image: radial-gradient(circle var(--r, 170px) at var(--px, 50%) var(--py, 40%), #000 0%, #000 35%, transparent 100%);
+    mask-image: radial-gradient(circle var(--r, 170px) at var(--px, 50%) var(--py, 40%), #000 0%, #000 35%, transparent 100%);
+  }
+  .glow { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen;
+    background: radial-gradient(circle calc(var(--r, 170px) * 1.6) at var(--x, 50%) var(--y, 45%), rgba(255, 170, 80, 0.22), rgba(255, 140, 60, 0.06) 45%, transparent 70%); }
+  .lantern { position: absolute; left: var(--x, 50%); top: var(--y, 45%); width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: #ffd79a; box-shadow: 0 0 18px 6px rgba(255, 190, 110, 0.7); pointer-events: none; }
+  #embers { position: absolute; inset: 0; pointer-events: none; }
+  .title { position: absolute; right: max(5vw, 20px); top: 50%; transform: translateY(-50%); writing-mode: vertical-rl; font-size: clamp(48px, 7.5vw, 104px); line-height: 1.1; letter-spacing: 0.08em; text-shadow: 0 0 30px rgba(0, 0, 0, 0.8); }
+  .title span { display: inline-block; opacity: 0; }
+  .sub { position: absolute; left: max(5vw, 20px); top: 50%; transform: translateY(-50%); writing-mode: vertical-rl; letter-spacing: 0.3em; color: var(--mute); font-size: clamp(14px, 1.4vw, 18px); }
+  .sub b { color: var(--vermilion-text); font-weight: 400; }
+  .clock { position: absolute; left: var(--gutter); bottom: 28px; color: var(--mute); font-size: 14px; letter-spacing: 0.1em; }
+  .clock strong { display: block; font-size: 46px; font-weight: 400; color: var(--gold); letter-spacing: 0.02em; line-height: 1.1; }
+  .hint { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); font-size: 12px; letter-spacing: 0.3em; color: var(--mute); text-align: center; animation: breathe 3s ease-in-out infinite; }
+  @keyframes breathe { 50% { opacity: 0.35; } }
+
+  .intro { max-width: 760px; margin: 0 auto; padding: 22vh var(--gutter) 12vh; text-align: center; }
+  .intro h2 { font-size: clamp(26px, 3.4vw, 42px); margin: 20px 0 26px; line-height: 1.6; }
+  .intro p { color: var(--paper-2); font-size: 17px; line-height: 2.1; }
+  .intro .btn { margin-top: 36px; }
+
+  .gates { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2px; max-width: 1200px; margin: 0 auto 16vh; padding: 0 var(--gutter); }
+  .gate { position: relative; height: 62vh; min-height: 380px; overflow: hidden; text-decoration: none; background: var(--ink-2); }
+  .gate img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.32) saturate(0.5); transition: filter 0.8s, transform 1.4s cubic-bezier(0.2, 0.7, 0.2, 1); }
+  .gate:hover img { filter: brightness(0.75) saturate(1); transform: scale(1.06); }
+  .lbl { position: absolute; left: 26px; right: 26px; bottom: 26px; }
+  .lbl h3 { font-size: 32px; margin: 10px 0 6px; }
+  .lbl p { font-size: 14px; color: var(--paper-2); line-height: 1.8; }
+
+  .facts { max-width: 1120px; margin: 0 auto 16vh; padding: 0 var(--gutter); display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .fact { padding: 36px 8px; text-align: center; }
+  .fact strong { display: block; font-size: 64px; font-weight: 400; color: var(--gold); line-height: 1; }
+  .fact span { color: var(--paper-2); font-size: 14px; }
+
+  .news { max-width: 1120px; margin: 0 auto 16vh; padding: 0 var(--gutter); }
+  .news-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+  .news-head h2 { font-size: 32px; }
+  .news-head a { color: var(--paper-2); font-size: 14px; text-decoration: none; }
+  .news ul { list-style: none; }
+  .news li { display: grid; grid-template-columns: 140px 1fr; gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
+  .news time { color: var(--gold); font-size: 18px; }
+  .news h3 { font-size: 20px; margin-bottom: 4px; }
+  .news p { color: var(--paper-2); font-size: 15px; }
+
+  @media (max-width: 700px) {
+    .sub { display: none; }
+    .title { right: 14px; }
+    .print { height: 74vh; }
+    .news li { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  gsap.registerPlugin(ScrollTrigger);
+
+  const hero = document.getElementById('hero')!;
+  const print = document.getElementById('print')!;
+  const root = document.documentElement;
+  const pos = { x: innerWidth * 0.5, y: innerHeight * 0.45 };
+  const target = { ...pos };
+  const r = { v: 170 };
+  let lastMove = 0;
+
+  hero.addEventListener('pointermove', (e) => { target.x = e.clientX; target.y = e.clientY; lastMove = performance.now(); });
+
+  gsap.ticker.add(() => {
+    const t = performance.now();
+    if (t - lastMove > 2500) {
+      target.x = innerWidth * (0.5 + 0.22 * Math.sin(t / 2600));
+      target.y = innerHeight * (0.45 + 0.2 * Math.sin(t / 1900));
+    }
+    pos.x += (target.x - pos.x) * 0.08;
+    pos.y += (target.y - pos.y) * 0.08;
+    const b = print.getBoundingClientRect();
+    const hb = hero.getBoundingClientRect();
+    root.style.setProperty('--x', `${pos.x}px`);
+    root.style.setProperty('--y', `${pos.y - hb.top}px`);
+    root.style.setProperty('--px', `${pos.x - b.left}px`);
+    root.style.setProperty('--py', `${pos.y - b.top}px`);
+    root.style.setProperty('--r', `${r.v * (1 + 0.03 * Math.sin(t / 180))}px`);
+  });
+
+  gsap.fromTo('#title span', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 1.6, stagger: 0.25, ease: 'power2.out', delay: 0.4 });
+  gsap.to(r, { v: Math.max(innerWidth, innerHeight), ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: 1 } });
+
+  const times = ['18:00', '19:00', '20:00', '21:00', '22:00', '23:00', '00:00', '05:00'];
+  const clock = document.getElementById('clock')!;
+  ScrollTrigger.create({ start: 0, end: 'max', onUpdate: (s) => { clock.textContent = times[Math.min(7, Math.floor(s.progress * 8))]; } });
+
+  const c = document.getElementById('embers') as HTMLCanvasElement;
+  const ctx = c.getContext('2d')!;
+  const size = () => { c.width = hero.clientWidth; c.height = hero.clientHeight; };
+  size();
+  addEventListener('resize', size);
+  const P = Array.from({ length: 60 }, () => ({ x: Math.random() * c.width, y: Math.random() * c.height, v: 0.2 + Math.random() * 0.6, s: 0.6 + Math.random() * 1.8, p: Math.random() * 6 }));
+  gsap.ticker.add(() => {
+    const t = performance.now();
+    ctx.clearRect(0, 0, c.width, c.height);
+    for (const e of P) {
+      e.y -= e.v; e.x += Math.sin(t / 900 + e.p) * 0.3;
+      if (e.y < -10) { e.y = c.height + 10; e.x = Math.random() * c.width; }
+      const a = Math.max(0.08, 1 - Math.hypot(e.x - pos.x, e.y - pos.y) / 420);
+      ctx.fillStyle = `rgba(255,${170 + Math.floor(e.p * 10)},90,${a * 0.8})`;
+      ctx.beginPath(); ctx.arc(e.x, e.y, e.s, 0, 7); ctx.fill();
+    }
+  });
+</script>

@@ -1,0 +1,199 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+import { artworks, times, regionName, thumb } from '../../lib/data';
+
+const prologue = artworks.filter((a) => !a.curatorialTime);
+const stations = times.map((t) => ({
+  ...t,
+  main: artworks.find((a) => a.curatorialTime === t.time && !a.parallel),
+  parallel: artworks.filter((a) => a.curatorialTime === t.time && a.parallel),
+}));
+---
+<Base title="夜之時間軸" navOverlay>
+  <div class="sky" id="sky"></div>
+  <div class="stars" id="stars"></div>
+  <div class="moon" id="moon"></div>
+  <div class="hud"><div class="now"><strong class="num" id="now">序章</strong><span id="nowLabel">白晝</span></div></div>
+  <div class="ticks" id="ticks">{stations.map(() => <i></i>)}</div>
+
+  <div class="wrap" id="wrap">
+    <div class="track" id="track">
+      <svg class="river" id="river" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+      <section class="panel intro">
+        <p class="lead">沿著隅田川一路向前<br />從黃昏走到黎明</p>
+        <h1>夜之時間軸</h1>
+        <p class="go">向下捲動・沿河前行 →</p>
+      </section>
+
+      {prologue.map((a) => (
+        <section class="panel station prologue" data-time="序章" data-label="白晝">
+          <div class="big display">序</div>
+          {a.image ? <figure><img src={thumb(a.image.src, 960)} alt={a.title} loading="lazy" /></figure> : <figure class="empty"><span>作品圖待補</span></figure>}
+          <div class="cap">
+            <span class="loc">{a.location.historicalName}</span>
+            <h2><a href={u(`artworks/${a.id}/`)}>{a.title}</a></h2>
+            <p>{a.summary}</p>
+            <span class="note">夜晚來臨之前——白天的江戶</span>
+          </div>
+        </section>
+      ))}
+
+      {stations.map((s) => (
+        <section class="panel station" data-time={s.time} data-label={s.label}>
+          <div class="big num">{s.time}</div>
+          {s.main?.image ? <figure><img src={thumb(s.main.image.src, 960)} alt={s.main.title} loading="lazy" /></figure> : <figure class="empty"><span>作品圖待補</span></figure>}
+          {s.main && (
+            <div class="cap">
+              <span class="loc">{s.main.location.historicalName}</span>
+              <h2><a href={u(`artworks/${s.main.id}/`)}>{s.main.title}</a></h2>
+              <p>{s.main.summary}</p>
+            </div>
+          )}
+          {s.parallel.length > 0 && (
+            <div class="parallel">
+              <span class="seal">同一時刻・平行場景</span>
+              {s.parallel.map((p) => (
+                <a class="pcard" href={u(`artworks/${p.id}/`)}>
+                  {p.image && <img src={thumb(p.image.src, 330)} alt="" loading="lazy" />}
+                  <div><strong>{p.title}</strong><small>{regionName(p.region)}</small></div>
+                </a>
+              ))}
+            </div>
+          )}
+        </section>
+      ))}
+
+      <section class="panel end">
+        <h2>天亮了</h2>
+        <p>江戶的夜，由許多地方、許多人共同構成。</p>
+        <p class="small">時間軸是策展導覽的安排，不代表這些作品描繪的是同一個歷史夜晚。</p>
+        <a class="btn" href={u('explore/')}>到地圖上找這些地方 →</a>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  :global(body) { background: #c79a6a; transition: none; }
+  :global(.site-foot) { z-index: 6; }
+  .sky { position: fixed; inset: 0; background: #c79a6a; z-index: 0; }
+  .stars { position: fixed; inset: 0; z-index: 1; opacity: 0; background-image: radial-gradient(1.2px 1.2px at 12% 18%, #fff 50%, transparent), radial-gradient(1px 1px at 28% 8%, #fff 50%, transparent), radial-gradient(1.4px 1.4px at 46% 22%, #fff 50%, transparent), radial-gradient(1px 1px at 63% 12%, #fff 50%, transparent), radial-gradient(1.3px 1.3px at 78% 26%, #fff 50%, transparent), radial-gradient(1px 1px at 90% 6%, #fff 50%, transparent), radial-gradient(1px 1px at 6% 34%, #fff 50%, transparent), radial-gradient(1.2px 1.2px at 54% 4%, #fff 50%, transparent), radial-gradient(1px 1px at 36% 30%, #fff 50%, transparent), radial-gradient(1px 1px at 84% 38%, #fff 50%, transparent); }
+  .moon { position: fixed; z-index: 1; width: 70px; height: 70px; border-radius: 50%; background: #f3e6bf; box-shadow: 0 0 60px 18px rgba(243, 230, 191, 0.25); left: -10vw; top: 30vh; }
+  .hud { position: fixed; top: 12px; left: 50%; transform: translateX(-50%); z-index: 81; text-align: center; pointer-events: none; }
+  .now strong { display: block; font-size: 44px; line-height: 1; color: var(--gold); font-weight: 400; }
+  .now span { font-size: 13px; letter-spacing: 0.2em; color: rgba(239, 230, 210, 0.75); }
+  .ticks { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); z-index: 30; display: flex; gap: 6px; }
+  .ticks i { display: block; width: 30px; height: 2px; background: rgba(239, 230, 210, 0.25); transition: background 0.4s; }
+  .ticks :global(i.on) { background: var(--gold); }
+
+  .wrap { position: relative; z-index: 5; height: 100vh; overflow: hidden; }
+  .track { display: flex; height: 100%; width: max-content; position: relative; }
+  .river { position: absolute; left: 0; right: 0; bottom: 0; height: 22vh; pointer-events: none; }
+  .river :global(path) { fill: none; stroke: rgba(239, 230, 210, 0.35); stroke-width: 1.2; }
+  .panel { flex: 0 0 auto; height: 100%; position: relative; display: flex; align-items: center; }
+  .intro { width: 100vw; justify-content: center; gap: 6vw; }
+  .intro h1 { writing-mode: vertical-rl; font-size: clamp(52px, 8vw, 110px); letter-spacing: 0.1em; }
+  .intro .lead { writing-mode: vertical-rl; font-size: 17px; letter-spacing: 0.25em; line-height: 2.4; max-height: 62vh; }
+  .intro .go { position: absolute; right: 6vw; bottom: 14vh; font-size: 13px; letter-spacing: 0.25em; color: rgba(239, 230, 210, 0.7); }
+  .station { padding: 0 5vw 0 4vw; gap: 3vw; }
+  .big { position: absolute; top: 10vh; left: 2vw; font-size: clamp(90px, 16vw, 230px); line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(239, 230, 210, 0.28); pointer-events: none; }
+  figure { position: relative; height: 64vh; aspect-ratio: 66/100; background: #e9dfc8; padding: 14px 14px 40px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6); flex: 0 0 auto; }
+  figure::before { content: ''; position: absolute; left: -12px; right: -12px; top: -10px; height: 10px; background: #3a2a1c; border-radius: 5px; }
+  figure img { width: 100%; height: 100%; object-fit: cover; }
+  figure.empty { display: flex; align-items: center; justify-content: center; background: rgba(239, 230, 210, 0.08); border: 1px dashed rgba(239, 230, 210, 0.45); box-shadow: none; }
+  figure.empty::before { display: none; }
+  figure.empty span { writing-mode: vertical-rl; letter-spacing: 0.3em; font-size: 14px; color: rgba(239, 230, 210, 0.7); }
+  .cap { writing-mode: vertical-rl; display: flex; flex-direction: column; gap: 18px; height: 64vh; }
+  .cap h2 { font-size: clamp(26px, 2.8vw, 36px); }
+  .cap h2 a { text-decoration: none; }
+  .cap h2 a:hover { color: var(--gold); }
+  .cap .loc { font-size: 13px; letter-spacing: 0.2em; color: var(--gold); }
+  .cap p { font-size: 15px; line-height: 2.1; letter-spacing: 0.08em; color: rgba(239, 230, 210, 0.88); max-height: 50vh; }
+  .cap .note { font-size: 13px; color: rgba(239, 230, 210, 0.6); }
+  .parallel { display: flex; flex-direction: column; gap: 12px; align-self: flex-end; margin-bottom: 26vh; width: 240px; }
+  .parallel .seal { align-self: flex-start; }
+  .pcard { display: flex; gap: 12px; align-items: center; text-decoration: none; background: rgba(7, 9, 26, 0.45); padding: 10px; }
+  .pcard img { width: 56px; height: 84px; object-fit: cover; }
+  .pcard strong { display: block; font-family: var(--serif-display); font-weight: 400; font-size: 18px; }
+  .pcard small { color: rgba(239, 230, 210, 0.7); }
+  .end { width: 80vw; justify-content: center; flex-direction: column; text-align: center; gap: 18px; }
+  .end h2 { font-size: clamp(32px, 4vw, 52px); }
+  .end p { color: rgba(239, 230, 210, 0.8); }
+  .end .small { font-size: 13px; }
+  @media (max-width: 700px) {
+    .station { padding: 0 8vw; }
+    figure { height: 54vh; }
+    .cap p { display: none; }
+    .parallel { width: 180px; margin-bottom: 24vh; }
+  }
+</style>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  gsap.registerPlugin(ScrollTrigger);
+
+  const track = document.getElementById('track')!;
+  const stations = [...document.querySelectorAll<HTMLElement>('.station')];
+  const night = stations.filter((s) => !s.classList.contains('prologue'));
+  const ticks = [...document.querySelectorAll('#ticks i')];
+  const river = document.getElementById('river')!;
+  const sky = document.getElementById('sky')!;
+  const stars = document.getElementById('stars')!;
+  const moon = document.getElementById('moon')!;
+
+  function drawRiver() {
+    const w = track.scrollWidth, h = river.clientHeight;
+    river.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    let s = '';
+    for (let k = 0; k < 4; k++) {
+      const y = h * (0.3 + k * 0.18);
+      let d = `M0 ${y}`;
+      for (let x = 0; x <= w; x += 120) d += ` Q${x + 60} ${y + (k % 2 ? 10 : -10)} ${x + 120} ${y}`;
+      s += `<path d="${d}" style="opacity:${1 - k * 0.2}"/>`;
+    }
+    river.innerHTML = s;
+  }
+  drawRiver();
+
+  const skyAt = gsap.utils.interpolate(['#c79a6a', '#c8694a', '#b8604f', '#7a4660', '#3a3666', '#232856', '#171c44', '#0c1030', '#0a0d26', '#4a5677', '#9fb0c6']);
+  const dist = () => track.scrollWidth - innerWidth;
+  const move = gsap.to(track, {
+    x: () => -dist(), ease: 'none',
+    scrollTrigger: {
+      trigger: '#wrap', pin: true, scrub: 1, end: () => '+=' + dist(), invalidateOnRefresh: true,
+      onUpdate: (s) => {
+        const p = s.progress, c = skyAt(p);
+        sky.style.background = c;
+        document.body.style.background = c;
+        stars.style.opacity = String(Math.max(0, Math.sin(Math.PI * Math.min(1, Math.max(0, (p - 0.18) / 0.72)))));
+        moon.style.left = `${p * 110 - 10}vw`;
+        moon.style.top = `${40 - Math.sin(p * Math.PI) * 28}vh`;
+      },
+    },
+  });
+
+  let shown: HTMLElement | null | undefined;
+  const now = document.getElementById('now')!, nowLabel = document.getElementById('nowLabel')!;
+  gsap.ticker.add(() => {
+    let cur: HTMLElement | null = null;
+    stations.forEach((st) => { if (st.getBoundingClientRect().left < innerWidth * 0.55) cur = st; });
+    if (cur === shown) return;
+    shown = cur;
+    const el = cur as HTMLElement | null;
+    now.textContent = el?.dataset.time ?? '序章';
+    nowLabel.textContent = el?.dataset.label ?? '白晝';
+    const idx = el ? night.indexOf(el) : -1;
+    ticks.forEach((t, i) => t.classList.toggle('on', i <= idx));
+  });
+
+  stations.forEach((st) => {
+    const fig = st.querySelector('figure'), cap = st.querySelector('.cap'), big = st.querySelector('.big');
+    if (fig) gsap.from(fig, { y: 80, rotate: -2, opacity: 0, ease: 'none', scrollTrigger: { trigger: st, containerAnimation: move, start: 'left 95%', end: 'left 45%', scrub: true } });
+    if (cap) gsap.from(cap, { y: -60, opacity: 0, ease: 'none', scrollTrigger: { trigger: st, containerAnimation: move, start: 'left 80%', end: 'left 35%', scrub: true } });
+    if (big) gsap.to(big, { x: -140, ease: 'none', scrollTrigger: { trigger: st, containerAnimation: move, start: 'left right', end: 'right left', scrub: true } });
+  });
+  addEventListener('resize', () => { drawRiver(); ScrollTrigger.refresh(); });
+</script>

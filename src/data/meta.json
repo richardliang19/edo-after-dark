@@ -1,0 +1,30 @@
+{
+  "times": [
+    { "time": "18:00", "label": "黃昏" },
+    { "time": "19:00", "label": "入夜" },
+    { "time": "20:00", "label": "夜間娛樂" },
+    { "time": "21:00", "label": "吉原夜生活" },
+    { "time": "22:00", "label": "深夜宴席" },
+    { "time": "23:00", "label": "深夜交通" },
+    { "time": "00:00", "label": "午夜祭典" },
+    { "time": "05:00", "label": "黎明" }
+  ],
+  "regions": [
+    { "id": "nihonbashi", "name": "日本橋", "function": "商業、物資流通" },
+    { "id": "ryogoku", "name": "兩國・柳橋・御廄河岸", "function": "河運、餐飲、娛樂、勞動" },
+    { "id": "asakusa", "name": "淺草・猿若町", "function": "劇場、娛樂、寺社與祭典" },
+    { "id": "yoshiwara", "name": "吉原・日本堤", "function": "遊里、交通、消費" },
+    { "id": "shinagawa", "name": "品川", "function": "海岸、旅宿、賞月" }
+  ],
+  "perspectives": [
+    { "id": "night-visitors", "name": "夜遊者", "desc": "夜遊者、觀劇者、旅人" },
+    { "id": "merchants", "name": "商人", "desc": "商人、店家、餐飲業者" },
+    { "id": "night-workers", "name": "夜間工作者", "desc": "船夫、服務工作者及其他夜間勞動者" },
+    { "id": "religious-visitors", "name": "參拜者", "desc": "參拜者、祭典參與者" }
+  ],
+  "confidence": {
+    "exact": "確定位置",
+    "approximate": "大致區域",
+    "hypothetical": "推定位置"
+  }
+}

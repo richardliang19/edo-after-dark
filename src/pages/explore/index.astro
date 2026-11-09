@@ -1,0 +1,120 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+import { ordered, times, regions, perspectives, regionName, confidence, thumb } from '../../lib/data';
+---
+<Base title="時空探索">
+  <div class="explore">
+    <aside class="left">
+      <span class="seal">時空探索</span>
+      <h1>選一個時間、地點或人物</h1>
+
+      <h2>時間</h2>
+      <div class="chips" data-key="time">
+        <button class="on" data-v="all">全部</button>
+        {times.map((t) => <button data-v={t.time}><span class="num">{t.time}</span> {t.label}</button>)}
+      </div>
+
+      <h2>區域</h2>
+      <div class="chips" data-key="region">
+        <button class="on" data-v="all">全部</button>
+        {regions.map((r) => <button data-v={r.id}>{r.name}</button>)}
+      </div>
+
+      <h2 id="perspective">人物視角</h2>
+      <div class="chips" data-key="perspective">
+        <button class="on" data-v="all">全部</button>
+        {perspectives.map((p) => <button data-v={p.id} title={p.desc}>{p.name}</button>)}
+      </div>
+      <p class="caveat">人物視角是策展分析工具；沒有直接證據的內容會標示為歷史背景推論。</p>
+    </aside>
+
+    <section class="center">
+      <div class="map-placeholder">
+        <p class="display">古今地圖</p>
+        <p>江戶古地圖與現代東京的對照地圖將在下一階段加入。<br />目前可以先用左側篩選，右側清單會即時更新。</p>
+      </div>
+    </section>
+
+    <section class="right">
+      <h2><span id="count">{ordered.length}</span> 件作品</h2>
+      <ul class="list">
+        {ordered.map((a) => (
+          <li data-time={a.curatorialTime ?? ''} data-region={a.region} data-perspective={a.perspectives.join(' ')}>
+            <a href={u(`artworks/${a.id}/`)}>
+              {a.image ? <img src={thumb(a.image.src, 330)} alt="" loading="lazy" /> : <span class="noimg"></span>}
+              <div>
+                <span class="num time">{a.curatorialTime ?? '序章'}</span>
+                <strong>{a.title}</strong>
+                <small>{a.location.historicalName}・{regionName(a.region)}</small>
+                <small class="conf">{confidence[a.location.confidence as keyof typeof confidence]}</small>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="empty" hidden>這個組合沒有對應的作品，換個條件試試。</p>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .explore { display: grid; grid-template-columns: 300px minmax(0, 1fr) 340px; gap: 0; min-height: 100vh; padding-top: var(--nav-h); }
+  .left, .right { padding: 28px 24px; border-right: 1px solid var(--line); }
+  .right { border-right: 0; border-left: 1px solid var(--line); max-height: calc(100vh - var(--nav-h)); overflow-y: auto; position: sticky; top: var(--nav-h); }
+  .left h1 { font-size: 26px; margin: 14px 0 20px; }
+  .left h2 { font-size: 16px; color: var(--mute); margin: 22px 0 10px; font-family: var(--serif); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips button { background: none; border: 1px solid var(--line); color: var(--paper-2); font-family: var(--serif); font-size: 13px; padding: 4px 12px; border-radius: 999px; cursor: pointer; transition: all 0.25s; }
+  .chips button:hover { border-color: var(--paper-2); }
+  .chips button.on { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+  .caveat { margin-top: 18px; font-size: 12px; color: var(--mute); line-height: 1.7; }
+  .center { padding: 24px; }
+  .map-placeholder { height: 100%; min-height: 60vh; border: 1px dashed rgba(239, 230, 210, 0.25); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: var(--mute); gap: 10px; background: radial-gradient(ellipse at center, rgba(216, 180, 106, 0.06), transparent 70%); }
+  .map-placeholder .display { font-size: 34px; color: var(--paper); }
+  .right h2 { font-size: 20px; margin-bottom: 14px; }
+  .list { list-style: none; }
+  .list li { border-top: 1px solid var(--line); }
+  .list li[hidden] { display: none; }
+  .list a { display: flex; gap: 14px; padding: 12px 0; text-decoration: none; }
+  .list img, .list .noimg { width: 54px; height: 82px; object-fit: cover; flex: 0 0 auto; background: var(--ink-2); }
+  .list strong { display: block; font-family: var(--serif-display); font-weight: 400; font-size: 18px; }
+  .list small { display: block; color: var(--mute); font-size: 12px; line-height: 1.6; }
+  .list .time { color: var(--gold); }
+  .list a:hover strong { color: var(--gold); }
+  .empty { color: var(--mute); font-size: 14px; padding: 20px 0; }
+  @media (max-width: 1000px) {
+    .explore { grid-template-columns: 1fr; }
+    .left, .right { border: 0; }
+    .right { position: static; max-height: none; }
+    .map-placeholder { min-height: 40vh; }
+  }
+</style>
+
+<script>
+  const state: Record<string, string> = { time: 'all', region: 'all', perspective: 'all' };
+  const items = [...document.querySelectorAll<HTMLLIElement>('.list li')];
+  const count = document.getElementById('count')!;
+  const empty = document.querySelector<HTMLElement>('.empty')!;
+  const apply = () => {
+    let n = 0;
+    items.forEach((li) => {
+      const ok = (state.time === 'all' || li.dataset.time === state.time)
+        && (state.region === 'all' || li.dataset.region === state.region)
+        && (state.perspective === 'all' || (li.dataset.perspective ?? '').split(' ').includes(state.perspective));
+      li.hidden = !ok;
+      if (ok) n++;
+    });
+    count.textContent = String(n);
+    empty.hidden = n > 0;
+  };
+  document.querySelectorAll<HTMLElement>('.chips').forEach((group) => {
+    const key = group.dataset.key!;
+    const btns = [...group.querySelectorAll<HTMLButtonElement>('button')];
+    btns.forEach((b) => b.addEventListener('click', () => {
+      btns.forEach((x) => x.classList.toggle('on', x === b));
+      state[key] = b.dataset.v!;
+      apply();
+    }));
+  });
+</script>

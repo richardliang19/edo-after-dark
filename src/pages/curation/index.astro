@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+---
+<Base title="策展理念">
+  <div class="page">
+    <div class="page-head">
+      <span class="seal">策展理念</span>
+      <h1>江戶的夜晚，<br />由許多地方、許多人共同構成。</h1>
+      <p>本展以歌川廣重等人的浮世繪為核心，透過 18:00 至隔日 05:00 的時間線，呈現江戶不同時段、不同地區的城市活動。</p>
+    </div>
+
+    <div class="prose">
+      <h2 class="reveal">為什麼是夜晚？</h2>
+      <p class="reveal">單純依時間排列作品，很難看見完整的城市風貌，也不容易理解不同活動在地理上的關聯。因此我們把浮世繪放進三個維度裡，讓觀眾用自己的方式走進江戶。</p>
+    </div>
+
+    <div class="dims">
+      <a class="dim reveal" href={u('timeline/')}><span class="seal">壹</span><h3>時間</h3><p>江戶城市從黃昏到黎明的活動變化。</p></a>
+      <a class="dim reveal" href={u('explore/')}><span class="seal">貳</span><h3>空間</h3><p>江戶古地圖與現代東京地圖的地理對照。</p></a>
+      <a class="dim reveal" href={u('explore/#perspective')}><span class="seal">參</span><h3>人物</h3><p>不同社會角色在夜間城市中的生活與活動。</p></a>
+    </div>
+
+    <div class="prose">
+      <h2 class="reveal">策展時間與歷史時間</h2>
+      <p class="reveal">十一幅作品的創作年份與季節各不相同。18:00 到 05:00 是我們安排的策展敘事時間，不代表這些作品描繪的是同一個歷史夜晚。作品的地理位置也依可信程度分為「確定位置」「大致區域」「推定位置」三級，不把推測呈現為確定的史實。</p>
+
+      <h2 class="reveal" id="online-museum">線上博物館是什麼？</h2>
+      <p class="todo reveal">期末必答題・待組員撰寫。建議從三個角度回答：線上博物館與實體博物館的差異、本展如何運用網路的特性（互動、細部放大、古今地圖），以及我們對「觀眾參與」的想法。</p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .dims { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2px; margin: 8vh 0; }
+  .dim { background: var(--ink-2); padding: 36px 30px 40px; text-decoration: none; transition: background 0.4s; }
+  .dim:hover { background: var(--ink-3); }
+  .dim h3 { font-size: 34px; margin: 14px 0 6px; }
+  .dim p { color: var(--paper-2); font-size: 15px; }
+</style>

@@ -1,0 +1,32 @@
+[
+  {
+    "category": "資料與研究",
+    "items": [
+      { "apa": "Wikipedia contributors. (n.d.). *One Hundred Famous Views of Edo*. In *Wikipedia*. Retrieved November 9, 2026, from https://en.wikipedia.org/wiki/One_Hundred_Famous_Views_of_Edo", "url": "https://en.wikipedia.org/wiki/One_Hundred_Famous_Views_of_Edo", "note": "作品編號、出版年月與地點座標參考" }
+    ]
+  },
+  {
+    "category": "地圖",
+    "items": [
+      { "apa": "ROIS-DS Center for Open Data in the Humanities. (n.d.). *江戸マップ* [Edo maps]. Retrieved November 9, 2026, from https://codh.rois.ac.jp/edo-maps/", "url": "https://codh.rois.ac.jp/edo-maps/", "note": "古地圖與地理配準；使用條件待確認" },
+      { "apa": "tsunagaru-map. (n.d.). *江戶百景古今互動地圖*. Retrieved November 9, 2026, from https://www.tsunagaru-map.com/edo100/", "url": "https://www.tsunagaru-map.com/edo100/", "note": "網站正式名稱與作者待確認" },
+      { "apa": "OpenStreetMap contributors. (n.d.). *OpenStreetMap*. https://www.openstreetmap.org/copyright", "url": "https://www.openstreetmap.org/copyright", "note": "現代地圖底圖（下一階段使用）" }
+    ]
+  },
+  {
+    "category": "館藏資料庫",
+    "items": [
+      { "apa": "The Metropolitan Museum of Art. (n.d.). *The Met collection*. Retrieved November 9, 2026, from https://www.metmuseum.org/art/collection", "url": "https://www.metmuseum.org/art/collection" },
+      { "apa": "慶應義塾大學. (n.d.). *浮世絵コレクション*. Retrieved November 9, 2026, from https://dcollections.lib.keio.ac.jp/ja/ukiyoe/", "url": "https://dcollections.lib.keio.ac.jp/ja/ukiyoe/", "note": "網站正式名稱待確認" },
+      { "apa": "東京都歷史文化財團. (n.d.). *東京都立博物館・美術館收藏品檢索*. Retrieved November 9, 2026, from https://museumcollection.tokyo/", "url": "https://museumcollection.tokyo/", "note": "網站正式名稱待確認" }
+    ]
+  },
+  {
+    "category": "網站技術",
+    "items": [
+      { "apa": "Astro Technology Company. (2026). *Astro* (Version 7.4.7) [Computer software]. https://astro.build/", "url": "https://astro.build/" },
+      { "apa": "GreenSock. (2026). *GSAP* (Version 3.15.1) [Computer software]. https://gsap.com/", "url": "https://gsap.com/" },
+      { "apa": "Google Fonts. (n.d.). *Cactus Classical Serif*, *Chiron Sung HK*, *IM Fell English* [Typefaces]. https://fonts.google.com/", "url": "https://fonts.google.com/" }
+    ]
+  }
+]

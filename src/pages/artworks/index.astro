@@ -1,0 +1,63 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+import { ordered, regions, regionName, thumb } from '../../lib/data';
+---
+<Base title="作品">
+  <div class="page">
+    <div class="page-head">
+      <span class="seal">展品</span>
+      <h1>全部作品</h1>
+      <p>八幅核心作品依夜間時間排列，另有三幅城市景觀作品，補足江戶的街道、交通與商業風貌。</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="依區域篩選">
+      <button class="on" data-region="all">全部</button>
+      {regions.map((r) => <button data-region={r.id}>{r.name}</button>)}
+    </div>
+
+    <div class="grid">
+      {ordered.map((a) => (
+        <a class="card reveal" href={u(`artworks/${a.id}/`)} data-region={a.region}>
+          <div class="img">
+            {a.image ? <img src={thumb(a.image.src, 500)} alt={a.title} loading="lazy" /> : <span class="noimg">作品圖待補</span>}
+          </div>
+          <div class="txt">
+            <div class="row"><span class="num time">{a.curatorialTime ?? '序章'}</span>{a.group === 'urban' && <span class="tag">城市景觀</span>}</div>
+            <h2>{a.title}</h2>
+            <p>{regionName(a.region)}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
+  .filters button { background: none; border: 1px solid var(--line); color: var(--paper-2); font-family: var(--serif); font-size: 14px; padding: 6px 16px; cursor: pointer; border-radius: 999px; transition: all 0.3s; }
+  .filters button:hover { border-color: var(--paper-2); }
+  .filters button.on { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 40px 28px; }
+  .card { text-decoration: none; display: block; }
+  .card.hide { display: none; }
+  .img { aspect-ratio: 66/100; background: var(--ink-2); overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .img img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.85); transition: transform 1s cubic-bezier(0.2, 0.7, 0.2, 1), filter 0.6s; }
+  .card:hover img { transform: scale(1.04); filter: saturate(1.05); }
+  .noimg { color: var(--mute); font-size: 13px; writing-mode: vertical-rl; letter-spacing: 0.3em; border: 1px dashed rgba(239, 230, 210, 0.25); padding: 20px 10px; }
+  .txt { padding-top: 14px; }
+  .row { display: flex; gap: 10px; align-items: center; }
+  .time { color: var(--gold); font-size: 22px; }
+  .txt h2 { font-size: 22px; margin: 2px 0; }
+  .txt p { color: var(--mute); font-size: 13px; }
+</style>
+
+<script>
+  const buttons = [...document.querySelectorAll<HTMLButtonElement>('.filters button')];
+  const cards = [...document.querySelectorAll<HTMLElement>('.card')];
+  buttons.forEach((b) => b.addEventListener('click', () => {
+    buttons.forEach((x) => x.classList.toggle('on', x === b));
+    const r = b.dataset.region;
+    cards.forEach((c) => c.classList.toggle('hide', r !== 'all' && c.dataset.region !== r));
+  }));
+</script>

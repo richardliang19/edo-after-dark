@@ -1,0 +1,201 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+import { artworks, ordered, regionName, perspectiveName, confidence, artworkApa, type Artwork } from '../../lib/data';
+
+export function getStaticPaths() {
+  return artworks.map((a) => ({ params: { id: a.id }, props: { a } }));
+}
+const { a } = Astro.props as { a: Artwork };
+const i = ordered.findIndex((x) => x.id === a.id);
+const prev = ordered[i - 1];
+const next = ordered[i + 1];
+const apa = artworkApa(a);
+const conf = confidence[a.location.confidence as keyof typeof confidence];
+
+const sectionDefs = [
+  { key: 'observe', title: '畫面中可以觀察到什麼？' },
+  { key: 'urban', title: '畫面中的城市空間' },
+  { key: 'people', title: '當時的人們在做什麼？' },
+  { key: 'modern', title: '現代地點對照' },
+];
+const hasStory = a.image && a.details.length > 0;
+const timeText = a.curatorialTime ?? '序章';
+---
+<Base title={a.title} description={a.summary}>
+  {hasStory ? (
+    <div class="story">
+      <div class="stage" id="stage" data-w={a.image!.width} data-h={a.image!.height}>
+        <div class="canvas" id="canvas"><img src={a.image!.src} alt={`歌川廣重《${a.title}》`} /></div>
+        <div class="vignette"></div>
+      </div>
+      <div class="steps">
+        <div class="step" data-f="0.5,0.5,1">
+          <div class="card">
+            <span class="seal">{timeText}・{a.timeLabel}</span>
+            <h1>{a.title}</h1>
+            <p>{a.summary}</p>
+            <p class="hint">向下捲動，靠近看看。</p>
+          </div>
+        </div>
+        {a.details.map((d, k) => (
+          <div class="step" data-f={`${d.x},${d.y},${d.scale}`}>
+            <div class="card">
+              <span class="seal">細部・{['壹', '貳', '參', '肆', '伍', '陸'][k]}</span>
+              <h2>{d.title}</h2>
+              <p>{d.text}</p>
+              {d.note && <p class="note">{d.note}</p>}
+            </div>
+          </div>
+        ))}
+        <div class="step" data-f="0.5,0.5,1"><div class="card"><span class="seal">全景</span><h2>回到整幅作品</h2><p>繼續往下，閱讀作品資料與地點對照。</p></div></div>
+      </div>
+      <div class="dots" id="dots" aria-hidden="true">{[0, ...a.details, 0].map(() => <i></i>)}</div>
+    </div>
+  ) : (
+    <header class="plain">
+      <div class="plain-img">
+        {a.image ? <img src={a.image.src} alt={`歌川廣重《${a.title}》`} /> : <div class="noimg">作品圖待補</div>}
+      </div>
+      <div class="plain-txt">
+        <span class="seal">{timeText}・{a.timeLabel}</span>
+        <h1>{a.title}</h1>
+        <p>{a.summary}</p>
+      </div>
+    </header>
+  )}
+
+  <section class="info">
+    <div class="status">{a.status}</div>
+    <div class="cols">
+      <dl class="meta">
+        <div><dt>作者</dt><dd>{a.artist}</dd></div>
+        <div><dt>系列</dt><dd>{a.series ? `${a.series}・第 ${a.seriesNo} 景` : '待查證'}</dd></div>
+        <div><dt>日文原題</dt><dd>{a.titleJa ?? '待查證'}</dd></div>
+        <div><dt>出版年</dt><dd>{a.year ?? '待查證'}</dd></div>
+        <div><dt>收藏</dt><dd>{a.image?.collection ?? '待查證'}</dd></div>
+        <div><dt>策展時間</dt><dd class="num">{timeText}　{a.timeLabel}</dd></div>
+        <div><dt>城市區域</dt><dd>{regionName(a.region)}</dd></div>
+        <div><dt>江戶地名</dt><dd>{a.location.historicalName}</dd></div>
+        <div><dt>現代位置</dt><dd>{a.location.modernName}</dd></div>
+        <div><dt>定位</dt><dd><span class="tag">{conf}</span>{a.location.note && <small>{a.location.note}</small>}</dd></div>
+        <div><dt>人物視角</dt><dd>{a.perspectives.map((p) => <span class="tag">{perspectiveName(p)}</span>)}</dd></div>
+      </dl>
+
+      <div class="text">
+        <h2>作品介紹</h2>
+        <p>{a.summary}</p>
+        {sectionDefs.map((s) => (
+          <>
+            <h2>{s.title}</h2>
+            {a.sections[s.key] ? <p>{a.sections[s.key]}</p> : <p class="todo">待組員撰寫</p>}
+          </>
+        ))}
+        <h2>資料來源與圖像授權</h2>
+        {apa ? <p class="apa" set:html={apa.replace(/\*(.+?)\*/g, '<em>$1</em>')} /> : <p class="todo">作品來源待查證</p>}
+        {a.image && <p class="credit">圖像：{a.image.collection}，經 <a href={a.image.sourceUrl} target="_blank" rel="noopener">{a.image.source}</a>（{a.image.license}）</p>}
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager" aria-label="上一件與下一件作品">
+    {prev ? <a href={u(`artworks/${prev.id}/`)}><small>上一件</small><span>{prev.title}</span></a> : <span></span>}
+    <a class="all" href={u('artworks/')}>全部作品</a>
+    {next ? <a class="r" href={u(`artworks/${next.id}/`)}><small>下一件</small><span>{next.title}</span></a> : <span></span>}
+  </nav>
+</Base>
+
+<style>
+  .story { position: relative; }
+  .stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+  .canvas { position: absolute; transform-origin: 0 0; will-change: transform; }
+  .canvas img { width: 100%; height: 100%; }
+  .vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 62% 50%, transparent 35%, rgba(7, 9, 26, 0.85) 100%); opacity: 0; transition: opacity 1s; }
+  .stage:global(.zoomed) .vignette { opacity: 1; }
+  .steps { position: relative; z-index: 5; margin-top: -100vh; pointer-events: none; }
+  .step { height: 110vh; display: flex; align-items: center; padding-left: 6vw; }
+  .step:first-child { height: 100vh; }
+  .card { pointer-events: auto; max-width: 400px; background: rgba(7, 9, 26, 0.84); backdrop-filter: blur(8px); border-left: 2px solid var(--vermilion); padding: 28px 30px; opacity: 0.3; transition: opacity 0.6s; }
+  .step:global(.active) .card { opacity: 1; }
+  .card h1 { font-size: clamp(30px, 3.4vw, 44px); margin: 12px 0; }
+  .card h2 { font-size: 28px; margin: 12px 0; }
+  .card p { color: var(--paper-2); font-size: 15px; }
+  .card .hint { color: var(--mute); font-size: 13px; margin-top: 12px; }
+  .card .note { margin-top: 14px; font-size: 13px; color: var(--mute); border-top: 1px solid var(--line); padding-top: 10px; }
+  .dots { position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 30; display: flex; flex-direction: column; gap: 12px; }
+  .dots i { width: 7px; height: 7px; border-radius: 50%; border: 1px solid var(--paper); opacity: 0.5; transition: all 0.4s; }
+  .dots :global(i.on) { background: var(--gold); border-color: var(--gold); opacity: 1; }
+
+  .plain { min-height: 100vh; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6vw; align-items: center; padding: calc(var(--nav-h) + 4vh) var(--gutter) 6vh; max-width: 1200px; margin: 0 auto; }
+  .plain-img img { max-height: 82vh; margin: 0 auto; box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8); }
+  .noimg { height: 70vh; border: 1px dashed rgba(239, 230, 210, 0.3); display: flex; align-items: center; justify-content: center; color: var(--mute); }
+  .plain-txt h1 { font-size: clamp(36px, 5vw, 64px); margin: 16px 0; }
+  .plain-txt p { color: var(--paper-2); font-size: 17px; }
+
+  .info { max-width: 1120px; margin: 0 auto; padding: 12vh var(--gutter) 8vh; }
+  .status { display: inline-block; font-size: 13px; color: var(--gold); border: 1px solid rgba(216, 180, 106, 0.4); padding: 4px 12px; margin-bottom: 32px; }
+  .cols { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 6vw; }
+  .meta { font-size: 14px; position: sticky; top: calc(var(--nav-h) + 20px); align-self: start; }
+  .meta div { display: grid; grid-template-columns: 76px 1fr; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .meta dt { color: var(--mute); }
+  .meta dd { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .meta small { display: block; width: 100%; color: var(--mute); font-size: 12px; line-height: 1.6; }
+  .text h2 { font-size: 26px; margin: 48px 0 14px; }
+  .text h2:first-child { margin-top: 0; }
+  .text p { color: var(--paper-2); }
+  .apa { font-size: 14px; line-height: 1.8; padding-left: 2em; text-indent: -2em; word-break: break-word; }
+  .credit { margin-top: 12px; font-size: 13px; }
+
+  .pager { max-width: 1120px; margin: 0 auto 12vh; padding: 0 var(--gutter); display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; }
+  .pager a { text-decoration: none; }
+  .pager small { display: block; color: var(--mute); font-size: 12px; }
+  .pager span { font-family: var(--serif-display); font-size: 22px; }
+  .pager .r { text-align: right; }
+  .pager .all { border: 1px solid var(--line); padding: 8px 18px; font-size: 14px; }
+  @media (max-width: 800px) {
+    .step { align-items: flex-end; padding: 0 16px 8vh; }
+    .card { max-width: none; }
+    .plain { grid-template-columns: 1fr; }
+    .cols { grid-template-columns: 1fr; }
+    .meta { position: static; }
+  }
+</style>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  gsap.registerPlugin(ScrollTrigger);
+
+  const stage = document.getElementById('stage');
+  const cv = document.getElementById('canvas');
+  if (stage && cv) {
+    const steps = [...document.querySelectorAll<HTMLElement>('.step')];
+    const dots = [...document.querySelectorAll('#dots i')];
+    const iw = Number(stage.dataset.w), ih = Number(stage.dataset.h);
+    let W = 0, H = 0, L = 0, T = 0, cur = 0;
+    const go = (i: number, d = 1.6) => {
+      cur = i;
+      const [fx, fy, s] = steps[i].dataset.f!.split(',').map(Number);
+      const mobile = innerWidth <= 800;
+      const cx = s > 1 && !mobile ? innerWidth * 0.64 : innerWidth / 2;
+      const cy = mobile && s > 1 ? innerHeight * 0.35 : innerHeight / 2;
+      const x = s === 1 ? 0 : cx - L - fx * W * s;
+      const y = s === 1 ? 0 : cy - T - fy * H * s;
+      gsap.to(cv, { x, y, scale: s, duration: d, ease: 'power3.inOut' });
+      stage.classList.toggle('zoomed', s > 1);
+      steps.forEach((st, k) => st.classList.toggle('active', k === i));
+      dots.forEach((t, k) => t.classList.toggle('on', k === i));
+    };
+    const layout = () => {
+      H = Math.min(innerHeight * 0.88, innerWidth * 1.4);
+      W = (H * iw) / ih;
+      L = (innerWidth - W) / 2;
+      T = (innerHeight - H) / 2 + 20;
+      Object.assign(cv.style, { width: `${W}px`, height: `${H}px`, left: `${L}px`, top: `${T}px` });
+      go(cur, 0);
+    };
+    steps.forEach((st, i) => ScrollTrigger.create({ trigger: st, start: 'top 55%', end: 'bottom 55%', onEnter: () => go(i), onEnterBack: () => go(i) }));
+    addEventListener('resize', layout);
+    layout();
+  }
+</script>

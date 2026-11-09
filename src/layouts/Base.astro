@@ -1,0 +1,119 @@
+---
+import '../styles/global.css';
+import { u } from '../lib/url';
+
+interface Props {
+  title?: string;
+  description?: string;
+  navOverlay?: boolean;
+}
+const { title, description = '以歌川廣重浮世繪為核心的線上博物館：從黃昏到黎明，走進江戶的城市夜生活。', navOverlay = false } = Astro.props;
+const fullTitle = title ? `${title}｜江戶不打烊` : '江戶不打烊：從黃昏到黎明的城市夜生活';
+
+const links = [
+  { href: 'curation/', label: '策展理念' },
+  { href: 'explore/', label: '時空探索' },
+  { href: 'timeline/', label: '夜之時間軸' },
+  { href: 'artworks/', label: '作品' },
+  { href: 'events/', label: '活動與消息' },
+  { href: 'about/', label: '關於我們' },
+  { href: 'references/', label: '參考資料' },
+];
+const path = Astro.url.pathname;
+const isActive = (href: string) => path.startsWith(u(href));
+---
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href={u('favicon.svg')} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Chiron+Sung+HK:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://upload.wikimedia.org" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class:list={['nav', { overlay: navOverlay }]}>
+    <a class="logo display" href={u('')}>江戶不打烊</a>
+    <button class="menu-btn" aria-label="開啟選單" aria-expanded="false" aria-controls="site-menu"><span></span><span></span></button>
+    <nav id="site-menu" aria-label="主選單">
+      {links.map((l) => <a href={u(l.href)} class:list={{ active: isActive(l.href) }}>{l.label}</a>)}
+    </nav>
+  </header>
+
+  <main><slot /></main>
+
+  <footer class="site-foot">
+    <div class="foot-inner">
+      <div>
+        <div class="display foot-title">江戶不打烊</div>
+        <p>從黃昏到黎明的城市夜生活・線上博物館</p>
+      </div>
+      <div class="foot-links">
+        {links.map((l) => <a href={u(l.href)}>{l.label}</a>)}
+      </div>
+    </div>
+    <p class="credit">浮世繪圖像：歌川廣重《名所江戶百景》等，經 Wikimedia Commons 取得之公有領域圖像，各作品來源詳見作品頁與<a href={u('references/')}>參考資料</a>。本網站為課程作業。</p>
+  </footer>
+
+  <script>
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    gsap.registerPlugin(ScrollTrigger);
+
+    const btn = document.querySelector<HTMLButtonElement>('.menu-btn');
+    const header = document.querySelector('.nav');
+    btn?.addEventListener('click', () => {
+      const open = header?.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(!!open));
+    });
+
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    gsap.utils.toArray<HTMLElement>('.reveal').forEach((el) => {
+      if (reduce) return;
+      gsap.to(el, { opacity: 1, y: 0, duration: 1.1, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 88%' } });
+    });
+  </script>
+</body>
+</html>
+
+<style>
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 80; height: var(--nav-h);
+    display: flex; align-items: center; justify-content: space-between; padding: 0 var(--gutter);
+    background: linear-gradient(to bottom, rgba(7, 9, 26, 0.85), rgba(7, 9, 26, 0));
+  }
+  .nav.overlay { background: transparent; }
+  .logo { text-decoration: none; font-size: 18px; letter-spacing: 0.12em; }
+  nav { display: flex; gap: clamp(14px, 2vw, 28px); }
+  nav a { text-decoration: none; font-size: 14px; color: var(--paper-2); transition: color 0.3s; position: relative; }
+  nav a:hover, nav a.active { color: var(--paper); }
+  nav a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 1px; background: var(--vermilion-text); }
+  .menu-btn { display: none; background: none; border: 0; width: 36px; height: 36px; cursor: pointer; position: relative; z-index: 2; }
+  .menu-btn span { position: absolute; left: 7px; right: 7px; height: 1px; background: var(--paper); transition: transform 0.3s; }
+  .menu-btn span:first-child { top: 14px; }
+  .menu-btn span:last-child { top: 21px; }
+  @media (max-width: 900px) {
+    .menu-btn { display: block; }
+    nav {
+      position: fixed; inset: 0; flex-direction: column; justify-content: center; align-items: center; gap: 26px;
+      background: rgba(7, 9, 26, 0.97); opacity: 0; pointer-events: none; transition: opacity 0.4s;
+    }
+    nav a { font-family: var(--serif-display); font-size: 24px; }
+    .open nav { opacity: 1; pointer-events: auto; }
+    .open .menu-btn span:first-child { transform: translateY(3.5px) rotate(45deg); }
+    .open .menu-btn span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
+  }
+
+  .site-foot { border-top: 1px solid var(--line); padding: 48px var(--gutter) 40px; color: var(--mute); font-size: 14px; position: relative; z-index: 2; background: var(--ink); }
+  .foot-inner { max-width: 1120px; margin: 0 auto; display: flex; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+  .foot-title { color: var(--paper); font-size: 22px; }
+  .foot-links { display: grid; grid-template-columns: repeat(2, auto); gap: 4px 32px; }
+  .foot-links a { text-decoration: none; }
+  .foot-links a:hover { color: var(--paper); }
+  .credit { max-width: 1120px; margin: 32px auto 0; font-size: 12px; line-height: 1.8; }
+</style>
