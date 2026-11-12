@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import refs from '../../data/references.json';
 import { ordered, artworkApa } from '../../lib/data';
+import { observationSources } from '../../data/observation';
 
 const em = (s: string) => s.replace(/\*(.+?)\*/g, '<em>$1</em>');
 const artworkRefs = ordered.map((a) => ({ a, apa: artworkApa(a) }));
@@ -21,6 +22,12 @@ const artworkRefs = ordered.map((a) => ({ a, apa: artworkApa(a) }));
           <li>{apa ? <span set:html={em(apa)} /> : <span class="pending">《{a.title}》：作品來源待查證</span>}</li>
         ))}
       </ul>
+    </section>
+
+    <section class="cat" id="observation-sources">
+      <h2>活動二：作品精讀與歷史背景</h2>
+      <p>逐題解說附有來源。以下為核對所用的館藏與機構頁面；檢索日期：2026 年 11 月 13 日。同圖異印本與一般歷史背景分別標明，不把推論改寫成已確證事件。</p>
+      <ul>{Object.values(observationSources).map((s) => <li>{s.institution}. (n.d.). <em>{s.title}</em> ({s.record}). Retrieved November 13, 2026, from <a href={s.url} target="_blank" rel="noopener">{s.url}</a><small>{s.scope}</small></li>)}</ul>
     </section>
 
     {refs.map((c) => (
@@ -43,4 +50,6 @@ const artworkRefs = ordered.map((a) => ({ a, apa: artworkApa(a) }));
   li { padding: 14px 0 14px 2em; text-indent: -2em; border-top: 1px solid var(--line); color: var(--paper-2); font-size: 15px; line-height: 1.8; word-break: break-word; }
   li small { display: block; text-indent: 0; color: var(--gold); font-size: 12px; margin-top: 4px; }
   .pending { color: var(--mute); }
+  #observation-sources { scroll-margin-top: calc(var(--nav-h) + 20px); }
+  .cat > p { color: var(--paper-2); font-size: 14px; margin-bottom: 16px; }
 </style>

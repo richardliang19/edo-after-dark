@@ -6,11 +6,22 @@
     ]
   },
   {
+    "category": "互動活動：館藏解說核對",
+    "items": [
+      { "apa": "The Metropolitan Museum of Art. (n.d.). *Pilgrimage to the Torinomachi Festival across the Ricefields of Asakusa* (JP60). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/36539", "url": "https://www.metmuseum.org/art/collection/search/36539", "note": "活動二的窗邊貓、暮色與富士山；活動一參拜者結果的人群與參拜目的地。00:00 為本展策展安排，並非館藏所述畫面時刻。" },
+      { "apa": "Cleveland Museum of Art. (n.d.). *Fireworks at Ryōgoku, from the series One Hundred Views of Famous Places in Edo* (1940.986). Retrieved November 13, 2026, from https://www.clevelandart.org/art/1940.986", "url": "https://www.clevelandart.org/art/1940.986", "note": "活動一夜遊者結果及活動二遊船觀賞煙火的背景依據。此館藏為同一構圖的另一印本；活動圖像來自 The Met JP642。" },
+      { "apa": "The Metropolitan Museum of Art. (n.d.). *Fireworks at Ryōgoku Bridge* (JP642). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/37093", "url": "https://www.metmuseum.org/art/collection/search/37093", "note": "活動二使用的圖像與作品資料；公有領域。放大畫面為原圖裁切。" },
+      { "apa": "The Metropolitan Museum of Art. (n.d.). *The Manpachi at Evening in Yanagibashi* (JP1158). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/45306", "url": "https://www.metmuseum.org/art/collection/search/45306", "note": "活動一商人結果：系列描繪江戶知名餐飲場所。商人為本展閱讀視角，不代表畫中人物身分皆已確認。" },
+      { "apa": "The Metropolitan Museum of Art. (n.d.). *Ommayagashi, Sumida River* (JP1547). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/55712", "url": "https://www.metmuseum.org/art/collection/search/55712", "note": "活動一夜間工作者結果：館方將部分渡船乘客解讀為前往工作的夜鷹。測驗情境為本展設計，非史料引文。" }
+    ]
+  },
+  {
     "category": "地圖",
     "items": [
-      { "apa": "ROIS-DS Center for Open Data in the Humanities. (n.d.). *江戸マップ* [Edo maps]. Retrieved November 9, 2026, from https://codh.rois.ac.jp/edo-maps/", "url": "https://codh.rois.ac.jp/edo-maps/", "note": "古地圖與地理配準；使用條件待確認" },
+      { "apa": "ROIS-DS Center for Open Data in the Humanities. (n.d.). *江戸マップ* [Edo maps]. Retrieved November 13, 2026, from https://codh.rois.ac.jp/edo-maps/", "url": "https://codh.rois.ac.jp/edo-maps/", "note": "古圖索引與配準參考。時空探索使用 1850–1853 年五幅尾張屋版切繪圖；原圖藏於國立國會圖書館，著作權保護期滿。" },
+      { "apa": "Kitamoto. (n.d.). *江戸切絵図: Georectified maps* [Map tiles]. 日本版 Map Warper. Retrieved November 13, 2026, from https://mapwarper.h-gis.jp/users/340", "url": "https://mapwarper.h-gis.jp/users/340", "note": "配準後圖磚：4908（芝高輪辺絵図，1850）、4902（日本橋北神田浜町絵図，1850）、4930（本所絵図，1852）、4931（浅草御蔵前辺図，1853）、4935（今戸箕輪浅草絵図，1853）。配準存在誤差，非精確測繪。各原圖與圖幅連結見時空探索。" },
       { "apa": "tsunagaru-map. (n.d.). *江戶百景古今互動地圖*. Retrieved November 9, 2026, from https://www.tsunagaru-map.com/edo100/", "url": "https://www.tsunagaru-map.com/edo100/", "note": "網站正式名稱與作者待確認" },
-      { "apa": "OpenStreetMap contributors. (n.d.). *OpenStreetMap*. https://www.openstreetmap.org/copyright", "url": "https://www.openstreetmap.org/copyright", "note": "現代地圖底圖（下一階段使用）" }
+      { "apa": "OpenStreetMap contributors. (n.d.). *OpenStreetMap*. https://www.openstreetmap.org/copyright", "url": "https://www.openstreetmap.org/copyright", "note": "時空探索的現代東京底圖；© OpenStreetMap contributors。" }
     ]
   },
   {

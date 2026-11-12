@@ -1,0 +1,313 @@
+---
+import { ordered, confidence } from '../lib/data';
+import { historicalSheets } from '../lib/maps';
+import { u } from '../lib/url';
+
+const locations = ordered.map((a) => ({
+  id: a.id, title: a.title, time: a.curatorialTime, region: a.region,
+  perspectives: a.perspectives, ...a.location, href: u(`artworks/${a.id}/`),
+}));
+---
+<section class="comparison" aria-labelledby="comparison-title" data-locations={JSON.stringify(locations)} data-confidence={JSON.stringify(confidence)}>
+  <div class="comparison-head">
+    <div><span class="eyebrow num">EDO / TOKYO</span><h2 id="comparison-title">同一個地方，兩個時代</h2></div>
+    <div class="tools">
+      <label><input id="map-sync" type="checkbox" checked disabled /> 同步移動</label>
+      <button id="map-fit" type="button" disabled>顯示篩選地點</button>
+      <button id="map-reset" type="button" disabled>重設視野</button>
+    </div>
+  </div>
+  <p id="map-help" class="help">拖曳任一地圖，另一側會一起移動。使用 ＋／− 放大縮小，選取標記查看作品；鍵盤可用方向鍵移動。</p>
+  <div class="maps">
+    <article class="map-panel">
+      <header><div><span class="seal">昔</span><h3>江戶古地圖</h3></div><span class="num">1850–1853</span></header>
+      <div id="edo-map" class="map historical" role="region" aria-label="江戶古地圖" aria-describedby="map-help" tabindex="0"></div>
+      <p class="tile-status" data-tile-status="historical" role="status">古地圖載入中…</p>
+    </article>
+    <article class="map-panel">
+      <header><div><span class="seal today">今</span><h3>今日東京</h3></div><span class="num">OpenStreetMap</span></header>
+      <div id="tokyo-map" class="map" role="region" aria-label="現代東京地圖" aria-describedby="map-help" tabindex="0"></div>
+      <p class="tile-status" data-tile-status="modern" role="status">現代地圖載入中…</p>
+    </article>
+  </div>
+  <p id="map-message" class="map-message" role="status">互動地圖載入中。作品清單仍可瀏覽。</p>
+  <noscript><p class="map-message">請啟用 JavaScript 使用互動地圖與篩選。下方保留完整作品清單。</p></noscript>
+  <div class="map-notes">
+    <div class="legend" aria-label="地圖圖例">
+      <span><i class="dot"></i>大致區域</span><span><i class="dot uncertain"></i>推定位置</span>
+      <span><i class="extent"></i>古圖影像外框</span>
+    </div>
+    <p>標記為作品相關位置，並非精確觀察點；虛線標記不表示已知的誤差半徑。古圖經地理配準，仍有變形與位置誤差。留白處可能超出圖幅，並不代表當時沒有街道或聚落。</p>
+  </div>
+  <details class="sources">
+    <summary>地圖來源與年代</summary>
+    <p>左圖拼接五幅尾張屋版《江戶切繪圖》，年代並不完全相同。原圖：國立國會圖書館數位典藏（著作權保護期滿）；圖幅索引：<a href="https://codh.rois.ac.jp/edo-maps/">CODH 江戶地圖</a>；地理配準與圖磚：<a href="https://mapwarper.h-gis.jp/users/340">Kitamoto／日本版 Map Warper</a>。影像為配準後版本。</p>
+    <ul>{historicalSheets.map((s) => <li><span class="num">{s.year}</span> · <a href={`https://codh.rois.ac.jp/edo-maps/owariya/${s.sheet}/georef/`}>{s.title}</a> · <a href={`https://dl.ndl.go.jp/pid/${s.ndl}`}>原圖</a></li>)}</ul>
+    <p>右圖：© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>。<a href="https://www.openstreetmap.org/fixthemap">回報現代地圖問題</a>。完整書目見<a href={u('references/')}>參考資料</a>。</p>
+  </details>
+</section>
+
+<script>
+  import 'leaflet/dist/leaflet.css';
+  import type { Map as LeafletMap, Marker, LatLngTuple, TileLayer } from 'leaflet';
+  import { historicalSheets, mapSources } from '../lib/maps';
+
+  type Location = {
+    id: string; title: string; time: string | null; region: string; perspectives: string[];
+    historicalName: string; modernName: string; lat: number | null; lng: number | null;
+    confidence: 'exact' | 'approximate' | 'hypothetical'; note: string | null; href: string;
+  };
+
+  async function initialize() {
+    const root = document.querySelector<HTMLElement>('.comparison')!;
+    const message = root.querySelector<HTMLElement>('#map-message')!;
+    // Dynamic import keeps Leaflet's window access out of Astro's server build.
+    const L = await import('leaflet');
+    const locations: Location[] = JSON.parse(root.dataset.locations!);
+    const confidence: Record<string, string> = JSON.parse(root.dataset.confidence!);
+    const sync = root.querySelector<HTMLInputElement>('#map-sync')!;
+    const fitButton = root.querySelector<HTMLButtonElement>('#map-fit')!;
+    const resetButton = root.querySelector<HTMLButtonElement>('#map-reset')!;
+    const maps = ['edo-map', 'tokyo-map'].map((id) => L.map(id, {
+      center: [35.697, 139.782], zoom: 12, minZoom: 11, maxZoom: 18,
+      scrollWheelZoom: false, zoomAnimation: false, fadeAnimation: false,
+      maxBounds: [[35.45, 139.45], [35.92, 140.05]], maxBoundsViscosity: 1,
+      zoomControl: false,
+    }));
+    maps.forEach((map) => {
+      L.control.zoom({ zoomInTitle: '放大', zoomOutTitle: '縮小' }).addTo(map);
+      L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
+    });
+
+    // Wait for movement to settle; guard synchronous setView events to avoid a loop.
+    let syncing = false;
+    let activeMap = maps[0];
+    const mirror = (source: LeafletMap) => {
+      if (syncing || !sync.checked) return;
+      syncing = true;
+      maps.filter((map) => map !== source).forEach((map) => map.setView(source.getCenter(), source.getZoom(), { animate: false }));
+      syncing = false;
+    };
+    maps.forEach((map) => {
+      map.on('movestart', () => { if (!syncing) activeMap = map; });
+      map.on('moveend zoomend', () => mirror(map));
+    });
+    sync.addEventListener('change', () => mirror(activeMap));
+
+    function watchTiles(layers: TileLayer[], kind: string) {
+      const status = root.querySelector<HTMLElement>(`[data-tile-status="${kind}"]`)!;
+      const loaded = new Set<TileLayer>();
+      const errors = new Set<TileLayer>();
+      let timer: ReturnType<typeof setTimeout>;
+      const report = () => {
+        const pending = layers.some((layer) => layer.isLoading());
+        const failed = errors.size > 0;
+        status.hidden = !pending && !failed && loaded.size > 0;
+        status.textContent = failed
+          ? `${kind === 'historical' ? '部分古地圖' : '現代地圖'}圖磚暫時無法載入；可稍後重試或開啟下方來源。`
+          : '地圖載入中…若等候過久，可開啟下方地圖來源。';
+      };
+      layers.forEach((layer) => {
+        layer.on('loading', () => { errors.delete(layer); loaded.delete(layer); });
+        layer.on('tileload', () => { loaded.add(layer); clearTimeout(timer); timer = setTimeout(report, 200); });
+        layer.on('tileerror', () => { errors.add(layer); clearTimeout(timer); timer = setTimeout(report, 200); });
+        layer.on('load', report);
+      });
+      timer = setTimeout(report, 12000);
+    }
+
+    const oldLayers = historicalSheets.map((sheet) => L.tileLayer(mapSources.historicalTiles(sheet.id), {
+      bounds: sheet.bounds, minZoom: 11, maxZoom: 18, maxNativeZoom: 17,
+      attribution: mapSources.historicalAttribution, keepBuffer: 1,
+    }));
+    const modernLayer = L.tileLayer(mapSources.modernTiles, {
+      maxZoom: 18, attribution: mapSources.modernAttribution, keepBuffer: 1,
+    });
+    watchTiles(oldLayers, 'historical');
+    watchTiles([modernLayer], 'modern');
+    oldLayers.forEach((layer) => layer.addTo(maps[0]));
+    modernLayer.addTo(maps[1]);
+    historicalSheets.forEach((sheet) => L.rectangle(sheet.bounds, {
+      color: '#8d7250', weight: 1, dashArray: '4 5', fill: false, interactive: false,
+    }).addTo(maps[0]));
+
+    const markerLayers = maps.map((map) => L.layerGroup().addTo(map));
+    const markers = maps.map(() => new Map<string, Marker>());
+    let visible = locations;
+    let selected: string | null = null;
+    const positioned = (items: Location[]) => items.filter((a): a is Location & {lat: number; lng: number} => a.lat !== null && a.lng !== null);
+    const centerOn = (items: Location[]) => {
+      const points = positioned(items).map((a) => [a.lat, a.lng] as LatLngTuple);
+      if (!points.length) return;
+      const bounds = L.latLngBounds(points);
+      // Use one camera for both panels, even if their dimensions differ slightly.
+      const zoom = Math.min(15, ...maps.map((map) => map.getBoundsZoom(bounds, false, L.point(40, 40))));
+      syncing = true;
+      maps.forEach((map) => map.setView(bounds.getCenter(), zoom, { animate: false }));
+      syncing = false;
+    };
+
+    function highlight(ids: string[]) {
+      selected = ids[0] ?? null;
+      document.querySelectorAll<HTMLElement>('[data-artwork-id]').forEach((card) => {
+        card.classList.toggle('selected', ids.includes(card.dataset.artworkId!));
+      });
+      markers.forEach((group) => group.forEach((marker, id) => {
+        marker.getElement()?.classList.toggle('selected', ids.includes(id));
+      }));
+    }
+
+    function popup(items: Location[]) {
+      const container = document.createElement('div');
+      container.className = 'location-popup';
+      items.forEach((a) => {
+        const title = document.createElement('strong');
+        title.textContent = a.historicalName;
+        const modern = document.createElement('p');
+        modern.textContent = `今日：${a.modernName}`;
+        const certainty = document.createElement('p');
+        certainty.textContent = `${confidence[a.confidence]}${a.note ? ` · ${a.note}` : ''}`;
+        const link = document.createElement('a');
+        link.href = a.href;
+        link.textContent = `${a.title} →`;
+        container.append(title, modern, certainty, link);
+      });
+      return container;
+    }
+
+    function renderMarkers() {
+      markerLayers.forEach((layer) => layer.clearLayers());
+      markers.forEach((group) => group.clear());
+      const grouped = new Map<string, Location[]>();
+      positioned(visible).forEach((a) => {
+        const key = `${a.lat},${a.lng}`;
+        grouped.set(key, [...(grouped.get(key) ?? []), a]);
+      });
+      grouped.forEach((items) => {
+        const a = items[0];
+        const ids = items.map((item) => item.id);
+        maps.forEach((map, index) => {
+          const marker = L.marker([a.lat!, a.lng!], {
+            icon: L.divIcon({
+              className: `location-marker ${a.confidence === 'hypothetical' ? 'hypothetical' : ''}`,
+              html: `<span>${items.length > 1 ? items.length : '•'}</span>`, iconSize: [30, 30], iconAnchor: [15, 15],
+            }),
+            title: `${a.historicalName}：${items.map((item) => item.title).join('、')}`,
+            alt: `${a.historicalName}，${confidence[a.confidence]}`, riseOnHover: true,
+          }).bindPopup(popup(items), { maxWidth: 280, autoPan: false }).addTo(markerLayers[index]);
+          marker.getElement()?.setAttribute('aria-label', `${a.historicalName}：${items.map((item) => item.title).join('、')}，${confidence[a.confidence]}`);
+          marker.on('click', () => {
+            highlight(ids);
+            markers[1 - index].get(ids[0])?.openPopup();
+          });
+          ids.forEach((id) => markers[index].set(id, marker));
+        });
+      });
+      highlight(selected && visible.some((a) => a.id === selected) ? [selected] : []);
+      const missing = visible.length - positioned(visible).length;
+      message.textContent = visible.length
+        ? `${visible.length} 件作品 · ${positioned(visible).length} 件已有位置${missing ? ` · ${missing} 件位置待考，保留於下方清單` : ''}。同址作品共用標記。`
+        : '這個篩選組合沒有作品。請調整條件。';
+      fitButton.disabled = positioned(visible).length === 0;
+    }
+
+    document.addEventListener('explore:filter', ((event: CustomEvent<{ids: string[]}>) => {
+      visible = locations.filter((a) => event.detail.ids.includes(a.id));
+      renderMarkers();
+      centerOn(visible);
+    }) as EventListener);
+    document.querySelectorAll<HTMLButtonElement>('[data-locate]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const a = locations.find((item) => item.id === button.dataset.locate)!;
+        if (a.lat === null || a.lng === null) return;
+        centerOn([a]);
+        const samePlace = visible.filter((item) => item.lat === a.lat && item.lng === a.lng);
+        highlight(samePlace.map((item) => item.id));
+        markers.forEach((group) => group.get(a.id)?.openPopup());
+        root.scrollIntoView({ behavior: 'instant', block: 'start' });
+        maps[0].getContainer().focus({ preventScroll: true });
+      });
+      button.disabled = false;
+    });
+    fitButton.addEventListener('click', () => centerOn(visible));
+    resetButton.addEventListener('click', () => centerOn(locations));
+    sync.disabled = false;
+    resetButton.disabled = false;
+    // Filters remain usable while the map module is loading.
+    const visibleIds = [...document.querySelectorAll<HTMLElement>('[data-artwork-id]:not([hidden])')].map((card) => card.dataset.artworkId);
+    visible = locations.filter((a) => visibleIds.includes(a.id));
+    renderMarkers();
+    centerOn(visible);
+    const resize = new ResizeObserver(() => {
+      syncing = true;
+      maps.forEach((map) => map.invalidateSize({ pan: false }));
+      syncing = false;
+      mirror(activeMap);
+    });
+    maps.forEach((map) => resize.observe(map.getContainer()));
+  }
+
+  initialize().catch((error) => {
+    console.error('Map comparison failed to initialize', error);
+    document.querySelector('#map-message')!.textContent = '互動地圖暫時無法載入。仍可使用篩選與作品清單，或開啟下方地圖來源。';
+    document.querySelectorAll<HTMLElement>('.tile-status').forEach((status) => { status.hidden = true; });
+  });
+</script>
+
+<style>
+  .comparison { scroll-margin-top: calc(var(--nav-h) + 16px); }
+  .comparison-head, .tools, .map-panel header, .map-panel header > div { display: flex; align-items: center; }
+  .comparison-head { justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+  .eyebrow { color: var(--gold); font-size: 12px; letter-spacing: .18em; }
+  h2 { font-size: clamp(25px, 3vw, 36px); margin-top: 7px; }
+  .tools { gap: 10px; flex-wrap: wrap; font-size: 13px; }
+  .tools label { display: flex; align-items: center; gap: 7px; margin-right: 8px; cursor: pointer; }
+  input { accent-color: var(--gold); width: 16px; height: 16px; }
+  button { color: var(--paper); background: var(--ink-2); border: 1px solid var(--line); padding: 7px 12px; font: inherit; cursor: pointer; }
+  button:hover { border-color: var(--gold); }
+  button:disabled { opacity: .45; cursor: default; }
+  .help { font-size: 13px; color: var(--paper-2); margin: 16px 0; }
+  .maps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .map-panel { min-width: 0; position: relative; border: 1px solid var(--line); }
+  .map-panel header { justify-content: space-between; padding: 15px 18px; background: var(--ink-2); gap: 10px; }
+  .map-panel header > div { gap: 10px; }
+  .map-panel h3 { font-size: 21px; }
+  .map-panel header > span { color: var(--mute); font-size: 13px; }
+  .today { background: #526a72; }
+  .map { height: clamp(380px, 55vh, 640px); isolation: isolate; background: #e3dfd5; font-family: var(--serif); line-height: 1.5; z-index: 0; }
+  .historical { background-color: #e9dfc7; background-image: radial-gradient(#b5a38055 .7px, transparent .7px); background-size: 6px 6px; }
+  .tile-status { position: absolute; top: 76px; left: 50px; right: 12px; z-index: 1; padding: 8px 10px; background: var(--ink); color: var(--paper); font-size: 12px; pointer-events: none; }
+  .tile-status[hidden] { display: none; }
+  .map-message { margin: 13px 0; color: var(--gold); font-size: 13px; }
+  .map-notes { display: flex; gap: 24px; align-items: flex-start; border-top: 1px solid var(--line); padding-top: 14px; }
+  .map-notes p { flex: 1; font-size: 12px; color: var(--mute); }
+  .legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--paper-2); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .dot { width: 11px; height: 11px; border: 2px solid var(--gold); border-radius: 50%; background: var(--vermilion); }
+  .uncertain { border-style: dashed; background: transparent; }
+  .extent { width: 20px; border-top: 1px dashed var(--mute); }
+  .sources { color: var(--mute); font-size: 12px; margin-top: 18px; }
+  summary { cursor: pointer; color: var(--paper-2); width: fit-content; }
+  .sources p { margin-top: 10px; max-width: 900px; }
+  .sources ul { padding-left: 20px; margin-top: 8px; }
+  :global(.comparison :focus-visible) { outline: 2px solid var(--gold); outline-offset: 3px; }
+  :global(.comparison .leaflet-tile) { max-width: none !important; max-height: none !important; }
+  :global(.comparison .leaflet-control-attribution) { font: 10px/1.6 sans-serif; max-width: 100%; }
+  :global(.comparison .location-marker) { background: var(--vermilion); border: 2px solid #f5dfaa; color: white; border-radius: 50%; box-shadow: 0 1px 7px #0007; text-align: center; font: 18px/26px Georgia, serif; }
+  :global(.comparison .location-marker.hypothetical) { background: #45423a; border-style: dashed; }
+  :global(.comparison .location-marker.selected) { background: #1c4b60; box-shadow: 0 0 0 5px #d8b46a88; }
+  :global(.comparison .leaflet-popup-content-wrapper) { background: var(--ink-2); color: var(--paper); border: 1px solid var(--gold); border-radius: 2px; }
+  :global(.comparison .leaflet-popup-tip) { background: var(--gold); }
+  :global(.comparison .leaflet-popup-close-button) { color: var(--paper); }
+  :global(.comparison .location-popup strong) { display: block; font-size: 16px; }
+  :global(.comparison .location-popup p) { margin: 6px 0; color: var(--paper-2); font-size: 12px; line-height: 1.7; }
+  :global(.comparison .location-popup a) { display: block; color: var(--gold); margin: 6px 0 16px; }
+  @media (max-width: 700px) {
+    .maps { grid-template-columns: 1fr; gap: 12px; }
+    .map { height: 350px; }
+    .map-panel header { padding: 12px; }
+    .map-panel h3 { font-size: 19px; }
+    .map-notes { flex-direction: column; gap: 10px; }
+    .tools { gap: 8px; }
+  }
+</style>
