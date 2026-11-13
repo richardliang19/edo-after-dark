@@ -1,0 +1,99 @@
+---
+import { activityRoles, activitySources, quizQuestions } from '../data/activities';
+import { byId, thumb } from '../lib/data';
+import { u } from '../lib/url';
+---
+<section id="nightwalker-quiz" class="activity-panel" aria-labelledby="quiz-title" hidden>
+  <div class="activity-top"><span class="seal">活動一 · 夜行視角</span><button type="button" data-activity-close>返回活動選單</button></div>
+  <h3 id="quiz-title" tabindex="-1">你是哪一種江戶夜行者？</h3>
+  <p class="activity-note">以下是為觀展設計的想像情境，沒有標準答案。結果提供閱讀作品的視角，不是心理測驗，也不是對歷史人物身分的判定。</p>
+  <div data-quiz-play>
+    <p class="step-count" data-quiz-progress aria-live="polite">第 1／6 題</p>
+    <progress max={quizQuestions.length} value="0" aria-label="已回答題數"></progress>
+    <form data-quiz-form>
+      {quizQuestions.map((q, index) => (
+        <fieldset data-quiz-question hidden={index !== 0}>
+          <legend tabindex="-1">{q.prompt}</legend>
+          <div class="answer-list">{q.choices.map((choice) => (
+            <label class="answer"><input type="radio" name={`question-${index}`} value={choice.role} />{choice.text}</label>
+          ))}</div>
+        </fieldset>
+      ))}
+      <div class="activity-actions"><button type="button" data-quiz-prev disabled>上一題</button><button type="submit" class="primary" data-quiz-next disabled>下一題 →</button></div>
+    </form>
+  </div>
+  <div data-quiz-result hidden>
+    <h4 data-quiz-result-title tabindex="-1"></h4>
+    <p>這是你這次選擇較多的觀看方向；同一幅畫也可以從多種視角閱讀。並列時，保留所有同分視角。</p>
+    <p class="result-score" data-quiz-scores></p>
+    {activityRoles.map((role) => {
+      const artwork = byId(role.artworkId)!;
+      const source = activitySources[role.source];
+      return (
+        <article class="result-card" data-role-result={role.id} hidden>
+          <span class="tag">{role.name}</span><h4>{role.subtitle}</h4>
+          <p>{role.description}</p>
+          <div class="recommendation">
+            {artwork.image && <img src={thumb(artwork.image.src, 330)} width="64" height="88" loading="lazy" alt="" />}
+            <a href={u(`artworks/${artwork.id}/`)}>閱讀《{artwork.title}》 →</a>
+          </div>
+          <div class="evidence"><p>{role.context}</p><p class="source-note">館藏依據：<a href={source.url} target="_blank" rel="noopener">{source.label} ↗</a></p></div>
+          <div class="activity-actions"><a class="activity-link" href={u(`explore/?perspective=${role.id}`)}>帶著「{role.name}」視角探索地圖 →</a></div>
+        </article>
+      );
+    })}
+    <div class="activity-actions"><button type="button" class="primary" data-quiz-restart>重新測驗</button><button type="button" data-activity-open="observation">接著玩提燈尋跡 →</button></div>
+  </div>
+</section>
+
+<script>
+  import { activityRoles, quizQuestions, scoreQuiz, type RoleId } from '../data/activities';
+  const root = document.querySelector<HTMLElement>('#nightwalker-quiz')!;
+  const form = root.querySelector<HTMLFormElement>('form')!;
+  const steps = [...root.querySelectorAll<HTMLFieldSetElement>('[data-quiz-question]')];
+  const play = root.querySelector<HTMLElement>('[data-quiz-play]')!;
+  const result = root.querySelector<HTMLElement>('[data-quiz-result]')!;
+  const next = root.querySelector<HTMLButtonElement>('[data-quiz-next]')!;
+  const prev = root.querySelector<HTMLButtonElement>('[data-quiz-prev]')!;
+  const progress = root.querySelector<HTMLProgressElement>('progress')!;
+  const answers: (RoleId | null)[] = quizQuestions.map(() => null);
+  let index = 0;
+
+  function showStep(focus = true) {
+    play.hidden = false;
+    result.hidden = true;
+    steps.forEach((step, i) => { step.hidden = index !== i; });
+    root.querySelector('[data-quiz-progress]')!.textContent = `第 ${index + 1}／${steps.length} 題`;
+    progress.value = answers.filter((answer) => answer !== null).length;
+    prev.disabled = index === 0;
+    next.disabled = answers[index] === null;
+    next.textContent = index === steps.length - 1 ? '看看我的夜行視角 →' : '下一題 →';
+    if (focus) steps[index].querySelector('legend')!.focus();
+  }
+  form.addEventListener('change', () => {
+    const checked = steps[index].querySelector<HTMLInputElement>('input:checked');
+    answers[index] = checked?.value as RoleId ?? null;
+    next.disabled = answers[index] === null;
+    progress.value = answers.filter((answer) => answer !== null).length;
+  });
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (answers[index] === null) return;
+    if (index < steps.length - 1) { index++; showStep(); return; }
+    if (answers.some((answer) => answer === null)) return;
+    const { winners, scores } = scoreQuiz(answers);
+    play.hidden = true;
+    result.hidden = false;
+    const names = activityRoles.filter((role) => winners.includes(role.id)).map((role) => role.name);
+    const title = root.querySelector<HTMLElement>('[data-quiz-result-title]')!;
+    title.textContent = `你的夜行視角：${names.join(' × ')}`;
+    root.querySelector('[data-quiz-scores]')!.textContent = activityRoles.map((role) => `${role.name} ${scores[role.id]}／6`).join(' · ');
+    root.querySelectorAll<HTMLElement>('[data-role-result]').forEach((card) => { card.hidden = !winners.includes(card.dataset.roleResult as RoleId); });
+    title.focus();
+  });
+  prev.addEventListener('click', () => { if (index > 0) { index--; showStep(); } });
+  root.querySelector('[data-quiz-restart]')!.addEventListener('click', () => {
+    form.reset(); answers.fill(null); index = 0; showStep();
+  });
+  showStep(false);
+</script>

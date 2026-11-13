@@ -1,0 +1,278 @@
+---
+import { observationQuestions, observationSources, observationArtworkOrder } from '../data/observation';
+import { byId } from '../lib/data';
+import { u } from '../lib/url';
+---
+<section id="observation-challenge" class="activity-panel" aria-labelledby="observation-title" hidden>
+  <div class="activity-top"><span class="seal">活動二 · 提燈尋跡</span><button type="button" data-activity-close>返回活動選單</button></div>
+  <h3 id="observation-title" tabindex="-1">不只看見，還要讀懂一幅畫</h3>
+  <p class="activity-note">11 幅作品、26 個提問，從構圖、版畫技法、城市生活，讀到勞動與證據的界線。不計時；可使用提示、重試或略過讀解說。題目依同幅作品成組安排，答題選項順序每次重新排列。</p>
+
+  <div data-observation-setup>
+    <form data-session-form>
+      <fieldset>
+        <legend>先選擇這次的路線</legend>
+        <div class="route-options">
+          <label class="answer"><input type="radio" name="observation-mode" value="full" checked /><span><strong>精讀全展</strong><small>11 幅 · 26 題 · 約 35–50 分鐘<br />依展覽路線，完整探索每幅作品。</small></span></label>
+          <label class="answer"><input type="radio" name="observation-mode" value="random" /><span><strong>隨機夜行</strong><small>抽選 3 幅 · 每幅 2 題 · 約 10–15 分鐘<br />每幅先看構圖或場景，再抽一道深入問題。</small></span></label>
+          <label class="answer"><input type="radio" name="observation-mode" value="painting" /><span><strong>專看一幅</strong><small>自選作品 · 2–4 題 · 約 5–10 分鐘<br />將注意力留在一幅畫，讀完它的全部提問。</small></span></label>
+        </div>
+      </fieldset>
+      <label class="painting-picker" for="observation-painting">選擇作品
+        <select id="observation-painting" disabled>{observationArtworkOrder.map((id) => <option value={id} selected={id === 'A03'}>{byId(id)!.title}（{observationQuestions.filter((q) => q.artworkId === id).length} 題）</option>)}</select>
+      </label>
+      <p class="activity-note">這是閱讀活動，完成時間可自由調整。開始新路線會重設本次答題進度；切換活動選單則會保留進度。</p>
+      <div class="activity-actions"><button type="submit" class="primary">開始這次的探索 →</button><button type="button" data-session-resume hidden>繼續原本的路線</button></div>
+    </form>
+  </div>
+
+  <div data-observation-play hidden>
+    <div class="activity-top"><p class="step-count" data-observation-progress aria-live="polite"></p><button type="button" data-route-change>更換路線</button></div>
+    <p class="activity-note" data-session-overview></p>
+    <progress value="0" max={observationQuestions.length} aria-label="已探索題數"></progress>
+    {observationQuestions.map((question) => {
+      const artwork = byId(question.artworkId)!;
+      const image = artwork.image!;
+      const f = question.focus;
+      const transform = 'translate(' + (50 - f.x * f.scale * 100) + '%, ' + (50 - f.y * f.scale * 100) + '%) scale(' + f.scale + ')';
+      return (
+        <article data-observation-round data-question-id={question.id} data-artwork={question.artworkId} data-answer={question.answer} hidden>
+          <span class="tag">{question.theme} · {artwork.title}</span>
+          <h4 tabindex="-1">{question.title}</h4>
+          <div class="observation-grid">
+            <figure>
+              <div class="art-stage" style={'aspect-ratio:' + image.width + '/' + image.height + ';--detail-transform:' + transform}>
+                <img data-src={image.src} alt={'歌川廣重《' + artwork.title + '》；可切換全圖與局部'} width={image.width} height={image.height} />
+              </div>
+              <p class="image-error" data-image-error hidden>圖像暫時無法載入。仍可使用提示、略過閱讀解說，或開啟館藏原圖。</p>
+              <figcaption>歌川廣重《{artwork.title}》 · {image.collection}{image.accession ? '，' + image.accession : ''}<br />{image.license}{image.source !== image.collection && ' · 經 ' + image.source} · 放大區域為原圖裁切</figcaption>
+              <div class="activity-actions"><button type="button" data-toggle-detail aria-pressed="false">放大觀察區域</button><a href={image.sourceUrl} class="source-image" target="_blank" rel="noopener">圖像來源 ↗</a></div>
+            </figure>
+            <div>
+              <form data-observation-form>
+                <fieldset><legend>{question.prompt}</legend>
+                  <div class="answer-list">{question.choices.map((choice, choiceIndex) => <label class="answer"><input type="radio" name={'round-' + question.id} value={choiceIndex} />{choice}</label>)}</div>
+                </fieldset>
+                <div class="activity-actions"><button class="primary" type="submit" data-check disabled>確認答案</button><button type="button" data-hint aria-expanded="false" aria-controls={'hint-' + question.id}>給我提示</button><button type="button" data-skip>略過並讀解說</button></div>
+              </form>
+              <p id={'hint-' + question.id} class="activity-note" data-hint-text hidden>{question.hint}</p>
+              <p class="activity-feedback" data-observation-feedback role="status"></p>
+              <div class="evidence" data-explanation hidden>
+                <p><strong>① 畫面觀察</strong><br />{question.observation}</p>
+                {question.evidence.map((e) => <div class="evidence-block">
+                  <p><strong>② {e.kind}</strong><br />{e.text}</p>
+                  {e.sources.map((key) => {
+                    const s = observationSources[key];
+                    return <p class="source-note"><a href={s.url} target="_blank" rel="noopener">{s.institution}｜{s.title} ↗</a><br />{s.record}<br /><span class="source-scope">{s.scope}</span></p>;
+                  })}
+                </div>)}
+                <div class="reflection"><p><strong>③ 再想一步（開放思考，不計分）</strong><br />{question.reflection}</p></div>
+                <p class="source-note">館藏文字為中文摘述，非逐字引文。資料核對：2026-11-13。圖面觀察與開放思考為本展編寫。</p>
+                <div class="activity-actions"><button class="primary" type="button" data-round-next>下一題 →</button></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    })}
+    <div class="activity-actions"><button type="button" data-round-prev disabled>← 上一題／回看</button><button type="button" data-notebook-return hidden>返回觀察手帖</button></div>
+  </div>
+
+  <div data-observation-result hidden>
+    <h4 tabindex="-1">你的江戶夜景觀察手帖</h4>
+    <p data-observation-summary></p>
+    <p class="activity-note">以下依作品整理本次探索。可回看完整解說與來源，也可以從全圖重新閱讀。</p>
+    <div class="notebook">
+      {observationArtworkOrder.map((id) => <section data-notebook-painting={id} hidden>
+        <h4>{byId(id)!.title}</h4>
+        <ol>{observationQuestions.filter((q) => q.artworkId === id).map((q) => <li data-notebook-question={q.id} hidden>
+          <h5>{q.title}</h5><p>{q.takeaway}</p><p class="activity-note" data-round-outcome={q.id}></p>
+          <div class="activity-actions"><button type="button" data-review={q.id}>回看解說與來源</button><a class="activity-link" href={u('artworks/' + id + '/')}>閱讀整幅作品 →</a></div>
+        </li>)}</ol>
+      </section>)}
+    </div>
+    <div class="activity-actions"><button class="primary" type="button" data-observation-restart>再走一次</button><button type="button" data-route-change>選另一條路線</button><button type="button" data-activity-open="quiz">找找我的夜行視角 →</button></div>
+  </div>
+
+  <details class="source-library">
+    <summary>本活動的來源、引用方式與完整書目</summary>
+    <p class="activity-note">解說逐段附來源。「同圖異印本」表示館方解說來自同一構圖的另一件印本；顏色、木紋和細節清晰度可能不同。「歷史背景」不等同於已證明本圖中每個人物或物件的情況。髮簪禮物、人物身分等解讀保留館方的推論語氣。</p>
+    <ul>{Object.values(observationSources).map((s) => <li><a href={s.url} target="_blank" rel="noopener">{s.institution}｜{s.title} ↗</a><small>{s.record} · {s.scope}</small></li>)}</ul>
+    <p class="activity-note">核對日期：2026-11-13。<a href={u('references/#observation-sources')}>參考資料頁：活動二完整書目 →</a></p>
+  </details>
+</section>
+
+<script>
+  import { observationQuestions, selectObservationSession, shuffled, type ObservationMode } from '../data/observation';
+  const root = document.querySelector<HTMLElement>('#observation-challenge')!;
+  const setup = root.querySelector<HTMLElement>('[data-observation-setup]')!;
+  const sessionForm = root.querySelector<HTMLFormElement>('[data-session-form]')!;
+  const picker = root.querySelector<HTMLSelectElement>('#observation-painting')!;
+  const play = root.querySelector<HTMLElement>('[data-observation-play]')!;
+  const result = root.querySelector<HTMLElement>('[data-observation-result]')!;
+  const rounds = new Map([...root.querySelectorAll<HTMLElement>('[data-observation-round]')].map((r) => [r.dataset.questionId!, r]));
+  const progress = root.querySelector<HTMLProgressElement>('progress')!;
+  const prev = root.querySelector<HTMLButtonElement>('[data-round-prev]')!;
+  const outcomes = new Map<string, 'answered' | 'skipped'>();
+  let session: string[] = [];
+  let index = 0;
+  let mode: ObservationMode = 'full';
+  let painting = 'A03';
+
+  function showDetail(round: HTMLElement, detail: boolean) {
+    round.querySelector('.art-stage')!.classList.toggle('is-detail', detail);
+    const toggle = round.querySelector<HTMLButtonElement>('[data-toggle-detail]')!;
+    toggle.setAttribute('aria-pressed', String(detail));
+    toggle.textContent = detail ? '查看全圖' : '放大觀察區域';
+  }
+  function updateProgress() {
+    progress.value = session.filter((id) => outcomes.has(id)).length;
+    root.querySelector<HTMLElement>('[data-notebook-return]')!.hidden = progress.value !== session.length;
+  }
+  function showRound(focus = true) {
+    if (!session.length) return;
+    setup.hidden = true; play.hidden = false; result.hidden = true;
+    rounds.forEach((round, id) => { round.hidden = id !== session[index]; });
+    const round = rounds.get(session[index])!;
+    const question = observationQuestions.find((q) => q.id === session[index])!;
+    const group = session.filter((id) => rounds.get(id)!.dataset.artwork === question.artworkId);
+    root.querySelector('[data-observation-progress]')!.textContent = '第 ' + (index + 1) + '／' + session.length + ' 題 · 本幅第 ' + (group.indexOf(question.id) + 1) + '／' + group.length + ' 題';
+    const img = round.querySelector('img')!;
+    if (!img.getAttribute('src')) img.src = img.dataset.src!;
+    prev.disabled = index === 0;
+    round.querySelector('[data-round-next]')!.textContent = index === session.length - 1 ? '收好我的觀察手帖 →' : '下一題 →';
+    updateProgress();
+    if (focus) round.querySelector('h4')!.focus();
+  }
+  function showNotebook() {
+    setup.hidden = true; play.hidden = true; result.hidden = false;
+    const paintings = new Set(session.map((id) => rounds.get(id)!.dataset.artwork));
+    const skipped = session.filter((id) => outcomes.get(id) === 'skipped').length;
+    root.querySelector('[data-observation-summary]')!.textContent = '已探索 ' + paintings.size + ' 幅作品、' + session.length + ' 題；其中 ' + skipped + ' 題選擇略過並閱讀解說。';
+    root.querySelectorAll<HTMLElement>('[data-notebook-painting]').forEach((el) => { el.hidden = !paintings.has(el.dataset.notebookPainting); });
+    root.querySelectorAll<HTMLElement>('[data-notebook-question]').forEach((el) => { el.hidden = !session.includes(el.dataset.notebookQuestion!); });
+    root.querySelectorAll<HTMLElement>('[data-round-outcome]').forEach((el) => { el.textContent = outcomes.get(el.dataset.roundOutcome!) === 'skipped' ? '略過後閱讀解說' : '完成作答與閱讀'; });
+    result.querySelector('h4')!.focus();
+  }
+  function startSession() {
+    session = selectObservationSession(mode, painting);
+    if (!session.length) return;
+    outcomes.clear(); index = 0; progress.max = session.length;
+    rounds.forEach((round) => {
+      round.hidden = true;
+      const form = round.querySelector('form')!;
+      form.reset();
+      form.querySelectorAll<HTMLInputElement | HTMLButtonElement>('input, button').forEach((el) => { el.disabled = false; });
+      round.querySelector<HTMLButtonElement>('[data-check]')!.disabled = true;
+      round.querySelector<HTMLElement>('[data-explanation]')!.hidden = true;
+      round.querySelector<HTMLElement>('[data-hint-text]')!.hidden = true;
+      round.querySelector('[data-hint]')!.setAttribute('aria-expanded', 'false');
+      round.querySelector('[data-hint]')!.textContent = '給我提示';
+      round.querySelector('[data-observation-feedback]')!.textContent = '';
+      showDetail(round, false);
+      if (session.includes(round.dataset.questionId!)) {
+        const list = round.querySelector('.answer-list')!;
+        shuffled([...list.children]).forEach((label) => list.append(label));
+      }
+    });
+    const paintingCount = new Set(session.map((id) => rounds.get(id)!.dataset.artwork)).size;
+    root.querySelector('[data-session-overview]')!.textContent = (mode === 'full' ? '精讀全展' : mode === 'random' ? '隨機夜行' : '專看一幅') + ' · ' + paintingCount + ' 幅作品 · ' + session.length + ' 題。解說依作品成組閱讀；可隨時回看上一題。';
+    root.querySelector<HTMLButtonElement>('[data-session-resume]')!.hidden = false;
+    root.querySelector('[data-observation-restart]')!.textContent = mode === 'random' ? '重新抽選三幅作品' : '重走同一路線';
+    showRound();
+  }
+  sessionForm.addEventListener('change', () => {
+    picker.disabled = sessionForm.querySelector<HTMLInputElement>('input:checked')?.value !== 'painting';
+  });
+  sessionForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    mode = sessionForm.querySelector<HTMLInputElement>('input:checked')!.value as ObservationMode;
+    painting = picker.value;
+    startSession();
+  });
+  root.querySelector('[data-session-resume]')!.addEventListener('click', () => showRound());
+  root.querySelectorAll('[data-route-change]').forEach((button) => button.addEventListener('click', () => {
+    setup.hidden = false; play.hidden = true; result.hidden = true;
+    sessionForm.querySelector('legend')!.setAttribute('tabindex', '-1');
+    sessionForm.querySelector('legend')!.focus();
+  }));
+  prev.addEventListener('click', () => { if (index > 0) { index--; showRound(); } });
+  rounds.forEach((round, id) => {
+    const form = round.querySelector<HTMLFormElement>('form')!;
+    const check = round.querySelector<HTMLButtonElement>('[data-check]')!;
+    const feedback = round.querySelector<HTMLElement>('[data-observation-feedback]')!;
+    const hintText = round.querySelector<HTMLElement>('[data-hint-text]')!;
+    const hint = round.querySelector<HTMLButtonElement>('[data-hint]')!;
+    const imageError = round.querySelector<HTMLElement>('[data-image-error]')!;
+    const img = round.querySelector('img')!;
+    img.addEventListener('error', () => { imageError.hidden = false; });
+    img.addEventListener('load', () => { imageError.hidden = true; });
+    round.querySelector('[data-toggle-detail]')!.addEventListener('click', () => showDetail(round, !round.querySelector('.art-stage')!.classList.contains('is-detail')));
+    hint.addEventListener('click', () => {
+      hintText.hidden = !hintText.hidden;
+      hint.setAttribute('aria-expanded', String(!hintText.hidden));
+      hint.textContent = hintText.hidden ? '給我提示' : '收起提示';
+    });
+    form.addEventListener('change', () => { check.disabled = !form.querySelector('input:checked'); feedback.textContent = ''; });
+    function reveal(outcome: 'answered' | 'skipped') {
+      if (outcomes.has(id)) return;
+      outcomes.set(id, outcome);
+      round.querySelector<HTMLElement>('[data-explanation]')!.hidden = false;
+      form.querySelectorAll<HTMLInputElement | HTMLButtonElement>('input, [data-check], [data-skip]').forEach((el) => { el.disabled = true; });
+      feedback.textContent = outcome === 'answered' ? '答對了。接著閱讀館方的解說與來源，再想一步。' : '這題選擇略過。仍可完整閱讀解說與來源。';
+      updateProgress();
+      showDetail(round, true);
+    }
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (outcomes.has(id)) return;
+      const selected = form.querySelector<HTMLInputElement>('input:checked');
+      if (!selected) return;
+      if (selected.value === round.dataset.answer) reveal('answered');
+      else feedback.textContent = '再比較一次畫面與題意。可使用提示、重試，或略過讀解說。';
+    });
+    round.querySelector('[data-skip]')!.addEventListener('click', () => reveal('skipped'));
+    round.querySelector('[data-round-next]')!.addEventListener('click', () => {
+      if (!outcomes.has(id)) return;
+      if (index < session.length - 1) { index++; showRound(); }
+      else showNotebook();
+    });
+  });
+  root.querySelectorAll<HTMLElement>('[data-review]').forEach((button) => button.addEventListener('click', () => {
+    const position = session.indexOf(button.dataset.review!);
+    if (position >= 0) { index = position; showRound(); }
+  }));
+  root.querySelector('[data-observation-restart]')!.addEventListener('click', startSession);
+  root.querySelector('[data-notebook-return]')!.addEventListener('click', showNotebook);
+</script>
+
+<style>
+  .route-options { display: grid; gap: 12px; }
+  .route-options strong { color: var(--paper); font-weight: 400; font-size: 20px; }
+  .route-options small { display: block; color: var(--mute); margin-top: 5px; line-height: 1.8; }
+  .painting-picker { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 18px; font-size: 14px; }
+  select { max-width: 100%; background: var(--ink); color: var(--paper); border: 1px solid var(--line); padding: 10px; font: inherit; }
+  select:disabled { opacity: .45; }
+  .observation-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 30px; align-items: start; }
+  figure { min-width: 0; position: sticky; top: calc(var(--nav-h) + 20px); }
+  .art-stage { overflow: hidden; background: var(--ink); width: 100%; }
+  .art-stage img { width: 100%; height: 100%; object-fit: contain; transform-origin: 0 0; transition: transform .5s ease; display: block; }
+  .art-stage.is-detail img { transform: var(--detail-transform); }
+  figcaption { color: var(--mute); font-size: 11px; margin-top: 10px; line-height: 1.7; }
+  .source-image { color: var(--paper-2); font-size: 12px; }
+  .image-error { padding: 12px; border: 1px solid var(--line); }
+  .evidence-block, .reflection { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .source-scope { color: var(--gold); }
+  .source-library { margin-top: 28px; border-top: 1px solid var(--line); padding-top: 18px; font-size: 13px; }
+  .source-library summary { cursor: pointer; color: var(--paper-2); }
+  .source-library ul { list-style: none; }
+  .source-library li { padding: 12px 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+  .source-library li a { color: var(--paper); }
+  .source-library small { display: block; margin-top: 5px; color: var(--mute); }
+  .notebook section { margin: 24px 0; padding-top: 14px; border-top: 1px solid var(--gold); }
+  .notebook ol { list-style: none; }
+  .notebook li { padding: 18px 0; border-top: 1px solid var(--line); }
+  .notebook h5 { font: 20px var(--serif-display); color: var(--gold); margin: 0 0 10px; }
+  @media (max-width: 700px) { .observation-grid { grid-template-columns: 1fr; gap: 22px; } figure { position: static; max-width: 340px; width: 100%; margin: 0 auto; } }
+  @media (prefers-reduced-motion: reduce) { .art-stage img { transition: none; } }
+</style>

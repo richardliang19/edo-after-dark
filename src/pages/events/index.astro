@@ -1,6 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
 import news from '../../data/news.json';
+import NightwalkerQuiz from '../../components/NightwalkerQuiz.astro';
+import ObservationChallenge from '../../components/ObservationChallenge.astro';
+import '../../styles/activities.css';
+import { u } from '../../lib/url';
 
 const friends = [
   { name: 'CODH 江戶地圖', url: 'https://codh.rois.ac.jp/edo-maps/', desc: '人文學開放資料共同利用中心的江戶古地圖資料' },
@@ -19,18 +23,23 @@ const friends = [
     </div>
 
     <h2 class="sec reveal">活動</h2>
-    <div class="events">
-      <article class="ev reveal">
-        <span class="tag">即將推出</span>
+    <div class="events" id="activity-menu">
+      <article class="ev">
+        <span class="tag">活動一 · 約 2–3 分鐘</span>
         <h3>你是哪一種江戶夜行者？</h3>
-        <p>回答幾個問題，找出你屬於夜遊者、商人、夜間工作者還是參拜者，再看看你的角色會出現在哪些作品裡。</p>
+        <p>六個想像情境，找出你想從哪個視角閱讀江戶：夜遊者、商人、夜間工作者，還是參拜者？帶著推薦作品繼續探索。</p>
+        <button class="event-start" type="button" data-activity-open="quiz" aria-controls="nightwalker-quiz" aria-expanded="false" disabled>開始尋找夜行視角 →</button>
       </article>
-      <article class="ev reveal">
-        <span class="tag">待規劃</span>
-        <h3>活動二</h3>
-        <p class="todo">待組員規劃，例如線上導覽、作品細節找找看等。</p>
+      <article class="ev">
+        <span class="tag">活動二 · 11 幅作品 · 26 個提問</span>
+        <h3>提燈尋跡：畫裡的江戶夜生活</h3>
+        <p>從構圖、木紋與商業標記，讀到勞動處境與畫外故事。精讀全展、隨機抽選三幅，或專看一幅；每段深入解說都附館藏或學術機構來源。</p>
+        <button class="event-start" type="button" data-activity-open="observation" aria-controls="observation-challenge" aria-expanded="false" disabled>提燈出發，尋找細節 →</button>
       </article>
     </div>
+    <noscript><p class="activity-fallback">請啟用 JavaScript 參加互動活動；也可以直接<a href={u('artworks/A03/')}>閱讀《兩國花火》</a>、<a href={u('artworks/A07/')}>閱讀《淺草田甫酉之町詣》</a>。</p></noscript>
+    <NightwalkerQuiz />
+    <ObservationChallenge />
 
     <h2 class="sec reveal">最新消息</h2>
     <ul class="news">
@@ -55,6 +64,13 @@ const friends = [
   .ev { background: var(--ink-2); padding: 30px; }
   .ev h3 { font-size: 26px; margin: 12px 0 8px; }
   .ev p { color: var(--paper-2); font-size: 15px; }
+  .ev { display: flex; flex-direction: column; align-items: flex-start; }
+  .ev p { flex: 1; }
+  .event-start { background: none; color: var(--gold); border: 1px solid var(--line); font: 14px var(--serif); text-align: left; padding: 11px 16px; margin-top: 22px; cursor: pointer; }
+  .event-start:hover { border-color: var(--gold); }
+  .event-start:disabled { opacity: .45; cursor: default; }
+  .event-start[aria-expanded="true"] { background: var(--paper); color: var(--ink); }
+  .activity-fallback { padding: 18px 0; color: var(--paper-2); }
   .news, .friends { list-style: none; }
   .news li { display: grid; grid-template-columns: 140px 1fr; gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
   .news time { color: var(--gold); font-size: 18px; }
@@ -67,3 +83,33 @@ const friends = [
   .friends a:hover strong { color: var(--gold); }
   @media (max-width: 700px) { .news li { grid-template-columns: 1fr; gap: 4px; } }
 </style>
+
+<script>
+  const panels = {
+    quiz: document.querySelector<HTMLElement>('#nightwalker-quiz')!,
+    observation: document.querySelector<HTMLElement>('#observation-challenge')!,
+  };
+  type Activity = keyof typeof panels;
+  let active: Activity = 'quiz';
+  const openers = [...document.querySelectorAll<HTMLButtonElement>('[data-activity-open]')];
+  function openActivity(key: Activity) {
+    active = key;
+    Object.entries(panels).forEach(([name, panel]) => { panel.hidden = name !== key; });
+    openers.forEach((button) => button.setAttribute('aria-expanded', String(button.dataset.activityOpen === key)));
+    panels[key].scrollIntoView({ behavior: 'instant', block: 'start' });
+    panels[key].querySelector('h3')!.focus({ preventScroll: true });
+  }
+  openers.forEach((button) => {
+    const key = button.dataset.activityOpen as Activity;
+    button.setAttribute('aria-controls', panels[key].id);
+    button.addEventListener('click', () => openActivity(key));
+    button.disabled = false;
+  });
+  document.querySelectorAll<HTMLButtonElement>('[data-activity-close]').forEach((button) => {
+    button.addEventListener('click', () => {
+      Object.values(panels).forEach((panel) => { panel.hidden = true; });
+      openers.forEach((opener) => opener.setAttribute('aria-expanded', 'false'));
+      document.querySelector<HTMLButtonElement>(`.event-start[data-activity-open="${active}"]`)!.focus();
+    });
+  });
+</script>
