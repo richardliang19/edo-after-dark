@@ -66,7 +66,7 @@ const timeText = a.curatorialTime ?? '序章';
   )}
 
   <section class="info">
-    <div class="status">{a.status}</div>
+    {a.status && <div class="status">{a.status}</div>}
     <div class="cols">
       <dl class="meta">
         <div><dt>作者</dt><dd>{a.artist}</dd></div>
@@ -93,6 +93,7 @@ const timeText = a.curatorialTime ?? '序章';
           </>
         ))}
         <h2>資料來源與圖像授權</h2>
+        <p class="credit">本頁文案依各館藏解說與地方史資料整理，引用之館藏與網頁詳見<a href={u('references/')}>參考資料</a>。</p>
         {apa ? <p class="apa" set:html={apa.replace(/\*(.+?)\*/g, '<em>$1</em>')} /> : <p class="todo">作品來源待查證</p>}
         {a.image && <p class="credit">圖像：{a.image.collection}{a.image.source !== 'The Met' && `，經 ${a.image.source}`}・<a href={a.image.sourceUrl} target="_blank" rel="noopener">查看原始館藏頁 ↗</a>（{a.image.license}）</p>}
       </div>

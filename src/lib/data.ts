@@ -80,6 +80,6 @@ export function artworkApa(a: Artwork): string | null {
   const en = a.titleEn ? ` [${a.titleEn}]` : '';
   const series = a.series ? `（${a.series}，第 ${a.seriesNo} 景）` : '';
   const year = a.year ?? 'n.d.';
-  const where = a.image.collection && a.image.collection !== '待查證' ? `${a.image.collection}. ` : '';
+  const where = a.image.collection && !/^(待查證|原典藏館未標明)/.test(a.image.collection) ? `${a.image.collection}. ` : '';
   return `Utagawa, H. (${year}). *${title}*${en} [Woodblock print]${series}. ${where}Retrieved November 9, 2026, from ${a.image.source}: ${a.image.sourceUrl}`;
 }

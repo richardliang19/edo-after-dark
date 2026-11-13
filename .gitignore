@@ -3,3 +3,6 @@ node_modules/
 dist/
 .DS_Store
 .astro/
+class_materials/
+*.docx
+*.pdf

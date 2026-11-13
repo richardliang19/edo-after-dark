@@ -1,32 +1,76 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { u } from '../../lib/url';
+import { ordered } from '../../lib/data';
+
+const route = ordered.filter((a) => a.group === 'core');
+const urban = ordered.filter((a) => a.group === 'urban');
 ---
 <Base title="策展理念">
   <div class="page">
     <div class="page-head">
       <span class="seal">策展理念</span>
-      <h1>江戶的夜晚，<br />由許多地方、許多人共同構成。</h1>
-      <p>本展以歌川廣重等人的浮世繪為核心，透過 18:00 至隔日 05:00 的時間線，呈現江戶不同時段、不同地區的城市活動。</p>
+      <h1>一座不眠的城市，<br />是誰讓它保持清醒？</h1>
+      <p>沒有公共路燈、沒有捷運，也沒有便利商店的江戶，天黑之後真的就安靜了嗎？本展以歌川廣重的浮世繪，從傍晚六點走到隔天清晨五點，看看江戶的夜晚究竟屬於誰。</p>
     </div>
 
     <div class="prose">
-      <h2 class="reveal">為什麼是夜晚？</h2>
-      <p class="reveal">單純依時間排列作品，很難看見完整的城市風貌，也不容易理解不同活動在地理上的關聯。因此我們把浮世繪放進三個維度裡，讓觀眾用自己的方式走進江戶。</p>
+      <h2 class="reveal">策展主題：為什麼是「江戶的夜晚」？</h2>
+      <p class="reveal">我們沒有做一檔「廣重作品展」，而是選擇以夜晚為主題，原因有三。</p>
+      <p class="reveal"><strong>第一，浮世繪是理解江戶城市文化的視覺史料。</strong>木版畫可以大量印製，本身就是商業出版的一部分。因此我們不把它當成像照片一樣中立的紀錄：它同時反映了當時的人想看什麼、出版者想賣什麼，以及一座城市希望被怎麼觀看。</p>
+      <p class="reveal"><strong>第二，「夜晚」能把遊船、餐飲、賞月、煙火、祭典與吉原串成一條完整的故事。</strong>研究德川時代夜晚的學者指出，當時的城市長期缺乏公共街燈，夜間卻依然發展出祭典、煙火、消費與社交活動。</p>
+      <p class="reveal"><strong>第三，也是最重要的：同一個夜晚，有人在休閒，也有人在工作。</strong>本展真正想問的是：一座不眠的城市，是由誰讓它保持清醒？</p>
     </div>
 
     <div class="dims">
       <a class="dim reveal" href={u('timeline/')}><span class="seal">壹</span><h3>時間</h3><p>江戶城市從黃昏到黎明的活動變化。</p></a>
       <a class="dim reveal" href={u('explore/')}><span class="seal">貳</span><h3>空間</h3><p>江戶古地圖與現代東京地圖的地理對照。</p></a>
-      <a class="dim reveal" href={u('explore/#perspective')}><span class="seal">參</span><h3>人物</h3><p>不同社會角色在夜間城市中的生活與活動。</p></a>
+      <a class="dim reveal" href={u('explore/#perspective')}><span class="seal">參</span><h3>人物</h3><p>夜遊者、商人、夜間工作者與參拜者的不同視角。</p></a>
     </div>
 
     <div class="prose">
+      <h2 class="reveal">展覽設計</h2>
+      <p class="reveal">為了讓觀眾感覺自己真的走進這一晚，我們用三個概念設計整個網站：</p>
+      <ul class="reveal">
+        <li><strong>時間沉浸：</strong>網站從黃昏的暖色，逐漸進入深藍與黑色，最後回到黎明。</li>
+        <li><strong>視角轉換：</strong>觀眾一開始像一名夜遊者，去料亭、賞月、看煙火；走到後半段，開始看見渡船上的夜間勞動者，以及吉原背後的工作與社會關係。</li>
+        <li><strong>教育價值：</strong>不只列出作者與年份，而是透過放大細節、作品比較、地圖與提問，讓觀眾練習從圖像裡找證據。</li>
+      </ul>
+      <p class="reveal">主要觀眾設定為 18 到 30 歲。我們從大家熟悉的聚餐、煙火、夜遊與節慶經驗出發，再慢慢把問題帶到比較陌生的江戶社會。</p>
+
+      <h3 class="reveal">四個閱讀層次</h3>
+      <p class="reveal">以《<a href={u('artworks/A05/')}>月之岬</a>》（1857）為例，每件作品都可以由淺入深地讀：</p>
+      <ol class="layers reveal">
+        <li><span>物件知識</span>歌川廣重作品，屬於《名所江戶百景》，是多色木版畫（錦繪）。</li>
+        <li><span>直接觀察</span>畫面幾乎沒有人，地上卻留著宴席後的器物，障子上映出一名女性的身影。</li>
+        <li><span>歷史脈絡</span>月之岬是可以眺望品川海灣、以賞月聞名的地方；畫面一般被解讀為月見宴結束後的二樓座敷。</li>
+        <li><span>反思</span>為什麼廣重把人移出畫面，只留下活動過的痕跡？一張圖像可以是歷史證據，但它也永遠是一種被選擇過的觀看方式。</li>
+      </ol>
+
+      <h3 class="reveal">一夜的展覽路線</h3>
+      <ol class="route reveal">
+        {route.map((a) => <li><span class="num">{a.curatorialTime}</span><a href={u(`artworks/${a.id}/`)}>{a.title}</a><small>{a.summary}</small></li>)}
+      </ol>
+
       <h2 class="reveal">策展時間與歷史時間</h2>
-      <p class="reveal">十一幅作品的創作年份與季節各不相同。18:00 到 05:00 是我們安排的策展敘事時間，不代表這些作品描繪的是同一個歷史夜晚。作品的地理位置也依可信程度分為「確定位置」「大致區域」「推定位置」三級，不把推測呈現為確定的史實。</p>
+      <p class="reveal">十一幅作品的創作年份與季節各不相同。18:00 到 05:00 是我們安排的策展敘事時間，不代表這些作品描繪的是同一個歷史夜晚，也不是畫中事件的精確鐘點。作品的地理位置也依可信程度分為「確定位置」「大致區域」「推定位置」三級，不把推測呈現為確定的史實。</p>
+
+      <h2 class="reveal">文物選件</h2>
+      <p class="reveal"><strong>八件核心作品</strong>全部來自紐約大都會藝術博物館（The Met）的線上館藏，館藏頁都標示為公有領域（Public Domain）。依 The Met 的開放取用（Open Access）政策，這些圖像可以不經許可、不需付費地使用，這對一檔線上展覽非常重要。</p>
+      <p class="reveal">我們挑選這八件，是為了讓作品涵蓋橋、河流、料亭、煙火、遊里、祭典與黎明，讓一個晚上同時呈現城市的娛樂、交通、信仰、消費與勞動。例如《<a href={u('artworks/A06/')}>御廄河岸</a>》：The Met 的館藏說明指出，畫中有「夜鷹」正搭渡船前往工作。這件作品讓展覽從漂亮的夜景，轉向一個社會問題：對有些人來說，午夜不是下班後的娛樂，而是工作的開始。</p>
+      <p class="reveal">另有<strong>三件城市景觀作品</strong>補充夜晚的前後脈絡：{urban.map((a, i) => <>{i > 0 && '、'}《<a href={u(`artworks/${a.id}/`)}>{a.title}</a>》</>)}。它們分別呈現白天的商業大街、通往吉原的堤道，以及月下的劇場街。</p>
 
       <h2 class="reveal" id="online-museum">線上博物館是什麼？</h2>
-      <p class="todo reveal">期末必答題・待組員撰寫。建議從三個角度回答：線上博物館與實體博物館的差異、本展如何運用網路的特性（互動、細部放大、古今地圖），以及我們對「觀眾參與」的想法。</p>
+      <p class="reveal">國際博物館協會（ICOM）在 2022 年通過新的博物館定義：博物館研究、典藏、保存、詮釋並展示有形與無形遺產；它對公眾開放、具可及性與包容性，並提供教育、欣賞、反思與知識分享的多元體驗。換句話說，博物館不只是「把老東西放好」的地方，而是透過選擇、研究與詮釋，讓物件和今天的人產生關係的地方。</p>
+      <p class="reveal">我們認為，線上博物館把這份工作搬到網路上，並利用數位媒介改變「觀看文物」的方法：</p>
+      <ul class="reveal">
+        <li><strong>打破實體的距離：</strong>分藏在紐約、克里夫蘭、牛津與東京的同系列版畫，可以在同一個頁面並列比較；觀眾也能放大到在展櫃前看不清的細節，例如夜空中的版木木紋。</li>
+        <li><strong>重新組織時間與空間：</strong>實體展間很難讓觀眾「從黃昏走到黎明」，也很難把一張浮世繪放回它所在的城市。網站可以用捲動的時間軸與古今對照地圖做到這件事。</li>
+        <li><strong>讓觀眾參與：</strong>測驗與提問讓觀眾先觀察、再推理、最後閱讀證據，而不只是被動接收展板文字。</li>
+        <li><strong>開放與可及：</strong>線上展覽免費、不限時間地點，以相對低的成本完成，也能隨研究更新內容。</li>
+      </ul>
+      <p class="reveal">線上博物館也有限制：螢幕無法取代原作的尺寸、紙質與色彩，數位圖像也經過拍攝與壓縮。所以我們為每一張圖標示館藏與來源，鼓勵觀眾回到原館藏頁，甚至走進實體博物館。</p>
+      <p class="reveal">一開始我們問的是：「江戶晚上睡不睡？」走完這一夜，我們更希望觀眾留下另一個問題：當一座城市燈火未熄，是誰在玩、誰在工作，又是誰沒有被漂亮的圖像看見？</p>
     </div>
   </div>
 </Base>
@@ -37,4 +81,16 @@ import { u } from '../../lib/url';
   .dim:hover { background: var(--ink-3); }
   .dim h3 { font-size: 34px; margin: 14px 0 6px; }
   .dim p { color: var(--paper-2); font-size: 15px; }
+  .prose strong { color: var(--paper); font-weight: 700; }
+  .prose h3 { font-size: 22px; margin: 6vh 0 14px; }
+  .prose ul { list-style: none; margin: 0 0 1.4em; }
+  .prose ul li { color: var(--paper-2); padding: 10px 0 10px 18px; border-left: 1px solid var(--line); margin-bottom: 8px; }
+  .layers, .route { list-style: none; margin: 0 0 1.4em; counter-reset: n; }
+  .layers li { color: var(--paper-2); padding: 14px 0; border-top: 1px solid var(--line); }
+  .layers li span { display: block; font-family: var(--serif-display); color: var(--gold); font-size: 18px; margin-bottom: 2px; }
+  .route li { display: grid; grid-template-columns: 64px 1fr; column-gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+  .route .num { color: var(--gold); font-size: 18px; grid-row: span 2; }
+  .route a { font-family: var(--serif-display); font-size: 19px; text-decoration: none; }
+  .route a:hover { color: var(--gold); }
+  .route small { color: var(--mute); font-size: 13px; }
 </style>

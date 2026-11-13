@@ -2,42 +2,190 @@
   {
     "category": "資料與研究",
     "items": [
-      { "apa": "Wikipedia contributors. (n.d.). *One Hundred Famous Views of Edo*. In *Wikipedia*. Retrieved November 9, 2026, from https://en.wikipedia.org/wiki/One_Hundred_Famous_Views_of_Edo", "url": "https://en.wikipedia.org/wiki/One_Hundred_Famous_Views_of_Edo", "note": "作品編號、出版年月與地點座標參考" }
+      {
+        "apa": "Wikipedia contributors. (n.d.). *One Hundred Famous Views of Edo*. In *Wikipedia*. Retrieved November 9, 2026, from https://en.wikipedia.org/wiki/One_Hundred_Famous_Views_of_Edo",
+        "url": "https://en.wikipedia.org/wiki/One_Hundred_Famous_Views_of_Edo",
+        "note": "作品編號、出版年月與地點座標參考"
+      },
+      {
+        "apa": "International Council of Museums. (2022). *Museum definition*. Retrieved November 13, 2026, from https://icom.museum/en/resources/standards-guidelines/museum-definition/",
+        "url": "https://icom.museum/en/resources/standards-guidelines/museum-definition/",
+        "note": "策展理念頁「線上博物館是什麼？」引用的 2022 年博物館定義"
+      },
+      {
+        "apa": "The Metropolitan Museum of Art. (n.d.). *Open Access at The Met*. Retrieved November 13, 2026, from https://www.metmuseum.org/hubs/open-access",
+        "url": "https://www.metmuseum.org/hubs/open-access",
+        "note": "八件核心作品圖像的公有領域授權說明"
+      },
+      {
+        "apa": "The University Art Museum, Tokyo University of the Arts. (2024). *Yoshiwara* [Exhibition outline]. Retrieved November 13, 2026, from https://museum.geidai.ac.jp/en/exhibit/2024/03/yoshiwara.html",
+        "url": "https://museum.geidai.ac.jp/en/exhibit/2024/03/yoshiwara.html",
+        "note": "吉原相關作品（夜櫻、廓中東雲、日本堤）的制度與季節活動背景"
+      }
+    ]
+  },
+  {
+    "category": "作品文案：現代地點與地方史",
+    "items": [
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *両国橋*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E4%B8%A1%E5%9B%BD%E6%A9%8B",
+        "url": "https://ja.wikipedia.org/wiki/%E4%B8%A1%E5%9B%BD%E6%A9%8B",
+        "note": "兩國橋的創架年份與現橋竣工年"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *両国 (墨田区)*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E4%B8%A1%E5%9B%BD_%28%E5%A2%A8%E7%94%B0%E5%8C%BA%29",
+        "url": "https://ja.wikipedia.org/wiki/%E4%B8%A1%E5%9B%BD_%28%E5%A2%A8%E7%94%B0%E5%8C%BA%29",
+        "note": "兩國廣小路"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *柳橋 (台東区)*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E6%9F%B3%E6%A9%8B_%28%E5%8F%B0%E6%9D%B1%E5%8C%BA%29",
+        "url": "https://ja.wikipedia.org/wiki/%E6%9F%B3%E6%A9%8B_%28%E5%8F%B0%E6%9D%B1%E5%8C%BA%29",
+        "note": "柳橋花街、船宿與現橋竣工年"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *隅田川花火大会*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E9%9A%85%E7%94%B0%E5%B7%9D%E8%8A%B1%E7%81%AB%E5%A4%A7%E4%BC%9A",
+        "url": "https://ja.wikipedia.org/wiki/%E9%9A%85%E7%94%B0%E5%B7%9D%E8%8A%B1%E7%81%AB%E5%A4%A7%E4%BC%9A",
+        "note": "現行會場與起源年份的考證"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *吉原遊廓*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E5%90%89%E5%8E%9F%E9%81%8A%E5%BB%93",
+        "url": "https://ja.wikipedia.org/wiki/%E5%90%89%E5%8E%9F%E9%81%8A%E5%BB%93",
+        "note": "新吉原的遷移與廢止"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *見返り柳*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E8%A6%8B%E8%BF%94%E3%82%8A%E6%9F%B3",
+        "url": "https://ja.wikipedia.org/wiki/%E8%A6%8B%E8%BF%94%E3%82%8A%E6%9F%B3",
+        "note": "吉原大門前的見返柳"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *月の岬*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E6%9C%88%E3%81%AE%E5%B2%AC",
+        "url": "https://ja.wikipedia.org/wiki/%E6%9C%88%E3%81%AE%E5%B2%AC",
+        "note": "月之岬的位置與「七崎」"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *厩橋*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E5%8E%A9%E6%A9%8B",
+        "url": "https://ja.wikipedia.org/wiki/%E5%8E%A9%E6%A9%8B",
+        "note": "御廄之渡與廄橋架設"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *鷲神社 (台東区)*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E9%B7%B2%E7%A5%9E%E7%A4%BE_%28%E5%8F%B0%E6%9D%B1%E5%8C%BA%29",
+        "url": "https://ja.wikipedia.org/wiki/%E9%B7%B2%E7%A5%9E%E7%A4%BE_%28%E5%8F%B0%E6%9D%B1%E5%8C%BA%29",
+        "note": "酉之市"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *江戸三座*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E6%B1%9F%E6%88%B8%E4%B8%89%E5%BA%A7",
+        "url": "https://ja.wikipedia.org/wiki/%E6%B1%9F%E6%88%B8%E4%B8%89%E5%BA%A7",
+        "note": "猿若町三座的成立與遷離"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *日本堤*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E5%A0%A4",
+        "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E5%A0%A4",
+        "note": "日本堤（土手八丁）"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *山谷堀*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E5%B1%B1%E8%B0%B7%E5%A0%80",
+        "url": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E8%B0%B7%E5%A0%80",
+        "note": "山谷堀與山谷堀公園"
+      },
+      {
+        "apa": "Wikipedia 日本語版. (n.d.). *三越日本橋本店*. Retrieved November 13, 2026, from https://ja.wikipedia.org/wiki/%E4%B8%89%E8%B6%8A%E6%97%A5%E6%9C%AC%E6%A9%8B%E6%9C%AC%E5%BA%97",
+        "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%B6%8A%E6%97%A5%E6%9C%AC%E6%A9%8B%E6%9C%AC%E5%BA%97",
+        "note": "越後屋與駿河町"
+      }
     ]
   },
   {
     "category": "互動活動：館藏解說核對",
     "items": [
-      { "apa": "The Metropolitan Museum of Art. (n.d.). *Pilgrimage to the Torinomachi Festival across the Ricefields of Asakusa* (JP60). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/36539", "url": "https://www.metmuseum.org/art/collection/search/36539", "note": "活動二的窗邊貓、暮色與富士山；活動一參拜者結果的人群與參拜目的地。00:00 為本展策展安排，並非館藏所述畫面時刻。" },
-      { "apa": "Cleveland Museum of Art. (n.d.). *Fireworks at Ryōgoku, from the series One Hundred Views of Famous Places in Edo* (1940.986). Retrieved November 13, 2026, from https://www.clevelandart.org/art/1940.986", "url": "https://www.clevelandart.org/art/1940.986", "note": "活動一夜遊者結果及活動二遊船觀賞煙火的背景依據。此館藏為同一構圖的另一印本；活動圖像來自 The Met JP642。" },
-      { "apa": "The Metropolitan Museum of Art. (n.d.). *Fireworks at Ryōgoku Bridge* (JP642). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/37093", "url": "https://www.metmuseum.org/art/collection/search/37093", "note": "活動二使用的圖像與作品資料；公有領域。放大畫面為原圖裁切。" },
-      { "apa": "The Metropolitan Museum of Art. (n.d.). *The Manpachi at Evening in Yanagibashi* (JP1158). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/45306", "url": "https://www.metmuseum.org/art/collection/search/45306", "note": "活動一商人結果：系列描繪江戶知名餐飲場所。商人為本展閱讀視角，不代表畫中人物身分皆已確認。" },
-      { "apa": "The Metropolitan Museum of Art. (n.d.). *Ommayagashi, Sumida River* (JP1547). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/55712", "url": "https://www.metmuseum.org/art/collection/search/55712", "note": "活動一夜間工作者結果：館方將部分渡船乘客解讀為前往工作的夜鷹。測驗情境為本展設計，非史料引文。" }
+      {
+        "apa": "The Metropolitan Museum of Art. (n.d.). *Pilgrimage to the Torinomachi Festival across the Ricefields of Asakusa* (JP60). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/36539",
+        "url": "https://www.metmuseum.org/art/collection/search/36539",
+        "note": "活動二的窗邊貓、暮色與富士山；活動一參拜者結果的人群與參拜目的地。00:00 為本展策展安排，並非館藏所述畫面時刻。"
+      },
+      {
+        "apa": "Cleveland Museum of Art. (n.d.). *Fireworks at Ryōgoku, from the series One Hundred Views of Famous Places in Edo* (1940.986). Retrieved November 13, 2026, from https://www.clevelandart.org/art/1940.986",
+        "url": "https://www.clevelandart.org/art/1940.986",
+        "note": "活動一夜遊者結果及活動二遊船觀賞煙火的背景依據。此館藏為同一構圖的另一印本；活動圖像來自 The Met JP642。"
+      },
+      {
+        "apa": "The Metropolitan Museum of Art. (n.d.). *Fireworks at Ryōgoku Bridge* (JP642). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/37093",
+        "url": "https://www.metmuseum.org/art/collection/search/37093",
+        "note": "活動二使用的圖像與作品資料；公有領域。放大畫面為原圖裁切。"
+      },
+      {
+        "apa": "The Metropolitan Museum of Art. (n.d.). *The Manpachi at Evening in Yanagibashi* (JP1158). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/45306",
+        "url": "https://www.metmuseum.org/art/collection/search/45306",
+        "note": "活動一商人結果：系列描繪江戶知名餐飲場所。商人為本展閱讀視角，不代表畫中人物身分皆已確認。"
+      },
+      {
+        "apa": "The Metropolitan Museum of Art. (n.d.). *Ommayagashi, Sumida River* (JP1547). Retrieved November 13, 2026, from https://www.metmuseum.org/art/collection/search/55712",
+        "url": "https://www.metmuseum.org/art/collection/search/55712",
+        "note": "活動一夜間工作者結果：館方將部分渡船乘客解讀為前往工作的夜鷹。測驗情境為本展設計，非史料引文。"
+      }
     ]
   },
   {
     "category": "地圖",
     "items": [
-      { "apa": "ROIS-DS Center for Open Data in the Humanities. (n.d.). *江戸マップ* [Edo maps]. Retrieved November 13, 2026, from https://codh.rois.ac.jp/edo-maps/", "url": "https://codh.rois.ac.jp/edo-maps/", "note": "古圖索引與配準參考。時空探索使用 1850–1853 年五幅尾張屋版切繪圖；原圖藏於國立國會圖書館，著作權保護期滿。" },
-      { "apa": "Kitamoto. (n.d.). *江戸切絵図: Georectified maps* [Map tiles]. 日本版 Map Warper. Retrieved November 13, 2026, from https://mapwarper.h-gis.jp/users/340", "url": "https://mapwarper.h-gis.jp/users/340", "note": "配準後圖磚：4908（芝高輪辺絵図，1850）、4902（日本橋北神田浜町絵図，1850）、4930（本所絵図，1852）、4931（浅草御蔵前辺図，1853）、4935（今戸箕輪浅草絵図，1853）。配準存在誤差，非精確測繪。各原圖與圖幅連結見時空探索。" },
-      { "apa": "tsunagaru-map. (n.d.). *江戶百景古今互動地圖*. Retrieved November 9, 2026, from https://www.tsunagaru-map.com/edo100/", "url": "https://www.tsunagaru-map.com/edo100/", "note": "網站正式名稱與作者待確認" },
-      { "apa": "OpenStreetMap contributors. (n.d.). *OpenStreetMap*. https://www.openstreetmap.org/copyright", "url": "https://www.openstreetmap.org/copyright", "note": "時空探索的現代東京底圖；© OpenStreetMap contributors。" }
+      {
+        "apa": "ROIS-DS Center for Open Data in the Humanities. (n.d.). *江戸マップ* [Edo maps]. Retrieved November 13, 2026, from https://codh.rois.ac.jp/edo-maps/",
+        "url": "https://codh.rois.ac.jp/edo-maps/",
+        "note": "古圖索引與配準參考。時空探索使用 1850–1853 年五幅尾張屋版切繪圖；原圖藏於國立國會圖書館，著作權保護期滿。"
+      },
+      {
+        "apa": "Kitamoto. (n.d.). *江戸切絵図: Georectified maps* [Map tiles]. 日本版 Map Warper. Retrieved November 13, 2026, from https://mapwarper.h-gis.jp/users/340",
+        "url": "https://mapwarper.h-gis.jp/users/340",
+        "note": "配準後圖磚：4908（芝高輪辺絵図，1850）、4902（日本橋北神田浜町絵図，1850）、4930（本所絵図，1852）、4931（浅草御蔵前辺図，1853）、4935（今戸箕輪浅草絵図，1853）。配準存在誤差，非精確測繪。各原圖與圖幅連結見時空探索。"
+      },
+      {
+        "apa": "ツナガルマップ. (n.d.). *歌川広重の江戸名所百景*. Retrieved November 13, 2026, from https://www.tsunagaru-map.com/edo100/",
+        "url": "https://www.tsunagaru-map.com/edo100/",
+        "note": "名所江戶百景的地點古今對照"
+      },
+      {
+        "apa": "OpenStreetMap contributors. (n.d.). *OpenStreetMap*. https://www.openstreetmap.org/copyright",
+        "url": "https://www.openstreetmap.org/copyright",
+        "note": "時空探索的現代東京底圖；© OpenStreetMap contributors。"
+      }
     ]
   },
   {
     "category": "館藏資料庫",
     "items": [
-      { "apa": "The Metropolitan Museum of Art. (n.d.). *The Met collection*. Retrieved November 9, 2026, from https://www.metmuseum.org/art/collection", "url": "https://www.metmuseum.org/art/collection" },
-      { "apa": "慶應義塾大學. (n.d.). *浮世絵コレクション*. Retrieved November 9, 2026, from https://dcollections.lib.keio.ac.jp/ja/ukiyoe/", "url": "https://dcollections.lib.keio.ac.jp/ja/ukiyoe/", "note": "網站正式名稱待確認" },
-      { "apa": "東京都歷史文化財團. (n.d.). *東京都立博物館・美術館收藏品檢索*. Retrieved November 9, 2026, from https://museumcollection.tokyo/", "url": "https://museumcollection.tokyo/", "note": "網站正式名稱待確認" }
+      {
+        "apa": "The Metropolitan Museum of Art. (n.d.). *The Met collection*. Retrieved November 9, 2026, from https://www.metmuseum.org/art/collection",
+        "url": "https://www.metmuseum.org/art/collection"
+      },
+      {
+        "apa": "慶應義塾大學メディアセンター. (n.d.). *高橋浮世絵コレクション*. Retrieved November 13, 2026, from https://dcollections.lib.keio.ac.jp/ja/ukiyoe/",
+        "url": "https://dcollections.lib.keio.ac.jp/ja/ukiyoe/"
+      },
+      {
+        "apa": "東京都歴史文化財団. (n.d.). *ToMuCo: 東京都立博物館・美術館収蔵品検索*. Retrieved November 13, 2026, from https://museumcollection.tokyo/",
+        "url": "https://museumcollection.tokyo/"
+      }
     ]
   },
   {
     "category": "網站技術",
     "items": [
-      { "apa": "Astro Technology Company. (2026). *Astro* (Version 7.4.7) [Computer software]. https://astro.build/", "url": "https://astro.build/" },
-      { "apa": "GreenSock. (2026). *GSAP* (Version 3.15.1) [Computer software]. https://gsap.com/", "url": "https://gsap.com/" },
-      { "apa": "Google Fonts. (n.d.). *Cactus Classical Serif*, *Chiron Sung HK*, *IM Fell English* [Typefaces]. https://fonts.google.com/", "url": "https://fonts.google.com/" }
+      {
+        "apa": "Astro Technology Company. (2026). *Astro* (Version 7.4.7) [Computer software]. https://astro.build/",
+        "url": "https://astro.build/"
+      },
+      {
+        "apa": "GreenSock. (2026). *GSAP* (Version 3.15.1) [Computer software]. https://gsap.com/",
+        "url": "https://gsap.com/"
+      },
+      {
+        "apa": "Agafonkin, V. (2023). *Leaflet* (Version 1.9.4) [Computer software]. https://leafletjs.com/",
+        "url": "https://leafletjs.com/",
+        "note": "時空探索的古今地圖"
+      },
+      {
+        "apa": "Google Fonts. (n.d.). *Cactus Classical Serif*, *Chiron Sung HK*, *IM Fell English* [Typefaces]. https://fonts.google.com/",
+        "url": "https://fonts.google.com/"
+      }
     ]
   }
 ]

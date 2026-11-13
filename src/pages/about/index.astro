@@ -1,30 +1,60 @@
 ---
 import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+
+const tour = [
+  { href: '', name: '首頁', text: '提著燈籠進入江戶的夜，再從三個入口選擇時間、空間或人物。' },
+  { href: 'curation/', name: '策展理念', text: '為什麼選擇夜晚、展覽如何設計，以及我們對線上博物館的看法。' },
+  { href: 'timeline/', name: '夜之時間軸', text: '沿著隅田川繪卷，從 18:00 走到隔日 05:00。' },
+  { href: 'artworks/A03/', name: '作品頁', text: '以《兩國花火》為例，捲動時鏡頭推進到畫面細節，再閱讀四段解說。' },
+  { href: 'explore/', name: '時空探索', text: '在江戶切繪圖與今日東京之間定位作品，並依時間、區域、人物篩選。' },
+  { href: 'events/', name: '活動與消息', text: '用測驗找出自己的夜行視角，或接受「提燈尋跡」的細節挑戰。' },
+];
+
+const highlights = [
+  { seal: '壹', title: '提燈夜行', where: '首頁', href: '', text: '江戶沒有公共路燈。首頁的浮世繪預設沉在黑暗中，滑鼠或手指就是燈籠，只照亮光圈裡的畫面，讓觀眾一開始就體會「夜」的視覺條件。' },
+  { seal: '貳', title: '隅田川繪卷', where: '夜之時間軸', href: 'timeline/', text: '向下捲動時，頁面轉為橫向展開的繪卷；天空顏色依時辰從暮色、深藍漸變到黎明，右上角的時鐘同步前進。' },
+  { seal: '參', title: '凝視細節', where: '作品頁', href: 'artworks/A07/', text: '捲動驅動鏡頭推進，依序停在畫中的貓、參拜人潮、富士山與髮簪等細節，每一站附上解說，模擬在展櫃前湊近觀看。' },
+  { seal: '肆', title: '古今對照地圖', where: '時空探索', href: 'explore/', text: '左側是 1850 年代配準後的江戶切繪圖，右側是今日東京，兩張地圖同步移動；作品位置依可信度分三級標示，不把推測當成史實。' },
+  { seal: '伍', title: '互動活動', where: '活動與消息', href: 'events/', text: '「江戶夜行者」測驗推薦適合你的閱讀視角；「提燈尋跡」以 26 個提問帶觀眾從構圖讀到勞動處境，每段解說都附館藏來源。' },
+];
 ---
 <Base title="關於我們">
   <div class="page">
     <div class="page-head">
       <span class="seal">關於我們</span>
       <h1>關於我們</h1>
-      <p>策展團隊、工作分配與製作過程。</p>
+      <p>策展團隊、網站導覽與設計特色。</p>
     </div>
 
     <section class="block reveal">
       <h2>團隊介紹</h2>
       <p class="todo">待補：組員姓名、負責項目與一句話介紹。</p>
     </section>
+
     <section class="block reveal">
-      <h2>工作分配</h2>
-      <p class="todo">待補：工作分配表。</p>
+      <h2>網站導覽</h2>
+      <p class="lead">第一次來訪，建議依照以下順序瀏覽：</p>
+      <ol class="tour">
+        {tour.map((t, i) => <li><span class="num">{String(i + 1).padStart(2, '0')}</span><a href={u(t.href)}>{t.name}</a><small>{t.text}</small></li>)}
+      </ol>
     </section>
+
     <section class="block reveal">
-      <h2>工作進度甘特圖</h2>
-      <p class="todo">待補：甘特圖。</p>
+      <h2>設計特色</h2>
+      <div class="hl">
+        {highlights.map((h) => (
+          <a class="card" href={u(h.href)}>
+            <span class="seal">{h.seal}</span>
+            <h3>{h.title}</h3>
+            <small>{h.where}</small>
+            <p>{h.text}</p>
+          </a>
+        ))}
+      </div>
+      <p class="note">字體使用仙人掌明體（標題）、Chiron Sung HK（內文）與 IM Fell English（數字），以朱紅印章取代一般的英文小標，並在全站加上細微的紙張顆粒，呼應木版印刷的質感。網站以 Astro、GSAP 與 Leaflet 製作，部署於 GitHub Pages。</p>
     </section>
-    <section class="block reveal">
-      <h2>報告討論紀錄</h2>
-      <p class="todo">待補：每次討論的日期、出席者、決議事項。</p>
-    </section>
+
     <section class="block reveal">
       <h2>主視覺海報</h2>
       <p class="todo">待補：主視覺海報圖檔與參考出處。</p>
@@ -35,4 +65,18 @@ import Base from '../../layouts/Base.astro';
 <style>
   .block { padding: 36px 0; border-top: 1px solid var(--line); }
   .block h2 { font-size: 28px; margin-bottom: 14px; }
+  .lead { color: var(--paper-2); margin-bottom: 12px; }
+  .tour { list-style: none; max-width: 760px; }
+  .tour li { display: grid; grid-template-columns: 48px 1fr; column-gap: 14px; padding: 12px 0; border-top: 1px solid var(--line); }
+  .tour .num { color: var(--gold); font-size: 18px; grid-row: span 2; }
+  .tour a { font-family: var(--serif-display); font-size: 20px; text-decoration: none; }
+  .tour a:hover { color: var(--gold); }
+  .tour small { color: var(--mute); font-size: 14px; }
+  .hl { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2px; margin-top: 8px; }
+  .card { background: var(--ink-2); padding: 28px 26px 30px; text-decoration: none; transition: background 0.4s; }
+  .card:hover { background: var(--ink-3); }
+  .card h3 { font-size: 26px; margin: 14px 0 2px; }
+  .card small { color: var(--gold); font-size: 13px; }
+  .card p { color: var(--paper-2); font-size: 15px; margin-top: 10px; }
+  .note { color: var(--mute); font-size: 14px; margin-top: 20px; max-width: 760px; }
 </style>
