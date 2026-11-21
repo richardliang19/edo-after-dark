@@ -1,0 +1,99 @@
+[
+  {
+    "id": "A01",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP123224.jpg",
+    "path": "docs/evidence/images/A01.jpg",
+    "bytes": 3116952,
+    "sha256": "3b92eb890c4c4be6a641aebf602c3d7930c045ce8e040ee5b32d116fd88ea32e",
+    "status": 200,
+    "date": "2026-11-18"
+  },
+  {
+    "id": "A02",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP123561.jpg",
+    "path": "docs/evidence/images/A02.jpg",
+    "bytes": 2087795,
+    "sha256": "7d1c2a0cab218fd51e6ebae9b3a9f178074d03d32a63ea89a23ce753e3a225da",
+    "status": 200,
+    "date": "2026-11-18"
+  },
+  {
+    "id": "A03",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP121524.jpg",
+    "path": "docs/evidence/images/A03.jpg",
+    "bytes": 2990431,
+    "sha256": "84bf671b8378b577c19b6fa7a8b19ac4d68ad3712e8be4d0492e34f17d09d773",
+    "status": 200,
+    "date": "2026-11-18"
+  },
+  {
+    "id": "A04",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP123286.jpg",
+    "path": "docs/evidence/images/A04.jpg",
+    "bytes": 3362720,
+    "sha256": "a41279a6e7a5f257163af228ce3a70f38622b6601293254b76938866469f8817",
+    "status": 200,
+    "date": "2026-11-18"
+  },
+  {
+    "id": "A05",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP121535.jpg",
+    "path": "docs/evidence/images/A05.jpg",
+    "bytes": 2716097,
+    "sha256": "3f1bdf6c2d2c5c10efe6f0a76d33ee3c1ac35a95ea77f2f89f3443518e1fb464",
+    "status": 200,
+    "date": "2026-11-18"
+  },
+  {
+    "id": "A06",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP122113.jpg",
+    "path": "docs/evidence/images/A06.jpg",
+    "bytes": 2820362,
+    "sha256": "0eea1a42703cd0d070ade6939139fd929be333cc2a67427bfc7f4b2ce66bd256",
+    "status": 200,
+    "date": "2026-11-18"
+  },
+  {
+    "id": "A07",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP121510.jpg",
+    "path": "docs/evidence/images/A07.jpg",
+    "bytes": 3035434,
+    "sha256": "b674cf36c4f7c7b6bbeca226302a99da211d92df755a3122faa0a06acfd601f9",
+    "status": 200,
+    "date": "2026-11-18"
+  },
+  {
+    "id": "A08",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP122115.jpg",
+    "path": "docs/evidence/images/A08.jpg",
+    "bytes": 2990942,
+    "sha256": "3bef766d0ed059bbaf3e20c6d97565e2cce6c27fb0aa9cdfa2cb3390658ae890",
+    "status": 200,
+    "date": "2026-11-18"
+  },
+  {
+    "id": "B01",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Hiroshige%2C_Night_View_of_Saruwaka-machi.jpg",
+    "date": "2026-11-18",
+    "path": "docs/evidence/images/B01.jpg",
+    "bytes": 411667,
+    "sha256": "0b70a1acc3c21d94089e4f1a5463b0a7219daaba4da5d96fcaade891cf45f554",
+    "status": 200
+  },
+  {
+    "id": "B02",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_100.jpg",
+    "date": "2026-11-18",
+    "status": 429,
+    "error": "Commons original image rate-limited; isolated browser also returned a 403 error page. No actual image inspected yet."
+  },
+  {
+    "id": "B03",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/100_views_edo_008.jpg",
+    "path": "docs/evidence/images/B03.jpg",
+    "bytes": 893982,
+    "sha256": "5bb4de0602c6a153f5d3d375150f45677405e81b2dcb2f6926cbd2285e8f411d",
+    "status": 200,
+    "date": "2026-11-18"
+  }
+]

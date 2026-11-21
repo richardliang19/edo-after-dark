@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-19",
+  "renderer": "LibreOffice 26.2.5.2 UNO/OLE through Windows JScript",
+  "indexes": 1,
+  "method": "LibreOffice UNO 更新目錄並儲存 DOCX；CLI 重新載入、以完整原圖輸出 PDF；目錄快取依實際 PDF 頁碼校正。保留可更新欄位及書籤，跨軟體再次更新可能重新分頁。",
+  "docx": "C:\\Users\\Benini\\Documents\\VSCode_Workspace\\Museum\\edo-after-dark\\docs\\期末報告_江戶不打烊_修訂版.docx",
+  "pdf": "C:\\Users\\Benini\\Documents\\VSCode_Workspace\\Museum\\edo-after-dark\\docs\\期末報告_江戶不打烊_修訂版.pdf",
+  "source": "https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1text_1_1XDocumentIndexesSupplier.html",
+  "finalExport": "LibreOffice CLI writer_pdf_Export",
+  "imageOptions": {
+    "UseLosslessCompression": true,
+    "ReduceImageResolution": false
+  }
+}

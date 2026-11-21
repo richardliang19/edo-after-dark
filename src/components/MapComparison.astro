@@ -42,7 +42,7 @@ const locations = ordered.map((a) => ({
   <details class="sources">
     <summary>地圖來源與年代</summary>
     <p>左圖拼接五幅尾張屋版《江戶切繪圖》，年代並不完全相同。原圖：國立國會圖書館數位典藏（著作權保護期滿）；圖幅索引：<a href="https://codh.rois.ac.jp/edo-maps/">CODH 江戶地圖</a>；地理配準與圖磚：<a href="https://mapwarper.h-gis.jp/users/340">Kitamoto／日本版 Map Warper</a>。影像為配準後版本。</p>
-    <ul>{historicalSheets.map((s) => <li><span class="num">{s.year}</span> · <a href={`https://codh.rois.ac.jp/edo-maps/owariya/${s.sheet}/georef/`}>{s.title}</a> · <a href={`https://dl.ndl.go.jp/pid/${s.ndl}`}>原圖</a></li>)}</ul>
+    <ul>{historicalSheets.map((s) => <li><span class="num">{s.year}</span> · <a href={`https://codh.rois.ac.jp/edo-maps/owariya/${s.sheet}/georef/`}>{s.title}</a> · <a href={`https://dl.ndl.go.jp/pid/${s.ndl}`}>原圖</a> · <a href={`https://mapwarper.h-gis.jp/maps/${s.id}`}>配準圖幅 {s.id}</a></li>)}</ul>
     <p>右圖：© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>。<a href="https://www.openstreetmap.org/fixthemap">回報現代地圖問題</a>。完整書目見<a href={u('references/')}>參考資料</a>。</p>
   </details>
 </section>

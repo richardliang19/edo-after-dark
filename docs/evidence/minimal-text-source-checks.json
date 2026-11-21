@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-18T17:37:04.703Z",
+  "newSources": 0,
+  "newHistoricalClaims": 0,
+  "checks": [
+    {
+      "id": "mitsuiHistory",
+      "url": "https://www.mitsuipr.com/history/columns/010/",
+      "institution": "三井廣報委員會",
+      "locator": "沿革第 2 段（本町開業與駿河町遷移）",
+      "support": "1673 年江戶本町開業、1683 年遷至駿河町。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "suruga",
+      "url": "https://artsandculture.google.com/asset/suruga-cho-no-8-in-one-hundred-famous-views-of-edo-utagawa-hiroshige-ando-japanese-1797-1858/KgG9YbG9Rf98Vg",
+      "institution": "Brooklyn Museum（Google Arts & Culture 館方供稿）",
+      "locator": "館方 Description／Details",
+      "support": "三井標誌辨認、越後屋與三越、雲帶柔化街景對稱；沒有核定 Commons 與館藏號的逐件對應。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "moonHeritage",
+      "url": "https://online.bunka.go.jp/heritages/detail/559992",
+      "institution": "東京國立博物館／文化遺產線上",
+      "locator": "解説",
+      "support": "品川灣高地、中秋賞月；館方將房間解讀為宴後，障子影子為離去遊女。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "moonRutgers",
+      "url": "https://zimmerli.rutgers.edu/node/356",
+      "institution": "Rutgers University · Zimmerli Art Museum",
+      "locator": "Moon-Viewing Point 條目",
+      "support": "署名文章將場景解讀為月見會中的歌舞，並提到三味線；保留與東京國立博物館的分歧。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "fireworks",
+      "url": "https://www.clevelandart.org/art/1940.986",
+      "institution": "Cleveland Museum of Art",
+      "locator": "Description",
+      "support": "夜空近半構圖、1850 年代商家贊助、橋上／岸邊／茶屋／租船等觀看位置。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "yoshiwara",
+      "url": "https://museum.geidai.ac.jp/en/exhibit/2024/03/yoshiwara.html",
+      "institution": "東京藝術大學大學美術館",
+      "locator": "Exhibition Outline",
+      "support": "陰曆三月暫植數百株櫻樹；遊女受債務服役條件拘束，無法自行離開。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "ferry",
+      "url": "https://www.metmuseum.org/art/collection/search/55712",
+      "institution": "The Metropolitan Museum of Art",
+      "locator": "作品頁開場 Description",
+      "support": "廣重圖中的夜鷹搭渡船前往工作；北齋的觀光渡船是段落另談作品，未移用到廣重。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "saruwaka",
+      "url": "https://dcollections.lib.keio.ac.jp/en/ukiyoe/0456",
+      "institution": "慶應義塾大學圖書館",
+      "locator": "日野原健司解說",
+      "support": "天保改革強制集中劇場、三座劇場沿街、散戲人物與滿月投影、版木木紋；資料來自另一印本。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "embankmentRoute",
+      "url": "https://nightoflonging.fitzmuseum.cam.ac.uk/explore/sex-for-sale",
+      "institution": "University of Cambridge · Fitzwilliam Museum",
+      "locator": "Nihon Embankment, Yoshiwara 條目",
+      "support": "步行、乘轎、引手茶屋預先安排接待，以及入口附近見返柳的回望敘述；不是對本圖每個人物的身分認定。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "asakusa",
+      "url": "https://www.metmuseum.org/art/collection/search/36539",
+      "institution": "The Metropolitan Museum of Art",
+      "locator": "Description 三段",
+      "support": "二樓房間、貓、暮色、田間人潮、熊手髮簪；男客送禮屬館方推測，保留可能。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "ryogokuLocal",
+      "url": "https://www.ndl.go.jp/landmarks/sights/ryogokubashi",
+      "institution": "國立國會圖書館",
+      "locator": "地點沿革首段",
+      "support": "1659 年架橋、初建位置較現橋偏下游、廣小路與川開／納涼煙火背景。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "fireworksModern",
+      "url": "https://sumidagawa-hanabi.com/about/",
+      "institution": "隅田川花火大會",
+      "locator": "隅田川花火大会の歴史",
+      "support": "中斷後 1978 年改現名復辦，上游兩會場；1733 年為官方起源敘述，不裁定爭議。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "yanagibashiLocal",
+      "url": "https://www.culture.city.taito.lg.jp/bunkatanbou/landscape/japanese/taito_01.html",
+      "institution": "台東區文化探訪",
+      "locator": "17. 柳橋",
+      "support": "河口、船宿、幕末至明治以後花柳界背景。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "bridgesLocal",
+      "url": "https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h14/kikakuten_sumidagawa_hasi.html",
+      "institution": "墨田區鄉土文化資料館",
+      "locator": "隅田川に架かる今の橋／兩國橋、厩橋",
+      "support": "現兩國橋 1932 年、現厩橋 1929 年、御廄河岸及渡口地名。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    },
+    {
+      "id": "embankment",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000094-I906",
+      "institution": "台東區立中央圖書館（NDL Search 收錄）",
+      "locator": "解題・解説與所藏機關",
+      "support": "黃昏田野、繁忙堤道與安靜田野的對比；NDL 收錄台東圖書館解說，為另一印本。",
+      "status": "本輪以網頁閱讀工具開啟並核讀相關段落；非僅搜尋摘要"
+    }
+  ],
+  "notReopened": [
+    {
+      "id": "bridge",
+      "url": "https://www.metmuseum.org/art/collection/search/45294",
+      "status": "沿用 2026-11-18 既有核讀紀錄；本輪未重新開啟，未添加其新主張"
+    },
+    {
+      "id": "manpachi",
+      "url": "https://www.metmuseum.org/art/collection/search/45306",
+      "status": "沿用 2026-11-18 既有核讀紀錄；本輪未重新開啟，未添加其新主張"
+    },
+    {
+      "id": "cherryImage",
+      "url": "https://www.metmuseum.org/art/collection/search/37059",
+      "status": "沿用 2026-11-18 既有核讀紀錄；本輪未重新開啟，未添加其新主張"
+    },
+    {
+      "id": "moonImage",
+      "url": "https://www.metmuseum.org/art/collection/search/55095",
+      "status": "沿用 2026-11-18 既有核讀紀錄；本輪未重新開啟，未添加其新主張"
+    },
+    {
+      "id": "dawnImage",
+      "url": "https://www.metmuseum.org/art/collection/search/54931",
+      "status": "沿用 2026-11-18 既有核讀紀錄；本輪未重新開啟，未添加其新主張"
+    },
+    {
+      "id": "festivalLocal",
+      "url": "https://www.city.taito.lg.jp/event/kanko/torinoithi.html",
+      "status": "沿用 2026-11-18 既有核讀紀錄；本輪未重新開啟，未添加其新主張"
+    },
+    {
+      "id": "yoshiwaraLocal",
+      "url": "https://www.city.taito.lg.jp/library/service/sonota/pathfinder.files/kyodo_no5_yoshiwara4.pdf",
+      "status": "沿用 2026-11-18 既有核讀紀錄；本輪未重新開啟，未添加其新主張"
+    }
+  ],
+  "existingRegistry": "docs/evidence/sources.json"
+}

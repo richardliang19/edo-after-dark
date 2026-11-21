@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-18T17:36:24.220Z",
+  "rows": [
+    {
+      "id": "A03",
+      "width": 1440,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A04",
+      "width": 1440,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A05",
+      "width": 1440,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A06",
+      "width": 1440,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A07",
+      "width": 1440,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A08",
+      "width": 1440,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A03",
+      "width": 390,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A04",
+      "width": 390,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A05",
+      "width": 390,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A06",
+      "width": 390,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A07",
+      "width": 390,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    },
+    {
+      "id": "A08",
+      "width": 390,
+      "zoomed": true,
+      "summaryCount": 2,
+      "overflow": false
+    }
+  ],
+  "exceptions": [],
+  "pass": true
+}

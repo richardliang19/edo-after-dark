@@ -1,0 +1,162 @@
+---
+import { observationQuestions, observationSources, observationArtworkOrder } from '../data/observation';
+import ArtworkViewer from './ArtworkViewer.astro';
+import { byId, thumb } from '../lib/data';
+import { u } from '../lib/url';
+---
+<section id="observation-challenge" class="activity-panel" aria-labelledby="observation-title" hidden>
+  <div class="activity-top"><span class="seal">活動二 · 提燈尋跡</span><button type="button" data-activity-close>返回活動選單</button></div>
+  <h3 id="observation-title" tabindex="-1">從畫面出發，讀江戶的夜</h3>
+  <p class="activity-note">先欣賞全圖，再挑細節放大。需要背景時，可另開站內作品介紹；答題所需資料都能在展覽內找到。沒有計時，也不計總分，可重試或略過讀解說。最後的手帖會整理本次作品與你選填的觀察。</p>
+
+  <div data-observation-setup>
+    <form data-session-form>
+      <fieldset>
+        <legend tabindex="-1">先選擇這次的路線</legend>
+        <div class="route-options">
+          <label class="answer"><input type="radio" name="observation-mode" value="full" /><span><strong>精讀全展</strong><small>11 幅 · 26 題 · 約 35–50 分鐘<br />依展覽路線，完整探索每幅作品。</small></span></label>
+          <label class="answer"><input type="radio" name="observation-mode" value="random" checked /><span><strong>隨機夜行</strong><small>抽選 3 幅核心作品 · 每幅 2 題 · 約 10–15 分鐘<br />先看構圖或場景，再選一道理解或反思題。</small></span></label>
+          <label class="answer"><input type="radio" name="observation-mode" value="painting" /><span><strong>專看一幅</strong><small>自選作品 · 2–4 題 · 約 5–10 分鐘<br />將注意力留在一幅畫，讀完它的全部提問。</small></span></label>
+        </div>
+      </fieldset>
+      <label class="painting-picker" for="observation-painting">選擇作品
+        <select id="observation-painting" disabled>{observationArtworkOrder.map((id) => <option value={id} selected={id === 'A03'}>{byId(id)!.title}（{observationQuestions.filter((q) => q.artworkId === id).length} 題）</option>)}</select>
+      </label>
+      <p class="activity-note">這是閱讀活動，完成時間可自由調整。可以略過作答，直接閱讀解說；切換活動不會清除進度。</p>
+      <div class="activity-actions"><button type="submit" class="primary">開始這次的探索 →</button><button type="button" data-session-resume hidden>繼續原本的路線</button></div>
+    </form>
+  </div>
+
+  <div class="saved-session">
+    <p class="activity-note" data-storage-status role="status">進度與選填觀察保存在此瀏覽器；開始新路線會取代原本的手帖。</p>
+    <button type="button" data-session-clear hidden>清除進度與觀察，重新開始</button>
+  </div>
+
+  <div data-observation-play hidden>
+    <div class="activity-top"><p class="step-count" data-observation-progress aria-live="polite"></p><button type="button" data-route-change>更換路線</button></div>
+    <p class="activity-note" data-session-overview></p>
+    <progress value="0" max={observationQuestions.length} aria-label="已探索題數"></progress>
+    {observationQuestions.map((question) => {
+      const artwork = byId(question.artworkId)!;
+      const image = artwork.image!;
+      const comparison = question.compareArtworkId ? byId(question.compareArtworkId) : null;
+      return (
+        <article data-observation-round data-question-id={question.id} data-artwork={question.artworkId} data-answer={question.answer} hidden>
+          <span class="tag">{question.phase} · {question.theme} · {artwork.title}</span>
+          <h4 tabindex="-1">{question.title}</h4>
+          <div class="observation-grid">
+            <figure>
+              <ArtworkViewer artwork={artwork} focuses={question.focuses ?? [{label: '細看畫面', ...question.focus}]} description={artwork.summary} />
+              <figcaption>歌川廣重《{artwork.title}》 · {image.collection}{image.accession ? '，' + image.accession : ''}<br />{image.license}{image.source !== 'The Met' && image.source !== image.collection && ' · 經 ' + image.source} · 放大顯示原圖細節</figcaption>
+              <div class="activity-actions">
+                {(question.readingArtworkIds ?? [artwork.id]).map((id) => <a class="activity-link" href={u('artworks/' + id + '/#artwork-reading')} target="_blank" rel="noopener">{question.readingArtworkIds ? '閱讀《' + byId(id)!.title + '》介紹' : '閱讀作品介紹'} ↗</a>)}
+                <a href={image.sourceUrl} class="source-image" target="_blank" rel="noopener">圖像來源 ↗</a>
+              </div>
+              {comparison?.image && <details class="comparison" data-comparison>
+                <summary>並看《{comparison.title}》</summary>
+                <img src={thumb(comparison.image.src, 960)} alt={comparison.title + '：' + comparison.summary} width={comparison.image.width} height={comparison.image.height} loading="lazy" />
+                <p class="source-note">{comparison.artist}《{comparison.title}》 · {comparison.image.collection}{comparison.image.accession && '，' + comparison.image.accession}<br />{comparison.image.license} · <a href={comparison.image.sourceUrl} target="_blank" rel="noopener">圖像來源 ↗</a></p>
+              </details>}
+            </figure>
+            <div>
+              <form data-observation-form>
+                <fieldset><legend>{question.prompt}</legend>
+                  <div class="answer-list">{question.choices.map((choice, choiceIndex) => <label class="answer"><input type="radio" name={'round-' + question.id} value={choiceIndex} />{choice}</label>)}</div>
+                </fieldset>
+                <div class="activity-actions"><button class="primary" type="submit" data-check disabled>確認答案</button><button type="button" data-hint aria-expanded="false" aria-controls={'hint-' + question.id}>給我提示</button><button type="button" data-skip>略過並讀解說</button></div>
+              </form>
+              <p id={'hint-' + question.id} class="activity-note" data-hint-text hidden>{question.hint}</p>
+              <p class="activity-feedback" data-observation-feedback role="status"></p>
+              <div class="evidence" data-explanation hidden>
+                <p><strong>① 畫面觀察</strong><br />{question.observation}</p>
+                {question.evidence.map((e) => <div class="evidence-block">
+                  <p><strong>② {e.kind}</strong><br />{e.text}</p>
+                  {e.sources.map((key) => {
+                    const s = observationSources[key];
+                    return <p class="source-note"><a href={s.url} target="_blank" rel="noopener">{s.institution}｜{s.title} ↗</a><br />{s.record}<br /><span class="source-scope">{s.scope}</span></p>;
+                  })}
+                </div>)}
+                <div class="reflection">
+                  <p><strong>③ 再想一步</strong><br />{question.reflection}</p>
+                  <label for={'note-' + question.id}>我的觀察／想法（選填，不計分）</label>
+                  <textarea id={'note-' + question.id} data-reflection-note rows="3" maxlength="2000" placeholder={'我看到：\n我推論：\n我仍有疑問：\n（選填，可直接往下一題）'}></textarea>
+                  <p class="source-note">最多 2,000 字，僅保存在此瀏覽器，會收進最後的觀察手帖。</p>
+                </div>
+                <p class="source-note">館藏文字為中文摘述，非逐字引文。獨立查核：2026-11-18。圖面觀察與開放思考為本展編寫；不同印本與不同解讀依來源範圍分別說明。</p>
+                <div class="activity-actions"><button class="primary" type="button" data-round-next>下一題 →</button></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    })}
+    <div class="activity-actions"><button type="button" data-round-prev disabled>← 上一題／回看</button><button type="button" data-notebook-return hidden>返回觀察手帖</button></div>
+  </div>
+
+  <div data-observation-result hidden>
+    <h4 tabindex="-1">你的江戶夜景觀察手帖</h4>
+    <p data-observation-summary></p>
+    <p class="activity-note">以下依作品整理本次探索。可回看完整解說與來源，也可以從全圖重新閱讀。</p>
+    <div class="activity-actions"><button type="button" data-notebook-download>下載文字手帖與來源</button></div>
+    <p class="activity-note" data-download-status role="status"></p>
+    <div class="notebook">
+      {observationArtworkOrder.map((id) => <section data-notebook-painting={id} hidden>
+        <h4>{byId(id)!.title}</h4>
+        <ol>{observationQuestions.filter((q) => q.artworkId === id).map((q) => <li data-notebook-question={q.id} hidden>
+          <h5>{q.title}</h5><p>{q.takeaway}</p><div class="my-note" data-notebook-note={q.id} hidden><strong>我的觀察</strong><p data-note-content></p></div><p class="activity-note" data-round-outcome={q.id}></p>
+          <div class="activity-actions"><button type="button" data-review={q.id}>回看解說與來源</button><a class="activity-link" href={u('artworks/' + id + '/')}>閱讀整幅作品 →</a></div>
+        </li>)}</ol>
+      </section>)}
+    </div>
+    <div class="activity-actions"><button class="primary" type="button" data-observation-restart>再走一次</button><button type="button" data-route-change>選另一條路線</button><button type="button" data-activity-open="quiz">找找我的夜行視角 →</button></div>
+  </div>
+
+  <details class="source-library">
+    <summary>本活動的來源、引用方式與完整書目</summary>
+    <p class="activity-note">解說逐段附來源。「同圖異印本」表示館方解說來自同一構圖的另一件印本；顏色、木紋和細節清晰度可能不同。「歷史背景」不等同於已證明本圖中每個人物或物件的情況。髮簪禮物、人物身分等解讀保留館方的推論語氣。</p>
+    <ul>{Object.values(observationSources).filter(s => !('unverified' in s)).map((s) => <li><a href={s.url} target="_blank" rel="noopener">{s.institution}｜{s.title} ↗</a><small>{s.record} · {s.scope}</small></li>)}</ul>
+    <p class="activity-note">本次查核：2026-11-18。<a href={u('references/#observation-sources')}>參考資料頁：完整書目與未完成全文核對的舊版引用 →</a></p>
+  </details>
+</section>
+
+<script>
+  import { initObservationChallenge } from '../lib/observation-controller';
+  initObservationChallenge(document.querySelector<HTMLElement>('#observation-challenge')!);
+</script>
+
+<style>
+  .route-options { display: grid; gap: 12px; }
+  .route-options strong { color: var(--paper); font-weight: 400; font-size: 20px; }
+  .route-options small { display: block; color: var(--mute); margin-top: 5px; line-height: 1.8; }
+  .painting-picker { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 18px; font-size: 14px; }
+  select { max-width: 100%; background: var(--ink); color: var(--paper); border: 1px solid var(--line); padding: 10px; font: inherit; }
+  select:disabled { opacity: .45; }
+  .observation-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 30px; align-items: start; }
+  figure { min-width: 0; }
+  figcaption { color: var(--mute); font-size: 11px; margin-top: 10px; line-height: 1.7; }
+  .source-image { color: var(--paper-2); font-size: 12px; }
+  .saved-session { border-bottom: 1px solid var(--line); margin-bottom: 24px; padding-bottom: 18px; }
+  .reflection label { display: block; font-size: 14px; margin-top: 18px; }
+  textarea { display: block; width: 100%; min-height: 110px; margin-top: 8px; padding: 12px; background: var(--ink-2); border: 1px solid var(--line); color: var(--paper); font: 16px/1.8 var(--serif); resize: vertical; }
+  textarea::placeholder { color: var(--mute); }
+  .my-note { margin-top: 12px; border-left: 2px solid var(--gold); padding-left: 14px; }
+  .my-note p { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comparison { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 12px; }
+  .comparison summary { cursor: pointer; min-height: 44px; color: var(--gold); }
+  .comparison img { max-height: 48vh; width: auto; margin: 12px auto; }
+  @media (min-width: 1100px) and (min-height: 950px) { figure { position: sticky; top: calc(var(--nav-h) + 20px); } }
+  .evidence-block, .reflection { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .source-scope { color: var(--gold); }
+  .source-library { margin-top: 28px; border-top: 1px solid var(--line); padding-top: 18px; font-size: 13px; }
+  .source-library summary { cursor: pointer; color: var(--paper-2); }
+  .source-library ul { list-style: none; }
+  .source-library li { padding: 12px 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+  .source-library li a { color: var(--paper); }
+  .source-library small { display: block; margin-top: 5px; color: var(--mute); }
+  .notebook section { margin: 24px 0; padding-top: 14px; border-top: 1px solid var(--gold); }
+  .notebook ol { list-style: none; }
+  .notebook li { padding: 18px 0; border-top: 1px solid var(--line); }
+  .notebook h5 { font: 20px var(--serif-display); color: var(--gold); margin: 0 0 10px; }
+  @media (max-width: 700px) { .observation-grid { grid-template-columns: 1fr; gap: 22px; } figure { position: static; max-width: 340px; width: 100%; margin: 0 auto; } }
+  @media (prefers-reduced-motion: reduce) { .art-stage img { transition: none; } }
+</style>

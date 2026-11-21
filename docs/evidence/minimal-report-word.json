@@ -1,0 +1,8 @@
+﻿{
+    "date":  "2026-11-19T01:36:25.3577574+08:00",
+    "validatedXmlParts":  15,
+    "xmlWellFormed":  true,
+    "wordOpen":  "failed",
+    "wordError":  "COM 0x80070520: no available logon session",
+    "scope":  "ZIP and XML validated; Word pagination and application opening not verified this round; no PDF generated"
+}

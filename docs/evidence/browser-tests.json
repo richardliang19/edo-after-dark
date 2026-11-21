@@ -1,0 +1,417 @@
+{
+  "date": "2026-11-18",
+  "browser": "Edge 157.0.4341.60 headless; CDP native mouse, touch and keyboard input; isolated profile",
+  "base": "http://127.0.0.1:4331/edo-after-dark/",
+  "results": [
+    {
+      "name": "homepage / reduced motion and first-visit route",
+      "result": "pass",
+      "evidence": {
+        "title": "江戶不打烊：從黃昏到黎明的城市夜生活",
+        "screenshot": "home-reduced-motion.png"
+      }
+    },
+    {
+      "name": "all eleven artwork pages / metadata, next/previous navigation and overflow",
+      "result": "pass",
+      "evidence": [
+        {
+          "id": "A01",
+          "title": "兩國橋宵月",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/B03/",
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/A02/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": false,
+              "src": "https://images.metmuseum.org/CRDImages/as/original/DP123224.jpg",
+              "alt": "歌川廣重《兩國橋宵月》"
+            }
+          ]
+        },
+        {
+          "id": "A02",
+          "title": "柳橋夜景・萬八",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/A01/",
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/A03/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": true,
+              "src": "https://images.metmuseum.org/CRDImages/as/original/DP123561.jpg",
+              "alt": "歌川廣重《柳橋夜景・萬八》"
+            }
+          ]
+        },
+        {
+          "id": "A03",
+          "title": "兩國花火",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/A02/",
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/A04/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": true,
+              "src": "https://images.metmuseum.org/CRDImages/as/original/DP121524.jpg",
+              "alt": "歌川廣重《兩國花火》"
+            }
+          ]
+        },
+        {
+          "id": "A04",
+          "title": "吉原夜櫻之圖",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/A03/",
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/B02/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": false,
+              "src": "https://images.metmuseum.org/CRDImages/as/original/DP123286.jpg",
+              "alt": "歌川廣重《吉原夜櫻之圖》"
+            }
+          ]
+        },
+        {
+          "id": "A05",
+          "title": "月之岬",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/B02/",
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/B01/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": true,
+              "src": "https://images.metmuseum.org/CRDImages/as/original/DP121535.jpg",
+              "alt": "歌川廣重《月之岬》"
+            }
+          ]
+        },
+        {
+          "id": "A06",
+          "title": "御廄河岸",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/B01/",
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/A07/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": false,
+              "src": "https://images.metmuseum.org/CRDImages/as/original/DP122113.jpg",
+              "alt": "歌川廣重《御廄河岸》"
+            }
+          ]
+        },
+        {
+          "id": "A07",
+          "title": "淺草田甫酉之町詣",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/A06/",
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/A08/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": false,
+              "src": "https://images.metmuseum.org/CRDImages/as/original/DP121510.jpg",
+              "alt": "歌川廣重《淺草田甫酉之町詣》"
+            }
+          ]
+        },
+        {
+          "id": "A08",
+          "title": "廓中東雲",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/A07/",
+            "/edo-after-dark/artworks/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": false,
+              "src": "https://images.metmuseum.org/CRDImages/as/original/DP122115.jpg",
+              "alt": "歌川廣重《廓中東雲》"
+            }
+          ]
+        },
+        {
+          "id": "B01",
+          "title": "猿若町夜之景",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/A05/",
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/A06/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": true,
+              "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Hiroshige%2C_Night_View_of_Saruwaka-machi.jpg",
+              "alt": "歌川廣重《猿若町夜之景》"
+            }
+          ]
+        },
+        {
+          "id": "B02",
+          "title": "吉原日本堤",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/A04/",
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/A05/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": true,
+              "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_100.jpg",
+              "alt": "歌川廣重《吉原日本堤》"
+            }
+          ]
+        },
+        {
+          "id": "B03",
+          "title": "駿河町之圖",
+          "metadata": 13,
+          "sections": 6,
+          "pager": [
+            "/edo-after-dark/artworks/",
+            "/edo-after-dark/artworks/A01/"
+          ],
+          "overflow": false,
+          "images": [
+            {
+              "loaded": true,
+              "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/100_views_edo_008.jpg",
+              "alt": "歌川廣重《駿河町之圖》"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "activity one / four native choices, result, recommendation and map link",
+      "result": "pass",
+      "evidence": {
+        "shown": true,
+        "title": "你的觀展視角：遊賞的視角 × 待客與生意的視角 × 勞動的視角 × 祭典與往來的視角",
+        "links": [
+          "http://127.0.0.1:4331/edo-after-dark/artworks/A03/",
+          "https://www.clevelandart.org/art/1940.986",
+          "http://127.0.0.1:4331/edo-after-dark/explore/?perspective=night-visitors",
+          "http://127.0.0.1:4331/edo-after-dark/artworks/A02/",
+          "https://www.metmuseum.org/art/collection/search/45306",
+          "http://127.0.0.1:4331/edo-after-dark/explore/?perspective=merchants",
+          "http://127.0.0.1:4331/edo-after-dark/artworks/A06/",
+          "https://www.metmuseum.org/art/collection/search/55712",
+          "http://127.0.0.1:4331/edo-after-dark/explore/?perspective=night-workers",
+          "http://127.0.0.1:4331/edo-after-dark/artworks/A07/",
+          "https://www.metmuseum.org/art/collection/search/36539",
+          "http://127.0.0.1:4331/edo-after-dark/explore/?perspective=religious-visitors"
+        ]
+      }
+    },
+    {
+      "name": "activity two / random six questions, feedback, image keys, local notes and download",
+      "result": "pass",
+      "evidence": {
+        "ids": [
+          "moon-objects",
+          "moon-offscreen",
+          "cherry-staging",
+          "cherry-social-context",
+          "fireworks-viewers",
+          "fireworks-business"
+        ],
+        "downloadFiles": [
+          "江戶夜景觀察手帖.txt"
+        ],
+        "restored": true,
+        "notesAreText": true
+      }
+    },
+    {
+      "name": "activity two / full 26 questions and all source links",
+      "result": "pass",
+      "evidence": {
+        "ids": [
+          "suruga-clouds",
+          "suruga-brand",
+          "bridge-frame",
+          "bridge-boating",
+          "manpachi-cartouche",
+          "manpachi-series",
+          "fireworks-viewers",
+          "fireworks-business",
+          "fireworks-sky",
+          "cherry-staging",
+          "cherry-social-context",
+          "embankment-contrast",
+          "embankment-route",
+          "moon-objects",
+          "moon-offscreen",
+          "saruwaka-perspective",
+          "saruwaka-shadows",
+          "saruwaka-grain",
+          "ferry-workers",
+          "ferry-multiple-uses",
+          "asakusa-viewpoint",
+          "asakusa-pilgrims",
+          "asakusa-hairpins",
+          "asakusa-time",
+          "dawn-departure",
+          "dawn-freedom"
+        ],
+        "count": 26,
+        "sourceLinks": 34,
+        "summary": "已探索 11 幅作品、26 題；其中 0 題選擇略過並閱讀解說。"
+      }
+    },
+    {
+      "name": "map / both Leaflet canvases, synchronized pan/zoom and source sheets",
+      "result": "pass",
+      "evidence": {
+        "before": [
+          "translate3d(0px, 0px, 0px)",
+          "translate3d(0px, 0px, 0px)"
+        ],
+        "after": [
+          "translate3d(-80px, 0px, 0px)",
+          "translate3d(-80px, 0px, 0px)"
+        ],
+        "scaled": [
+          "translate3d(0px, 0px, 0px) scale(1)",
+          "translate3d(0px, 0px, 0px) scale(1)",
+          "translate3d(0px, 0px, 0px) scale(1)",
+          "translate3d(0px, 0px, 0px) scale(1)",
+          "translate3d(0px, 0px, 0px) scale(1)",
+          "translate3d(0px, 0px, 0px) scale(1)"
+        ],
+        "tileState": [
+          {
+            "tiles": 27,
+            "loaded": 3
+          },
+          {
+            "tiles": 12,
+            "loaded": 12
+          }
+        ],
+        "sheets": 5
+      }
+    },
+    {
+      "name": "mobile / 390×844 timeline descriptions and keyboard station navigation",
+      "result": "pass",
+      "evidence": {
+        "descriptions": [
+          {
+            "text": "白天的商業大街，兩側是吳服店，遠方是富士山——夜晚來臨前的江戶。",
+            "display": "block"
+          },
+          {
+            "text": "交叉的橋架占據近景，月亮、雲帶與遊船從橋下的空隙露出。",
+            "display": "block"
+          },
+          {
+            "text": "料亭的座敷面向河水，橋上的人物與水面的船接續了店外的景色。",
+            "display": "block"
+          },
+          {
+            "text": "煙火在夜空綻開，橋下擠滿遊船，整條河成了看台。",
+            "display": "block"
+          },
+          {
+            "text": "櫻花與燈籠沿街排列，花下與樓上都有人群。",
+            "display": "block"
+          },
+          {
+            "text": "花下聚集的人群，也需要沿途的交通與店家的接待。看過街上的熱鬧，接著留意宴席留下的痕跡。",
+            "display": "block"
+          },
+          {
+            "text": "滿月在海灣上方，座敷留下器物與人影；館方將此景解讀為宴席之後。",
+            "display": "block"
+          },
+          {
+            "text": "餐具還在，人只露出身影。從宴飲與散戲之後的場景，再把目光移向渡船上前往工作的人。",
+            "display": "block"
+          },
+          {
+            "text": "渡船仍在河上往返，載著夜間工作者過河。",
+            "display": "block"
+          },
+          {
+            "text": "在另一幅河景裡，乘船不再只是遊賞。接下來，我們從窗內回望城市，尋找祭典如何進入日常空間。",
+            "display": "block"
+          },
+          {
+            "text": "窗邊的貓望向田間，參拜酉之市的人潮正在遠方移動。",
+            "display": "block"
+          },
+          {
+            "text": "這一站借室內與祭典的關係接續夜行；畫中實為黃昏。下一站轉到黎明，並不補畫兩幅作品之間沒有記錄的夜間經過。",
+            "display": "block"
+          },
+          {
+            "text": "黎明的街道上只有幾組人物，與夜櫻圖的密集人群形成對照。",
+            "display": "block"
+          },
+          {
+            "text": "黎明圖的街面比夜櫻圖疏落。把兩幅作品並讀，訪客的遊賞與待客者的工作，能用同一種結尾收束嗎？",
+            "display": "block"
+          }
+        ],
+        "overflow": false,
+        "position": 780
+      }
+    },
+    {
+      "name": "mobile / activity focus switches, optional reflection and no overflow",
+      "result": "pass",
+      "evidence": {
+        "overflow": false,
+        "focus": "true",
+        "imageLoaded": true,
+        "transform": "translate(-89.2%, -140%) scale(2.4)"
+      }
+    }
+  ],
+  "exceptions": [],
+  "externalFailures": []
+}

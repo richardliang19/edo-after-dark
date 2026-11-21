@@ -1,0 +1,186 @@
+{
+  "id": "aic-A08",
+  "url": "https://api.artic.edu/api/v1/artworks/150286",
+  "status": 200,
+  "text": {
+    "data": {
+      "id": 150286,
+      "api_model": "artworks",
+      "api_link": "https://api.artic.edu/api/v1/artworks/150286",
+      "is_boosted": false,
+      "title": "Yoshiwara Licensed Quarters at Dawn (Kakuchu shinonome), No.38 from the series “One Hundred Famous Views of Edo (Meisho Edo hyakkei)”",
+      "alt_titles": [],
+      "thumbnail": {
+        "lqip": "data:image/gif;base64,R0lGODlhAwAFAPMAAGppYnBsZXx2a3x9a414aYp7bYKGcoaAdJGOd4WIgY2Sioyemo+em52jmaygigAAACH5BAAAAAAALAAAAAADAAUAAAQLMADCVlLNFXGQGREAOw==",
+        "width": 513,
+        "height": 768,
+        "alt_text": "A work made of color woodblock print."
+      },
+      "main_reference_number": "1965.1035",
+      "has_not_been_viewed_much": true,
+      "boost_rank": null,
+      "date_start": 1857,
+      "date_end": 1857,
+      "date_display": "1857",
+      "date_qualifier_title": null,
+      "date_qualifier_id": null,
+      "artist_display": "Utagawa Hiroshige \nJapanese, 1797-1858",
+      "place_of_origin": "Japan",
+      "description": null,
+      "short_description": null,
+      "dimensions": "35.8 × 23.6 cm (14 1/8 × 9 5/16 in.)",
+      "dimensions_detail": [
+        {
+          "depth": null,
+          "width": 23,
+          "height": 35,
+          "diameter": null,
+          "clarification": null
+        }
+      ],
+      "medium_display": "Color woodblock print",
+      "inscriptions": null,
+      "credit_line": "Gift of Mr. and Mrs. Harold G. Henderson",
+      "catalogue_display": null,
+      "publication_history": "Chinese Art Society of American Museums, 1965.",
+      "exhibition_history": null,
+      "provenance_text": "Harold Gould Henderson (1889–1974) and Mary A. Henderson (1905–1998), New York; given to the Art Institute of Chicago, 1965.",
+      "edition": null,
+      "publishing_verification_level": "Web Cataloged",
+      "internal_department_id": 8,
+      "fiscal_year": null,
+      "fiscal_year_deaccession": null,
+      "is_public_domain": true,
+      "is_zoomable": true,
+      "max_zoom_window_size": -1,
+      "copyright_notice": null,
+      "has_multimedia_resources": false,
+      "has_educational_resources": false,
+      "has_advanced_imaging": false,
+      "colorfulness": 24.4847,
+      "color": {
+        "h": 50,
+        "l": 51,
+        "s": 8,
+        "percentage": 0.128869613278364,
+        "population": 1371
+      },
+      "latitude": null,
+      "longitude": null,
+      "latlon": null,
+      "is_on_view": false,
+      "on_loan_display": null,
+      "gallery_title": null,
+      "gallery_id": null,
+      "nomisma_id": null,
+      "artwork_type_title": "Print",
+      "artwork_type_id": 18,
+      "department_title": "Arts of Asia",
+      "department_id": "PC-7",
+      "artist_id": 34946,
+      "artist_title": "Utagawa Hiroshige",
+      "alt_artist_ids": [],
+      "artist_ids": [
+        34946
+      ],
+      "artist_titles": [
+        "Utagawa Hiroshige"
+      ],
+      "category_ids": [
+        "PC-7",
+        "PC-103"
+      ],
+      "category_titles": [
+        "Arts of Asia",
+        "Japanese"
+      ],
+      "term_titles": [
+        "woodblock print",
+        "print",
+        "asian art"
+      ],
+      "style_id": null,
+      "style_title": null,
+      "alt_style_ids": [],
+      "style_ids": [],
+      "style_titles": [],
+      "classification_id": "TM-402",
+      "classification_title": "woodblock print",
+      "alt_classification_ids": [
+        "TM-17",
+        "TM-26"
+      ],
+      "classification_ids": [
+        "TM-402",
+        "TM-17",
+        "TM-26"
+      ],
+      "classification_titles": [
+        "woodblock print",
+        "print",
+        "asian art"
+      ],
+      "subject_id": null,
+      "alt_subject_ids": [],
+      "subject_ids": [],
+      "subject_titles": [],
+      "material_id": null,
+      "alt_material_ids": [],
+      "material_ids": [],
+      "material_titles": [],
+      "technique_id": null,
+      "alt_technique_ids": [],
+      "technique_ids": [],
+      "technique_titles": [],
+      "theme_titles": [],
+      "image_id": "0800df63-5e2e-175b-b5a5-5fe9b58c1b92",
+      "alt_image_ids": [],
+      "document_ids": [],
+      "sound_ids": [],
+      "video_ids": [],
+      "text_ids": [],
+      "section_ids": [],
+      "section_titles": [],
+      "site_ids": [],
+      "suggest_autocomplete_all": [
+        {
+          "input": [
+            "1965.1035"
+          ],
+          "contexts": {
+            "groupings": [
+              "accession"
+            ]
+          }
+        },
+        {
+          "input": [
+            "Yoshiwara Licensed Quarters at Dawn (Kakuchu shinonome), No.38 from the series “One Hundred Famous Views of Edo (Meisho Edo hyakkei)”"
+          ],
+          "weight": 1,
+          "contexts": {
+            "groupings": [
+              "title"
+            ]
+          }
+        }
+      ],
+      "source_updated_at": "2026-04-03T12:11:23-05:00",
+      "updated_at": "2026-10-22T18:52:05-05:00",
+      "timestamp": "2026-11-18T07:24:40-06:00"
+    },
+    "info": {
+      "license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+      "license_links": [
+        "https://creativecommons.org/publicdomain/zero/1.0/",
+        "https://www.artic.edu/terms"
+      ],
+      "version": "1.16"
+    },
+    "config": {
+      "iiif_url": "https://www.artic.edu/iiif/2",
+      "website_url": "https://www.artic.edu"
+    }
+  },
+  "date": "2026-11-18"
+}

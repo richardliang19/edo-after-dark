@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-18",
+  "renderer": "Edge HTML print → PDF.js",
+  "scope": "HTML preview only; not Word DOCX page-layout verification",
+  "pages": [
+    {
+      "page": 1,
+      "text": "江\n⼾\n不打烊：從黃昏到黎明的城市夜\n⽣\n活\n\n期末報告分章修訂稿｜內容核對\n⽇\n期：2026 年 11\n \n⽉\n \n18\n \n⽇\n\n文件狀態：尚未取得原期末報告 DOCX。本稿以\n⽬\n前可讀取的網站、館藏資料、Git 紀錄與\ncontributions.csv 編成，供合併回原稿使\n⽤\n；不冒稱已修訂原 DOCX，也不代填組別、學號、繳\n交\n⽇\n期、會議出席或觀眾測試結果。\n\n原始基線：feature/update；b61293fab0cdc4de8564d71c2e91016b21ffa53d。下列章節中的\n「已實作」「程式測試」「瀏覽器實測」「待執\n⾏\n」各有不同意義。\n\n前期底稿：已從 Git f6f3650 找回本組七\n⾴\n期中簡報 PDF 與講稿 DOCX，逐\n⾴\n及逐段核讀；原件\n保存在 evidence/recovered/。它們不是原期末報告，也不是教師的期中範例。本稿保留前期的\n八件核\n⼼\n順序與觀察\n⽅\n法，修正其中缺乏來源的物件鑑定、創作動機及鐘點推定。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n1 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 2,
+      "text": "第\n⼀\n章\n \n研究問題與策展\n⽅\n法\n\n本展以歌川廣重的\n⼗\n⼀\n件城市風景版畫，組織八件核\n⼼\n與三件延伸作品。問題不只是江\n⼾\n夜裡有\n哪些娛樂，也包括遊賞、移動與待客如何相連，以及哪些\n⼯\n作不容易被風景畫的美感注意到。\n\n研究問題\n⼀\n：畫\n⾯\n如何利\n⽤\n橋架、窗框、街道與留空，安排觀眾的位置？研究問題\n⼆\n：加入館\n⽅\n\n解說與制度背景後，遊客和\n⼯\n作者的經驗有什麼差別？研究問題三：數位展\n⽰\n如何協助觀眾分辨\n看\n⾒\n的線索、來源提供的解釋與\n⾃\n⼰\n的推論？\n\nThe Met 亞洲藝術部（2003）說明\n⽊\n版畫的複數印製與出版者參與。這種媒介適合研究城市如何\n被觀看與介紹，卻不能當成沒有選擇和設計的攝影紀錄。Cambridge University Press（n.d.）的\nNenzi《Japan After Dark》公開摘要，提供公共照明普及以前已有活躍夜\n⽣\n活的研究入\n⼝\n。本次\n沒有取得全書，不列出未讀\n⾴\n碼，也不將摘要延伸成個別\n⼈\n物的作息。證據索引：C0811、\nC0812。\n\n預期學習\n⽬\n標\n \n可觀察的表現\n \n如何評量\n\n找出圖像線索\n \n在\n⼀\n幅畫指出\n⾄\n少兩處位置，說明\n它們如何影響觀看\n\n訪談／\n⼿\n帖記錄觀眾指出的位置與\n說法；尚未實施真\n⼈\n研究\n\n分辨證據層次\n \n就\n⼀\n段解說分別指出圖像所\n⾒\n、具\n名來源與策展推論\n\n以《\n⽉\n之岬》的差異解讀追問；不\n將開放反思計分\n\n比較夜間經驗\n \n比較《兩國花火》與《御廄河\n岸》，各舉\n⼀\n項遊賞與\n⼯\n作線索\n\n由圖像與站內介紹說明，不要求背\n誦\n⼈\n物姓名或鐘點\n\n這些是設計\n⽬\n標，不是已證明達成的學習成效。沒有真\n⼈\n受測者資料，不能寫出通過比例、滿意\n度或觀眾引\n⾔\n。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n2 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 3,
+      "text": "第\n⼆\n章\n \n展覽路線與數位設計\n\n18:00\n \n⾄\n隔\n⽇\n \n05:00 是策展敘事安排，並非事件的精確時間，也不是同\n⼀\n歷史夜晚。春季夜櫻、\n陰曆\n⼗\n⼀\n⽉\n的酉祭與不同出版年代，各\n⾃\n保留原有脈絡。《淺草\n⽥\n甫酉之町詣》畫中為黃昏，放\n在 00:00 站\n⽤\n來接續室內與祭典的討論。\n\n策展站點\n \n作品\n \n網站\n⽬\n前摘要\n\n18:00（敘事）\n \n兩國橋宵\n⽉\n \n交叉的橋架占據近景，\n⽉\n亮、雲帶\n與遊船從橋下的空隙露出。\n\n19:00（敘事）\n \n柳橋夜景・萬八\n \n料亭的座敷\n⾯\n向河\n⽔\n，橋上的\n⼈\n物\n與\n⽔\n⾯\n的船接續了店外的景\n⾊\n。\n\n20:00（敘事）\n \n兩國花火\n \n煙火在夜空綻開，橋下擠滿遊船，\n整條河成了看台。\n\n21:00（敘事）\n \n吉原夜櫻之圖\n \n櫻花與燈籠沿街排列，花下與樓上\n都有\n⼈\n群。\n\n22:00（敘事）\n \n⽉\n之岬\n \n滿\n⽉\n在海灣上\n⽅\n，座敷留下器物與\n\n⼈\n影；館\n⽅\n將此景解讀為宴席之\n後。\n\n23:00（敘事）\n \n御廄河岸\n \n渡船仍在河上往返，載著夜間\n⼯\n作\n者過河。\n\n00:00（敘事）\n \n淺草\n⽥\n甫酉之町詣\n \n窗邊的貓望向\n⽥\n間，參拜酉之市的\n\n⼈\n潮正在遠\n⽅\n移動。\n\n05:00（敘事）\n \n廓中東雲\n \n黎明的街道上只有幾組\n⼈\n物，與夜\n櫻圖的密集\n⼈\n群形成對照。\n\n21:00 後的過場由\n⼈\n群、宴席痕跡轉向渡船上的\n⼯\n作者；午夜到黎明之間，只轉換觀看與提問，\n不補寫圖像沒有記錄的事件。《廓中東雲》以較疏落的街景回看整場展覽，不將散場等同於遊女\n服役關係終\n⽌\n。\n\n功能\n \n策展\n⽬\n的\n \n預期學習\n \n驗證\n⽅\n法與狀態\n\n提燈\n⾸\n⾴\n \n讓觀眾先分區注意畫\n⾯\n \n指出亮區與全圖中的細節\n差別\n\n已檢降低動態模式；真\n⼈\n\n學習差異待測\n\n橫向時間軸\n \n把不同作品組成\n⼀\n條導覽\n \n區分策展時刻、作品年代\n與季節\n\n已檢\n⼿\n機文字顯\n⽰\n與前後\n站／鍵盤；不當作歷史時\n間重建\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n3 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 4,
+      "text": "功能\n \n策展\n⽬\n的\n \n預期學習\n \n驗證\n⽅\n法與狀態\n\n六件作品推鏡\n \n指向有助閱讀的細節\n \n由局部回到全圖\n \n六件資料設定已查；新焦\n點與原圖核對，部分外圖\n載入仍受服務限制\n\n古今雙地圖\n \n比較相關區域與\n⽔\n路\n \n理解配準與定位的限制\n \n五幅 metadata 已核；兩\n圖同步縮放與鍵盤移動已\n測\n\n活動\n⼀\n四個情境\n \n整理觀展視\n⾓\n \n嘗試另\n⼀\n種閱讀位置\n \n四題與結果推薦連結已\n測；不是\n⼈\n格或歷史\n⾝\n分\n測驗\n\n活動\n⼆\n \n6／26 題\n \n由觀察接到背景與反思\n \n以站內介紹和圖像判讀\n \n隨機與全展路線、回饋、\n來源與\n⼿\n帖已以 Edge\n \n⾛\n\n完\n\n本機\n⼿\n帖保存與下載\n \n保留觀眾思考及來源\n \n區分我看到／我推論／我\n仍有疑問\n\nlocalStorage、舊版本遷\n移與文字下載已測；不需\n要帳號或後端\n\n《\n⽉\n之岬》的資料處理\n⽰\n範：東京國立博物館透過文化遺產線上將房間讀為\n⽉\n⾒\n宴結束後；\nZimmerli 的署名文章則讀為\n⽉\n⾒\n會中的歌舞。本展並列差異，不將任\n⼀\n階段當成唯\n⼀\n史實，也不\n宣稱廣重為地震後祈福\n⽽\n創作本圖。精確現代地點未獲\n⾜\n夠證據，原有座標暫予撤除。\n\n期中簡報第 4\n \n⾴\n曾將鮪\n⿂\n⽣\n⿂\n片、煙草盆、煙管袋、\n⼿\n⼱\n等逐\n⼀\n列為直接觀察，並以全\n⺠\n⽉\n⾒\n文\n化與災後復興意圖解釋本作。本次沒有取得\n⽀\n持這整套鑑定和主觀意圖的可靠研究，不承接進新\n稿。這不表\n⽰\n已證明各物件或所有背景年代錯誤，\n⽽\n是它們尚未達到本次引\n⽤\n標準。對照索引：\nMIDTERM-objects、MIDTERM-universal、MIDTERM-intention（\n⾒\n證據登錄表\nartwork_id/page 欄）。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n4 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 5,
+      "text": "第三章\n \n⼗\n⼀\n件作品的編\n⽬\n、詮釋與權利\n\n八件核\n⼼\n展\n⽰\n圖像對應 The Met 的 JP1312、JP1158、JP642、JP608、JP1185、JP1547、\nJP60、JP1024；各件 API 的 primaryImage 與本\n⾴\n檔案\n⼀\n致，且 isPublicDomain 為 true。三件\n補充圖像來\n⾃\n \nCommons，不能統稱\n⼗\n⼀\n件全來\n⾃\n \nThe Met。尺\n⼨\n、序號與其他印本的來源範圍\n另\n⾒\n \nartwork-catalog.csv 及 rights-register.csv。\n\nA01\n \n兩國橋宵\n⽉\n\n作者：歌川廣重。\n⽇\n文題名：両國之宵\n⽉\n。英文：Twilight Moon at Ry\nō\ngoku Bridge。系列：東\n都名所。年代：The Met 未定年。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：The Metropolitan Museum of Art；館藏號：JP1312。本\n⾴\n印本尺\n⼨\n：H. 9 5/8 in.\n(24.4 cm); W. 15 3/16 in. (38.6 cm)。策展位置：18:00，黃昏。\n\n交叉的橋架占據近景，\n⽉\n亮、雲帶與遊船從橋下的空隙露出。\n\n證據索引：C0007、C0017、C0015。\n\n圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nA02\n \n柳橋夜景・萬八\n\n作者：歌川廣重。\n⽇\n文題名：柳ばし夜景\n \n万八。英文：The Manpachi at Evening in\nYanagibashi。系列：江\n⼾\n⾼\n名會亭盡。年代：約 1835–1842。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：The Metropolitan Museum of Art；館藏號：JP1158。本\n⾴\n印本尺\n⼨\n：H. 9 13/16\nin. (24.9 cm); W. 14 9/16 in. (37 cm)。策展位置：19:00，入夜。\n\n料亭的座敷\n⾯\n向河\n⽔\n，橋上的\n⼈\n物與\n⽔\n⾯\n的船接續了店外的景\n⾊\n。\n\n證據索引：C0044、C0054、C0052。\n\n圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nA03\n \n兩國花火\n\n作者：歌川廣重。\n⽇\n文題名：両国花火。英文：Fireworks at Ry\nō\ngoku Bridge, from the series\nOne Hundred Famous Views of Edo。系列：名所江\n⼾\n百景，第 98 景。年代：1858。媒材：彩\n\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：The Metropolitan Museum of Art；館藏號：JP642。本\n⾴\n印本尺\n⼨\n：Image: 13 1/4\n× 8 3/4 in. (33.7 × 22.2 cm)。策展位置：20:00，夜間娛樂。\n\n煙火在夜空綻開，橋下擠滿遊船，整條河成了看台。\n\n證據索引：C0082、C0091、C0090。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n5 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 6,
+      "text": "圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nA04\n \n吉原夜櫻之圖\n\n作者：歌川廣重。\n⽇\n文題名：吉原夜桜の図。英文：Yoshiwara Yo Zakura no Zu。系列：東都名\n所。年代：約 1841。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：The Metropolitan Museum of Art；館藏號：JP608。本\n⾴\n印本尺\n⼨\n：9 13/16 x 14\n3/8 in. (24.9 x 36.5 cm)。策展位置：21:00，吉原夜\n⽣\n活。\n\n櫻花與燈籠沿街排列，花下與樓上都有\n⼈\n群。\n\n陰曆三\n⽉\n暫植櫻樹、七\n⽉\n⽟\n菊燈籠、八\n⽉\n俄祭典，是 Geidai 的\n⼀\n般背景；不能據此認定每位畫中\n\n⼈\n物的\n⾝\n分、債務或\n⾃\n由程度。\n\n證據索引：C0126、C0136、C0134。\n\n圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nA05\n \n⽉\n之岬\n\n作者：歌川廣重。\n⽇\n文題名：\n⽉\nの岬。英文：Moon-Viewing Location (Tsuki no Misaki), from\nthe series One Hundred Famous Views of Edo (Meisho Edo Hyakkei)。系列：名所江\n⼾\n百景，\n第 82 景。年代：1857。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：The Metropolitan Museum of Art；館藏號：JP1185。本\n⾴\n印本尺\n⼨\n：Oban 13 7/8\nx 9 5/8 in. (35.2 x 24.4 cm)。策展位置：22:00，宴飲之後。保留限制：精確地點與不同解說的活\n動階段待研究。\n\n滿\n⽉\n在海灣上\n⽅\n，座敷留下器物與\n⼈\n影；館\n⽅\n將此景解讀為宴席之後。\n\n證據索引：C0170、C0180、C0178。\n\n圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nA06\n \n御廄河岸\n\n作者：歌川廣重。\n⽇\n文題名：御厩河岸。英文：Ommayagashi, Sumida River。系列：名所江\n⼾\n\n百景，第 105 景。年代：約 1857。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：The Metropolitan Museum of Art；館藏號：JP1547。本\n⾴\n印本尺\n⼨\n：H. 14 3/4 in.\n(37.5 cm); W. 10 1/8 in. (25.7 cm)。策展位置：23:00，深夜交通。\n\n渡船仍在河上往返，載著夜間\n⼯\n作者過河。\n\nThe Met 同\n⼀\n段先談北齋另\n⼀\n幅渡船，再談廣重圖中的夜鷹。本展只將後者\n⽤\n於本作\n⼈\n物解讀，\n不添入 23:00 或午夜上\n⼯\n的鐘點。\n\n證據索引：C0238、C0247、C0246。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n6 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 7,
+      "text": "圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nA07\n \n淺草\n⽥\n甫酉之町詣\n\n作者：歌川廣重。\n⽇\n文題名：浅草\n⽥\n甫酉の町詣。英文：Pilgrimage to the Torinomachi\nFestival across the Ricefields of Asakusa (Asakusa tanbo Torinomachi m\nō\nde), from the series\nOne Hundred Famous Views of Edo (Meisho Edo hyakkei)。系列：名所江\n⼾\n百景，第 101\n景。年代：1857（安政四年\n⼗\n⼀\n⽉\n）。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：The Metropolitan Museum of Art；館藏號：JP60。本\n⾴\n印本尺\n⼨\n：Vertical\n \nō\nban;\n13 1/16 x 8 11/16 in. (33.2 x 22.1 cm)。策展位置：00:00，窗內與祭典。\n\n窗邊的貓望向\n⽥\n間，參拜酉之市的\n⼈\n潮正在遠\n⽅\n移動。\n\n髮簪禮物是館\n⽅\n推測，不能改寫為已發\n⽣\n的送禮事件；觀看位置在新吉原\n⼀\n帶，祭典\n⽬\n的地在畫\n外，兩者不混\n⽤\n。\n\n證據索引：C0279、C0288、C0287。\n\n圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nA08\n \n廓中東雲\n\n作者：歌川廣重。\n⽇\n文題名：廓中東雲。英文：The Entrance to the Yoshiwara at Dawn。系\n列：名所江\n⼾\n百景，第 38 景。年代：1857。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：The Metropolitan Museum of Art；館藏號：JP1024。本\n⾴\n印本尺\n⼨\n：H. 13 3/8 in.\n(34 cm); W. 8 3/4 in. (22.2 cm)。策展位置：05:00，黎明。\n\n黎明的街道上只有幾組\n⼈\n物，與夜櫻圖的密集\n⼈\n群形成對照。\n\n證據索引：C0325、C0335、C0333。\n\n圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nB01\n \n猿若町夜之景\n\n作者：歌川廣重。\n⽇\n文題名：猿わか町よるの景。英文：Night View of Saruwaka-machi。系\n列：名所江\n⼾\n百景，第 90 景。年代：1856。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：原典藏館未標明（圖像取\n⾃\n \nWikimedia Commons）；館藏號：本\n⾴\n印本館藏號未確\n認。本\n⾴\n印本尺\n⼨\n：本\n⾴\n印本尺\n⼨\n未獨立核實；不移\n⽤\n其他印本尺\n⼨\n。策展位置：22:00，\n⽉\n下劇\n場街。保留限制：原典藏、印次未確認。\n\n⽉\n光照著劇場街，看戲歸來的\n⼈\n們沿街\n⽽\n⾏\n。\n\nCommons 上傳史記錄\n⾊\n彩處理。原典藏未確認，慶應 200X@5-56 只能作同構圖解說來源，不\n能填成此數位圖像的館藏號。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n7 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 8,
+      "text": "證據索引：C0380、C0389、C0388。\n\n圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nB02\n \n吉原\n⽇\n本堤\n\n作者：歌川廣重。\n⽇\n文題名：よし原\n⽇\n本堤。英文：Nihon Embankment and Yoshiwara。系\n列：名所江\n⼾\n百景，第 100 景。年代：1857。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：Brooklyn Museum（依 Commons 檔案記載；原館藏連結本次未能核讀）；館藏\n號：本\n⾴\n印本館藏號未確認。本\n⾴\n印本尺\n⼨\n：本\n⾴\n印本尺\n⼨\n未獨立核實；不移\n⽤\n其他印本尺\n⼨\n。\n策展位置：21:00，通往吉原。保留限制：原圖限流；已檢正式 500px 同檔縮圖；Brooklyn 原\n⾴\n\n不可核讀。\n\n通往吉原的堤道上，\n⾏\n⼈\n、轎\n⼦\n與茶店集中在\n⽥\n野之間。\n\n本次取得並核看的為本檔正式 500px 縮圖；原始 789×1200 檔案受到限流。\n⽉\n亮可\n⾒\n，但\n⽉\n亮與\n黃昏並不\n⽭\n盾，也不直接證明整幅畫由\n⽉\n光照明或已到深夜。\n\n證據索引：C0414、C0424、C0422。\n\n圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nB03\n \n駿河町之圖\n\n作者：歌川廣重。\n⽇\n文題名：する賀てふ。英文：Suruga-ch\nō\n。系列：名所江\n⼾\n百景，第 8 景。\n年代：1856。媒材：彩\n⾊\n⽊\n版畫。\n\n⽬\n前圖像：Brooklyn Museum（依 Commons 檔案記載；原館藏連結本次未能核讀）；館藏\n號：本\n⾴\n印本館藏號未確認。本\n⾴\n印本尺\n⼨\n：本\n⾴\n印本尺\n⼨\n未獨立核實；不移\n⽤\n其他印本尺\n⼨\n。\n策展位置：\n⽩\n晝序章，序章・\n⽩\n晝。保留限制：Commons 原\n⾴\n指 Brooklyn 121623，原館藏全\n文不可讀；與 30.1478.8 的精確對應待確認。\n\n⽩\n天的商業\n⼤\n街，兩側是吳服店，遠\n⽅\n是富\n⼠\n⼭\n——夜晚來臨前的江\n⼾\n。\n\n證據索引：C0452、C0461、C0460。\n\n圖像來源（本\n⾴\n⽬\n前使\n⽤\n的資料鏈）\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n8 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 9,
+      "text": "第四章\n \n網站實作與互動內容\n\n網站以 Astro 7.4.7、TypeScript 模組、GSAP 3.15.1 與 Leaflet 1.9.4 組成，保留 GitHub Pages\n的 /edo-after-dark/\n \n⼦\n路徑。11 件均有基本資料及四段介紹；A03–A08 六件有推鏡設定，\nA01、A02、B01、B02、B03 五件為\n⼀\n般圖文展\n⽰\n，不能將八件核\n⼼\n全稱為已製作推鏡。\n\n活動\n⼀\n保留四個情境與四種觀展視\n⾓\n，同分並列，背景各有具名機構來源。活動\n⼆\n保留全部 26 個\n題\n⽬\n \nID、11 件作品及原選題路線；預設三幅六題，另有專看\n⼀\n幅與完整模式。選填反思不計分，\n可略過；\n⼿\n帖將展覽解說與觀眾文字分開，下載純文字時保留來源網址。\n\n⽉\n之岬修正了影\n⼦\n與三味線的焦點；萬八補上地\n⽅\n史來源；廓中東雲改\n⽤\n已核讀的題名與\n⼈\n物疏\n密；駿河町延伸題不再先假定建築或富\n⼠\n⼭\n視野已完成現代對照。其餘題\n⽬\n若原有邏輯與來源可\n\n⽀\n持即保留，逐欄結果\n⾒\n \nquestion-audit.csv。\n\n本次沒有更換主站圖像或擴增推鏡作品數量。Commons 卡片縮圖改\n⽤\n其正式縮圖主機；同檔影\n像、原圖來源與權利標\n⽰\n保持可追查。其他印本的尺\n⼨\n、\n⾊\n彩及\n⽊\n紋不轉移到本\n⾴\n印本。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n9 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 10,
+      "text": "第五章\n \n學\n⽣\n數位策展與博物館職能\n\nICOM 於 2022 年 8\n \n⽉\n \n24\n \n⽇\n通過的定義包含以下完整要素（此處轉述，完整原文\n⾒\n官\n⽅\n連結）：\n博物館是服務社會的非營利常設機構，研究、蒐藏、保存、詮釋並展\n⽰\n有形與無形遺產；向公眾\n開放，具可及性與包容性，促進多樣性與永續；以倫理、專業及社群參與運作與溝通，提供教\n育、欣賞、反思及知識分享的多元經驗。\n\nICOM 完整定義原文\n\n本展以外部館藏的數位資料進\n⾏\n研究、詮釋與教育展\n⽰\n。標\n⽰\n來源和保存程式碼，是資料管理的\n\n⼀\n部分；本\n⼩\n組沒有取得實體藏品，也沒有完成機構治理、文物保護、\n⻑\n期保存或社群參與研\n究。網站名稱使\n⽤\n線上博物館，不等於已具備所有正式機構職能。\n\n因此，本展的教育責任\n⾸\n先是說明我們看到了什麼、依誰的研究作解釋，以及哪些推論還有疑\n點。美感與互動應協助觀眾閱讀，不能使不確定的\n⾝\n分、時間或制度看起來像確定事實。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n10 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 11,
+      "text": "第六章\n \n實際分\n⼯\n、版本與進度\n\n姓名（依原 CSV）\n \n原檔提供的分\n⼯\n\n梁棨理\n \n策展設計、網站架設\n\n王鴻翰\n \n策展設計\n\n劉彥廷\n \n未提供；待本\n⼈\n確認\n\n黃\n⼦\n懿\n \n策展設計、網站內容精修\n\n曾祥恩\n \n策展設計、資料收集\n\n王怡婷\n \n未提供；待本\n⼈\n確認\n\n郭濬瑀\n \n未提供；待本\n⼈\n確認\n\n上表不因 Git 作者姓名、活動內容或本次代理修改\n⽽\n替組員推定新的責任。沒有取得會議證據，\n不填寫出席者、開會\n⽇\n期、討論決議或同儕回饋。\n\n找回的期中簡報第 7\n \n⾴\n另有分\n⾴\n安排：梁棨理 P5、王鴻翰 P3、劉彥廷 P4、黃\n⼦\n懿 P1／P2、曾\n祥恩 P6／P7，另兩位未填\n⾴\n碼。這只能證明期中簡報的\n⾴\n⾯\n安排，不能直接當作期末專案分\n⼯\n；\n三位原 CSV 空\n⽩\n者仍需本\n⼈\n確認。姓名沿\n⽤\n⽬\n前 CSV，不由低解析表格改寫\n⼈\n名或學號。\n\n版本\n \nGit 記錄時間\n \n提交主旨（只作版本證據）\n\nb61293f\n \n2026-11-15T17:18:11+08:00\n \nRestore zoom glide in activity\ntwo; clear timeline cover overlap\n\n7b4cbe8\n \n2026-11-15T17:15:02+08:00\n \nMerge pull request #2 from love-\nsora-chan (activities, timeline,\nteam)\n\ncd3e09b\n \n2026-11-15T15:25:45+08:00\n \nEnhanced the questions to reader\nin page:events. Added our name\nand work in page:about\n\n87db3f0\n \n2026-11-13T20:17:51+08:00\n \nWrite artwork texts, curation\nanswers and site guide; untrack\nreport files\n\nee5d543\n \n2026-11-13T19:45:58+08:00\n \nMerge pull request #1 from love-\nsora-chan/map/compare\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n11 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 12,
+      "text": "進度項\n⽬\n \n可證\n⽇\n期／狀態\n \n依據／下\n⼀\n步\n\n網站與作品文案基線\n \n2026-11-13、11-15 已有提交\n \n只按 Git 主旨與現存程式記錄，不推\n定會議時間\n\n本次來源、程式與題庫審核\n \n2026-11-18 已執\n⾏\n \nevidence-register、question-\naudit、差異檔及測試紀錄\n\n原 DOCX 的分章合併與排版\n \n待執\n⾏\n，未排定\n⽇\n期\n \n需原始 DOCX 與老師引\n⽤\n格式 PDF\n\n三位組員分\n⼯\n確認\n \n待本\n⼈\n提供，未排定\n⽇\n期\n \n劉彥廷、王怡婷、郭濬瑀原欄位空\n\n⽩\n\n約五位真\n⼈\n觀眾研究\n \n尚未實施，未排定\n⽇\n期\n \n已備腳本與同意／匿名紀錄空表\n\n圖像原館藏與爭議複核\n \n待\n⼈\n⼯\n／機構資料\n \nB01 原典藏、B02/B03 原\n⾴\n、\n⽉\n之\n岬地點與活動階段\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n12 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 13,
+      "text": "第七章\n \n資料來源與引\n⽤\n⽅\n法\n\n尚未取得老師的引\n⽤\n格式 PDF，以下以\n⼀\n致的「機構／作者、年份或 n.d.、題名、館藏號、\nURL、本次讀取範圍」暫編。沒有讀到全文的書籍及\n⾴\n⾯\n不假造\n⾴\n碼或引文。引\n⽤\n格式待取得課\n程規範後再核對，不宣稱已完全符合該規範。\n\nThe Metropolitan Museum of Art. (n.d.). Twilight Moon at Ry\nō\ngoku Bridge（JP1312）。核對\n\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。本\n⾴\n所\n⽤\n印本的館藏解說\n\n來源網址\n\nThe Metropolitan Museum of Art. (n.d.). The Manpachi at Evening in Yanagibashi\n（JP1158）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。本\n⾴\n所\n⽤\n印本與系列的館\n藏解說\n\n來源網址\n\nCleveland Museum of Art. (n.d.). Fireworks at Ry\nō\ngoku（1940.986）。核對\n⽇\n期：2026-11-\n18。讀取狀態：已核讀所列段落。同\n⼀\n構圖的另\n⼀\n印本；本\n⾴\n圖像為 The Met JP642\n\n來源網址\n\nThe Metropolitan Museum of Art. (n.d.). Fireworks at Ry\nō\ngoku Bridge（JP642）。核對\n⽇\n\n期：2026-11-18。讀取狀態：已核讀所列段落。本\n⾴\n圖像與作品資料\n\n來源網址\n\nThe Metropolitan Museum of Art. (n.d.). Yoshiwara Yo Zakura no Zu（JP608）。核對\n⽇\n期：\n2026-11-18。讀取狀態：已核讀所列段落。本\n⾴\n圖像與作品資料\n\n來源網址\n\n東京藝術\n⼤\n學\n⼤\n學美術館. (2024). Yoshiwara（2024 年展覽概要）（Exhibition Outline）。核對\n\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。吉原的歷史背景；非對本\n⾴\n某\n⼀\n印本的專屬解\n說\n\n來源網址\n\nCornell University · Herbert F. Johnson Museum of Art. (n.d.). Moon-Viewing Point（56.073\n（舊版引\n⽤\n，未重新核實登錄號））。核對\n⽇\n期：2026-11-18。讀取狀態：未完成全文核對。舊\n版引\n⽤\n；本次遇驗證\n⾴\n，未完成全文核對，修訂題\n⽬\n不再以此作依據\n\n來源網址\n\n東京國立博物館／文化遺產線上. (n.d.). 名所江戸百景・\n⽉\nの岬（文化遺產線上 559992；\nColBase A-10569-7372）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。同構圖另\n⼀\n\n印本；提供品川灣、\n⾼\n地與宴後房間的館\n⽅\n解讀，非 The Met JP1185 的專屬標籤\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n13 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 14,
+      "text": "來源網址\n\nRutgers University · Zimmerli Art Museum. (n.d.). Musings by Moonlight: Shadow and\nSilhouette（Irene Hu、Paisley Murray、Megan Williams 署名展覽文章）。核對\n⽇\n期：2026-\n11-18。讀取狀態：已核讀所列段落。同構圖另\n⼀\n印本；文章把場景讀為\n⽉\n⾒\n會中的歌舞，與東京\n國立博物館的宴後解讀有差異，不能合併為唯\n⼀\n活動階段\n\n來源網址\n\nThe Metropolitan Museum of Art. (n.d.). Moon-Viewing Location (Tsuki no Misaki)（JP1185\n（物件 55095））。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。本\n⾴\n圖像與作品資料\n\n來源網址\n\nThe Metropolitan Museum of Art. (n.d.). Ommayagashi, Sumida River（JP1547）。核對\n⽇\n\n期：2026-11-18。讀取狀態：已核讀所列段落。本\n⾴\n所\n⽤\n印本的館藏解說\n\n來源網址\n\nThe Metropolitan Museum of Art. (n.d.). Pilgrimage to the Torinomachi Festival across the\nRicefields of Asakusa（JP60）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。本\n⾴\n所\n\n⽤\n印本的館藏解說\n\n來源網址\n\nUniversity of Oxford · Ashmolean Museum. (n.d.). Dawn Inside the Yoshiwara（Eastern Art\nOnline · object 21196（舊版引\n⽤\n））。核對\n⽇\n期：2026-11-18。讀取狀態：未完成全文核對。\n本次無法讀取全文；不再以此確認\n⼈\n物為太夫或判定移動\n⽅\n向\n\n來源網址\n\nThe Metropolitan Museum of Art. (n.d.). The Entrance to the Yoshiwara at Dawn\n（JP1024）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。本\n⾴\n圖像、題名與作品資\n料\n\n來源網址\n\n慶應義塾\n⼤\n學圖書館. (n.d.). 名所江戸百景・猿わか町よるの景（200X@5-56 ·\n \n⽇\n野原健司解\n說）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。同\n⼀\n構圖的另\n⼀\n印本；本\n⾴\n沿\n⽤\n專\n案的 Wikimedia Commons 圖像\n\n來源網址\n\n台東區立中央圖書館（NDL Search 收錄）. (n.d.). 名所江戸百景・よし原\n⽇\n本堤（「吉原細\n⾒\nの\n世界Ⅱ」解說）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。同\n⼀\n構圖的另\n⼀\n印本；\n本\n⾴\n沿\n⽤\n \nBrooklyn Museum／Wikimedia 圖像\n\n來源網址\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n14 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 15,
+      "text": "University of Cambridge · Fitzwilliam Museum. (n.d.). Nihon Embankment, Yoshiwara\n（P.3577-R · The Night of Longing）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。\n同\n⼀\n構圖的另\n⼀\n印本與通往吉原的交通背景\n\n來源網址\n\nBrooklyn Museum（Google Arts & Culture 館\n⽅\n供稿）. (n.d.). Suruga-cho, No. 8 in One\nHundred Famous Views of Edo（30.1478.8）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所\n列段落。館\n⽅\n對本構圖的解說；Commons 圖像記載來\n⾃\n \nBrooklyn，但與此館藏號的精確對應仍\n須核實\n\n來源網址\n\nSeattle Art Museum. (n.d.). Moon Cape（2017.23.23（舊版引\n⽤\n，未重新核實登錄號））。核\n對\n⽇\n期：2026-11-18。讀取狀態：未完成全文核對。本次遭拒絕存取，未完成全文核對；修訂題\n\n⽬\n不再以此作依據\n\n來源網址\n\n台東區文化探訪. (n.d.). 史跡・名所案内：17. 柳橋（柳橋 1-1-1）。核對\n⽇\n期：2026-11-18。讀\n取狀態：已核讀所列段落。地\n⽅\n史背景：河\n⼝\n、船宿、花柳界與 1929 年現橋；不是萬八印本的\n\n⼈\n物職業紀錄\n\n來源網址\n\n墨\n⽥\n區鄉\n⼟\n文化資料館. (n.d.). 今と昔の橋物語：隅\n⽥\n川に架かる橋（「隅\n⽥\n川に架かる今の橋」\n之兩國橋、廄橋項）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀所列段落。橋梁年代與渡\n⼝\n地\n名背景；不證明畫家精確觀看點\n\n來源網址\n\n國立國會圖書館. (n.d.). 錦絵と写真でめぐる\n⽇\n本の名所：両国橋（地點沿\n⾰\n⾸\n段）。核對\n⽇\n期：\n2026-11-18。讀取狀態：已核讀所列段落。架橋、廣\n⼩\n路與川開き背景；不是畫中精確\n⽇\n期\n\n來源網址\n\n隅\n⽥\n川花火\n⼤\n會. (n.d.).\n \n⼤\n会について（隅\n⽥\n川花火\n⼤\n会の歴史）。核對\n⽇\n期：2026-11-18。讀\n取狀態：已核讀所列段落。現代\n⼤\n會中斷、1978 年復辦與上游會場；起源說僅作官\n⽅\n敘事，不裁\n定爭議\n\n來源網址\n\n台東區. (n.d.). 酉の市（\n⾴\n⾯\n \n173283461，更新 2026-09-24）。核對\n⽇\n期：2026-11-18。讀取\n狀態：已核讀所列段落。今\n⽇\n國曆\n⼗\n⼀\n⽉\n的酉\n⽇\n與祭典地點，不反推江\n⼾\n畫\n⾯\n鐘點\n\n來源網址\n\n三井廣報委員會. (n.d.). 幕府御\n⽤\n達と維新政府への\n⽀\n援（創業、遷移年份段落）。核對\n⽇\n期：\n2026-11-18。讀取狀態：已核讀所列段落。企業\n⾃\n⾝\n沿\n⾰\n：1673 年本町創業、1683 年移到駿河\n町；不代表現存建築未變\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n15 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 16,
+      "text": "來源網址\n\n台東區立中央圖書館. (n.d.). 吉原を知る（2024 年改訂第 4 版，第 1\n \n⾴\n）。核對\n⽇\n期：2026-11-\n18。讀取狀態：已核讀所列段落。地\n⽅\n史資料指南轉引地名辭典；區分遷移、戰後制度與 1958\n年沿\n⾰\n\n來源網址\n\nThe Metropolitan Museum of Art, Department of Asian Art. (2003). Woodblock Prints in the\nUkiyo-e Style。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀正文。媒介的\n⼀\n般背景，不是某張畫\n的個別動機\n\n來源網址\n\nCambridge University Press / Laura Nenzi. (n.d.). Japan After Dark — Book description。核\n對\n⽇\n期：2026-11-18。讀取狀態：已核讀公開摘要；全書未讀。僅公開摘要，未讀全書，不引\n⽤\n\n章節\n⾴\n碼\n\n來源網址\n\nUniversity of California Press. (n.d.). Selling Women — source entrance。核對\n⽇\n期：2026-\n11-18。讀取狀態：未完成全文核對。只列後續研究入\n⼝\n，未\n⽀\n持本次具體歷史論述\n\n來源網址\n\nInternational Council of Museums. (2022). Museum Definition (2022)。核對\n⽇\n期：2026-11-\n18。讀取狀態：已核讀定義全文。完整要素轉述；不表\n⽰\n學\n⽣\n網站已具備所有機構職能\n\n來源網址\n\nThe Metropolitan Museum of Art. (n.d.). Open Access at The Met。核對\n⽇\n期：2026-11-18。\n讀取狀態：瀏覽\n⼯\n具已核讀政策；直接批次請求另遇 429，兩者分記。八件核\n⼼\n需另核對各件\nAPI isPublicDomain 與 primaryImage\n\n來源網址\n\nW3C. (n.d.). WCAG 2.2。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀標準入\n⼝\n及相關準則。設\n計參照，非符合性審定\n\n來源網址\n\nROIS-DS CODH. (n.d.). 江戸マップ。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀圖幅表；五幅\nmetadata 另存。圖幅出版年與地理配準，非畫家站立點\n\n來源網址\n\nWikimedia Commons／原上傳者. (n.d.). File:Hiroshige,_Night_View_of_Saruwaka-\nmachi.jpg。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀檔案說明及上傳史；原典藏仍有限制。\n只證明數位檔案\n⾴\n所聲明的來源與權利；不視為獨立確認原館藏、印次或法律結論\n\n來源網址\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n16 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 17,
+      "text": "Wikimedia Commons／原上傳者. (n.d.). File:100_views_edo_100.jpg。核對\n⽇\n期：2026-11-\n18。讀取狀態：已核讀檔案說明及上傳史；原典藏仍有限制。只證明數位檔案\n⾴\n所聲明的來源與\n權利；不視為獨立確認原館藏、印次或法律結論\n\n來源網址\n\nWikimedia Commons／原上傳者. (n.d.). File:100_views_edo_008.jpg。核對\n⽇\n期：2026-11-\n18。讀取狀態：已核讀檔案說明及上傳史；原典藏仍有限制。只證明數位檔案\n⾴\n所聲明的來源與\n權利；不視為獨立確認原館藏、印次或法律結論\n\n來源網址\n\n本組期中報告／Git f6f3650. (n.d.). 江\n⼾\n不打烊期中簡報及講稿（前期底稿）。核對\n⽇\n期：2026-\n11-18。讀取狀態：已讀講稿全文、PDF 七\n⾴\n抽文與逐\n⾴\n圖像。只證明前期曾寫過哪些內容及期\n中分\n⾴\n安排，不證明歷史主張、會議出席或期末分\n⼯\n\n來源網址\n\n東京藝術\n⼤\n學美術館作成資料／國立藝術研究中\n⼼\n \nAPJ. (n.d.). 兩國花火（同構圖另\n⼀\n印本編\n⽬\n）\n（PR645）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀編\n⽬\n與備考。只交叉核對構圖、系列序\n號與年代；不移\n⽤\n其尺\n⼨\n與館藏號\n\n來源網址\n\n東京藝術\n⼤\n學美術館作成資料／國立藝術研究中\n⼼\n \nAPJ. (n.d.).\n \n⽉\n之岬（同構圖另\n⼀\n印本編\n⽬\n）\n（PR645）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀編\n⽬\n與備考。只交叉核對構圖、系列序\n號與年代；不移\n⽤\n其尺\n⼨\n與館藏號\n\n來源網址\n\n東京藝術\n⼤\n學美術館作成資料／國立藝術研究中\n⼼\n \nAPJ. (n.d.). 御廄河岸（同構圖另\n⼀\n印本編\n⽬\n）\n（PR645）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀編\n⽬\n與備考。只交叉核對構圖、系列序\n號與年代；不移\n⽤\n其尺\n⼨\n與館藏號\n\n來源網址\n\n東京藝術\n⼤\n學美術館作成資料／國立藝術研究中\n⼼\n \nAPJ. (n.d.). 淺草\n⽥\n甫酉之町詣（同構圖另\n⼀\n印\n本編\n⽬\n）（PR645）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀編\n⽬\n與備考。只交叉核對構\n圖、系列序號與年代；不移\n⽤\n其尺\n⼨\n與館藏號\n\n來源網址\n\n東京藝術\n⼤\n學美術館作成資料／國立藝術研究中\n⼼\n \nAPJ. (n.d.). 廓中東雲（同構圖另\n⼀\n印本編\n⽬\n）\n（PR645）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀編\n⽬\n與備考。只交叉核對構圖、系列序\n號與年代；不移\n⽤\n其尺\n⼨\n與館藏號\n\n來源網址\n\n東京藝術\n⼤\n學美術館作成資料／國立藝術研究中\n⼼\n \nAPJ. (n.d.). 猿若町夜之景（同構圖另\n⼀\n印本編\n\n⽬\n）（PR645）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀編\n⽬\n與備考。只交叉核對構圖、系\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n17 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 18,
+      "text": "列序號與年代；不移\n⽤\n其尺\n⼨\n與館藏號\n\n來源網址\n\n⽇\n本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 芝\n⾼\n輪辺絵図\n（doi:10.11501/1286663）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀完整 JSON。配準後\n影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線\n\n來源網址\n\n⽇\n本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕.\n \n⽇\n本橋北神\n⽥\n浜町絵図\n（doi:10.11501/1286645）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀完整 JSON。配準後\n影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線\n\n來源網址\n\n⽇\n本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 本所絵図（doi:10.11501/1286679）。\n核對\n⽇\n期：2026-11-18。讀取狀態：已核讀完整 JSON。配準後影像外框與圖幅 metadata，不\n代表測量誤差半徑或歷史街區界線\n\n來源網址\n\n⽇\n本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 浅草御蔵前辺図\n（doi:10.11501/1286209）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀完整 JSON。配準後\n影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線\n\n來源網址\n\n⽇\n本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 今戸箕輪浅草絵図\n（doi:10.11501/1286208）。核對\n⽇\n期：2026-11-18。讀取狀態：已核讀完整 JSON。配準後\n影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線\n\n來源網址\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n18 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 19,
+      "text": "第八章\n \n驗證與限制\n\n乾淨安裝 npm ci 成功。Windows 應\n⽤\n程式控制阻擋 satteri 原\n⽣\n模組，原\n⽣\n \nnpm run build 失\n敗；未更動安全政策。以鎖定版本補上官\n⽅\n同版本 WASM 後端後，npm run build 成功產出 19\n個 Astro\n \n⾴\n⾯\n。package.json、package-lock.json 與部署\n⼦\n路徑未改動。這是本機替代後端的\n驗證，不冒稱原\n⽣\n後端已解除問題。\n\nNode 24.19.0／npm 11.17.0 下，17 項測試涵蓋原有九項、編\n⽬\n／來源／遷移／匯出五項，以及\n建置連結／錨點／草稿提\n⽰\n三項。這些只驗證程式、資料關聯與輸出，歷史內容另由逐條來源審\n查\n⽀\n撐。\n\n隔離 Edge 157.0.4341.60 以實際滑鼠與鍵盤事件檢查：1440×1000 桌\n⾯\n、390×844\n \n⼿\n機版\n⾯\n；\n\n⾸\n⾴\n低動態、11 件作品基本\n⾴\n、活動\n⼀\n四題、隨機六題與完整\n⼆\n⼗\n六題、答錯回饋、保存、下\n載、雙圖同步與\n⼿\n機時間軸。沒有真\n⼈\n觀眾。這是\n⾃\n動化瀏覽器驗收，不是觀眾研究。詳細通過\n／失敗與後續重跑結果以 docs/test-report.md 及 browser-tests.json 為準。\n\n限制包括外部圖像、字體及地圖圖磚的網路依賴；本次原圖下載與瀏覽器顯\n⽰\n不等於未來服務可\n\n⽤\n性的保證。未做實體\n⼿\n機、iOS／Safari、螢幕閱讀器、全站所有狀態對比度與 200% 文字放\n⼤\n\n的完整\n⼈\n⼯\n審查。WCAG 2.2 AA 是設計\n⽬\n標，沒有符合性認證。\n\n本稿由缺少原 DOCX 的情況產\n⽣\n，不能證明已保留原封\n⾯\n、\n⽬\n錄、表格、圖說或教師規範。\nDOCX 與 PDF 若能產\n⽣\n，只是本分章稿的輸出；不得誤當已驗收原稿。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n19 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 20,
+      "text": "第九章\n \n結論與後續改善\n\n本次已把\n⼗\n⼀\n件作品與\n⼆\n⼗\n六題放回各\n⾃\n可核讀的來源，讓時間軸、作品\n⾴\n與互動對同\n⼀\n內容使\n\n⽤\n⼀\n致的表述。娛樂與\n⼯\n作可以從橋、遊船、室內器物、渡河\n⼈\n物及街道疏密\n⼀\n起討論；這個策\n展框架已實作，但觀眾是否學會區分證據，仍須真\n⼈\n研究。\n\n後續先取得原期末報告與課程格式，核實三\n⼈\n的分\n⼯\n及真正的會議證據，再完成文件合併；史料\n\n⽅\n⾯\n優先追查補充作品原印本來源與\n⽉\n之岬地點，不為補\n⿑\n文案\n⽽\n猜測。介\n⾯\n⽅\n⾯\n則以圖片依\n賴、無障礙\n⼈\n⼯\n測試與學習成效為優先，不增加與閱讀無關的互動。\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n20 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    },
+    {
+      "page": 21,
+      "text": "附錄\n \n內部待辦與\n⼈\n⼯\n確認\n\n項\n⽬\n \n⽬\n前狀態\n \n所需資料\n\n原期末報告 DOCX\n \n未取得；未修訂原檔\n \n提供原檔路徑或原檔\n\n教師引\n⽤\n格式／期中範例 PDF\n \n未取得；已找回的是本組期中簡報\n與講稿，不能混同\n\n老師提供的兩份規範資料\n\n組別、學號、正式繳交\n⽇\n \n不填假資料\n \n組員確認；只放內部待辦\n\n劉彥廷、王怡婷、郭濬瑀的分\n⼯\n \n原 CSV 空\n⽩\n \n本\n⼈\n提供實際負責事項\n\n會議紀錄與出席\n \n未取得\n \n真實紀錄，不以版本提交替代出席\n證據\n\n觀眾測試\n \n未實施\n \n同意後招募，依空\n⽩\n紀錄表記錄\n\nDOCX 原版格式與逐\n⾴\n合併\n \n未完成\n \n原稿取得後另存修訂版並重新渲染\n\nHTML\n \n預覽（\n⾮\n \nWord\n \n分\n⾴\n）｜\n21 / 21",
+      "width": 475.96796800000004,
+      "height": 673.5359840000001
+    }
+  ]
+}

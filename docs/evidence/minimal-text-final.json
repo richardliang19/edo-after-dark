@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-18T17:39:17.783Z",
+  "sourceFiles": 5,
+  "localEdits": 63,
+  "nodeTests": 17,
+  "browserFlows": 9,
+  "zoomCases": 12,
+  "brokenDeliveryLinks": [],
+  "wordPaginationVerified": false,
+  "pdfGenerated": false,
+  "deployed": false,
+  "files": [
+    {
+      "file": "src/data/artworks.json",
+      "sha256": "5797768e621819709246bd5ab98393b34f05edcd42951c6100f1cb9a4aaafffb"
+    },
+    {
+      "file": "src/data/observation.ts",
+      "sha256": "d968b07ed84816fd6734bac63d1ff693aa75060723fa3a41b096d5e49ff3613b"
+    },
+    {
+      "file": "src/pages/artworks/[id].astro",
+      "sha256": "853f2f60f8376de372100c9ca7e832a9503c28c58c936683e747170c4d29e790"
+    },
+    {
+      "file": "src/pages/curation/index.astro",
+      "sha256": "6a55584895a293426e19b4f47e5441e114237b9973e9d40e134f043fdde54b6c"
+    },
+    {
+      "file": "src/pages/timeline/index.astro",
+      "sha256": "4e45761cf4395f2f5a952c7cc6f2ae4b5e26c72ef275608eff7e130e4afdfdc3"
+    },
+    {
+      "file": "docs/期末報告_江戶不打烊_文字精修版.docx",
+      "sha256": "f7db7aef913cffe53496c7f12bffa8792ee15cc279fd54695daebad494d75fc7"
+    },
+    {
+      "file": "docs/最小文字修訂_交付紀錄.md",
+      "sha256": "b2fad1f4e717c04e3cc0b96671b5f74360b609497302575a7ec2a094c2afeb64"
+    },
+    {
+      "file": "docs/最小文字修訂_逐項對照.md",
+      "sha256": "a9a2a901a091a41d0e6d8d1d947fe0c4b9b1bbfde6c8023e5217e1d437ed7fbe"
+    },
+    {
+      "file": "docs/報告_必要修訂對照.md",
+      "sha256": "be9098b824cae6330439cdae47d3984ba5f35752ed68ca15912fe64054c55427"
+    }
+  ]
+}

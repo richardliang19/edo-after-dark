@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-19",
+  "websiteAuditDate": "2026-11-18",
+  "brokenDocumentationLinks": [],
+  "gitDiffCheck": "pass",
+  "protectedFiles": [
+    {
+      "path": "package.json",
+      "unchanged": true,
+      "comparison": "Git comparison with configured line-ending normalization"
+    },
+    {
+      "path": "package-lock.json",
+      "unchanged": true,
+      "comparison": "Git comparison with configured line-ending normalization"
+    },
+    {
+      "path": "astro.config.mjs",
+      "unchanged": true,
+      "comparison": "Git comparison with configured line-ending normalization"
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "unchanged": true,
+      "comparison": "Git comparison with configured line-ending normalization"
+    }
+  ],
+  "wordDocx": {
+    "bytes": 1853462,
+    "hasAllNineChapters": true,
+    "hasWordToc": true,
+    "scope": "Original-derived revision; OOXML structure only; no historical or participant-data validation by keyword tests"
+  },
+  "reportValidationPassed": true,
+  "status": " M .gitignore\n M public/concepts/emaki.html\n M public/concepts/fonts.html\n M public/concepts/index.html\n M public/concepts/lantern.html\n M public/concepts/zoom.html\n M src/components/MapComparison.astro\n M src/components/ObservationChallenge.astro\n M src/data/activities.ts\n M src/data/artworks.json\n M src/data/observation.ts\n M src/data/references.json\n M src/lib/data.ts\n M src/lib/maps.ts\n M src/lib/observation-controller.ts\n M src/lib/observation-session.ts\n M src/pages/artworks/[id].astro\n M src/pages/curation/index.astro\n M src/pages/index.astro\n M src/pages/references/index.astro\n M src/pages/timeline/index.astro\n?? docs/\n?? scripts/\n?? src/data/observation-legacy.ts\n?? src/lib/observation-notebook.ts\n?? tests/history-audit.test.mjs\n?? tests/site-build.test.mjs\n"
+}

@@ -1,6 +1,6 @@
 import type { LatLngBoundsExpression } from 'leaflet';
 
-// Verified against CODH's georef pages and Map Warper metadata, 2026-11-13.
+// Independently checked 2026-11-18: docs/evidence/map-*.json and source locators.
 // Bounds describe the raster extent, not an exact historical district boundary.
 export const historicalSheets = [
   { id: 4908, title: '芝高輪辺絵図', year: 1850, sheet: '05', ndl: '1286663', bounds: [[35.602878, 139.710399], [35.664301, 139.767216]] },

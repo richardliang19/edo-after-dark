@@ -8,8 +8,14 @@ const transitions: Record<string, string> = {
   '21:00': '花下聚集的人群，也需要沿途的交通與店家的接待。看過街上的熱鬧，接著留意宴席留下的痕跡。',
   '22:00': '餐具還在，人只露出身影。從宴飲與散戲之後的場景，再把目光移向渡船上前往工作的人。',
   '23:00': '在另一幅河景裡，乘船不再只是遊賞。接下來，我們從窗內回望城市，尋找祭典如何進入日常空間。',
-  '00:00': '這一站借室內與祭典的關係接續夜行；畫中實為黃昏。下一站轉到黎明，並不補畫兩幅作品之間沒有記錄的夜間經過。',
-  '05:00': '街上人群散去，客人的遊興告一段落。對待客與載客的人來說，這一夜又留下什麼？',
+  '00:00': '畫中雖是黃昏，這一站仍從窗內與祭典的關係接續夜行。下一站轉到黎明的吉原，看看人群散去後的街道。',
+  '05:00': '黎明圖的街面比夜櫻圖疏落。把兩幅作品並讀，訪客的遊賞與待客者的工作，能用同一種結尾收束嗎？',
+};
+const seasonNotes: Record<string, string> = {
+  A03: '川開き與納涼背景；非精確畫中日期',
+  A04: '夜櫻；陰曆三月賞花背景',
+  A05: '中秋月見：館方解讀',
+  A07: '陰曆十一月酉日；畫中為黃昏',
 };
 const stations = times.map((t) => ({
   ...t,
@@ -44,6 +50,7 @@ const stations = times.map((t) => ({
           {a.image ? <figure><img src={thumb(a.image.src, 960)} width={a.image.width} height={a.image.height} alt={a.title} /></figure> : <figure class="empty"><span>作品圖待補</span></figure>}
           <div class="cap">
             <span class="loc">{a.location.historicalName}</span>
+            <span class="loc">作品年代：{a.year ?? '館藏未定年'}・白晝序章</span>
             <h2><a href={u(`artworks/${a.id}/`)}>{a.title}</a></h2>
             <p>{a.summary}</p>
             <span class="note">夜晚來臨之前——白天的江戶</span>
@@ -58,6 +65,7 @@ const stations = times.map((t) => ({
           {s.main && (
             <div class="cap">
               <span class="loc">{s.main.location.historicalName}</span>
+              <span class="loc">作品年代：{s.main.year ?? '館藏未定年'}{seasonNotes[s.main.id] && `｜${seasonNotes[s.main.id]}`}</span>
               <h2><a href={u(`artworks/${s.main.id}/`)}>{s.main.title}</a></h2>
               <p>{s.main.summary}</p>{transitions[s.time] && <p class="transition">{transitions[s.time]}</p>}
             </div>

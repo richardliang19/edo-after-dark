@@ -79,10 +79,10 @@ import { u } from '../lib/url';
                 <div class="reflection">
                   <p><strong>③ 再想一步</strong><br />{question.reflection}</p>
                   <label for={'note-' + question.id}>我的觀察／想法（選填，不計分）</label>
-                  <textarea id={'note-' + question.id} data-reflection-note rows="3" maxlength="2000" placeholder="可以留白，直接往下一題。"></textarea>
+                  <textarea id={'note-' + question.id} data-reflection-note rows="3" maxlength="2000" placeholder={'我看到：\n我推論：\n我仍有疑問：\n（選填，可直接往下一題）'}></textarea>
                   <p class="source-note">最多 2,000 字，僅保存在此瀏覽器，會收進最後的觀察手帖。</p>
                 </div>
-                <p class="source-note">館藏文字為中文摘述，非逐字引文。資料核對：2026-11-13；增補：2026-11-15。圖面觀察與開放思考為本展編寫。</p>
+                <p class="source-note">館藏文字為中文摘述，非逐字引文。獨立查核：2026-11-18。圖面觀察與開放思考為本展編寫；不同印本與不同解讀依來源範圍分別說明。</p>
                 <div class="activity-actions"><button class="primary" type="button" data-round-next>下一題 →</button></div>
               </div>
             </div>
@@ -97,6 +97,8 @@ import { u } from '../lib/url';
     <h4 tabindex="-1">你的江戶夜景觀察手帖</h4>
     <p data-observation-summary></p>
     <p class="activity-note">以下依作品整理本次探索。可回看完整解說與來源，也可以從全圖重新閱讀。</p>
+    <div class="activity-actions"><button type="button" data-notebook-download>下載文字手帖與來源</button></div>
+    <p class="activity-note" data-download-status role="status"></p>
     <div class="notebook">
       {observationArtworkOrder.map((id) => <section data-notebook-painting={id} hidden>
         <h4>{byId(id)!.title}</h4>
@@ -112,8 +114,8 @@ import { u } from '../lib/url';
   <details class="source-library">
     <summary>本活動的來源、引用方式與完整書目</summary>
     <p class="activity-note">解說逐段附來源。「同圖異印本」表示館方解說來自同一構圖的另一件印本；顏色、木紋和細節清晰度可能不同。「歷史背景」不等同於已證明本圖中每個人物或物件的情況。髮簪禮物、人物身分等解讀保留館方的推論語氣。</p>
-    <ul>{Object.values(observationSources).map((s) => <li><a href={s.url} target="_blank" rel="noopener">{s.institution}｜{s.title} ↗</a><small>{s.record} · {s.scope}</small></li>)}</ul>
-    <p class="activity-note">既有資料核對：2026-11-13；新增資料：2026-11-15。<a href={u('references/#observation-sources')}>參考資料頁：活動二完整書目 →</a></p>
+    <ul>{Object.values(observationSources).filter(s => !('unverified' in s)).map((s) => <li><a href={s.url} target="_blank" rel="noopener">{s.institution}｜{s.title} ↗</a><small>{s.record} · {s.scope}</small></li>)}</ul>
+    <p class="activity-note">本次查核：2026-11-18。<a href={u('references/#observation-sources')}>參考資料頁：完整書目與未完成全文核對的舊版引用 →</a></p>
   </details>
 </section>
 

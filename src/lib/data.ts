@@ -69,7 +69,7 @@ export function thumb(src: string, width: 330 | 500 | 960 | 1280 = 500): string 
   if (src.includes('images.metmuseum.org')) return width <= 960 ? src.replace('/original/', '/web-large/') : src;
   const m = src.match(/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/([0-9a-f])\/([0-9a-f]{2})\/(.+)$/);
   if (!m) return src;
-  return `https://upload.wikimedia.org/wikipedia/commons/thumb/${m[1]}/${m[2]}/${m[3]}/${width}px-${m[3]}`;
+  return `https://thumb.wikimedia.org/wikipedia/commons/thumb/${m[1]}/${m[2]}/${m[3]}/${width}px-${m[3]}`;
 }
 
 export const isLandscape = (a: Artwork) => !!a.image && a.image.width > a.image.height;
@@ -79,8 +79,8 @@ export function artworkApa(a: Artwork): string | null {
   if (!a.image) return null;
   const title = a.titleJa ?? a.title;
   const en = a.titleEn ? ` [${a.titleEn}]` : '';
-  const series = a.series ? `（${a.series}，第 ${a.seriesNo} 景）` : '';
+  const series = a.series ? `（${a.series}${a.seriesNo ? `，第 ${a.seriesNo} 景` : ''}）` : '';
   const year = a.year ?? 'n.d.';
   const where = a.image.collection && !/^(待查證|原典藏館未標明)/.test(a.image.collection) ? `${a.image.collection}. ` : '';
-  return `Utagawa, H. (${year}). *${title}*${en} [Woodblock print]${series}. ${where}Retrieved November 9, 2026, from ${a.image.source}: ${a.image.sourceUrl}`;
+  return `Utagawa, H. (${year}). *${title}*${en} [Woodblock print]${series}. ${where}Retrieved November 18, 2026, from ${a.image.source}: ${a.image.sourceUrl}`;
 }

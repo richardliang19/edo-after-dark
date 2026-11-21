@@ -1,0 +1,43 @@
+{
+  "original": {
+    "packageBytes": 361219,
+    "media": [
+      {
+        "path": "word/media/image2.jpg",
+        "bytes": 209128,
+        "sha256": "34e8fcfa96ad09c74054404daf2b4f1da0bedb7869ae250ee4c384c2c541f469"
+      },
+      {
+        "path": "word/media/image1.jpg",
+        "bytes": 52132,
+        "sha256": "68d268d826a8fe5f66c3ca081c063bd1823dda32657f6f3d2971725f19cff9ce"
+      },
+      {
+        "path": "word/media/image3.jpg",
+        "bytes": 116236,
+        "sha256": "b3cd293034a09b72380f7b667a74f4cc19438b6be9ac28a28e25cdb7c271688c"
+      }
+    ]
+  },
+  "revised": {
+    "packageBytes": 1853462,
+    "media": [
+      {
+        "path": "word/media/image1.jpeg",
+        "bytes": 52132,
+        "sha256": "68d268d826a8fe5f66c3ca081c063bd1823dda32657f6f3d2971725f19cff9ce"
+      },
+      {
+        "path": "word/media/image3.jpeg",
+        "bytes": 209128,
+        "sha256": "34e8fcfa96ad09c74054404daf2b4f1da0bedb7869ae250ee4c384c2c541f469"
+      },
+      {
+        "path": "word/media/image2.jpeg",
+        "bytes": 116236,
+        "sha256": "b3cd293034a09b72380f7b667a74f4cc19438b6be9ac28a28e25cdb7c271688c"
+      }
+    ]
+  },
+  "allOriginalImageBytesPreserved": true
+}

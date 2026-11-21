@@ -1,0 +1,34 @@
+[
+  {
+    "id": "B02",
+    "url": "https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+    "status": 200,
+    "links": [
+      {
+        "url": "http://www.brooklynmuseum.org/",
+        "label": "www.brooklynmuseum.org"
+      },
+      {
+        "url": "http://www.brooklynmuseum.org/opencollection/objects/121713/Nihon_Embankment_Yoshiwara_No._100_from_One_Hundred_Famous_Views_of_Edo",
+        "label": "Online Collection"
+      }
+    ],
+    "date": "2026-11-18"
+  },
+  {
+    "id": "B03",
+    "url": "https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+    "status": 200,
+    "links": [
+      {
+        "url": "http://www.brooklynmuseum.org/",
+        "label": "www.brooklynmuseum.org"
+      },
+      {
+        "url": "http://www.brooklynmuseum.org/opencollection/objects/121623/Suruga-cho_No._8_in_One_Hundred_Famous_Views_of_Edo",
+        "label": "Online Collection"
+      }
+    ],
+    "date": "2026-11-18"
+  }
+]

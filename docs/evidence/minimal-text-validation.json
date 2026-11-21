@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-18T17:39:17.937Z",
+  "checks": [
+    {
+      "name": "all eleven catalog records retain metadata, summaries, images, locations and detail coordinates",
+      "result": "pass"
+    },
+    {
+      "name": "question wording, choices, correct indices, feedback, hints, reflections, sources and selection logic are preserved",
+      "result": "pass"
+    },
+    {
+      "name": "existing in-progress observations and notes still restore with exactly the same content signature",
+      "result": "pass"
+    },
+    {
+      "name": "unrelated source files and report originals retain their baseline bytes; CSS and script blocks are unchanged",
+      "result": "pass"
+    },
+    {
+      "name": "all eleven built pages render one summary and one correct time label; source links and reading anchor remain",
+      "result": "pass"
+    }
+  ],
+  "pass": true
+}

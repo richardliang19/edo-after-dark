@@ -12,7 +12,7 @@ const artworkRefs = ordered.map((a) => ({ a, apa: artworkApa(a) }));
     <div class="page-head">
       <span class="seal">參考資料</span>
       <h1>參考資料</h1>
-      <p>依 APA 第七版格式整理，檢索日期標示於各條目。</p>
+      <p>作品、解說與研究來源分列。2026 年 11 月 18 日重新查核；遇到無法核讀全文的頁面會另行標示。學術書籍若只取得出版社摘要，不視為已閱讀全書。</p>
     </div>
 
     <section class="cat">
@@ -26,8 +26,9 @@ const artworkRefs = ordered.map((a) => ({ a, apa: artworkApa(a) }));
 
     <section class="cat" id="observation-sources">
       <h2>作品精讀與活動二的解說來源</h2>
-      <p>活動二的答題線索已整理在站內作品頁，以下館藏與機構頁面供延伸閱讀和查核，不是作答前必須閱讀的材料。原書目檢索日期：2026 年 11 月 13 日。各條目標明資料來自本頁印本、同圖異印本或一般歷史背景；涉及推測的解讀會保留原有語氣。</p>
-      <ul>{Object.values(observationSources).map((s) => <li>{s.institution}. (n.d.). <em>{s.title}</em> ({s.record}). Retrieved {'accessed' in s ? 'November 15, 2026' : 'November 13, 2026'}, from <a href={s.url} target="_blank" rel="noopener">{s.url}</a><small>{s.scope}</small></li>)}</ul>
+      <p>活動二的答題線索已整理在站內作品頁，以下館藏與機構頁面供延伸閱讀和查核，不是作答前必須閱讀的材料。各條目區分本頁印本、同圖異印本與一般歷史背景。《月之岬》的兩份解說對活動階段有不同理解，本展保留差異。</p>
+      <ul>{Object.values(observationSources).filter(s => !('unverified' in s)).map((s) => <li>{s.institution}. (n.d.). <em>{s.title}</em> ({s.record}). Retrieved November 18, 2026, from <a href={s.url} target="_blank" rel="noopener">{s.url}</a><small>{s.scope}</small></li>)}</ul>
+      <details><summary>舊版引用：本次未完成全文核對</summary><ul>{Object.values(observationSources).filter(s => 'unverified' in s).map(s => <li>{s.institution}｜<a href={s.url} target="_blank" rel="noopener">{s.title}</a><small>{s.scope}。嘗試核對日期：2026-11-18；修訂版不以這些頁面支撐答案。</small></li>)}</ul></details>
     </section>
 
     {refs.map((c) => (

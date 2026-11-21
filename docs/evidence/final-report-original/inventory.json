@@ -1,0 +1,1332 @@
+﻿{
+    "source":  "C:\\Users\\Benini\\Documents\\VSCode_Workspace\\Museum\\期末報告_江戶不打烊.docx",
+    "sha256":  "96AA19AE7463915002C3381816EE7524E3CDA7D47891135FBF93FD41AF21CA14",
+    "bytes":  361219,
+    "received":  "2026-11-18",
+    "blocks":  [
+                   {
+                       "index":  1,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "博物館探索　期末報告",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  2,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "江戶不打烊",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  3,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "從黃昏到黎明的城市夜生活",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  4,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "以歌川廣重浮世繪為核心的線上博物館",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  5,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "展覽網址：https://richardliang19.github.io/edo-after-dark/",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  6,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "組別：＿＿＿＿",
+                       "pictures":  0,
+                       "highlight":  [
+                                         "yellow"
+                                     ]
+                   },
+                   {
+                       "index":  7,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "組員：梁棨理、王鴻翰、劉彥廷、黃子懿、曾祥恩、王怡婷、郭濬瑀",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  8,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "學號：＿＿＿＿（如需列出）",
+                       "pictures":  0,
+                       "highlight":  [
+                                         "yellow"
+                                     ]
+                   },
+                   {
+                       "index":  9,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "繳交日期：＿＿＿＿",
+                       "pictures":  0,
+                       "highlight":  [
+                                         "yellow"
+                                     ]
+                   },
+                   {
+                       "index":  10,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  11,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "目錄",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  13,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  15,
+                       "type":  "paragraph",
+                       "style":  "Heading1",
+                       "text":  "一、策展理念及主題",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  16,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "本展《江戶不打烊：從黃昏到黎明的城市夜生活》從一個問題出發：沒有公共路燈、沒有捷運，也沒有便利商店的江戶，天黑之後真的就安靜了嗎？研究德川時代夜晚的學者指出，當時的城市雖然缺乏公共街燈，夜間仍發展出祭典、煙火、消費與社交活動。本展以歌川廣重（1797–1858）的浮世繪，帶觀眾從傍晚六點走到隔天清晨五點。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  17,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "我們選擇「夜晚」而不是單純的「廣重作品展」，原因有三：",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  18,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "浮世繪是視覺史料。木版畫可以大量印製，本身就是商業出版品；它反映當時的人想看什麼、出版者想賣什麼，而不是中立的紀錄。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  19,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "夜晚能串起完整的故事。遊船、餐飲、賞月、煙火、祭典與吉原，可以連成同一個晚上的城市經驗。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  20,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "同一個夜晚，有人休閒，也有人工作。本展的核心問題是：一座不眠的城市，是由誰讓它保持清醒？",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  21,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "作品依時間（黃昏到黎明）、空間（江戶古地圖與現代東京）與人物（夜遊者、商人、夜間工作者、參拜者）三個維度組織。主要觀眾設定為 18 到 30 歲，從聚餐、煙火、節慶等熟悉的經驗出發，再帶到遊里制度與夜間勞動等較陌生的議題。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  23,
+                       "type":  "paragraph",
+                       "style":  "Heading1",
+                       "text":  "二、展覽設計",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  24,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "2.1 設計理念",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  25,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "時間沉浸：網站色調從黃昏的暖色，逐漸進入深藍與黑色，最後回到黎明。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  26,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "視角轉換：觀眾一開始是夜遊者；走到後半段，開始看見渡船上的夜間勞動者與吉原背後的社會關係。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  27,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "教育價值：透過放大細節、地圖與提問，引導觀眾從圖像裡找證據，而不只是記住作者與年份。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  28,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "2.2 四個閱讀層次",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  29,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "每件作品都可以由淺入深地閱讀。以《名所江戶百景・月之岬》（1857）為例：",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  30,
+                       "type":  "table",
+                       "rows":  [
+                                    [
+                                        "層次",
+                                        "以《月之岬》為例"
+                                    ],
+                                    [
+                                        "1. 物件知識",
+                                        "歌川廣重作品，1857 年，《名所江戶百景》第 82 景，多色木版畫（錦繪）。"
+                                    ],
+                                    [
+                                        "2. 直接觀察",
+                                        "畫面幾乎沒有人，地上留著宴席後的器物，障子上映出一名女性的身影，窗外滿月懸在海灣上。"
+                                    ],
+                                    [
+                                        "3. 歷史脈絡",
+                                        "月之岬是可眺望品川海灣的賞月名所；畫面一般被解讀為月見宴結束後的二樓座敷。"
+                                    ],
+                                    [
+                                        "4. 反思",
+                                        "廣重為什麼把人移出畫面，只留下活動的痕跡？本系列發行於 1855 年安政大地震之後，常被認為帶有災後復興的意涵。圖像是證據，也是被選擇過的觀看方式。"
+                                    ]
+                                ]
+                   },
+                   {
+                       "index":  31,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  32,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "2.3 一夜的展覽路線",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  33,
+                       "type":  "table",
+                       "rows":  [
+                                    [
+                                        "時間",
+                                        "作品",
+                                        "敘事"
+                                    ],
+                                    [
+                                        "18:00",
+                                        "《兩國橋宵月》",
+                                        "日落時分，橋上有行人，橋下的河面也有遊船往來。"
+                                    ],
+                                    [
+                                        "19:00",
+                                        "《柳橋夜景・萬八》",
+                                        "河岸料亭點起燈火，宴席從這裡開始。"
+                                    ],
+                                    [
+                                        "20:00",
+                                        "《兩國花火》",
+                                        "煙火在夜空綻開，橋下擠滿遊船，整條河成了看台。"
+                                    ],
+                                    [
+                                        "21:00",
+                                        "《吉原夜櫻之圖》",
+                                        "吉原仲之町的夜櫻與燈籠，是遊里最熱鬧的時刻。"
+                                    ],
+                                    [
+                                        "22:00",
+                                        "《月之岬》",
+                                        "宴席後的器物散落一地，窗外滿月懸在海灣上。"
+                                    ],
+                                    [
+                                        "23:00",
+                                        "《御廄河岸》",
+                                        "渡船仍在河上往返，載著夜間工作者過河。"
+                                    ],
+                                    [
+                                        "00:00",
+                                        "《淺草田甫酉之町詣》",
+                                        "窗邊的貓望向田間，參拜酉之市的人潮正在遠方移動。"
+                                    ],
+                                    [
+                                        "05:00",
+                                        "《廓中東雲》",
+                                        "天色微亮，街巷中的人陸續離去，一夜的遊興告一段落。"
+                                    ]
+                                ]
+                   },
+                   {
+                       "index":  34,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  35,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "18:00 到 05:00 是本展安排的策展敘事時間，不代表作品描繪的是同一個夜晚或精確的鐘點；作品位置也依可信度分為確定、大致與推定三級，不把推測當成史實。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  37,
+                       "type":  "paragraph",
+                       "style":  "Heading1",
+                       "text":  "三、文物選件",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  38,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "八件核心作品全部來自紐約大都會藝術博物館（The Met）的線上館藏，館藏頁皆標示為公有領域；依 The Met 的 Open Access 政策，可不經許可、免費使用。選件時我們讓作品涵蓋橋、河流、料亭、煙火、遊里、祭典與黎明，同時呈現城市的娛樂、交通、信仰、消費與勞動。另以三件城市景觀作品補充前後脈絡（圖像取自 Wikimedia Commons）。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  39,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "例如《御廄河岸》：The Met 指出畫中的「夜鷹」正搭渡船前往工作。這件作品讓展覽從漂亮的夜景，轉向一個社會問題：對有些人來說，午夜不是娛樂，而是工作的開始。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  40,
+                       "type":  "table",
+                       "rows":  [
+                                    [
+                                        "作品",
+                                        "系列",
+                                        "年代",
+                                        "收藏"
+                                    ],
+                                    [
+                                        "《兩國橋宵月》",
+                                        "東都名所",
+                                        "不詳",
+                                        "The Met JP1312"
+                                    ],
+                                    [
+                                        "《柳橋夜景・萬八》",
+                                        "江戶高名會亭盡",
+                                        "約 1835–1842",
+                                        "The Met JP1158"
+                                    ],
+                                    [
+                                        "《兩國花火》",
+                                        "名所江戶百景・第 98 景",
+                                        "1858",
+                                        "The Met JP642"
+                                    ],
+                                    [
+                                        "《吉原夜櫻之圖》",
+                                        "東都名所",
+                                        "約 1841",
+                                        "The Met JP608"
+                                    ],
+                                    [
+                                        "《月之岬》",
+                                        "名所江戶百景・第 82 景",
+                                        "1857",
+                                        "The Met JP1185"
+                                    ],
+                                    [
+                                        "《御廄河岸》",
+                                        "名所江戶百景・第 105 景",
+                                        "約 1857",
+                                        "The Met JP1547"
+                                    ],
+                                    [
+                                        "《淺草田甫酉之町詣》",
+                                        "名所江戶百景・第 101 景",
+                                        "1857（安政四年十一月）",
+                                        "The Met JP60"
+                                    ],
+                                    [
+                                        "《廓中東雲》",
+                                        "名所江戶百景・第 38 景",
+                                        "1857",
+                                        "The Met JP1024"
+                                    ],
+                                    [
+                                        "《猿若町夜之景》",
+                                        "名所江戶百景・第 90 景",
+                                        "1856",
+                                        "原典藏館未標明"
+                                    ],
+                                    [
+                                        "《吉原日本堤》",
+                                        "名所江戶百景・第 100 景",
+                                        "1857",
+                                        "Brooklyn Museum"
+                                    ],
+                                    [
+                                        "《駿河町之圖》",
+                                        "名所江戶百景・第 8 景",
+                                        "1856",
+                                        "Brooklyn Museum"
+                                    ]
+                                ]
+                   },
+                   {
+                       "index":  41,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  42,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "各作品的詳細解說（畫面觀察、城市空間、當時的人們、現代地點對照）見網站作品頁。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  44,
+                       "type":  "paragraph",
+                       "style":  "Heading1",
+                       "text":  "四、網頁導覽及特色",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  45,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "4.1 網站架構與導覽路線",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  46,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "展覽網址：https://richardliang19.github.io/edo-after-dark/。建議依下表順序瀏覽，亦為現場導覽的路線：",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  47,
+                       "type":  "table",
+                       "rows":  [
+                                    [
+                                        "頁面",
+                                        "內容"
+                                    ],
+                                    [
+                                        "首頁",
+                                        "提燈照亮浮世繪的開場，以及時間、空間、人物三個入口"
+                                    ],
+                                    [
+                                        "策展理念",
+                                        "展覽主題、設計、選件與「線上博物館是什麼？」"
+                                    ],
+                                    [
+                                        "夜之時間軸",
+                                        "橫向捲動的隅田川繪卷，從 18:00 走到 05:00"
+                                    ],
+                                    [
+                                        "作品",
+                                        "11 件作品的細節導覽、資料與解說"
+                                    ],
+                                    [
+                                        "時空探索",
+                                        "江戶古地圖與今日東京的對照，可依條件篩選"
+                                    ],
+                                    [
+                                        "活動與消息",
+                                        "兩個互動活動、最新消息與友站連結"
+                                    ],
+                                    [
+                                        "關於我們／參考資料",
+                                        "團隊、設計特色、APA 參考文獻"
+                                    ]
+                                ]
+                   },
+                   {
+                       "index":  48,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  49,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "4.2 設計特色",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  50,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "一、提燈夜行（首頁）：江戶沒有公共路燈，首頁的浮世繪沉在黑暗中，滑鼠或手指就是燈籠，只照亮光圈裡的畫面。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  51,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "二、隅田川繪卷（夜之時間軸）：捲動時頁面轉為橫向繪卷，天色依時辰從暮色、深藍漸變到黎明。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  52,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "三、凝視細節（作品頁）：捲動驅動鏡頭推進，依序停在畫中的細節並附上解說，模擬在展櫃前湊近觀看。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  53,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "四、古今對照地圖（時空探索）：左側為 1850 年代經地理配準的江戶切繪圖，右側為今日東京，兩圖同步移動。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  54,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "五、互動活動：活動一「你的江戶夜行，會先看見什麼？」以四個觀展情境推薦閱讀視角與作品。活動二「提燈尋跡」預設隨機三幅、六題，也可選擇完整 26 題；畫面會推進到題目所問的細節，答題後可在觀察手帖留下自己的想法，解說皆附館藏來源。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  55,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  1,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  56,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "圖 1　首頁的提燈效果",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  57,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  1,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  58,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "圖 2　作品頁的細節導覽",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  59,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  1,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  60,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "圖 3　古今對照地圖",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  61,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "網站以 Astro、GSAP 與 Leaflet 製作，部署於 GitHub Pages；組員透過 GitHub 的 Pull Request 協作，無需額外費用。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  63,
+                       "type":  "paragraph",
+                       "style":  "Heading1",
+                       "text":  "五、線上博物館是什麼",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  64,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "國際博物館協會（ICOM）2022 年的博物館定義指出，博物館研究、典藏、保存、詮釋並展示遺產，對公眾開放且具可及性，提供教育、欣賞、反思與知識分享的體驗。因此博物館不只是「把老東西放好」的地方，而是透過選擇、研究與詮釋，讓物件和今天的人產生關係。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  65,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "我們認為，線上博物館把這份工作搬到網路上，並改變了「觀看文物」的方法：",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  66,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "打破距離：分藏各地的作品可以並列比較，也能放大到展櫃前看不清的細節。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  67,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "重組時空：用時間軸與古今地圖，把作品放回它所在的夜晚與城市。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  68,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "觀眾參與：透過測驗與提問，讓觀眾先觀察、再推理、最後閱讀證據。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  69,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "開放可及：免費、不限時地，成本低，也能隨研究更新。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  70,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "它也有限制：螢幕無法取代原作的尺寸、紙質與色彩。所以我們為每張圖標示館藏與來源，鼓勵觀眾回到原館藏，甚至走進實體博物館。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  72,
+                       "type":  "paragraph",
+                       "style":  "Heading1",
+                       "text":  "六、分工進度",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  73,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "6.1 工作分配",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  74,
+                       "type":  "table",
+                       "rows":  [
+                                    [
+                                        "組員",
+                                        "負責項目"
+                                    ],
+                                    [
+                                        "梁棨理",
+                                        "策展設計、網站架設"
+                                    ],
+                                    [
+                                        "王鴻翰",
+                                        "策展設計"
+                                    ],
+                                    [
+                                        "劉彥廷",
+                                        ""
+                                    ],
+                                    [
+                                        "黃子懿",
+                                        "策展設計、網站內容精修"
+                                    ],
+                                    [
+                                        "曾祥恩",
+                                        "策展設計、資料收集"
+                                    ],
+                                    [
+                                        "王怡婷",
+                                        ""
+                                    ],
+                                    [
+                                        "郭濬瑀",
+                                        ""
+                                    ]
+                                ]
+                   },
+                   {
+                       "index":  75,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "黃色欄位的組員負責項目請補上。",
+                       "pictures":  0,
+                       "highlight":  [
+                                         "yellow"
+                                     ]
+                   },
+                   {
+                       "index":  76,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  77,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "6.2 進度甘特圖",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  78,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "依網站開發紀錄整理；深色為已完成，淺色為預定。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  79,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "期中報告之前的階段請依實際日期補上。",
+                       "pictures":  0,
+                       "highlight":  [
+                                         "yellow"
+                                     ]
+                   },
+                   {
+                       "index":  80,
+                       "type":  "table",
+                       "rows":  [
+                                    [
+                                        "工作項目",
+                                        "11/9",
+                                        "11/10",
+                                        "11/11",
+                                        "11/12",
+                                        "11/13",
+                                        "11/14",
+                                        "11/15",
+                                        "11/16"
+                                    ],
+                                    [
+                                        "視覺概念與網站骨架",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    [
+                                        "館藏圖像查證",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    [
+                                        "古今地圖與互動活動",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    [
+                                        "作品解說與策展內容",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    [
+                                        "活動改版與時間軸調整",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    [
+                                        "期末書面報告",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    [
+                                        "團隊名單上線",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    [
+                                        "主視覺海報",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    [
+                                        "最終檢查與簡報",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ]
+                                ]
+                   },
+                   {
+                       "index":  81,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  82,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "6.3 討論紀錄",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  83,
+                       "type":  "table",
+                       "rows":  [
+                                    [
+                                        "日期",
+                                        "決議"
+                                    ],
+                                    [
+                                        "11/9",
+                                        "以 Astro 建置網站並部署於 GitHub Pages（不使用 Wix）；確定沉浸式暗色風格與字體；核心作品改用 The Met 公有領域圖像。"
+                                    ],
+                                    [
+                                        "11/13",
+                                        "合併古今地圖與互動活動；作品解說放上網站，分工、甘特圖與討論紀錄放在書面報告。"
+                                    ],
+                                    [
+                                        "11/15",
+                                        "合併活動與時間軸改版：活動一改為四個觀展情境，活動二預設改為三幅六題並加入觀察手帖；保留細節推鏡動畫；團隊名單上線，主視覺海報待圖檔與授權確認後再公開。"
+                                    ]
+                                ]
+                   },
+                   {
+                       "index":  84,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  85,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "請補上出席者，以及期中報告前的討論。",
+                       "pictures":  0,
+                       "highlight":  [
+                                         "yellow"
+                                     ]
+                   },
+                   {
+                       "index":  87,
+                       "type":  "paragraph",
+                       "style":  "Heading1",
+                       "text":  "七、參考文獻",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  88,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "展出作品",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  89,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (1856). する賀てふ [Suruga-chō] [Woodblock print]（名所江戶百景，第 8 景）. Brooklyn Museum. Retrieved November 9, 2026, from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  90,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (1856). 猿わか町よるの景 [Night View of Saruwaka-machi] [Woodblock print]（名所江戶百景，第 90 景）. Retrieved November 9, 2026, from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  91,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (1857). よし原日本堤 [Nihon Embankment and Yoshiwara] [Woodblock print]（名所江戶百景，第 100 景）. Brooklyn Museum. Retrieved November 9, 2026, from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  92,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (1857a). The entrance to the Yoshiwara at dawn [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/54931",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  93,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (1857b). Moon-viewing location (Tsuki no Misaki), from the series One hundred famous views of Edo (Meisho Edo Hyakkei) [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/55095",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  94,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (1857c). Pilgrimage to the Torinomachi Festival across the ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One hundred famous views of Edo (Meisho Edo hyakkei) [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/36539",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  95,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (1858). Fireworks at Ryōgoku Bridge, from the series One hundred famous views of Edo [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/37093",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  96,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (ca. 1835–1842). The Manpachi at evening in Yanagibashi [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/45306",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  97,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (ca. 1841). Yoshiwara yo zakura no zu [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/37059",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  98,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (ca. 1857). Ommayagashi, Sumida River [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/55712",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  99,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Utagawa, H. (n.d.). Twilight moon at Ryōgoku Bridge [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/45294",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  100,
+                       "type":  "paragraph",
+                       "style":  "Heading2",
+                       "text":  "其他參考資料",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  101,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Agafonkin, V. (2023). Leaflet (Version 1.9.4) [Computer software]. https://leafletjs.com/",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  102,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Astro Technology Company. (2026). Astro (Version 7.4.7) [Computer software]. https://astro.build/",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  103,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "GreenSock. (2026). GSAP (Version 3.15.1) [Computer software]. https://gsap.com/",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  104,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "International Council of Museums. (2022). Museum definition. Retrieved November 13, 2026, from https://icom.museum/en/resources/standards-guidelines/museum-definition/",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  105,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "Kitamoto. (n.d.). 江戸切絵図: Georectified maps [Map tiles]. 日本版 Map Warper. Retrieved November 13, 2026, from https://mapwarper.h-gis.jp/users/340",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  106,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "OpenStreetMap contributors. (n.d.). OpenStreetMap. https://www.openstreetmap.org/copyright",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  107,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "ROIS-DS Center for Open Data in the Humanities. (n.d.). 江戸マップ [Edo maps]. Retrieved November 13, 2026, from https://codh.rois.ac.jp/edo-maps/",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  108,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "The Metropolitan Museum of Art. (n.d.). Open Access at The Met. Retrieved November 13, 2026, from https://www.metmuseum.org/hubs/open-access",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   },
+                   {
+                       "index":  109,
+                       "type":  "paragraph",
+                       "style":  "",
+                       "text":  "完整參考資料（含各作品解說所引用之館藏與地方史資料）見網站「參考資料」頁。",
+                       "pictures":  0,
+                       "highlight":  [
+
+                                     ]
+                   }
+               ],
+    "entries":  [
+                    "word/footer1.xml",
+                    "word/numbering.xml",
+                    "word/settings.xml",
+                    "word/fontTable.xml",
+                    "word/styles.xml",
+                    "word/document.xml",
+                    "word/_rels/document.xml.rels",
+                    "_rels/.rels",
+                    "word/theme/theme1.xml",
+                    "word/media/image2.jpg",
+                    "word/media/image1.jpg",
+                    "word/media/image3.jpg",
+                    "[Content_Types].xml"
+                ]
+}

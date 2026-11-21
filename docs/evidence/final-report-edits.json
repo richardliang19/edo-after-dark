@@ -1,0 +1,3347 @@
+{
+  "date": "2026-11-19",
+  "historicalAuditDate": "2026-11-18",
+  "source": "C:\\Users\\Benini\\Documents\\VSCode_Workspace\\Museum\\期末報告_江戶不打烊.docx",
+  "sourceSha256": "96AA19AE7463915002C3381816EE7524E3CDA7D47891135FBF93FD41AF21CA14",
+  "paragraphs": {
+    "10": {
+      "type": "paragraph",
+      "text": "史料與網站核對：2026 年 11 月 18 日｜原稿修訂：11 月 19 日",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "16": {
+      "type": "paragraph",
+      "text": "城市入夜以後，還有哪些活動？Nenzi《Japan After Dark》的出版社摘要指出，公共街燈普及以前，日本已有活躍的夜間生活（Nenzi, n.d.；僅核讀公開摘要）。本展《江戶不打烊》以歌川廣重的城市風景版畫，安排從傍晚六點到隔天清晨五點的導覽。",
+      "keys": [
+        "nenzi"
+      ],
+      "claimType": "具名研究摘要／策展安排"
+    },
+    "18": {
+      "type": "paragraph",
+      "text": "浮世繪是視覺史料。The Met 亞洲藝術部（2003）說明，木版畫可大量印製，製作涉及畫師、雕版師、摺師與出版者。這種商業媒介適合研究城市如何被觀看，也經過題材與構圖的選擇，不能當作中立的攝影紀錄。",
+      "keys": [
+        "metEssay"
+      ],
+      "claimType": "媒介背景／策展閱讀"
+    },
+    "19": {
+      "type": "paragraph",
+      "text": "夜晚能組織一條展覽路線。遊船、餐飲、賞月、煙火、祭典與吉原各有脈絡；本展將它們接成導覽，不把不同年代、季節的場景寫成同一個真實夜晚。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "35": {
+      "type": "paragraph",
+      "text": "18:00 到 05:00 是本展的策展敘事時間，不是畫中事件的精確鐘點，也不是同一年、同一季節或同一個夜晚。尤其《淺草田甫酉之町詣》畫中是黃昏，00:00 僅是其導覽位置。地點依證據分為確定、大致與推定三級；《月之岬》精確位置仍待確認，沒有保留未獲佐證的座標。",
+      "keys": [
+        "asakusa",
+        "moonHeritage"
+      ],
+      "claimType": "策展安排／館方解讀"
+    },
+    "38": {
+      "type": "paragraph",
+      "text": "八件核心圖像來自 The Met；已逐件核對館藏頁、API 的登錄號、primaryImage 與 isPublicDomain=true。依其 Open Access 政策，這些公有領域圖像以 CC0 開放使用（The Metropolitan Museum of Art, n.d.）。三件延伸作品的數位檔來自 Wikimedia Commons，來源鏈與權利標示另列，不統稱十一件都出自 The Met。",
+      "keys": [
+        "metRights",
+        "api-A01",
+        "api-A02",
+        "api-A03",
+        "api-A04",
+        "api-A05",
+        "api-A06",
+        "api-A07",
+        "api-A08"
+      ],
+      "claimType": "圖像來源與權利"
+    },
+    "39": {
+      "type": "paragraph",
+      "text": "選件涵蓋橋、河流、料亭、煙火、遊里、祭典與黎明，供觀眾比較娛樂、移動、消費與勞動。例如《御廄河岸》，The Met 將部分乘客解讀為搭渡船前往工作的「夜鷹」（JP1547）。館方同段也談到北齋另一幅渡船圖，兩作不能混用；它沒有說這些人正好在 23:00 或午夜開始工作。",
+      "keys": [
+        "ferry"
+      ],
+      "claimType": "館方人物解讀／策展安排"
+    },
+    "42": {
+      "type": "paragraph",
+      "text": "十一件作品的四段解說（畫面觀察、城市空間、當時的人們、現代地點對照）均可在網站作品頁閱讀；完整編目與圖像權利另存 artwork-catalog.csv 及 rights-register.csv。下列資料區分本頁印本與同構圖的其他印本，不移用他館的尺寸、收藏號或色彩狀態。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "46": {
+      "type": "paragraph",
+      "text": "展覽網址：https://richardliang19.github.io/edo-after-dark/ 。建議從時間軸進入，再依興趣閱讀作品、比較地圖或參與活動。各頁可以互相返回；本表是建議路線，沒有真人現場導覽紀錄。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "50": {
+      "type": "paragraph",
+      "text": "一、提燈夜行（首頁）：用光圈引導觀眾注意浮世繪局部，再回到完整作品。這是觀看方式的設計，不是重建某一晚的實際照明；降低動態時仍可直接閱讀完整圖像。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "52": {
+      "type": "paragraph",
+      "text": "三、凝視細節（作品頁）：11 件作品均有基本資料與圖文解說，其中 A03–A08 六件有捲動推鏡設定，其餘 A01、A02、B01、B02、B03 五件是一般圖文展示。手機與低動態模式保留直接閱讀；推鏡不是每件都有，也不保證超出原圖解析度的細節。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "53": {
+      "type": "paragraph",
+      "text": "四、古今對照地圖（時空探索）：左側為經配準的 1850–1853 年五幅江戶切繪圖，右側為今日東京，兩圖可同步移動與縮放。圖幅年份及來源以 CODH／Map Warper metadata 核對；配準有誤差，區域標記不宣稱是畫家站立點。",
+      "keys": [
+        "codh",
+        "map-4908",
+        "map-4902",
+        "map-4930",
+        "map-4931",
+        "map-4935"
+      ],
+      "claimType": "圖幅 metadata／策展限制"
+    },
+    "54": {
+      "type": "paragraph",
+      "text": "五、互動活動：活動一「你的江戶夜行，會先看見什麼？」以四個情境推薦觀展視角，不是心理或歷史人物身分測驗。活動二「提燈尋跡」共 11 幅、26 題，預設隨機三幅六題，也可專看一幅或選完整路線。畫面可切換全圖、不同焦點並放大拖曳；每個錯誤選項有提示，反思選填且不計分。手帖可在本機保存、恢復與清除，也能下載含來源網址的純文字；沒有帳號、社群或後端資料庫。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "56": {
+      "type": "paragraph",
+      "text": "圖 1　首頁提燈效果。保留原報告截圖，作設計示例；不作本輪部署證據。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "58": {
+      "type": "paragraph",
+      "text": "圖 2　作品頁細節導覽。保留原報告截圖；目前只有六件作品有推鏡設定。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "60": {
+      "type": "paragraph",
+      "text": "圖 3　古今對照地圖。保留原報告截圖；標記與文字以本輪修訂網站為準。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "61": {
+      "type": "paragraph",
+      "text": "網站使用 Astro、TypeScript、GSAP 與 Leaflet，保留 GitHub Pages 的 /edo-after-dark/ 子路徑。Git 中有 Pull Request 合併紀錄，可支持曾用版本協作，不能據此推定所有組員工作或會議出席。本輪只修改本地檔案，沒有推送或部署；也沒有成本帳目可證明所有製作均無額外費用。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "64": {
+      "type": "paragraph",
+      "text": "ICOM（2022）於 8 月 24 日通過的定義包含以下完整要素（此處轉述，原文見第七章連結）：博物館是服務社會的非營利常設機構，研究、蒐藏、保存、詮釋並展示有形與無形遺產；向公眾開放，具可及性與包容性，促進多樣性與永續；以倫理、專業及社群參與運作和溝通，提供教育、欣賞、反思及知識分享的多元經驗。",
+      "keys": [
+        "icom"
+      ],
+      "claimType": "完整定義轉述"
+    },
+    "65": {
+      "type": "paragraph",
+      "text": "本展是以外部館藏資料為基礎的學生數位策展，已實作研究、詮釋與教育展示。小組沒有取得實體藏品，也不把網站檔案整理當作完成典藏機構的治理、文物保護、長期保存或社群參與研究。我們使用數位媒介，重點在以下幾種閱讀方式：",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "66": {
+      "type": "paragraph",
+      "text": "連結不同館藏：展示八件 Met 圖像與三件 Commons 補充圖像，連到其他機構對同構圖印本的解說；活動可比較作品。放大的清晰程度受圖像解析度限制，不能把他館印本的木紋或色彩當成本頁特徵。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "67": {
+      "type": "paragraph",
+      "text": "重組時空：以時間軸與古今地圖建立觀看順序，並保留不同年代、季節、圖幅與定位信度的差別。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "69": {
+      "type": "paragraph",
+      "text": "開放可及：公開網站可免費閱讀，內容可隨研究更新。仍依賴瀏覽器、網路及外部圖像／圖磚服務，是否足夠可及須經人工與使用者驗證，不能只由線上形式推定。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "75": {
+      "type": "paragraph",
+      "text": "分工表依 contributions.csv，三位空白者維持未提供；沒有由 Git 作者推定個人責任。期中簡報第 7 頁有分頁安排，但不能直接代填期末分工。需本人確認的項目列於內部待辦。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "78": {
+      "type": "paragraph",
+      "text": "下表以 2026 年可核對的 Git 提交日與本輪驗證紀錄標示節點；深色「●」為有證據的完成節點，淺色「待」為尚未執行。它不是工時表，不表示連續施工或實際起訖日。",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "82": {
+      "type": "paragraph",
+      "text": "6.3 可核對的版本節點",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "87": {
+      "type": "paragraph",
+      "text": "七、參考文獻",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "88": {
+      "type": "paragraph",
+      "text": "7.1 展出作品（依實際圖像來源）",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "89": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (n.d.). 両國之宵月 [Twilight Moon at Ryōgoku Bridge] [木版畫]（東都名所；JP1312）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/45294",
+      "keys": [
+        "api-A01"
+      ],
+      "claimType": "作品書目"
+    },
+    "90": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (約 1835–1842). 柳ばし夜景　万八 [The Manpachi at Evening in Yanagibashi] [木版畫]（江戶高名會亭盡；JP1158）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/45306",
+      "keys": [
+        "api-A02"
+      ],
+      "claimType": "作品書目"
+    },
+    "91": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (1858). 両国花火 [Fireworks at Ryōgoku Bridge, from the series One Hundred Famous Views of Edo] [木版畫]（名所江戶百景，第 98 景；JP642）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/37093",
+      "keys": [
+        "api-A03"
+      ],
+      "claimType": "作品書目"
+    },
+    "92": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (約 1841). 吉原夜桜の図 [Yoshiwara Yo Zakura no Zu] [木版畫]（東都名所；JP608）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/37059",
+      "keys": [
+        "api-A04"
+      ],
+      "claimType": "作品書目"
+    },
+    "93": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (1857). 月の岬 [Moon-Viewing Location (Tsuki no Misaki), from the series One Hundred Famous Views of Edo (Meisho Edo Hyakkei)] [木版畫]（名所江戶百景，第 82 景；JP1185）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/55095",
+      "keys": [
+        "api-A05"
+      ],
+      "claimType": "作品書目"
+    },
+    "94": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (約 1857). 御厩河岸 [Ommayagashi, Sumida River] [木版畫]（名所江戶百景，第 105 景；JP1547）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/55712",
+      "keys": [
+        "api-A06"
+      ],
+      "claimType": "作品書目"
+    },
+    "95": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (1857（安政四年十一月）). 浅草田甫酉の町詣 [Pilgrimage to the Torinomachi Festival across the Ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One Hundred Famous  Views of Edo (Meisho Edo hyakkei)] [木版畫]（名所江戶百景，第 101 景；JP60）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/36539",
+      "keys": [
+        "api-A07"
+      ],
+      "claimType": "作品書目"
+    },
+    "96": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (1857). 廓中東雲 [The Entrance to the Yoshiwara at Dawn] [木版畫]（名所江戶百景，第 38 景；JP1024）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/54931",
+      "keys": [
+        "api-A08"
+      ],
+      "claimType": "作品書目"
+    },
+    "97": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (1856). 猿わか町よるの景 [Night View of Saruwaka-machi] [木版畫]（名所江戶百景，第 90 景；原印本資訊有限制）. Wikimedia Commons；檔案聲明與原館藏獨立核實分開。 檢索於 2026 年 11 月 18 日：https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+      "keys": [
+        "commons-B01"
+      ],
+      "claimType": "作品書目"
+    },
+    "98": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (1857). よし原日本堤 [Nihon Embankment and Yoshiwara] [木版畫]（名所江戶百景，第 100 景；原印本資訊有限制）. Wikimedia Commons；檔案聲明與原館藏獨立核實分開。 檢索於 2026 年 11 月 18 日：https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+      "keys": [
+        "commons-B02"
+      ],
+      "claimType": "作品書目"
+    },
+    "99": {
+      "type": "paragraph",
+      "text": "Utagawa, H. (1856). する賀てふ [Suruga-chō] [木版畫]（名所江戶百景，第 8 景；原印本資訊有限制）. Wikimedia Commons；檔案聲明與原館藏獨立核實分開。 檢索於 2026 年 11 月 18 日：https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+      "keys": [
+        "commons-B03"
+      ],
+      "claimType": "作品書目"
+    },
+    "100": {
+      "type": "paragraph",
+      "text": "7.2 研究、館方解說與標準",
+      "keys": [],
+      "claimType": "策展說明"
+    },
+    "101": {
+      "type": "paragraph",
+      "text": "參考文獻暫採機構／作者、年份、題名、來源與讀取範圍的一致格式。教師引用格式 PDF 尚未取得，不能宣稱完全符合課程規範。未取得的全文與頁碼不自行補寫。",
+      "keys": [],
+      "claimType": "策展說明"
+    }
+  },
+  "tables": {
+    "30": {
+      "type": "table",
+      "headers": [
+        "層次",
+        "以《月之岬》為例"
+      ],
+      "rows": [
+        [
+          "1. 物件知識",
+          "歌川廣重作品，1857 年，《名所江戶百景》第 82 景，多色木版畫；本頁印本 The Met JP1185。年代、媒材依本印本編目；系列序號以 APJ 所收東京藝術大學另印本交叉核對。"
+        ],
+        [
+          "2. 直接觀察",
+          "座敷留有器物，左側障子映出人影，人物在畫邊露出局部，窗外可見月亮與海灣。可見線索不直接證明人物身分或活動階段。"
+        ],
+        [
+          "3. 館方解讀",
+          "東京國立博物館／文化遺產線上（n.d.）將同構圖印本讀為月見宴結束後的二樓房間；Zimmerli 的署名文章（Hu、Murray 與 Williams，n.d.）則讀為月見會中的歌舞。本展並列兩說，不把其中一說當作唯一史實。"
+        ],
+        [
+          "4. 反思",
+          "如果把托盤、杯碟、人影或局部樂器拿掉，我們對房間活動的理解會如何改變？這是策展提問。沒有可靠依據證明廣重為祈福而畫本作，也不以地震後出版直接推定全系列創作意圖。"
+        ]
+      ],
+      "widths": [
+        1800,
+        7226
+      ],
+      "keys": [
+        "moonImage",
+        "api-A05",
+        "apj-A05",
+        "moonHeritage",
+        "moonRutgers"
+      ]
+    },
+    "33": {
+      "type": "table",
+      "headers": [
+        "策展時間",
+        "作品／年代與季節",
+        "敘事（與網站摘要一致）"
+      ],
+      "rows": [
+        [
+          "18:00",
+          "兩國橋宵月\n館藏未定年",
+          "交叉的橋架占據近景，月亮、雲帶與遊船從橋下的空隙露出。"
+        ],
+        [
+          "19:00",
+          "柳橋夜景・萬八\n約 1835–1842",
+          "料亭的座敷面向河水，橋上的人物與水面的船接續了店外的景色。"
+        ],
+        [
+          "20:00",
+          "兩國花火\n1858",
+          "煙火在夜空綻開，橋下擠滿遊船，整條河成了看台。"
+        ],
+        [
+          "21:00",
+          "吉原夜櫻之圖\n約 1841；陰曆三月夜櫻背景",
+          "櫻花與燈籠沿街排列，花下與樓上都有人群。"
+        ],
+        [
+          "22:00",
+          "月之岬\n1857；館方作中秋月見解讀",
+          "滿月在海灣上方，座敷留下器物與人影；館方將此景解讀為宴席之後。"
+        ],
+        [
+          "23:00",
+          "御廄河岸\n約 1857",
+          "渡船仍在河上往返，載著夜間工作者過河。"
+        ],
+        [
+          "00:00",
+          "淺草田甫酉之町詣\n1857（安政四年十一月）；陰曆十一月；畫中黃昏",
+          "窗邊的貓望向田間，參拜酉之市的人潮正在遠方移動。"
+        ],
+        [
+          "05:00",
+          "廓中東雲\n1857",
+          "黎明的街道上只有幾組人物，與夜櫻圖的密集人群形成對照。"
+        ]
+      ],
+      "widths": [
+        1050,
+        2650,
+        5326
+      ],
+      "keys": [
+        "bridge",
+        "manpachi",
+        "fireworksImage",
+        "cherryImage",
+        "moonImage",
+        "ferry",
+        "asakusa",
+        "dawnImage",
+        "yoshiwara",
+        "moonHeritage"
+      ]
+    },
+    "40": {
+      "type": "table",
+      "headers": [
+        "作品 ID／名稱",
+        "系列",
+        "年代",
+        "本頁圖像來源"
+      ],
+      "rows": [
+        [
+          "A01 兩國橋宵月",
+          "東都名所",
+          "館藏未定年",
+          "The Met JP1312"
+        ],
+        [
+          "A02 柳橋夜景・萬八",
+          "江戶高名會亭盡",
+          "約 1835–1842",
+          "The Met JP1158"
+        ],
+        [
+          "A03 兩國花火",
+          "名所江戶百景・第 98 景",
+          "1858",
+          "The Met JP642"
+        ],
+        [
+          "A04 吉原夜櫻之圖",
+          "東都名所",
+          "約 1841",
+          "The Met JP608"
+        ],
+        [
+          "A05 月之岬",
+          "名所江戶百景・第 82 景",
+          "1857",
+          "The Met JP1185"
+        ],
+        [
+          "A06 御廄河岸",
+          "名所江戶百景・第 105 景",
+          "約 1857",
+          "The Met JP1547"
+        ],
+        [
+          "A07 淺草田甫酉之町詣",
+          "名所江戶百景・第 101 景",
+          "1857（安政四年十一月）",
+          "The Met JP60"
+        ],
+        [
+          "A08 廓中東雲",
+          "名所江戶百景・第 38 景",
+          "1857",
+          "The Met JP1024"
+        ],
+        [
+          "B01 猿若町夜之景",
+          "名所江戶百景・第 90 景",
+          "1856",
+          "Commons；原典藏未確認"
+        ],
+        [
+          "B02 吉原日本堤",
+          "名所江戶百景・第 100 景",
+          "1857",
+          "Commons 指向 Brooklyn；精確對應尚有限制"
+        ],
+        [
+          "B03 駿河町之圖",
+          "名所江戶百景・第 8 景",
+          "1856",
+          "Commons 指向 Brooklyn；精確對應尚有限制"
+        ]
+      ],
+      "widths": [
+        2350,
+        2400,
+        1120,
+        3156
+      ],
+      "keys": [
+        "bridge",
+        "api-A01",
+        "manpachi",
+        "api-A02",
+        "fireworksImage",
+        "api-A03",
+        "cherryImage",
+        "api-A04",
+        "moonImage",
+        "api-A05",
+        "ferry",
+        "api-A06",
+        "asakusa",
+        "api-A07",
+        "dawnImage",
+        "api-A08",
+        "saruwaka",
+        "commons-B01",
+        "embankment",
+        "commons-B02",
+        "suruga",
+        "commons-B03"
+      ]
+    },
+    "47": {
+      "type": "table",
+      "headers": [
+        "頁面",
+        "內容"
+      ],
+      "rows": [
+        [
+          "首頁",
+          "提燈開場、首次看展路線，以及時間、空間、人物三個入口"
+        ],
+        [
+          "策展理念",
+          "主題、設計、選件與學生數位策展的職能範圍"
+        ],
+        [
+          "夜之時間軸",
+          "18:00–05:00 的敘事路線，標示策展時間與年代／季節差別"
+        ],
+        [
+          "作品",
+          "11 件基本資料與圖文解說，其中 6 件有推鏡、5 件為一般圖文"
+        ],
+        [
+          "時空探索",
+          "江戶切繪圖與今日東京同步比較，地點分級並保留未定位作品"
+        ],
+        [
+          "活動與消息",
+          "四題觀展視角、提燈尋跡 6／26 題、消息與友站"
+        ],
+        [
+          "關於我們／參考資料",
+          "CSV 團隊資料；作品、已核讀解說與舊版未核讀線索分列"
+        ]
+      ],
+      "widths": [
+        2000,
+        7026
+      ]
+    },
+    "74": {
+      "type": "table",
+      "headers": [
+        "組員",
+        "負責項目（依 contributions.csv）"
+      ],
+      "rows": [
+        [
+          "梁棨理",
+          "策展設計、網站架設"
+        ],
+        [
+          "王鴻翰",
+          "策展設計"
+        ],
+        [
+          "劉彥廷",
+          "未提供；待本人確認"
+        ],
+        [
+          "黃子懿",
+          "策展設計、網站內容精修"
+        ],
+        [
+          "曾祥恩",
+          "策展設計、資料收集"
+        ],
+        [
+          "王怡婷",
+          "未提供；待本人確認"
+        ],
+        [
+          "郭濬瑀",
+          "未提供；待本人確認"
+        ]
+      ],
+      "widths": [
+        2200,
+        6826
+      ]
+    },
+    "80": {
+      "type": "table",
+      "headers": [
+        "工作項目",
+        "11/9",
+        "11/13",
+        "11/15",
+        "11/18",
+        "狀態",
+        "可追溯依據"
+      ],
+      "rows": [
+        [
+          "視覺概念與網站骨架",
+          "●",
+          "",
+          "",
+          "",
+          "已有版本",
+          "e633d2d、4271712"
+        ],
+        [
+          "核心圖像選用與本輪查核",
+          "●",
+          "",
+          "",
+          "●",
+          "另有待查",
+          "0e127f2；證據登錄表（不表示所有史實已確證）"
+        ],
+        [
+          "古今地圖與互動活動",
+          "",
+          "●",
+          "",
+          "●",
+          "已驗收",
+          "f6f3650／ee5d543；瀏覽器紀錄"
+        ],
+        [
+          "作品解說與策展內容",
+          "",
+          "●",
+          "",
+          "●",
+          "已修訂",
+          "87db3f0；本輪逐件／逐題審核"
+        ],
+        [
+          "活動改版與時間軸調整",
+          "",
+          "",
+          "●",
+          "●",
+          "已驗收",
+          "7b4cbe8、b61293f；瀏覽器紀錄"
+        ],
+        [
+          "期末書面報告",
+          "",
+          "",
+          "",
+          "●",
+          "原稿修訂 11/19",
+          "11/18 分章稿；11/19 原稿修訂與 PDF 驗收；教師格式仍待核"
+        ],
+        [
+          "團隊名單上線",
+          "",
+          "",
+          "●",
+          "",
+          "分工未齊",
+          "cd3e09b；原 CSV 三欄空白"
+        ],
+        [
+          "主視覺海報",
+          "",
+          "",
+          "",
+          "",
+          "待",
+          "未取得正式圖檔及來源，不假填完成日期"
+        ],
+        [
+          "真人研究與課堂簡報",
+          "",
+          "",
+          "",
+          "",
+          "待",
+          "沒有真人研究或最終課堂簡報的實施證據"
+        ]
+      ],
+      "widths": [
+        2200,
+        520,
+        520,
+        520,
+        520,
+        950,
+        3796
+      ]
+    },
+    "83": {
+      "type": "table",
+      "headers": [
+        "日期（2026）",
+        "版本／可核對的內容",
+        "證據範圍"
+      ],
+      "rows": [
+        [
+          "11/9",
+          "e633d2d：視覺概念；4271712：Astro 骨架；0e127f2：八件核心改用 Met 圖像",
+          "支持版本變更，不能證明當日曾開會、出席或一致決議"
+        ],
+        [
+          "11/13",
+          "f6f3650／ee5d543：地圖與活動；87db3f0：作品文案、策展與導覽",
+          "以提交內容與主旨為準；不以它補出席名單"
+        ],
+        [
+          "11/15",
+          "cd3e09b／7b4cbe8：活動、時間軸與團隊；b61293f：推鏡與時間軸修正",
+          "支持功能版本節點，不能分配三位空白者的責任"
+        ],
+        [
+          "11/18",
+          "本輪來源、網站修訂、分章稿與驗證紀錄",
+          "尚未提交或部署；實測與人工待辦分列"
+        ],
+        [
+          "11/19",
+          "依使用者原 DOCX 同步修訂正文／表格並渲染驗收",
+          "原稿保持原樣；不以內容核對日代填繳交日"
+        ]
+      ],
+      "widths": [
+        1050,
+        4700,
+        3276
+      ]
+    }
+  },
+  "after": {
+    "21": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "1.1 研究問題與學習目標"
+      },
+      {
+        "type": "paragraph",
+        "text": "我們希望觀眾能回答三個問題：畫面安排我們從哪裡觀看城市？遊賞與工作如何出現在同一個夜間環境？哪些解釋來自畫面，哪些需要文獻，哪些仍是自己的推論？",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "學習目標",
+          "可觀察的表現",
+          "評量方式（尚未進行真人研究）"
+        ],
+        "rows": [
+          [
+            "找出圖像線索",
+            "指出至少兩處細節，說明它們如何影響觀看",
+            "請觀眾指認位置並說明，不以記住題名或年代為準"
+          ],
+          [
+            "分辨證據層次",
+            "區分可見細節、具名館方解讀與個人推論",
+            "以月之岬的不同館方解讀追問，記錄原話"
+          ],
+          [
+            "比較夜間經驗",
+            "比較兩國花火與御廄河岸，各舉一項線索",
+            "由圖像與站內介紹說明遊賞和工作，不要求背誦鐘點"
+          ]
+        ],
+        "widths": [
+          1800,
+          3300,
+          3926
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "以上是預期學習目標。程式與瀏覽器驗收只能確認功能運作，不能代替觀眾理解或教學成效的研究。",
+        "keys": [],
+        "claimType": "策展說明"
+      }
+    ],
+    "35": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "2.4 功能如何支持閱讀"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "功能",
+          "策展目的",
+          "預期學習",
+          "如何驗證"
+        ],
+        "rows": [
+          [
+            "提燈首頁",
+            "先注意局部，再回看完整圖像",
+            "說出局部與全圖的差別",
+            "已測低動態；學習差異待真人研究"
+          ],
+          [
+            "時間軸",
+            "組織八件核心的觀看順序",
+            "分辨策展時刻與歷史時間",
+            "已測一般 GSAP、手機文字、前後站及方向鍵"
+          ],
+          [
+            "六件推鏡與活動放大",
+            "指向可辨認且有意義的細節",
+            "由位置與構圖提出解釋",
+            "核對原圖焦點；已測切換、鍵盤和模擬觸控"
+          ],
+          [
+            "古今地圖",
+            "比較相關區域與水路",
+            "認識配準與定位的限制",
+            "五幅 metadata 已核；雙圖同步已測"
+          ],
+          [
+            "活動一",
+            "推薦不同觀展視角",
+            "嘗試原本沒注意的觀看位置",
+            "已走完四題；不是心理或歷史身分測驗"
+          ],
+          [
+            "活動二與手帖",
+            "接續觀察、背景與反思",
+            "分清我看到、我推論與仍有疑問",
+            "已測短／完整路線、保存與文字下載；真人理解待測"
+          ]
+        ],
+        "widths": [
+          1500,
+          2250,
+          2600,
+          2676
+        ]
+      }
+    ],
+    "42": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "3.1 編目與圖像來源"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A01 兩國橋宵月"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：両國之宵月。英文題名：Twilight Moon at Ryōgoku Bridge。年代：The Met 未定年；系列：東都名所。媒材：彩色木版畫。",
+        "keys": [
+          "bridge",
+          "api-A01"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "本頁印本：The Metropolitan Museum of Art，JP1312；尺寸：H. 9 5/8 in. (24.4 cm); W. 15 3/16 in. (38.6 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+        "keys": [
+          "api-A01",
+          "metRights"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "策展位置：18:00（敘事安排）。作品的觀看與生活脈絡詳見站內介紹。",
+        "keys": [
+          "bridge"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://www.metmuseum.org/art/collection/search/45294",
+        "keys": [
+          "api-A01"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A02 柳橋夜景・萬八"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：柳ばし夜景　万八。英文題名：The Manpachi at Evening in Yanagibashi。年代：約 1835–1842；系列：江戶高名會亭盡。媒材：彩色木版畫。",
+        "keys": [
+          "manpachi",
+          "api-A02"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "本頁印本：The Metropolitan Museum of Art，JP1158；尺寸：H. 9 13/16 in. (24.9 cm); W. 14 9/16 in. (37 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+        "keys": [
+          "api-A02",
+          "metRights"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "策展位置：19:00（敘事安排）。作品的觀看與生活脈絡詳見站內介紹。",
+        "keys": [
+          "manpachi"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://www.metmuseum.org/art/collection/search/45306",
+        "keys": [
+          "api-A02"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A03 兩國花火"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：両国花火。英文題名：Fireworks at Ryōgoku Bridge, from the series One Hundred Famous Views of Edo。年代：1858；系列：名所江戶百景，第 98 景。媒材：彩色木版畫。",
+        "keys": [
+          "fireworksImage",
+          "api-A03"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "本頁印本：The Metropolitan Museum of Art，JP642；尺寸：Image: 13 1/4 × 8 3/4 in. (33.7 × 22.2 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+        "keys": [
+          "api-A03",
+          "metRights"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "策展位置：20:00（敘事安排）。作品的觀看與生活脈絡詳見站內介紹。",
+        "keys": [
+          "fireworksImage"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://www.metmuseum.org/art/collection/search/37093",
+        "keys": [
+          "api-A03"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A04 吉原夜櫻之圖"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：吉原夜桜の図。英文題名：Yoshiwara Yo Zakura no Zu。年代：約 1841；系列：東都名所。媒材：彩色木版畫。",
+        "keys": [
+          "cherryImage",
+          "api-A04"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "本頁印本：The Metropolitan Museum of Art，JP608；尺寸：9 13/16 x 14 3/8 in. (24.9 x 36.5 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+        "keys": [
+          "api-A04",
+          "metRights"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "策展位置：21:00（敘事安排）。春季夜櫻與暫植櫻樹背景不直接證明每位人物的身分或債務。",
+        "keys": [
+          "cherryImage"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://www.metmuseum.org/art/collection/search/37059",
+        "keys": [
+          "api-A04"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A05 月之岬"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：月の岬。英文題名：Moon-Viewing Location (Tsuki no Misaki), from the series One Hundred Famous Views of Edo (Meisho Edo Hyakkei)。年代：1857；系列：名所江戶百景，第 82 景。媒材：彩色木版畫。",
+        "keys": [
+          "moonImage",
+          "api-A05"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "本頁印本：The Metropolitan Museum of Art，JP1185；尺寸：Oban 13 7/8 x 9 5/8 in. (35.2 x 24.4 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+        "keys": [
+          "api-A05",
+          "metRights"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "詮釋限制：品川灣高地為具名館方解說，精確地點待考；宴席階段的兩種讀法見第 2.2 節。",
+        "keys": [
+          "moonImage",
+          "moonHeritage",
+          "moonRutgers"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://www.metmuseum.org/art/collection/search/55095",
+        "keys": [
+          "api-A05"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A06 御廄河岸"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：御厩河岸。英文題名：Ommayagashi, Sumida River。年代：約 1857；系列：名所江戶百景，第 105 景。媒材：彩色木版畫。",
+        "keys": [
+          "ferry",
+          "api-A06"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "本頁印本：The Metropolitan Museum of Art，JP1547；尺寸：H. 14 3/4 in. (37.5 cm); W. 10 1/8 in. (25.7 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+        "keys": [
+          "api-A06",
+          "metRights"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "策展位置：23:00（敘事安排）。作品的觀看與生活脈絡詳見站內介紹。",
+        "keys": [
+          "ferry"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://www.metmuseum.org/art/collection/search/55712",
+        "keys": [
+          "api-A06"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A07 淺草田甫酉之町詣"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：浅草田甫酉の町詣。英文題名：Pilgrimage to the Torinomachi Festival across the Ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One Hundred Famous  Views of Edo (Meisho Edo hyakkei)。年代：1857（安政四年十一月）；系列：名所江戶百景，第 101 景。媒材：彩色木版畫。",
+        "keys": [
+          "asakusa",
+          "api-A07"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "本頁印本：The Metropolitan Museum of Art，JP60；尺寸：Vertical ōban; 13 1/16 x 8 11/16 in. (33.2 x 22.1 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+        "keys": [
+          "api-A07",
+          "metRights"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "策展位置：00:00（敘事安排）。畫中黃昏與本展午夜站點分開；髮簪禮物保留館方推測語氣。",
+        "keys": [
+          "asakusa"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://www.metmuseum.org/art/collection/search/36539",
+        "keys": [
+          "api-A07"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "A08 廓中東雲"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：廓中東雲。英文題名：The Entrance to the Yoshiwara at Dawn。年代：1857；系列：名所江戶百景，第 38 景。媒材：彩色木版畫。",
+        "keys": [
+          "dawnImage",
+          "api-A08"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "本頁印本：The Metropolitan Museum of Art，JP1024；尺寸：H. 13 3/8 in. (34 cm); W. 8 3/4 in. (22.2 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+        "keys": [
+          "api-A08",
+          "metRights"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "策展位置：05:00（敘事安排）。街上幾組人物不直接證明個別去向或服役關係終止。",
+        "keys": [
+          "dawnImage"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://www.metmuseum.org/art/collection/search/54931",
+        "keys": [
+          "api-A08"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "B01 猿若町夜之景"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：猿わか町よるの景。英文題名：Night View of Saruwaka-machi。年代：1856；系列：名所江戶百景，第 90 景。媒材：彩色木版畫。",
+        "keys": [
+          "saruwaka",
+          "commons-B01"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "數位檔：Wikimedia Commons，706×1050 像素；檔案頁標示 Commons 標示公有領域（PD-Art）；檔案曾經色彩處理，原典藏未確認。本頁原印本尺寸及館藏號未獨立核實，不套用另館資料。",
+        "keys": [
+          "commons-B01"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "來源限制：Commons 指私人整理站，上傳史記載色彩處理；慶應 200X@5-56 是同構圖另印本，不是本檔原典藏的證明。",
+        "keys": [
+          "saruwaka",
+          "commons-B01"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+        "keys": [
+          "commons-B01"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "B02 吉原日本堤"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：よし原日本堤。英文題名：Nihon Embankment and Yoshiwara。年代：1857；系列：名所江戶百景，第 100 景。媒材：彩色木版畫。",
+        "keys": [
+          "embankment",
+          "commons-B02"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "數位檔：Wikimedia Commons，789×1200 像素；檔案頁標示 Commons 標示公有領域（PD-Art）；原館藏對應仍待確認。本頁原印本尺寸及館藏號未獨立核實，不套用另館資料。",
+        "keys": [
+          "commons-B02"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "來源限制：Commons 指 Brooklyn 舊物件 121713，但本次原頁不可核讀；已核看同檔正式 500px 縮圖，原圖下載受限，不作微小細節或色彩鑑定。",
+        "keys": [
+          "embankment",
+          "commons-B02"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+        "keys": [
+          "commons-B02"
+        ],
+        "claimType": "來源入口"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "B03 駿河町之圖"
+      },
+      {
+        "type": "paragraph",
+        "text": "作者：歌川廣重。日文題名：する賀てふ。英文題名：Suruga-chō。年代：1856；系列：名所江戶百景，第 8 景。媒材：彩色木版畫。",
+        "keys": [
+          "suruga",
+          "commons-B03"
+        ],
+        "claimType": "編目"
+      },
+      {
+        "type": "paragraph",
+        "text": "數位檔：Wikimedia Commons，790×1200 像素；檔案頁標示 Commons 標示公有領域（PD-Art）；原館藏對應仍待確認。本頁原印本尺寸及館藏號未獨立核實，不套用另館資料。",
+        "keys": [
+          "commons-B03"
+        ],
+        "claimType": "編目／圖像權利"
+      },
+      {
+        "type": "paragraph",
+        "text": "來源限制：Commons 指 Brooklyn 舊物件 121623，原館藏全文不可核讀。Brooklyn 在 Google Arts & Culture 的 30.1478.8 可作構圖解說，未將它逕定為本檔館藏號；本件是白晝序章。",
+        "keys": [
+          "suruga",
+          "commons-B03"
+        ],
+        "claimType": "來源限制／策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "圖像來源：https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+        "keys": [
+          "commons-B03"
+        ],
+        "claimType": "來源入口"
+      }
+    ],
+    "83": [
+      {
+        "type": "paragraph",
+        "text": "原稿曾將上述日期列為討論紀錄；目前沒有出席或會議證據，因此改列可核對的版本節點。原稿保持原樣，沒有以程式版本冒充會議紀錄。",
+        "keys": [],
+        "claimType": "策展說明"
+      }
+    ],
+    "101": [
+      {
+        "type": "paragraph",
+        "text": "Nenzi, L.. (n.d.). Japan After Dark — Book description. 核對：2026-11-18；僅公開摘要，未讀全書，不引用章節頁碼。https://www.cambridge.org/core/books/japan-after-dark/3149361D47CB1F1D331909733A694D0E",
+        "keys": [
+          "nenzi"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Metropolitan Museum of Art, Department of Asian Art. (2003). Woodblock Prints in the Ukiyo-e Style. 核對：2026-11-18；媒介的一般背景，不是某張畫的個別動機。https://www.metmuseum.org/essays/woodblock-prints-in-the-ukiyo-e-style",
+        "keys": [
+          "metEssay"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "東京國立博物館／文化遺產線上. (n.d.). 名所江戸百景・月の岬（文化遺產線上 559992；ColBase A-10569-7372）. 核對：2026-11-18；同構圖另一印本；提供品川灣、高地與宴後房間的館方解讀，非 The Met JP1185 的專屬標籤。https://online.bunka.go.jp/heritages/detail/559992",
+        "keys": [
+          "moonHeritage"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "Hu, I., Murray, P., & Williams, M.. (n.d.). Musings by Moonlight: Shadow and Silhouette（Irene Hu、Paisley Murray、Megan Williams 署名展覽文章）. 核對：2026-11-18；同構圖另一印本；文章把場景讀為月見會中的歌舞，與東京國立博物館的宴後解讀有差異，不能合併為唯一活動階段。https://zimmerli.rutgers.edu/node/356",
+        "keys": [
+          "moonRutgers"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "International Council of Museums. (2022). Museum Definition (2022). 核對：2026-11-18；完整要素轉述；不表示學生網站已具備所有機構職能。https://icom.museum/en/resources/standards-guidelines/museum-definition/",
+        "keys": [
+          "icom"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Metropolitan Museum of Art. (n.d.). Open Access at The Met. 核對：2026-11-18；八件核心需另核對各件 API isPublicDomain 與 primaryImage。https://www.metmuseum.org/hubs/open-access",
+        "keys": [
+          "metRights"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "東京藝術大學大學美術館. (2024). Yoshiwara（2024 年展覽概要）（Exhibition Outline）. 核對：2026-11-18；吉原的歷史背景；非對本頁某一印本的專屬解說。https://museum.geidai.ac.jp/en/exhibit/2024/03/yoshiwara.html",
+        "keys": [
+          "yoshiwara"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "慶應義塾大學圖書館. (n.d.). 名所江戸百景・猿わか町よるの景（200X@5-56 · 日野原健司解說）. 核對：2026-11-18；同一構圖的另一印本；本頁沿用專案的 Wikimedia Commons 圖像。https://dcollections.lib.keio.ac.jp/en/ukiyoe/0456",
+        "keys": [
+          "saruwaka"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "台東區立中央圖書館（NDL Search 收錄）. (n.d.). 名所江戸百景・よし原日本堤（「吉原細見の世界Ⅱ」解說）. 核對：2026-11-18；同一構圖的另一印本；本頁沿用 Brooklyn Museum／Wikimedia 圖像。https://ndlsearch.ndl.go.jp/books/R100000094-I906",
+        "keys": [
+          "embankment"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "University of Cambridge · Fitzwilliam Museum. (n.d.). Nihon Embankment, Yoshiwara（P.3577-R · The Night of Longing）. 核對：2026-11-18；同一構圖的另一印本與通往吉原的交通背景。https://nightoflonging.fitzmuseum.cam.ac.uk/explore/sex-for-sale",
+        "keys": [
+          "embankmentRoute"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "Brooklyn Museum（Google Arts & Culture 館方供稿）. (n.d.). Suruga-cho, No. 8 in One Hundred Famous Views of Edo（30.1478.8）. 核對：2026-11-18；館方對本構圖的解說；Commons 圖像記載來自 Brooklyn，但與此館藏號的精確對應仍須核實。https://artsandculture.google.com/asset/suruga-cho-no-8-in-one-hundred-famous-views-of-edo-utagawa-hiroshige-ando-japanese-1797-1858/KgG9YbG9Rf98Vg",
+        "keys": [
+          "suruga"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "三井廣報委員會. (n.d.). 幕府御用達と維新政府への支援（創業、遷移年份段落）. 核對：2026-11-18；企業自身沿革：1673 年本町創業、1683 年移到駿河町；不代表現存建築未變。https://www.mitsuipr.com/history/columns/010/",
+        "keys": [
+          "mitsuiHistory"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "ROIS-DS CODH. (n.d.). 江戸マップ. 核對：2026-11-18；圖幅出版年與地理配準，非畫家站立點。https://codh.rois.ac.jp/edo-maps/",
+        "keys": [
+          "codh"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 兩國花火（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032273",
+        "keys": [
+          "apj-A03"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 月之岬（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032257",
+        "keys": [
+          "apj-A05"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 御廄河岸（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032280",
+        "keys": [
+          "apj-A06"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 淺草田甫酉之町詣（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032276",
+        "keys": [
+          "apj-A07"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 廓中東雲（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032213",
+        "keys": [
+          "apj-A08"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 猿若町夜之景（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032265",
+        "keys": [
+          "apj-B01"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 芝高輪辺絵図（doi:10.11501/1286663）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4908.json",
+        "keys": [
+          "map-4908"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 日本橋北神田浜町絵図（doi:10.11501/1286645）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4902.json",
+        "keys": [
+          "map-4902"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 本所絵図（doi:10.11501/1286679）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4930.json",
+        "keys": [
+          "map-4930"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 浅草御蔵前辺図（doi:10.11501/1286209）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4931.json",
+        "keys": [
+          "map-4931"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 今戸箕輪浅草絵図（doi:10.11501/1286208）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4935.json",
+        "keys": [
+          "map-4935"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wikimedia Commons／原上傳者. (n.d.). File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg. 核對：2026-11-18；只證明數位檔案頁所聲明的來源與權利；不視為獨立確認原館藏、印次或法律結論。https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+        "keys": [
+          "commons-B01"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wikimedia Commons／原上傳者. (n.d.). File:100_views_edo_100.jpg. 核對：2026-11-18；只證明數位檔案頁所聲明的來源與權利；不視為獨立確認原館藏、印次或法律結論。https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+        "keys": [
+          "commons-B02"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wikimedia Commons／原上傳者. (n.d.). File:100_views_edo_008.jpg. 核對：2026-11-18；只證明數位檔案頁所聲明的來源與權利；不視為獨立確認原館藏、印次或法律結論。https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+        "keys": [
+          "commons-B03"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "paragraph",
+        "text": "W3C. (n.d.). WCAG 2.2. 核對：2026-11-18；設計參照，非符合性審定。https://www.w3.org/TR/WCAG22/",
+        "keys": [
+          "wcag"
+        ],
+        "claimType": "來源書目"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "7.3 技術與版本依據"
+      },
+      {
+        "type": "paragraph",
+        "text": "Astro 7.4.7、GSAP 3.15.1、Leaflet 1.9.4 的版本依現有鎖定檔，不把專案核對日期當作軟體發行年份。GitHub 提交紀錄見第六章；其他測試命令與限制見第八章。",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "Astro Technology Company. (n.d.). Astro [軟體；本專案鎖定 7.4.7]. https://astro.build/",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "GreenSock. (n.d.). GSAP [軟體；本專案鎖定 3.15.1]. https://gsap.com/",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "Leaflet. (n.d.). Leaflet [軟體；本專案鎖定 1.9.4]. https://leafletjs.com/",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "OpenStreetMap contributors. (n.d.). Copyright and License [保留原稿技術歸屬入口；未用於新增史實]. https://www.openstreetmap.org/copyright",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "完整網站解說來源與未核讀舊線索，見 https://richardliang19.github.io/edo-after-dark/references/ 。本輪網站修改尚未部署；驗收對象為本地建置，外部讀者應於正式部署後查看新版。",
+        "keys": [],
+        "claimType": "策展說明"
+      }
+    ],
+    "109": [
+      {
+        "type": "heading",
+        "level": 1,
+        "text": "八、驗證與限制"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "8.1 程式與建置"
+      },
+      {
+        "type": "paragraph",
+        "text": "本輪環境為 Windows、Node 24.19.0、npm 11.17.0。npm ci 成功；Windows 應用程式控制阻擋 satteri 原生模組，原生 npm run build 失敗，未更改系統政策。改用官方同版本 WASM 後端（NAPI_RS_FORCE_WASI=true）後，建置成功產出 19 個 Astro 頁面與五份概念稿。套件清單、鎖定檔與 GitHub Pages 設定未改。",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "17 項 Node 測試通過，涵蓋資料關聯、答案索引、來源識別、保存驗證、舊進度遷移、手帖輸出、內部連結與公開草稿提示。TypeScript 模組嚴格檢查通過，但未執行完整 astro check。這些測試驗證程式結構及行為，不會證明歷史內容真實。",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "8.2 瀏覽器驗收與觀眾研究"
+      },
+      {
+        "type": "paragraph",
+        "text": "隔離 Edge 157.0.4341.60 以原生滑鼠、鍵盤及模擬觸控事件實測：1440×1000 桌面、390×844 手機版面；首頁低動態、一般 GSAP 時間軸、十一件作品、雙圖同步、活動一四題、活動二隨機六題與完整二十六題、個別錯誤回饋、保存、清除、手帖下載及圖片失敗提示。8 組主流程加 3 組補測通過；快速換頁時有些外部圖像尚未載完，不宣稱全部外部影像均可用。",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "沒有招募真人受測者，因此沒有受測人數、平均耗時、問卷比例、滿意度或觀眾原話。已準備約五位觀眾的自願同意說明、測試腳本及匿名空表，研究仍待實施；自動化瀏覽器操作不能代替學習成效。",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "8.3 未測範圍與資料限制"
+      },
+      {
+        "type": "paragraph",
+        "text": "手機是瀏覽器模擬，未測實體手機、iOS／Safari／Firefox、螢幕閱讀器、完整 Tab 路徑、所有狀態對比度與 200% 文字放大。WCAG 2.2 AA 為設計目標，沒有符合性認證（W3C, n.d.）。外部圖像、字體與圖磚仍有服務依賴；B02 原圖受限，部分 Commons 原館藏鏈未確認。",
+        "keys": [
+          "wcag"
+        ],
+        "claimType": "技術限制／來源範圍"
+      },
+      {
+        "type": "paragraph",
+        "text": "npm audit 回報既有鎖定相依圖有 9 項 high；本輪未自動升降主要版本，需另評估公告適用性與相容修正。本地建置成功不等於 GitHub Actions 已執行，也不表示網站已部署。",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "heading",
+        "level": 1,
+        "text": "九、結論與後續改善"
+      },
+      {
+        "type": "paragraph",
+        "text": "本展以橋架、窗框、河道、街道與畫邊細節，實作了由觀看位置理解城市的閱讀路線；館方解說與跨作品比較，則把夜間娛樂接到服務、交通與勞動。這些是已完成的策展安排，觀眾是否能辨別證據層次與比較不同經驗，仍須真人研究。",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "本輪已核對十一件作品及二十六題，修正鐘點、人物、器物與另印本引用的過度斷言，也讓作品頁、時間軸、互動與報告使用一致表述。對月之岬活動階段保留具名差異；對精確地點與補充作品原印本不確定處，保留限制，不為完成故事而猜測。",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "paragraph",
+        "text": "後續先取得教師引用規範，確認空白分工與真實會議紀錄；再追查補充作品的原館藏鏈、完成無障礙人工審查與觀眾研究。夜景的美感是觀看入口，仍須回到具體問題：誰在遊賞、誰在工作，哪些人的經驗沒有被圖像充分呈現？",
+        "keys": [],
+        "claimType": "策展說明"
+      },
+      {
+        "type": "heading",
+        "level": 1,
+        "text": "附錄：內部待辦（非已完成資料）"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "待確認項目",
+          "目前證據／處理",
+          "下一步"
+        ],
+        "rows": [
+          [
+            "封面組別、學號、繳交日期",
+            "原稿僅空白線，沒有正式資料；封面先不列",
+            "由組員提供，不以內容核對日代填繳交日"
+          ],
+          [
+            "三位分工",
+            "劉彥廷、王怡婷、郭濬瑀的 CSV 欄位仍空白",
+            "本人確認；期中分頁不能代填期末工作"
+          ],
+          [
+            "會議出席與期中前工作",
+            "沒有可核對會議證據；第六章僅列版本節點",
+            "提供真實會議紀錄，勿由提交日猜出席"
+          ],
+          [
+            "教師格式與範例",
+            "尚未取得",
+            "取得後再核引註、書目與封面格式"
+          ],
+          [
+            "來源與觀眾研究",
+            "原館藏／地點待考；真人研究未實施",
+            "依 unresolved-issues 與匿名空表續作"
+          ],
+          [
+            "文件與圖像驗收",
+            "本報告修訂自提供的原 DOCX，保留三張原截圖、原章節主題及七個原有表格的位置和用途，新增學習／功能對照與第八、九章。原截圖是舊版設計示例，不冒稱本輪部署畫面。文件的實際渲染器、逐頁驗收及尚待修正事項另記於 report-revision.md，沒有以網頁 HTML 預覽代替 DOCX 渲染。",
+            "詳見 report-revision.md 與原圖雜湊；不同文書軟體可能重新分頁"
+          ]
+        ],
+        "widths": [
+          2300,
+          3400,
+          3326
+        ]
+      }
+    ]
+  },
+  "remove": [
+    6,
+    8,
+    9,
+    79,
+    85,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+  ],
+  "review": [
+    {
+      "id": "DOCX-P10",
+      "original": "",
+      "updated": "史料與網站核對：2026 年 11 月 18 日｜原稿修訂：11 月 19 日",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 10"
+    },
+    {
+      "id": "DOCX-P16",
+      "original": "本展《江戶不打烊：從黃昏到黎明的城市夜生活》從一個問題出發：沒有公共路燈、沒有捷運，也沒有便利商店的江戶，天黑之後真的就安靜了嗎？研究德川時代夜晚的學者指出，當時的城市雖然缺乏公共街燈，夜間仍發展出祭典、煙火、消費與社交活動。本展以歌川廣重（1797–1858）的浮世繪，帶觀眾從傍晚六點走到隔天清晨五點。",
+      "updated": "城市入夜以後，還有哪些活動？Nenzi《Japan After Dark》的出版社摘要指出，公共街燈普及以前，日本已有活躍的夜間生活（Nenzi, n.d.；僅核讀公開摘要）。本展《江戶不打烊》以歌川廣重的城市風景版畫，安排從傍晚六點到隔天清晨五點的導覽。",
+      "keys": [
+        "nenzi"
+      ],
+      "claimType": "具名研究摘要／策展安排",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 16"
+    },
+    {
+      "id": "DOCX-P18",
+      "original": "浮世繪是視覺史料。木版畫可以大量印製，本身就是商業出版品；它反映當時的人想看什麼、出版者想賣什麼，而不是中立的紀錄。",
+      "updated": "浮世繪是視覺史料。The Met 亞洲藝術部（2003）說明，木版畫可大量印製，製作涉及畫師、雕版師、摺師與出版者。這種商業媒介適合研究城市如何被觀看，也經過題材與構圖的選擇，不能當作中立的攝影紀錄。",
+      "keys": [
+        "metEssay"
+      ],
+      "claimType": "媒介背景／策展閱讀",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 18"
+    },
+    {
+      "id": "DOCX-P19",
+      "original": "夜晚能串起完整的故事。遊船、餐飲、賞月、煙火、祭典與吉原，可以連成同一個晚上的城市經驗。",
+      "updated": "夜晚能組織一條展覽路線。遊船、餐飲、賞月、煙火、祭典與吉原各有脈絡；本展將它們接成導覽，不把不同年代、季節的場景寫成同一個真實夜晚。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 19"
+    },
+    {
+      "id": "DOCX-P30",
+      "original": "層次｜以《月之岬》為例\n1. 物件知識｜歌川廣重作品，1857 年，《名所江戶百景》第 82 景，多色木版畫（錦繪）。\n2. 直接觀察｜畫面幾乎沒有人，地上留著宴席後的器物，障子上映出一名女性的身影，窗外滿月懸在海灣上。\n3. 歷史脈絡｜月之岬是可眺望品川海灣的賞月名所；畫面一般被解讀為月見宴結束後的二樓座敷。\n4. 反思｜廣重為什麼把人移出畫面，只留下活動的痕跡？本系列發行於 1855 年安政大地震之後，常被認為帶有災後復興的意涵。圖像是證據，也是被選擇過的觀看方式。",
+      "updated": "層次｜以《月之岬》為例\n1. 物件知識｜歌川廣重作品，1857 年，《名所江戶百景》第 82 景，多色木版畫；本頁印本 The Met JP1185。年代、媒材依本印本編目；系列序號以 APJ 所收東京藝術大學另印本交叉核對。\n2. 直接觀察｜座敷留有器物，左側障子映出人影，人物在畫邊露出局部，窗外可見月亮與海灣。可見線索不直接證明人物身分或活動階段。\n3. 館方解讀｜東京國立博物館／文化遺產線上（n.d.）將同構圖印本讀為月見宴結束後的二樓房間；Zimmerli 的署名文章（Hu、Murray 與 Williams，n.d.）則讀為月見會中的歌舞。本展並列兩說，不把其中一說當作唯一史實。\n4. 反思｜如果把托盤、杯碟、人影或局部樂器拿掉，我們對房間活動的理解會如何改變？這是策展提問。沒有可靠依據證明廣重為祈福而畫本作，也不以地震後出版直接推定全系列創作意圖。",
+      "keys": [
+        "moonImage",
+        "api-A05",
+        "apj-A05",
+        "moonHeritage",
+        "moonRutgers"
+      ],
+      "claimType": "表格修訂",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 30"
+    },
+    {
+      "id": "DOCX-P33",
+      "original": "時間｜作品｜敘事\n18:00｜《兩國橋宵月》｜日落時分，橋上有行人，橋下的河面也有遊船往來。\n19:00｜《柳橋夜景・萬八》｜河岸料亭點起燈火，宴席從這裡開始。\n20:00｜《兩國花火》｜煙火在夜空綻開，橋下擠滿遊船，整條河成了看台。\n21:00｜《吉原夜櫻之圖》｜吉原仲之町的夜櫻與燈籠，是遊里最熱鬧的時刻。\n22:00｜《月之岬》｜宴席後的器物散落一地，窗外滿月懸在海灣上。\n23:00｜《御廄河岸》｜渡船仍在河上往返，載著夜間工作者過河。\n00:00｜《淺草田甫酉之町詣》｜窗邊的貓望向田間，參拜酉之市的人潮正在遠方移動。\n05:00｜《廓中東雲》｜天色微亮，街巷中的人陸續離去，一夜的遊興告一段落。",
+      "updated": "策展時間｜作品／年代與季節｜敘事（與網站摘要一致）\n18:00｜兩國橋宵月\n館藏未定年｜交叉的橋架占據近景，月亮、雲帶與遊船從橋下的空隙露出。\n19:00｜柳橋夜景・萬八\n約 1835–1842｜料亭的座敷面向河水，橋上的人物與水面的船接續了店外的景色。\n20:00｜兩國花火\n1858｜煙火在夜空綻開，橋下擠滿遊船，整條河成了看台。\n21:00｜吉原夜櫻之圖\n約 1841；陰曆三月夜櫻背景｜櫻花與燈籠沿街排列，花下與樓上都有人群。\n22:00｜月之岬\n1857；館方作中秋月見解讀｜滿月在海灣上方，座敷留下器物與人影；館方將此景解讀為宴席之後。\n23:00｜御廄河岸\n約 1857｜渡船仍在河上往返，載著夜間工作者過河。\n00:00｜淺草田甫酉之町詣\n1857（安政四年十一月）；陰曆十一月；畫中黃昏｜窗邊的貓望向田間，參拜酉之市的人潮正在遠方移動。\n05:00｜廓中東雲\n1857｜黎明的街道上只有幾組人物，與夜櫻圖的密集人群形成對照。",
+      "keys": [
+        "bridge",
+        "manpachi",
+        "fireworksImage",
+        "cherryImage",
+        "moonImage",
+        "ferry",
+        "asakusa",
+        "dawnImage",
+        "yoshiwara",
+        "moonHeritage"
+      ],
+      "claimType": "表格修訂",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 33"
+    },
+    {
+      "id": "DOCX-P35",
+      "original": "18:00 到 05:00 是本展安排的策展敘事時間，不代表作品描繪的是同一個夜晚或精確的鐘點；作品位置也依可信度分為確定、大致與推定三級，不把推測當成史實。",
+      "updated": "18:00 到 05:00 是本展的策展敘事時間，不是畫中事件的精確鐘點，也不是同一年、同一季節或同一個夜晚。尤其《淺草田甫酉之町詣》畫中是黃昏，00:00 僅是其導覽位置。地點依證據分為確定、大致與推定三級；《月之岬》精確位置仍待確認，沒有保留未獲佐證的座標。",
+      "keys": [
+        "asakusa",
+        "moonHeritage"
+      ],
+      "claimType": "策展安排／館方解讀",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 35"
+    },
+    {
+      "id": "DOCX-P38",
+      "original": "八件核心作品全部來自紐約大都會藝術博物館（The Met）的線上館藏，館藏頁皆標示為公有領域；依 The Met 的 Open Access 政策，可不經許可、免費使用。選件時我們讓作品涵蓋橋、河流、料亭、煙火、遊里、祭典與黎明，同時呈現城市的娛樂、交通、信仰、消費與勞動。另以三件城市景觀作品補充前後脈絡（圖像取自 Wikimedia Commons）。",
+      "updated": "八件核心圖像來自 The Met；已逐件核對館藏頁、API 的登錄號、primaryImage 與 isPublicDomain=true。依其 Open Access 政策，這些公有領域圖像以 CC0 開放使用（The Metropolitan Museum of Art, n.d.）。三件延伸作品的數位檔來自 Wikimedia Commons，來源鏈與權利標示另列，不統稱十一件都出自 The Met。",
+      "keys": [
+        "metRights",
+        "api-A01",
+        "api-A02",
+        "api-A03",
+        "api-A04",
+        "api-A05",
+        "api-A06",
+        "api-A07",
+        "api-A08"
+      ],
+      "claimType": "圖像來源與權利",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 38"
+    },
+    {
+      "id": "DOCX-P39",
+      "original": "例如《御廄河岸》：The Met 指出畫中的「夜鷹」正搭渡船前往工作。這件作品讓展覽從漂亮的夜景，轉向一個社會問題：對有些人來說，午夜不是娛樂，而是工作的開始。",
+      "updated": "選件涵蓋橋、河流、料亭、煙火、遊里、祭典與黎明，供觀眾比較娛樂、移動、消費與勞動。例如《御廄河岸》，The Met 將部分乘客解讀為搭渡船前往工作的「夜鷹」（JP1547）。館方同段也談到北齋另一幅渡船圖，兩作不能混用；它沒有說這些人正好在 23:00 或午夜開始工作。",
+      "keys": [
+        "ferry"
+      ],
+      "claimType": "館方人物解讀／策展安排",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 39"
+    },
+    {
+      "id": "DOCX-P40",
+      "original": "作品｜系列｜年代｜收藏\n《兩國橋宵月》｜東都名所｜不詳｜The Met JP1312\n《柳橋夜景・萬八》｜江戶高名會亭盡｜約 1835–1842｜The Met JP1158\n《兩國花火》｜名所江戶百景・第 98 景｜1858｜The Met JP642\n《吉原夜櫻之圖》｜東都名所｜約 1841｜The Met JP608\n《月之岬》｜名所江戶百景・第 82 景｜1857｜The Met JP1185\n《御廄河岸》｜名所江戶百景・第 105 景｜約 1857｜The Met JP1547\n《淺草田甫酉之町詣》｜名所江戶百景・第 101 景｜1857（安政四年十一月）｜The Met JP60\n《廓中東雲》｜名所江戶百景・第 38 景｜1857｜The Met JP1024\n《猿若町夜之景》｜名所江戶百景・第 90 景｜1856｜原典藏館未標明\n《吉原日本堤》｜名所江戶百景・第 100 景｜1857｜Brooklyn Museum\n《駿河町之圖》｜名所江戶百景・第 8 景｜1856｜Brooklyn Museum",
+      "updated": "作品 ID／名稱｜系列｜年代｜本頁圖像來源\nA01 兩國橋宵月｜東都名所｜館藏未定年｜The Met JP1312\nA02 柳橋夜景・萬八｜江戶高名會亭盡｜約 1835–1842｜The Met JP1158\nA03 兩國花火｜名所江戶百景・第 98 景｜1858｜The Met JP642\nA04 吉原夜櫻之圖｜東都名所｜約 1841｜The Met JP608\nA05 月之岬｜名所江戶百景・第 82 景｜1857｜The Met JP1185\nA06 御廄河岸｜名所江戶百景・第 105 景｜約 1857｜The Met JP1547\nA07 淺草田甫酉之町詣｜名所江戶百景・第 101 景｜1857（安政四年十一月）｜The Met JP60\nA08 廓中東雲｜名所江戶百景・第 38 景｜1857｜The Met JP1024\nB01 猿若町夜之景｜名所江戶百景・第 90 景｜1856｜Commons；原典藏未確認\nB02 吉原日本堤｜名所江戶百景・第 100 景｜1857｜Commons 指向 Brooklyn；精確對應尚有限制\nB03 駿河町之圖｜名所江戶百景・第 8 景｜1856｜Commons 指向 Brooklyn；精確對應尚有限制",
+      "keys": [
+        "bridge",
+        "api-A01",
+        "manpachi",
+        "api-A02",
+        "fireworksImage",
+        "api-A03",
+        "cherryImage",
+        "api-A04",
+        "moonImage",
+        "api-A05",
+        "ferry",
+        "api-A06",
+        "asakusa",
+        "api-A07",
+        "dawnImage",
+        "api-A08",
+        "saruwaka",
+        "commons-B01",
+        "embankment",
+        "commons-B02",
+        "suruga",
+        "commons-B03"
+      ],
+      "claimType": "表格修訂",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 40"
+    },
+    {
+      "id": "DOCX-P42",
+      "original": "各作品的詳細解說（畫面觀察、城市空間、當時的人們、現代地點對照）見網站作品頁。",
+      "updated": "十一件作品的四段解說（畫面觀察、城市空間、當時的人們、現代地點對照）均可在網站作品頁閱讀；完整編目與圖像權利另存 artwork-catalog.csv 及 rights-register.csv。下列資料區分本頁印本與同構圖的其他印本，不移用他館的尺寸、收藏號或色彩狀態。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 42"
+    },
+    {
+      "id": "DOCX-P46",
+      "original": "展覽網址：https://richardliang19.github.io/edo-after-dark/。建議依下表順序瀏覽，亦為現場導覽的路線：",
+      "updated": "展覽網址：https://richardliang19.github.io/edo-after-dark/ 。建議從時間軸進入，再依興趣閱讀作品、比較地圖或參與活動。各頁可以互相返回；本表是建議路線，沒有真人現場導覽紀錄。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 46"
+    },
+    {
+      "id": "DOCX-P47",
+      "original": "頁面｜內容\n首頁｜提燈照亮浮世繪的開場，以及時間、空間、人物三個入口\n策展理念｜展覽主題、設計、選件與「線上博物館是什麼？」\n夜之時間軸｜橫向捲動的隅田川繪卷，從 18:00 走到 05:00\n作品｜11 件作品的細節導覽、資料與解說\n時空探索｜江戶古地圖與今日東京的對照，可依條件篩選\n活動與消息｜兩個互動活動、最新消息與友站連結\n關於我們／參考資料｜團隊、設計特色、APA 參考文獻",
+      "updated": "頁面｜內容\n首頁｜提燈開場、首次看展路線，以及時間、空間、人物三個入口\n策展理念｜主題、設計、選件與學生數位策展的職能範圍\n夜之時間軸｜18:00–05:00 的敘事路線，標示策展時間與年代／季節差別\n作品｜11 件基本資料與圖文解說，其中 6 件有推鏡、5 件為一般圖文\n時空探索｜江戶切繪圖與今日東京同步比較，地點分級並保留未定位作品\n活動與消息｜四題觀展視角、提燈尋跡 6／26 題、消息與友站\n關於我們／參考資料｜CSV 團隊資料；作品、已核讀解說與舊版未核讀線索分列",
+      "keys": [],
+      "claimType": "表格修訂",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 47"
+    },
+    {
+      "id": "DOCX-P50",
+      "original": "一、提燈夜行（首頁）：江戶沒有公共路燈，首頁的浮世繪沉在黑暗中，滑鼠或手指就是燈籠，只照亮光圈裡的畫面。",
+      "updated": "一、提燈夜行（首頁）：用光圈引導觀眾注意浮世繪局部，再回到完整作品。這是觀看方式的設計，不是重建某一晚的實際照明；降低動態時仍可直接閱讀完整圖像。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 50"
+    },
+    {
+      "id": "DOCX-P52",
+      "original": "三、凝視細節（作品頁）：捲動驅動鏡頭推進，依序停在畫中的細節並附上解說，模擬在展櫃前湊近觀看。",
+      "updated": "三、凝視細節（作品頁）：11 件作品均有基本資料與圖文解說，其中 A03–A08 六件有捲動推鏡設定，其餘 A01、A02、B01、B02、B03 五件是一般圖文展示。手機與低動態模式保留直接閱讀；推鏡不是每件都有，也不保證超出原圖解析度的細節。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 52"
+    },
+    {
+      "id": "DOCX-P53",
+      "original": "四、古今對照地圖（時空探索）：左側為 1850 年代經地理配準的江戶切繪圖，右側為今日東京，兩圖同步移動。",
+      "updated": "四、古今對照地圖（時空探索）：左側為經配準的 1850–1853 年五幅江戶切繪圖，右側為今日東京，兩圖可同步移動與縮放。圖幅年份及來源以 CODH／Map Warper metadata 核對；配準有誤差，區域標記不宣稱是畫家站立點。",
+      "keys": [
+        "codh",
+        "map-4908",
+        "map-4902",
+        "map-4930",
+        "map-4931",
+        "map-4935"
+      ],
+      "claimType": "圖幅 metadata／策展限制",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 53"
+    },
+    {
+      "id": "DOCX-P54",
+      "original": "五、互動活動：活動一「你的江戶夜行，會先看見什麼？」以四個觀展情境推薦閱讀視角與作品。活動二「提燈尋跡」預設隨機三幅、六題，也可選擇完整 26 題；畫面會推進到題目所問的細節，答題後可在觀察手帖留下自己的想法，解說皆附館藏來源。",
+      "updated": "五、互動活動：活動一「你的江戶夜行，會先看見什麼？」以四個情境推薦觀展視角，不是心理或歷史人物身分測驗。活動二「提燈尋跡」共 11 幅、26 題，預設隨機三幅六題，也可專看一幅或選完整路線。畫面可切換全圖、不同焦點並放大拖曳；每個錯誤選項有提示，反思選填且不計分。手帖可在本機保存、恢復與清除，也能下載含來源網址的純文字；沒有帳號、社群或後端資料庫。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 54"
+    },
+    {
+      "id": "DOCX-P56",
+      "original": "圖 1　首頁的提燈效果",
+      "updated": "圖 1　首頁提燈效果。保留原報告截圖，作設計示例；不作本輪部署證據。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 56"
+    },
+    {
+      "id": "DOCX-P58",
+      "original": "圖 2　作品頁的細節導覽",
+      "updated": "圖 2　作品頁細節導覽。保留原報告截圖；目前只有六件作品有推鏡設定。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 58"
+    },
+    {
+      "id": "DOCX-P60",
+      "original": "圖 3　古今對照地圖",
+      "updated": "圖 3　古今對照地圖。保留原報告截圖；標記與文字以本輪修訂網站為準。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 60"
+    },
+    {
+      "id": "DOCX-P61",
+      "original": "網站以 Astro、GSAP 與 Leaflet 製作，部署於 GitHub Pages；組員透過 GitHub 的 Pull Request 協作，無需額外費用。",
+      "updated": "網站使用 Astro、TypeScript、GSAP 與 Leaflet，保留 GitHub Pages 的 /edo-after-dark/ 子路徑。Git 中有 Pull Request 合併紀錄，可支持曾用版本協作，不能據此推定所有組員工作或會議出席。本輪只修改本地檔案，沒有推送或部署；也沒有成本帳目可證明所有製作均無額外費用。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 61"
+    },
+    {
+      "id": "DOCX-P64",
+      "original": "國際博物館協會（ICOM）2022 年的博物館定義指出，博物館研究、典藏、保存、詮釋並展示遺產，對公眾開放且具可及性，提供教育、欣賞、反思與知識分享的體驗。因此博物館不只是「把老東西放好」的地方，而是透過選擇、研究與詮釋，讓物件和今天的人產生關係。",
+      "updated": "ICOM（2022）於 8 月 24 日通過的定義包含以下完整要素（此處轉述，原文見第七章連結）：博物館是服務社會的非營利常設機構，研究、蒐藏、保存、詮釋並展示有形與無形遺產；向公眾開放，具可及性與包容性，促進多樣性與永續；以倫理、專業及社群參與運作和溝通，提供教育、欣賞、反思及知識分享的多元經驗。",
+      "keys": [
+        "icom"
+      ],
+      "claimType": "完整定義轉述",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 64"
+    },
+    {
+      "id": "DOCX-P65",
+      "original": "我們認為，線上博物館把這份工作搬到網路上，並改變了「觀看文物」的方法：",
+      "updated": "本展是以外部館藏資料為基礎的學生數位策展，已實作研究、詮釋與教育展示。小組沒有取得實體藏品，也不把網站檔案整理當作完成典藏機構的治理、文物保護、長期保存或社群參與研究。我們使用數位媒介，重點在以下幾種閱讀方式：",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 65"
+    },
+    {
+      "id": "DOCX-P66",
+      "original": "打破距離：分藏各地的作品可以並列比較，也能放大到展櫃前看不清的細節。",
+      "updated": "連結不同館藏：展示八件 Met 圖像與三件 Commons 補充圖像，連到其他機構對同構圖印本的解說；活動可比較作品。放大的清晰程度受圖像解析度限制，不能把他館印本的木紋或色彩當成本頁特徵。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 66"
+    },
+    {
+      "id": "DOCX-P67",
+      "original": "重組時空：用時間軸與古今地圖，把作品放回它所在的夜晚與城市。",
+      "updated": "重組時空：以時間軸與古今地圖建立觀看順序，並保留不同年代、季節、圖幅與定位信度的差別。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 67"
+    },
+    {
+      "id": "DOCX-P69",
+      "original": "開放可及：免費、不限時地，成本低，也能隨研究更新。",
+      "updated": "開放可及：公開網站可免費閱讀，內容可隨研究更新。仍依賴瀏覽器、網路及外部圖像／圖磚服務，是否足夠可及須經人工與使用者驗證，不能只由線上形式推定。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 69"
+    },
+    {
+      "id": "DOCX-P74",
+      "original": "組員｜負責項目\n梁棨理｜策展設計、網站架設\n王鴻翰｜策展設計\n劉彥廷｜\n黃子懿｜策展設計、網站內容精修\n曾祥恩｜策展設計、資料收集\n王怡婷｜\n郭濬瑀｜",
+      "updated": "組員｜負責項目（依 contributions.csv）\n梁棨理｜策展設計、網站架設\n王鴻翰｜策展設計\n劉彥廷｜未提供；待本人確認\n黃子懿｜策展設計、網站內容精修\n曾祥恩｜策展設計、資料收集\n王怡婷｜未提供；待本人確認\n郭濬瑀｜未提供；待本人確認",
+      "keys": [],
+      "claimType": "表格修訂",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 74"
+    },
+    {
+      "id": "DOCX-P75",
+      "original": "黃色欄位的組員負責項目請補上。",
+      "updated": "分工表依 contributions.csv，三位空白者維持未提供；沒有由 Git 作者推定個人責任。期中簡報第 7 頁有分頁安排，但不能直接代填期末分工。需本人確認的項目列於內部待辦。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 75"
+    },
+    {
+      "id": "DOCX-P78",
+      "original": "依網站開發紀錄整理；深色為已完成，淺色為預定。",
+      "updated": "下表以 2026 年可核對的 Git 提交日與本輪驗證紀錄標示節點；深色「●」為有證據的完成節點，淺色「待」為尚未執行。它不是工時表，不表示連續施工或實際起訖日。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 78"
+    },
+    {
+      "id": "DOCX-P80",
+      "original": "工作項目｜11/9｜11/10｜11/11｜11/12｜11/13｜11/14｜11/15｜11/16\n視覺概念與網站骨架｜｜｜｜｜｜｜｜\n館藏圖像查證｜｜｜｜｜｜｜｜\n古今地圖與互動活動｜｜｜｜｜｜｜｜\n作品解說與策展內容｜｜｜｜｜｜｜｜\n活動改版與時間軸調整｜｜｜｜｜｜｜｜\n期末書面報告｜｜｜｜｜｜｜｜\n團隊名單上線｜｜｜｜｜｜｜｜\n主視覺海報｜｜｜｜｜｜｜｜\n最終檢查與簡報｜｜｜｜｜｜｜｜",
+      "updated": "工作項目｜11/9｜11/13｜11/15｜11/18｜狀態｜可追溯依據\n視覺概念與網站骨架｜●｜｜｜｜已有版本｜e633d2d、4271712\n核心圖像選用與本輪查核｜●｜｜｜●｜另有待查｜0e127f2；證據登錄表（不表示所有史實已確證）\n古今地圖與互動活動｜｜●｜｜●｜已驗收｜f6f3650／ee5d543；瀏覽器紀錄\n作品解說與策展內容｜｜●｜｜●｜已修訂｜87db3f0；本輪逐件／逐題審核\n活動改版與時間軸調整｜｜｜●｜●｜已驗收｜7b4cbe8、b61293f；瀏覽器紀錄\n期末書面報告｜｜｜｜●｜原稿修訂 11/19｜11/18 分章稿；11/19 原稿修訂與 PDF 驗收；教師格式仍待核\n團隊名單上線｜｜｜●｜｜分工未齊｜cd3e09b；原 CSV 三欄空白\n主視覺海報｜｜｜｜｜待｜未取得正式圖檔及來源，不假填完成日期\n真人研究與課堂簡報｜｜｜｜｜待｜沒有真人研究或最終課堂簡報的實施證據",
+      "keys": [],
+      "claimType": "表格修訂",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 80"
+    },
+    {
+      "id": "DOCX-P82",
+      "original": "6.3 討論紀錄",
+      "updated": "6.3 可核對的版本節點",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 82"
+    },
+    {
+      "id": "DOCX-P83",
+      "original": "日期｜決議\n11/9｜以 Astro 建置網站並部署於 GitHub Pages（不使用 Wix）；確定沉浸式暗色風格與字體；核心作品改用 The Met 公有領域圖像。\n11/13｜合併古今地圖與互動活動；作品解說放上網站，分工、甘特圖與討論紀錄放在書面報告。\n11/15｜合併活動與時間軸改版：活動一改為四個觀展情境，活動二預設改為三幅六題並加入觀察手帖；保留細節推鏡動畫；團隊名單上線，主視覺海報待圖檔與授權確認後再公開。",
+      "updated": "日期（2026）｜版本／可核對的內容｜證據範圍\n11/9｜e633d2d：視覺概念；4271712：Astro 骨架；0e127f2：八件核心改用 Met 圖像｜支持版本變更，不能證明當日曾開會、出席或一致決議\n11/13｜f6f3650／ee5d543：地圖與活動；87db3f0：作品文案、策展與導覽｜以提交內容與主旨為準；不以它補出席名單\n11/15｜cd3e09b／7b4cbe8：活動、時間軸與團隊；b61293f：推鏡與時間軸修正｜支持功能版本節點，不能分配三位空白者的責任\n11/18｜本輪來源、網站修訂、分章稿與驗證紀錄｜尚未提交或部署；實測與人工待辦分列\n11/19｜依使用者原 DOCX 同步修訂正文／表格並渲染驗收｜原稿保持原樣；不以內容核對日代填繳交日",
+      "keys": [],
+      "claimType": "表格修訂",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 83"
+    },
+    {
+      "id": "DOCX-P87",
+      "original": "七、參考文獻",
+      "updated": "七、參考文獻",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 87"
+    },
+    {
+      "id": "DOCX-P88",
+      "original": "展出作品",
+      "updated": "7.1 展出作品（依實際圖像來源）",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 88"
+    },
+    {
+      "id": "DOCX-P89",
+      "original": "Utagawa, H. (1856). する賀てふ [Suruga-chō] [Woodblock print]（名所江戶百景，第 8 景）. Brooklyn Museum. Retrieved November 9, 2026, from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+      "updated": "Utagawa, H. (n.d.). 両國之宵月 [Twilight Moon at Ryōgoku Bridge] [木版畫]（東都名所；JP1312）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/45294",
+      "keys": [
+        "api-A01"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 89"
+    },
+    {
+      "id": "DOCX-P90",
+      "original": "Utagawa, H. (1856). 猿わか町よるの景 [Night View of Saruwaka-machi] [Woodblock print]（名所江戶百景，第 90 景）. Retrieved November 9, 2026, from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+      "updated": "Utagawa, H. (約 1835–1842). 柳ばし夜景　万八 [The Manpachi at Evening in Yanagibashi] [木版畫]（江戶高名會亭盡；JP1158）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/45306",
+      "keys": [
+        "api-A02"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 90"
+    },
+    {
+      "id": "DOCX-P91",
+      "original": "Utagawa, H. (1857). よし原日本堤 [Nihon Embankment and Yoshiwara] [Woodblock print]（名所江戶百景，第 100 景）. Brooklyn Museum. Retrieved November 9, 2026, from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+      "updated": "Utagawa, H. (1858). 両国花火 [Fireworks at Ryōgoku Bridge, from the series One Hundred Famous Views of Edo] [木版畫]（名所江戶百景，第 98 景；JP642）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/37093",
+      "keys": [
+        "api-A03"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 91"
+    },
+    {
+      "id": "DOCX-P92",
+      "original": "Utagawa, H. (1857a). The entrance to the Yoshiwara at dawn [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/54931",
+      "updated": "Utagawa, H. (約 1841). 吉原夜桜の図 [Yoshiwara Yo Zakura no Zu] [木版畫]（東都名所；JP608）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/37059",
+      "keys": [
+        "api-A04"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 92"
+    },
+    {
+      "id": "DOCX-P93",
+      "original": "Utagawa, H. (1857b). Moon-viewing location (Tsuki no Misaki), from the series One hundred famous views of Edo (Meisho Edo Hyakkei) [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/55095",
+      "updated": "Utagawa, H. (1857). 月の岬 [Moon-Viewing Location (Tsuki no Misaki), from the series One Hundred Famous Views of Edo (Meisho Edo Hyakkei)] [木版畫]（名所江戶百景，第 82 景；JP1185）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/55095",
+      "keys": [
+        "api-A05"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 93"
+    },
+    {
+      "id": "DOCX-P94",
+      "original": "Utagawa, H. (1857c). Pilgrimage to the Torinomachi Festival across the ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One hundred famous views of Edo (Meisho Edo hyakkei) [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/36539",
+      "updated": "Utagawa, H. (約 1857). 御厩河岸 [Ommayagashi, Sumida River] [木版畫]（名所江戶百景，第 105 景；JP1547）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/55712",
+      "keys": [
+        "api-A06"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 94"
+    },
+    {
+      "id": "DOCX-P95",
+      "original": "Utagawa, H. (1858). Fireworks at Ryōgoku Bridge, from the series One hundred famous views of Edo [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/37093",
+      "updated": "Utagawa, H. (1857（安政四年十一月）). 浅草田甫酉の町詣 [Pilgrimage to the Torinomachi Festival across the Ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One Hundred Famous  Views of Edo (Meisho Edo hyakkei)] [木版畫]（名所江戶百景，第 101 景；JP60）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/36539",
+      "keys": [
+        "api-A07"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 95"
+    },
+    {
+      "id": "DOCX-P96",
+      "original": "Utagawa, H. (ca. 1835–1842). The Manpachi at evening in Yanagibashi [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/45306",
+      "updated": "Utagawa, H. (1857). 廓中東雲 [The Entrance to the Yoshiwara at Dawn] [木版畫]（名所江戶百景，第 38 景；JP1024）. The Metropolitan Museum of Art. 檢索於 2026 年 11 月 18 日：https://www.metmuseum.org/art/collection/search/54931",
+      "keys": [
+        "api-A08"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 96"
+    },
+    {
+      "id": "DOCX-P97",
+      "original": "Utagawa, H. (ca. 1841). Yoshiwara yo zakura no zu [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/37059",
+      "updated": "Utagawa, H. (1856). 猿わか町よるの景 [Night View of Saruwaka-machi] [木版畫]（名所江戶百景，第 90 景；原印本資訊有限制）. Wikimedia Commons；檔案聲明與原館藏獨立核實分開。 檢索於 2026 年 11 月 18 日：https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+      "keys": [
+        "commons-B01"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 97"
+    },
+    {
+      "id": "DOCX-P98",
+      "original": "Utagawa, H. (ca. 1857). Ommayagashi, Sumida River [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/55712",
+      "updated": "Utagawa, H. (1857). よし原日本堤 [Nihon Embankment and Yoshiwara] [木版畫]（名所江戶百景，第 100 景；原印本資訊有限制）. Wikimedia Commons；檔案聲明與原館藏獨立核實分開。 檢索於 2026 年 11 月 18 日：https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+      "keys": [
+        "commons-B02"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 98"
+    },
+    {
+      "id": "DOCX-P99",
+      "original": "Utagawa, H. (n.d.). Twilight moon at Ryōgoku Bridge [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/45294",
+      "updated": "Utagawa, H. (1856). する賀てふ [Suruga-chō] [木版畫]（名所江戶百景，第 8 景；原印本資訊有限制）. Wikimedia Commons；檔案聲明與原館藏獨立核實分開。 檢索於 2026 年 11 月 18 日：https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+      "keys": [
+        "commons-B03"
+      ],
+      "claimType": "作品書目",
+      "support": "依具體來源分讀；館方解讀不等於唯一史實",
+      "location": "原 body 節點 99"
+    },
+    {
+      "id": "DOCX-P100",
+      "original": "其他參考資料",
+      "updated": "7.2 研究、館方解說與標準",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 100"
+    },
+    {
+      "id": "DOCX-P101",
+      "original": "Agafonkin, V. (2023). Leaflet (Version 1.9.4) [Computer software]. https://leafletjs.com/",
+      "updated": "參考文獻暫採機構／作者、年份、題名、來源與讀取範圍的一致格式。教師引用格式 PDF 尚未取得，不能宣稱完全符合課程規範。未取得的全文與頁碼不自行補寫。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明，非新增歷史斷言",
+      "location": "原 body 節點 101"
+    },
+    {
+      "id": "DOCX-A21-2",
+      "original": "新增",
+      "updated": "我們希望觀眾能回答三個問題：畫面安排我們從哪裡觀看城市？遊賞與工作如何出現在同一個夜間環境？哪些解釋來自畫面，哪些需要文獻，哪些仍是自己的推論？",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 21 後，第 2 區塊"
+    },
+    {
+      "id": "DOCX-A21-3",
+      "original": "新增",
+      "updated": "學習目標｜可觀察的表現｜評量方式（尚未進行真人研究）\n找出圖像線索｜指出至少兩處細節，說明它們如何影響觀看｜請觀眾指認位置並說明，不以記住題名或年代為準\n分辨證據層次｜區分可見細節、具名館方解讀與個人推論｜以月之岬的不同館方解讀追問，記錄原話\n比較夜間經驗｜比較兩國花火與御廄河岸，各舉一項線索｜由圖像與站內介紹說明遊賞和工作，不要求背誦鐘點",
+      "keys": [],
+      "claimType": "新增教學／驗證內容",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 21 後，第 3 區塊"
+    },
+    {
+      "id": "DOCX-A21-4",
+      "original": "新增",
+      "updated": "以上是預期學習目標。程式與瀏覽器驗收只能確認功能運作，不能代替觀眾理解或教學成效的研究。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 21 後，第 4 區塊"
+    },
+    {
+      "id": "DOCX-A35-2",
+      "original": "新增",
+      "updated": "功能｜策展目的｜預期學習｜如何驗證\n提燈首頁｜先注意局部，再回看完整圖像｜說出局部與全圖的差別｜已測低動態；學習差異待真人研究\n時間軸｜組織八件核心的觀看順序｜分辨策展時刻與歷史時間｜已測一般 GSAP、手機文字、前後站及方向鍵\n六件推鏡與活動放大｜指向可辨認且有意義的細節｜由位置與構圖提出解釋｜核對原圖焦點；已測切換、鍵盤和模擬觸控\n古今地圖｜比較相關區域與水路｜認識配準與定位的限制｜五幅 metadata 已核；雙圖同步已測\n活動一｜推薦不同觀展視角｜嘗試原本沒注意的觀看位置｜已走完四題；不是心理或歷史身分測驗\n活動二與手帖｜接續觀察、背景與反思｜分清我看到、我推論與仍有疑問｜已測短／完整路線、保存與文字下載；真人理解待測",
+      "keys": [],
+      "claimType": "新增教學／驗證內容",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 35 後，第 2 區塊"
+    },
+    {
+      "id": "DOCX-A42-3",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：両國之宵月。英文題名：Twilight Moon at Ryōgoku Bridge。年代：The Met 未定年；系列：東都名所。媒材：彩色木版畫。",
+      "keys": [
+        "bridge",
+        "api-A01"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 3 區塊"
+    },
+    {
+      "id": "DOCX-A42-4",
+      "original": "新增",
+      "updated": "本頁印本：The Metropolitan Museum of Art，JP1312；尺寸：H. 9 5/8 in. (24.4 cm); W. 15 3/16 in. (38.6 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+      "keys": [
+        "api-A01",
+        "metRights"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 4 區塊"
+    },
+    {
+      "id": "DOCX-A42-5",
+      "original": "新增",
+      "updated": "策展位置：18:00（敘事安排）。作品的觀看與生活脈絡詳見站內介紹。",
+      "keys": [
+        "bridge"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 5 區塊"
+    },
+    {
+      "id": "DOCX-A42-6",
+      "original": "新增",
+      "updated": "圖像來源：https://www.metmuseum.org/art/collection/search/45294",
+      "keys": [
+        "api-A01"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 6 區塊"
+    },
+    {
+      "id": "DOCX-A42-8",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：柳ばし夜景　万八。英文題名：The Manpachi at Evening in Yanagibashi。年代：約 1835–1842；系列：江戶高名會亭盡。媒材：彩色木版畫。",
+      "keys": [
+        "manpachi",
+        "api-A02"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 8 區塊"
+    },
+    {
+      "id": "DOCX-A42-9",
+      "original": "新增",
+      "updated": "本頁印本：The Metropolitan Museum of Art，JP1158；尺寸：H. 9 13/16 in. (24.9 cm); W. 14 9/16 in. (37 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+      "keys": [
+        "api-A02",
+        "metRights"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 9 區塊"
+    },
+    {
+      "id": "DOCX-A42-10",
+      "original": "新增",
+      "updated": "策展位置：19:00（敘事安排）。作品的觀看與生活脈絡詳見站內介紹。",
+      "keys": [
+        "manpachi"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 10 區塊"
+    },
+    {
+      "id": "DOCX-A42-11",
+      "original": "新增",
+      "updated": "圖像來源：https://www.metmuseum.org/art/collection/search/45306",
+      "keys": [
+        "api-A02"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 11 區塊"
+    },
+    {
+      "id": "DOCX-A42-13",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：両国花火。英文題名：Fireworks at Ryōgoku Bridge, from the series One Hundred Famous Views of Edo。年代：1858；系列：名所江戶百景，第 98 景。媒材：彩色木版畫。",
+      "keys": [
+        "fireworksImage",
+        "api-A03"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 13 區塊"
+    },
+    {
+      "id": "DOCX-A42-14",
+      "original": "新增",
+      "updated": "本頁印本：The Metropolitan Museum of Art，JP642；尺寸：Image: 13 1/4 × 8 3/4 in. (33.7 × 22.2 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+      "keys": [
+        "api-A03",
+        "metRights"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 14 區塊"
+    },
+    {
+      "id": "DOCX-A42-15",
+      "original": "新增",
+      "updated": "策展位置：20:00（敘事安排）。作品的觀看與生活脈絡詳見站內介紹。",
+      "keys": [
+        "fireworksImage"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 15 區塊"
+    },
+    {
+      "id": "DOCX-A42-16",
+      "original": "新增",
+      "updated": "圖像來源：https://www.metmuseum.org/art/collection/search/37093",
+      "keys": [
+        "api-A03"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 16 區塊"
+    },
+    {
+      "id": "DOCX-A42-18",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：吉原夜桜の図。英文題名：Yoshiwara Yo Zakura no Zu。年代：約 1841；系列：東都名所。媒材：彩色木版畫。",
+      "keys": [
+        "cherryImage",
+        "api-A04"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 18 區塊"
+    },
+    {
+      "id": "DOCX-A42-19",
+      "original": "新增",
+      "updated": "本頁印本：The Metropolitan Museum of Art，JP608；尺寸：9 13/16 x 14 3/8 in. (24.9 x 36.5 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+      "keys": [
+        "api-A04",
+        "metRights"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 19 區塊"
+    },
+    {
+      "id": "DOCX-A42-20",
+      "original": "新增",
+      "updated": "策展位置：21:00（敘事安排）。春季夜櫻與暫植櫻樹背景不直接證明每位人物的身分或債務。",
+      "keys": [
+        "cherryImage"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 20 區塊"
+    },
+    {
+      "id": "DOCX-A42-21",
+      "original": "新增",
+      "updated": "圖像來源：https://www.metmuseum.org/art/collection/search/37059",
+      "keys": [
+        "api-A04"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 21 區塊"
+    },
+    {
+      "id": "DOCX-A42-23",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：月の岬。英文題名：Moon-Viewing Location (Tsuki no Misaki), from the series One Hundred Famous Views of Edo (Meisho Edo Hyakkei)。年代：1857；系列：名所江戶百景，第 82 景。媒材：彩色木版畫。",
+      "keys": [
+        "moonImage",
+        "api-A05"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 23 區塊"
+    },
+    {
+      "id": "DOCX-A42-24",
+      "original": "新增",
+      "updated": "本頁印本：The Metropolitan Museum of Art，JP1185；尺寸：Oban 13 7/8 x 9 5/8 in. (35.2 x 24.4 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+      "keys": [
+        "api-A05",
+        "metRights"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 24 區塊"
+    },
+    {
+      "id": "DOCX-A42-25",
+      "original": "新增",
+      "updated": "詮釋限制：品川灣高地為具名館方解說，精確地點待考；宴席階段的兩種讀法見第 2.2 節。",
+      "keys": [
+        "moonImage",
+        "moonHeritage",
+        "moonRutgers"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 25 區塊"
+    },
+    {
+      "id": "DOCX-A42-26",
+      "original": "新增",
+      "updated": "圖像來源：https://www.metmuseum.org/art/collection/search/55095",
+      "keys": [
+        "api-A05"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 26 區塊"
+    },
+    {
+      "id": "DOCX-A42-28",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：御厩河岸。英文題名：Ommayagashi, Sumida River。年代：約 1857；系列：名所江戶百景，第 105 景。媒材：彩色木版畫。",
+      "keys": [
+        "ferry",
+        "api-A06"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 28 區塊"
+    },
+    {
+      "id": "DOCX-A42-29",
+      "original": "新增",
+      "updated": "本頁印本：The Metropolitan Museum of Art，JP1547；尺寸：H. 14 3/4 in. (37.5 cm); W. 10 1/8 in. (25.7 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+      "keys": [
+        "api-A06",
+        "metRights"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 29 區塊"
+    },
+    {
+      "id": "DOCX-A42-30",
+      "original": "新增",
+      "updated": "策展位置：23:00（敘事安排）。作品的觀看與生活脈絡詳見站內介紹。",
+      "keys": [
+        "ferry"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 30 區塊"
+    },
+    {
+      "id": "DOCX-A42-31",
+      "original": "新增",
+      "updated": "圖像來源：https://www.metmuseum.org/art/collection/search/55712",
+      "keys": [
+        "api-A06"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 31 區塊"
+    },
+    {
+      "id": "DOCX-A42-33",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：浅草田甫酉の町詣。英文題名：Pilgrimage to the Torinomachi Festival across the Ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One Hundred Famous  Views of Edo (Meisho Edo hyakkei)。年代：1857（安政四年十一月）；系列：名所江戶百景，第 101 景。媒材：彩色木版畫。",
+      "keys": [
+        "asakusa",
+        "api-A07"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 33 區塊"
+    },
+    {
+      "id": "DOCX-A42-34",
+      "original": "新增",
+      "updated": "本頁印本：The Metropolitan Museum of Art，JP60；尺寸：Vertical ōban; 13 1/16 x 8 11/16 in. (33.2 x 22.1 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+      "keys": [
+        "api-A07",
+        "metRights"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 34 區塊"
+    },
+    {
+      "id": "DOCX-A42-35",
+      "original": "新增",
+      "updated": "策展位置：00:00（敘事安排）。畫中黃昏與本展午夜站點分開；髮簪禮物保留館方推測語氣。",
+      "keys": [
+        "asakusa"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 35 區塊"
+    },
+    {
+      "id": "DOCX-A42-36",
+      "original": "新增",
+      "updated": "圖像來源：https://www.metmuseum.org/art/collection/search/36539",
+      "keys": [
+        "api-A07"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 36 區塊"
+    },
+    {
+      "id": "DOCX-A42-38",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：廓中東雲。英文題名：The Entrance to the Yoshiwara at Dawn。年代：1857；系列：名所江戶百景，第 38 景。媒材：彩色木版畫。",
+      "keys": [
+        "dawnImage",
+        "api-A08"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 38 區塊"
+    },
+    {
+      "id": "DOCX-A42-39",
+      "original": "新增",
+      "updated": "本頁印本：The Metropolitan Museum of Art，JP1024；尺寸：H. 13 3/8 in. (34 cm); W. 8 3/4 in. (22.2 cm)。API 圖像與本頁來源一致；公有領域，依 Met Open Access 採 CC0。",
+      "keys": [
+        "api-A08",
+        "metRights"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 39 區塊"
+    },
+    {
+      "id": "DOCX-A42-40",
+      "original": "新增",
+      "updated": "策展位置：05:00（敘事安排）。街上幾組人物不直接證明個別去向或服役關係終止。",
+      "keys": [
+        "dawnImage"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 40 區塊"
+    },
+    {
+      "id": "DOCX-A42-41",
+      "original": "新增",
+      "updated": "圖像來源：https://www.metmuseum.org/art/collection/search/54931",
+      "keys": [
+        "api-A08"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 41 區塊"
+    },
+    {
+      "id": "DOCX-A42-43",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：猿わか町よるの景。英文題名：Night View of Saruwaka-machi。年代：1856；系列：名所江戶百景，第 90 景。媒材：彩色木版畫。",
+      "keys": [
+        "saruwaka",
+        "commons-B01"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 43 區塊"
+    },
+    {
+      "id": "DOCX-A42-44",
+      "original": "新增",
+      "updated": "數位檔：Wikimedia Commons，706×1050 像素；檔案頁標示 Commons 標示公有領域（PD-Art）；檔案曾經色彩處理，原典藏未確認。本頁原印本尺寸及館藏號未獨立核實，不套用另館資料。",
+      "keys": [
+        "commons-B01"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 44 區塊"
+    },
+    {
+      "id": "DOCX-A42-45",
+      "original": "新增",
+      "updated": "來源限制：Commons 指私人整理站，上傳史記載色彩處理；慶應 200X@5-56 是同構圖另印本，不是本檔原典藏的證明。",
+      "keys": [
+        "saruwaka",
+        "commons-B01"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 45 區塊"
+    },
+    {
+      "id": "DOCX-A42-46",
+      "original": "新增",
+      "updated": "圖像來源：https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+      "keys": [
+        "commons-B01"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 46 區塊"
+    },
+    {
+      "id": "DOCX-A42-48",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：よし原日本堤。英文題名：Nihon Embankment and Yoshiwara。年代：1857；系列：名所江戶百景，第 100 景。媒材：彩色木版畫。",
+      "keys": [
+        "embankment",
+        "commons-B02"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 48 區塊"
+    },
+    {
+      "id": "DOCX-A42-49",
+      "original": "新增",
+      "updated": "數位檔：Wikimedia Commons，789×1200 像素；檔案頁標示 Commons 標示公有領域（PD-Art）；原館藏對應仍待確認。本頁原印本尺寸及館藏號未獨立核實，不套用另館資料。",
+      "keys": [
+        "commons-B02"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 49 區塊"
+    },
+    {
+      "id": "DOCX-A42-50",
+      "original": "新增",
+      "updated": "來源限制：Commons 指 Brooklyn 舊物件 121713，但本次原頁不可核讀；已核看同檔正式 500px 縮圖，原圖下載受限，不作微小細節或色彩鑑定。",
+      "keys": [
+        "embankment",
+        "commons-B02"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 50 區塊"
+    },
+    {
+      "id": "DOCX-A42-51",
+      "original": "新增",
+      "updated": "圖像來源：https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+      "keys": [
+        "commons-B02"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 51 區塊"
+    },
+    {
+      "id": "DOCX-A42-53",
+      "original": "新增",
+      "updated": "作者：歌川廣重。日文題名：する賀てふ。英文題名：Suruga-chō。年代：1856；系列：名所江戶百景，第 8 景。媒材：彩色木版畫。",
+      "keys": [
+        "suruga",
+        "commons-B03"
+      ],
+      "claimType": "編目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 53 區塊"
+    },
+    {
+      "id": "DOCX-A42-54",
+      "original": "新增",
+      "updated": "數位檔：Wikimedia Commons，790×1200 像素；檔案頁標示 Commons 標示公有領域（PD-Art）；原館藏對應仍待確認。本頁原印本尺寸及館藏號未獨立核實，不套用另館資料。",
+      "keys": [
+        "commons-B03"
+      ],
+      "claimType": "編目／圖像權利",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 54 區塊"
+    },
+    {
+      "id": "DOCX-A42-55",
+      "original": "新增",
+      "updated": "來源限制：Commons 指 Brooklyn 舊物件 121623，原館藏全文不可核讀。Brooklyn 在 Google Arts & Culture 的 30.1478.8 可作構圖解說，未將它逕定為本檔館藏號；本件是白晝序章。",
+      "keys": [
+        "suruga",
+        "commons-B03"
+      ],
+      "claimType": "來源限制／策展說明",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 55 區塊"
+    },
+    {
+      "id": "DOCX-A42-56",
+      "original": "新增",
+      "updated": "圖像來源：https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+      "keys": [
+        "commons-B03"
+      ],
+      "claimType": "來源入口",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 42 後，第 56 區塊"
+    },
+    {
+      "id": "DOCX-A83-1",
+      "original": "新增",
+      "updated": "原稿曾將上述日期列為討論紀錄；目前沒有出席或會議證據，因此改列可核對的版本節點。原稿保持原樣，沒有以程式版本冒充會議紀錄。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 83 後，第 1 區塊"
+    },
+    {
+      "id": "DOCX-A101-1",
+      "original": "新增",
+      "updated": "Nenzi, L.. (n.d.). Japan After Dark — Book description. 核對：2026-11-18；僅公開摘要，未讀全書，不引用章節頁碼。https://www.cambridge.org/core/books/japan-after-dark/3149361D47CB1F1D331909733A694D0E",
+      "keys": [
+        "nenzi"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 1 區塊"
+    },
+    {
+      "id": "DOCX-A101-2",
+      "original": "新增",
+      "updated": "The Metropolitan Museum of Art, Department of Asian Art. (2003). Woodblock Prints in the Ukiyo-e Style. 核對：2026-11-18；媒介的一般背景，不是某張畫的個別動機。https://www.metmuseum.org/essays/woodblock-prints-in-the-ukiyo-e-style",
+      "keys": [
+        "metEssay"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 2 區塊"
+    },
+    {
+      "id": "DOCX-A101-3",
+      "original": "新增",
+      "updated": "東京國立博物館／文化遺產線上. (n.d.). 名所江戸百景・月の岬（文化遺產線上 559992；ColBase A-10569-7372）. 核對：2026-11-18；同構圖另一印本；提供品川灣、高地與宴後房間的館方解讀，非 The Met JP1185 的專屬標籤。https://online.bunka.go.jp/heritages/detail/559992",
+      "keys": [
+        "moonHeritage"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 3 區塊"
+    },
+    {
+      "id": "DOCX-A101-4",
+      "original": "新增",
+      "updated": "Hu, I., Murray, P., & Williams, M.. (n.d.). Musings by Moonlight: Shadow and Silhouette（Irene Hu、Paisley Murray、Megan Williams 署名展覽文章）. 核對：2026-11-18；同構圖另一印本；文章把場景讀為月見會中的歌舞，與東京國立博物館的宴後解讀有差異，不能合併為唯一活動階段。https://zimmerli.rutgers.edu/node/356",
+      "keys": [
+        "moonRutgers"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 4 區塊"
+    },
+    {
+      "id": "DOCX-A101-5",
+      "original": "新增",
+      "updated": "International Council of Museums. (2022). Museum Definition (2022). 核對：2026-11-18；完整要素轉述；不表示學生網站已具備所有機構職能。https://icom.museum/en/resources/standards-guidelines/museum-definition/",
+      "keys": [
+        "icom"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 5 區塊"
+    },
+    {
+      "id": "DOCX-A101-6",
+      "original": "新增",
+      "updated": "The Metropolitan Museum of Art. (n.d.). Open Access at The Met. 核對：2026-11-18；八件核心需另核對各件 API isPublicDomain 與 primaryImage。https://www.metmuseum.org/hubs/open-access",
+      "keys": [
+        "metRights"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 6 區塊"
+    },
+    {
+      "id": "DOCX-A101-7",
+      "original": "新增",
+      "updated": "東京藝術大學大學美術館. (2024). Yoshiwara（2024 年展覽概要）（Exhibition Outline）. 核對：2026-11-18；吉原的歷史背景；非對本頁某一印本的專屬解說。https://museum.geidai.ac.jp/en/exhibit/2024/03/yoshiwara.html",
+      "keys": [
+        "yoshiwara"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 7 區塊"
+    },
+    {
+      "id": "DOCX-A101-8",
+      "original": "新增",
+      "updated": "慶應義塾大學圖書館. (n.d.). 名所江戸百景・猿わか町よるの景（200X@5-56 · 日野原健司解說）. 核對：2026-11-18；同一構圖的另一印本；本頁沿用專案的 Wikimedia Commons 圖像。https://dcollections.lib.keio.ac.jp/en/ukiyoe/0456",
+      "keys": [
+        "saruwaka"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 8 區塊"
+    },
+    {
+      "id": "DOCX-A101-9",
+      "original": "新增",
+      "updated": "台東區立中央圖書館（NDL Search 收錄）. (n.d.). 名所江戸百景・よし原日本堤（「吉原細見の世界Ⅱ」解說）. 核對：2026-11-18；同一構圖的另一印本；本頁沿用 Brooklyn Museum／Wikimedia 圖像。https://ndlsearch.ndl.go.jp/books/R100000094-I906",
+      "keys": [
+        "embankment"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 9 區塊"
+    },
+    {
+      "id": "DOCX-A101-10",
+      "original": "新增",
+      "updated": "University of Cambridge · Fitzwilliam Museum. (n.d.). Nihon Embankment, Yoshiwara（P.3577-R · The Night of Longing）. 核對：2026-11-18；同一構圖的另一印本與通往吉原的交通背景。https://nightoflonging.fitzmuseum.cam.ac.uk/explore/sex-for-sale",
+      "keys": [
+        "embankmentRoute"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 10 區塊"
+    },
+    {
+      "id": "DOCX-A101-11",
+      "original": "新增",
+      "updated": "Brooklyn Museum（Google Arts & Culture 館方供稿）. (n.d.). Suruga-cho, No. 8 in One Hundred Famous Views of Edo（30.1478.8）. 核對：2026-11-18；館方對本構圖的解說；Commons 圖像記載來自 Brooklyn，但與此館藏號的精確對應仍須核實。https://artsandculture.google.com/asset/suruga-cho-no-8-in-one-hundred-famous-views-of-edo-utagawa-hiroshige-ando-japanese-1797-1858/KgG9YbG9Rf98Vg",
+      "keys": [
+        "suruga"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 11 區塊"
+    },
+    {
+      "id": "DOCX-A101-12",
+      "original": "新增",
+      "updated": "三井廣報委員會. (n.d.). 幕府御用達と維新政府への支援（創業、遷移年份段落）. 核對：2026-11-18；企業自身沿革：1673 年本町創業、1683 年移到駿河町；不代表現存建築未變。https://www.mitsuipr.com/history/columns/010/",
+      "keys": [
+        "mitsuiHistory"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 12 區塊"
+    },
+    {
+      "id": "DOCX-A101-13",
+      "original": "新增",
+      "updated": "ROIS-DS CODH. (n.d.). 江戸マップ. 核對：2026-11-18；圖幅出版年與地理配準，非畫家站立點。https://codh.rois.ac.jp/edo-maps/",
+      "keys": [
+        "codh"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 13 區塊"
+    },
+    {
+      "id": "DOCX-A101-14",
+      "original": "新增",
+      "updated": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 兩國花火（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032273",
+      "keys": [
+        "apj-A03"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 14 區塊"
+    },
+    {
+      "id": "DOCX-A101-15",
+      "original": "新增",
+      "updated": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 月之岬（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032257",
+      "keys": [
+        "apj-A05"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 15 區塊"
+    },
+    {
+      "id": "DOCX-A101-16",
+      "original": "新增",
+      "updated": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 御廄河岸（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032280",
+      "keys": [
+        "apj-A06"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 16 區塊"
+    },
+    {
+      "id": "DOCX-A101-17",
+      "original": "新增",
+      "updated": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 淺草田甫酉之町詣（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032276",
+      "keys": [
+        "apj-A07"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 17 區塊"
+    },
+    {
+      "id": "DOCX-A101-18",
+      "original": "新增",
+      "updated": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 廓中東雲（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032213",
+      "keys": [
+        "apj-A08"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 18 區塊"
+    },
+    {
+      "id": "DOCX-A101-19",
+      "original": "新增",
+      "updated": "東京藝術大學美術館作成資料／國立藝術研究中心 APJ. (n.d.). 猿若町夜之景（同構圖另一印本編目）（PR645）. 核對：2026-11-18；只交叉核對構圖、系列序號與年代；不移用其尺寸與館藏號。https://artplatform.go.jp/ja/collections/W1032265",
+      "keys": [
+        "apj-B01"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 19 區塊"
+    },
+    {
+      "id": "DOCX-A101-20",
+      "original": "新增",
+      "updated": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 芝高輪辺絵図（doi:10.11501/1286663）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4908.json",
+      "keys": [
+        "map-4908"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 20 區塊"
+    },
+    {
+      "id": "DOCX-A101-21",
+      "original": "新增",
+      "updated": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 日本橋北神田浜町絵図（doi:10.11501/1286645）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4902.json",
+      "keys": [
+        "map-4902"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 21 區塊"
+    },
+    {
+      "id": "DOCX-A101-22",
+      "original": "新增",
+      "updated": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 本所絵図（doi:10.11501/1286679）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4930.json",
+      "keys": [
+        "map-4930"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 22 區塊"
+    },
+    {
+      "id": "DOCX-A101-23",
+      "original": "新增",
+      "updated": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 浅草御蔵前辺図（doi:10.11501/1286209）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4931.json",
+      "keys": [
+        "map-4931"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 23 區塊"
+    },
+    {
+      "id": "DOCX-A101-24",
+      "original": "新增",
+      "updated": "日本版 Map Warper／Kitamoto. (n.d.). 〔江戸切絵図〕. 今戸箕輪浅草絵図（doi:10.11501/1286208）. 核對：2026-11-18；配準後影像外框與圖幅 metadata，不代表測量誤差半徑或歷史街區界線。https://mapwarper.h-gis.jp/maps/4935.json",
+      "keys": [
+        "map-4935"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 24 區塊"
+    },
+    {
+      "id": "DOCX-A101-25",
+      "original": "新增",
+      "updated": "Wikimedia Commons／原上傳者. (n.d.). File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg. 核對：2026-11-18；只證明數位檔案頁所聲明的來源與權利；不視為獨立確認原館藏、印次或法律結論。https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+      "keys": [
+        "commons-B01"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 25 區塊"
+    },
+    {
+      "id": "DOCX-A101-26",
+      "original": "新增",
+      "updated": "Wikimedia Commons／原上傳者. (n.d.). File:100_views_edo_100.jpg. 核對：2026-11-18；只證明數位檔案頁所聲明的來源與權利；不視為獨立確認原館藏、印次或法律結論。https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+      "keys": [
+        "commons-B02"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 26 區塊"
+    },
+    {
+      "id": "DOCX-A101-27",
+      "original": "新增",
+      "updated": "Wikimedia Commons／原上傳者. (n.d.). File:100_views_edo_008.jpg. 核對：2026-11-18；只證明數位檔案頁所聲明的來源與權利；不視為獨立確認原館藏、印次或法律結論。https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+      "keys": [
+        "commons-B03"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 27 區塊"
+    },
+    {
+      "id": "DOCX-A101-28",
+      "original": "新增",
+      "updated": "W3C. (n.d.). WCAG 2.2. 核對：2026-11-18；設計參照，非符合性審定。https://www.w3.org/TR/WCAG22/",
+      "keys": [
+        "wcag"
+      ],
+      "claimType": "來源書目",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 101 後，第 28 區塊"
+    },
+    {
+      "id": "DOCX-A101-30",
+      "original": "新增",
+      "updated": "Astro 7.4.7、GSAP 3.15.1、Leaflet 1.9.4 的版本依現有鎖定檔，不把專案核對日期當作軟體發行年份。GitHub 提交紀錄見第六章；其他測試命令與限制見第八章。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 101 後，第 30 區塊"
+    },
+    {
+      "id": "DOCX-A101-31",
+      "original": "新增",
+      "updated": "Astro Technology Company. (n.d.). Astro [軟體；本專案鎖定 7.4.7]. https://astro.build/",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 101 後，第 31 區塊"
+    },
+    {
+      "id": "DOCX-A101-32",
+      "original": "新增",
+      "updated": "GreenSock. (n.d.). GSAP [軟體；本專案鎖定 3.15.1]. https://gsap.com/",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 101 後，第 32 區塊"
+    },
+    {
+      "id": "DOCX-A101-33",
+      "original": "新增",
+      "updated": "Leaflet. (n.d.). Leaflet [軟體；本專案鎖定 1.9.4]. https://leafletjs.com/",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 101 後，第 33 區塊"
+    },
+    {
+      "id": "DOCX-A101-34",
+      "original": "新增",
+      "updated": "OpenStreetMap contributors. (n.d.). Copyright and License [保留原稿技術歸屬入口；未用於新增史實]. https://www.openstreetmap.org/copyright",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 101 後，第 34 區塊"
+    },
+    {
+      "id": "DOCX-A101-35",
+      "original": "新增",
+      "updated": "完整網站解說來源與未核讀舊線索，見 https://richardliang19.github.io/edo-after-dark/references/ 。本輪網站修改尚未部署；驗收對象為本地建置，外部讀者應於正式部署後查看新版。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 101 後，第 35 區塊"
+    },
+    {
+      "id": "DOCX-A109-3",
+      "original": "新增",
+      "updated": "本輪環境為 Windows、Node 24.19.0、npm 11.17.0。npm ci 成功；Windows 應用程式控制阻擋 satteri 原生模組，原生 npm run build 失敗，未更改系統政策。改用官方同版本 WASM 後端（NAPI_RS_FORCE_WASI=true）後，建置成功產出 19 個 Astro 頁面與五份概念稿。套件清單、鎖定檔與 GitHub Pages 設定未改。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 109 後，第 3 區塊"
+    },
+    {
+      "id": "DOCX-A109-4",
+      "original": "新增",
+      "updated": "17 項 Node 測試通過，涵蓋資料關聯、答案索引、來源識別、保存驗證、舊進度遷移、手帖輸出、內部連結與公開草稿提示。TypeScript 模組嚴格檢查通過，但未執行完整 astro check。這些測試驗證程式結構及行為，不會證明歷史內容真實。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 109 後，第 4 區塊"
+    },
+    {
+      "id": "DOCX-A109-6",
+      "original": "新增",
+      "updated": "隔離 Edge 157.0.4341.60 以原生滑鼠、鍵盤及模擬觸控事件實測：1440×1000 桌面、390×844 手機版面；首頁低動態、一般 GSAP 時間軸、十一件作品、雙圖同步、活動一四題、活動二隨機六題與完整二十六題、個別錯誤回饋、保存、清除、手帖下載及圖片失敗提示。8 組主流程加 3 組補測通過；快速換頁時有些外部圖像尚未載完，不宣稱全部外部影像均可用。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 109 後，第 6 區塊"
+    },
+    {
+      "id": "DOCX-A109-7",
+      "original": "新增",
+      "updated": "沒有招募真人受測者，因此沒有受測人數、平均耗時、問卷比例、滿意度或觀眾原話。已準備約五位觀眾的自願同意說明、測試腳本及匿名空表，研究仍待實施；自動化瀏覽器操作不能代替學習成效。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 109 後，第 7 區塊"
+    },
+    {
+      "id": "DOCX-A109-9",
+      "original": "新增",
+      "updated": "手機是瀏覽器模擬，未測實體手機、iOS／Safari／Firefox、螢幕閱讀器、完整 Tab 路徑、所有狀態對比度與 200% 文字放大。WCAG 2.2 AA 為設計目標，沒有符合性認證（W3C, n.d.）。外部圖像、字體與圖磚仍有服務依賴；B02 原圖受限，部分 Commons 原館藏鏈未確認。",
+      "keys": [
+        "wcag"
+      ],
+      "claimType": "技術限制／來源範圍",
+      "support": "依具體來源分讀；保留引用範圍",
+      "location": "原 body 節點 109 後，第 9 區塊"
+    },
+    {
+      "id": "DOCX-A109-10",
+      "original": "新增",
+      "updated": "npm audit 回報既有鎖定相依圖有 9 項 high；本輪未自動升降主要版本，需另評估公告適用性與相容修正。本地建置成功不等於 GitHub Actions 已執行，也不表示網站已部署。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 109 後，第 10 區塊"
+    },
+    {
+      "id": "DOCX-A109-12",
+      "original": "新增",
+      "updated": "本展以橋架、窗框、河道、街道與畫邊細節，實作了由觀看位置理解城市的閱讀路線；館方解說與跨作品比較，則把夜間娛樂接到服務、交通與勞動。這些是已完成的策展安排，觀眾是否能辨別證據層次與比較不同經驗，仍須真人研究。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 109 後，第 12 區塊"
+    },
+    {
+      "id": "DOCX-A109-13",
+      "original": "新增",
+      "updated": "本輪已核對十一件作品及二十六題，修正鐘點、人物、器物與另印本引用的過度斷言，也讓作品頁、時間軸、互動與報告使用一致表述。對月之岬活動階段保留具名差異；對精確地點與補充作品原印本不確定處，保留限制，不為完成故事而猜測。",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 109 後，第 13 區塊"
+    },
+    {
+      "id": "DOCX-A109-14",
+      "original": "新增",
+      "updated": "後續先取得教師引用規範，確認空白分工與真實會議紀錄；再追查補充作品的原館藏鏈、完成無障礙人工審查與觀眾研究。夜景的美感是觀看入口，仍須回到具體問題：誰在遊賞、誰在工作，哪些人的經驗沒有被圖像充分呈現？",
+      "keys": [],
+      "claimType": "策展說明",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 109 後，第 14 區塊"
+    },
+    {
+      "id": "DOCX-A109-16",
+      "original": "新增",
+      "updated": "待確認項目｜目前證據／處理｜下一步\n封面組別、學號、繳交日期｜原稿僅空白線，沒有正式資料；封面先不列｜由組員提供，不以內容核對日代填繳交日\n三位分工｜劉彥廷、王怡婷、郭濬瑀的 CSV 欄位仍空白｜本人確認；期中分頁不能代填期末工作\n會議出席與期中前工作｜沒有可核對會議證據；第六章僅列版本節點｜提供真實會議紀錄，勿由提交日猜出席\n教師格式與範例｜尚未取得｜取得後再核引註、書目與封面格式\n來源與觀眾研究｜原館藏／地點待考；真人研究未實施｜依 unresolved-issues 與匿名空表續作\n文件與圖像驗收｜本報告修訂自提供的原 DOCX，保留三張原截圖、原章節主題及七個原有表格的位置和用途，新增學習／功能對照與第八、九章。原截圖是舊版設計示例，不冒稱本輪部署畫面。文件的實際渲染器、逐頁驗收及尚待修正事項另記於 report-revision.md，沒有以網頁 HTML 預覽代替 DOCX 渲染。｜詳見 report-revision.md 與原圖雜湊；不同文書軟體可能重新分頁",
+      "keys": [],
+      "claimType": "新增教學／驗證內容",
+      "support": "策展／專案說明；不冒認真人研究或出席",
+      "location": "原 body 節點 109 後，第 16 區塊"
+    },
+    {
+      "id": "DOCX-REMOVE6",
+      "original": "組別：＿＿＿＿",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 6"
+    },
+    {
+      "id": "DOCX-REMOVE8",
+      "original": "學號：＿＿＿＿（如需列出）",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 8"
+    },
+    {
+      "id": "DOCX-REMOVE9",
+      "original": "繳交日期：＿＿＿＿",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 9"
+    },
+    {
+      "id": "DOCX-REMOVE79",
+      "original": "期中報告之前的階段請依實際日期補上。",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 79"
+    },
+    {
+      "id": "DOCX-REMOVE85",
+      "original": "請補上出席者，以及期中報告前的討論。",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 85"
+    },
+    {
+      "id": "DOCX-REMOVE102",
+      "original": "Astro Technology Company. (2026). Astro (Version 7.4.7) [Computer software]. https://astro.build/",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 102"
+    },
+    {
+      "id": "DOCX-REMOVE103",
+      "original": "GreenSock. (2026). GSAP (Version 3.15.1) [Computer software]. https://gsap.com/",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 103"
+    },
+    {
+      "id": "DOCX-REMOVE104",
+      "original": "International Council of Museums. (2022). Museum definition. Retrieved November 13, 2026, from https://icom.museum/en/resources/standards-guidelines/museum-definition/",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 104"
+    },
+    {
+      "id": "DOCX-REMOVE105",
+      "original": "Kitamoto. (n.d.). 江戸切絵図: Georectified maps [Map tiles]. 日本版 Map Warper. Retrieved November 13, 2026, from https://mapwarper.h-gis.jp/users/340",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 105"
+    },
+    {
+      "id": "DOCX-REMOVE106",
+      "original": "OpenStreetMap contributors. (n.d.). OpenStreetMap. https://www.openstreetmap.org/copyright",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 106"
+    },
+    {
+      "id": "DOCX-REMOVE107",
+      "original": "ROIS-DS Center for Open Data in the Humanities. (n.d.). 江戸マップ [Edo maps]. Retrieved November 13, 2026, from https://codh.rois.ac.jp/edo-maps/",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 107"
+    },
+    {
+      "id": "DOCX-REMOVE108",
+      "original": "The Metropolitan Museum of Art. (n.d.). Open Access at The Met. Retrieved November 13, 2026, from https://www.metmuseum.org/hubs/open-access",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 108"
+    },
+    {
+      "id": "DOCX-REMOVE109",
+      "original": "完整參考資料（含各作品解說所引用之館藏與地方史資料）見網站「參考資料」頁。",
+      "updated": "從正文移出或以新節取代；待確認資訊見內部待辦",
+      "keys": [],
+      "claimType": "草稿提示／未證實資料",
+      "support": "未提供；不補造",
+      "location": "原 body 節點 109"
+    }
+  ]
+}

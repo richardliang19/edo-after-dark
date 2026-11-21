@@ -1,5 +1,6 @@
 // Storage is optional. Treat saved data as untrusted, including old question versions.
 import { observationQuestions, observationArtworkOrder, selectObservationSession, type ObservationMode } from '../data/observation.ts';
+import { legacyObservationVersion } from '../data/observation-legacy.ts';
 export const observationStorageKey = 'edo-after-dark:observation:v2';
 export const observationVersion = JSON.stringify(observationQuestions.map(q => [q.id, q.prompt, q.choices, q.answer, q.reflection]));
 export type ObservationSnapshot = {
@@ -17,7 +18,10 @@ const record = (value: unknown): value is Record<string, unknown> => !!value && 
 export function parseObservationSnapshot(raw: string | null): ObservationSnapshot | null {
   try {
     const value: unknown = JSON.parse(raw ?? 'null');
-    if (!record(value) || value.version !== observationVersion || !['full', 'random', 'painting'].includes(String(value.mode))) return null;
+    if (!record(value) || ![observationVersion, legacyObservationVersion].includes(String(value.version)) || !['full', 'random', 'painting'].includes(String(value.mode))) return null;
+    // The 2026-11-18 historical corrections retain all IDs and correct indices.
+    // Accept only the exact previous content signature, then apply current validation.
+    // Arbitrary stale/corrupt versions are still rejected.
     if (typeof value.painting !== 'string' || !observationArtworkOrder.includes(value.painting)) return null;
     if (!Array.isArray(value.session) || !value.session.length || value.session.length > observationQuestions.length) return null;
     const ids = value.session;
@@ -47,6 +51,6 @@ export function parseObservationSnapshot(raw: string | null): ObservationSnapsho
     for (const id of ids.slice(0, Number(value.index))) if (!(id in value.outcomes)) return null;
     const savedOutcomes = value.outcomes;
     if (value.view === 'notebook' && ids.some(id => !(id in savedOutcomes))) return null;
-    return value as ObservationSnapshot;
+    return { ...value, version: observationVersion } as ObservationSnapshot;
   } catch { return null; }
 }

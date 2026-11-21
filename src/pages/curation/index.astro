@@ -11,14 +11,14 @@ const urban = ordered.filter((a) => a.group === 'urban');
     <div class="page-head">
       <span class="seal">策展理念</span>
       <h1>一座不眠的城市，<br />是誰讓它保持清醒？</h1>
-      <p>沒有公共路燈、沒有捷運，也沒有便利商店的江戶，天黑之後真的就安靜了嗎？本展以歌川廣重的浮世繪，從傍晚六點走到隔天清晨五點，看看江戶的夜晚究竟屬於誰。</p>
+      <p>天黑以後，江戶的河岸與街道有哪些活動？本展以歌川廣重的浮世繪，安排一條從傍晚六點走到隔天清晨五點的導覽，看看不同的人如何度過夜晚。這些作品的年代與季節各不相同。</p>
     </div>
 
     <div class="prose">
       <h2 class="reveal">策展主題：為什麼是「江戶的夜晚」？</h2>
       <p class="reveal">這次選展的重點是夜生活，而非廣重的創作生涯。我們選擇這個主題，有三個原因。</p>
-      <p class="reveal"><strong>第一，浮世繪是理解江戶城市文化的視覺史料。</strong>木版畫可以大量印製，本身就是商業出版的一部分。因此，讀畫時也要考慮觀眾想看什麼、出版者想賣什麼，以及畫面如何呈現城市，不能把它當成中立的紀錄。</p>
-      <p class="reveal"><strong>第二，「夜晚」能把遊船、餐飲、賞月、煙火、祭典與吉原連成一條展覽路線。</strong>研究德川時代夜晚的學者指出，當時的城市長期缺乏公共街燈，夜間卻依然發展出祭典、煙火、消費與社交活動。</p>
+      <p class="reveal"><strong>第一，浮世繪是理解江戶城市文化的視覺史料。</strong><a href="https://www.metmuseum.org/essays/woodblock-prints-in-the-ukiyo-e-style" target="_blank" rel="noopener">The Met 亞洲藝術部的研究文章（2003）</a>說明，木版畫可大量印製，出版者參與主題與製作品質的決定。因此，本展也問：城市如何被選擇、安排成可觀看的景象？</p>
+      <p class="reveal"><strong>第二，「夜晚」能把遊船、餐飲、賞月、煙火、祭典與吉原連成一條展覽路線。</strong>Laura Nenzi《<a href="https://www.cambridge.org/core/books/japan-after-dark/3149361D47CB1F1D331909733A694D0E" target="_blank" rel="noopener">Japan After Dark</a>》的出版社摘要指出，公共街燈出現以前，日本已有活躍的夜間生活。</p>
       <p class="reveal"><strong>第三，也是最重要的：同一個夜晚，有人在休閒，也有人在工作。</strong>本展關心的是，夜裡的娛樂與消費需要哪些人的勞動。</p>
     </div>
 
@@ -42,8 +42,8 @@ const urban = ordered.filter((a) => a.group === 'urban');
       <p class="reveal">以《<a href={u('artworks/A05/')}>月之岬</a>》（1857）為例，每件作品都可以由淺入深地讀：</p>
       <ol class="layers reveal">
         <li><span>物件知識</span>歌川廣重作品，屬於《名所江戶百景》，是多色木版畫（錦繪）。</li>
-        <li><span>直接觀察</span>畫面幾乎沒有人，地上卻留著宴席後的器物，障子上映出一名女性的身影。</li>
-        <li><span>歷史脈絡</span>月之岬是可以眺望品川海灣、以賞月聞名的地方；畫面一般被解讀為月見宴結束後的二樓座敷。</li>
+        <li><span>直接觀察</span>座敷留著器物，障子映出人影，人物只在畫邊露出局部。這些是目前展示圖像可見的線索。</li>
+        <li><span>館方解讀</span><a href="https://online.bunka.go.jp/heritages/detail/559992" target="_blank" rel="noopener">東京國立博物館／文化遺產線上</a>將同構圖印本解讀為月見宴結束後的二樓房間；<a href="https://zimmerli.rutgers.edu/node/356" target="_blank" rel="noopener">Zimmerli 的署名展覽文章</a>則讀為月見會中的歌舞。兩份解說對宴席階段的判讀不同。</li>
         <li><span>反思</span>人物沒有完整出現時，留下的物件能說明多少事情？圖像可以作為歷史證據，閱讀時也要考慮畫家選擇呈現與省略了什麼。</li>
       </ol>
 
@@ -57,14 +57,15 @@ const urban = ordered.filter((a) => a.group === 'urban');
 
       <h2 class="reveal">文物選件</h2>
       <p class="reveal"><strong>八件核心作品</strong>全部來自紐約大都會藝術博物館（The Met）的線上館藏，館藏頁都標示為公有領域（Public Domain）。依 The Met 的開放取用（Open Access）政策，這些圖像可以不經許可、不需付費地使用，使我們能在網站上展示這些作品。</p>
-      <p class="reveal">這八件作品涵蓋橋、河流、料亭、煙火、遊里、祭典與黎明，適合用來討論夜間的娛樂、交通、信仰、消費與勞動。例如《<a href={u('artworks/A06/')}>御廄河岸</a>》：The Met 的館藏說明指出，畫中有「夜鷹」正搭渡船前往工作。這件作品讓展覽從漂亮的夜景，轉向一個社會問題：對有些人來說，午夜不是下班後的娛樂，而是工作的開始。</p>
+      <p class="reveal">這八件作品涵蓋橋、河流、料亭、煙火、遊里、祭典與黎明，適合用來討論娛樂、交通、信仰、消費與勞動。例如《<a href={u('artworks/A06/')}>御廄河岸</a>》：The Met 將部分乘客解讀為搭渡船前往工作的「夜鷹」。這使我們從河景轉向使用水路的人：有人乘船遊賞，也有人正在上工。</p>
       <p class="reveal">另有<strong>三件城市景觀作品</strong>補充夜晚的前後脈絡：{urban.map((a, i) => <>{i > 0 && '、'}《<a href={u(`artworks/${a.id}/`)}>{a.title}</a>》</>)}。它們分別呈現白天的商業大街、通往吉原的堤道，以及月下的劇場街。</p>
 
       <h2 class="reveal" id="online-museum">線上博物館是什麼？</h2>
-      <p class="reveal">國際博物館協會（ICOM）在 2022 年通過新的博物館定義：博物館研究、典藏、保存、詮釋並展示有形與無形遺產；它對公眾開放、具可及性與包容性，並提供教育、欣賞、反思與知識分享的多元體驗。在我們看來，博物館的工作也包括向觀眾說明：為何選擇這些物件、研究發現了什麼，以及今天可以如何理解它們。</p>
+      <p class="reveal"><a href="https://icom.museum/en/resources/standards-guidelines/museum-definition/" target="_blank" rel="noopener">ICOM 在 2022 年通過的完整定義</a>涵蓋以下要素：博物館是服務社會的非營利常設機構，從事有形與無形遺產的研究、蒐藏、保存、詮釋與展示；向公眾開放，重視可及性與包容，促進多樣性與永續；以倫理、專業及社群參與來運作和溝通，提供教育、欣賞、反思與知識分享的多元經驗。此處為要素轉述，原文見連結。</p>
+      <p class="reveal">《江戶不打烊》是使用外部館藏資料的學生數位策展，實作重點在研究、詮釋與教育展示。我們沒有取得實體藏品，也不把網站資料整理等同於典藏機構的治理、文物保存或長期維護。</p>
       <p class="reveal">我們認為，線上博物館把這份工作搬到網路上，並利用數位媒介改變「觀看文物」的方法：</p>
       <ul class="reveal">
-        <li><strong>打破實體的距離：</strong>分藏在紐約、克里夫蘭、牛津與東京的同系列版畫，可以在同一個頁面並列比較；觀眾也能放大到在展櫃前看不清的細節，例如夜空中的版木木紋。</li>
+        <li><strong>連結不同館藏：</strong>網站展示八件 The Met 圖像與三件 Commons 補充圖像，也連到其他機構對同構圖印本的解說。活動中可以比較不同作品；放大的清晰程度仍受各張影像的解析度限制。</li>
         <li><strong>重新組織時間與空間：</strong>實體展間很難讓觀眾「從黃昏走到黎明」，也很難把一張浮世繪放回它所在的城市。網站可以用捲動的時間軸與古今對照地圖做到這件事。</li>
         <li><strong>讓觀眾參與：</strong>觀眾可以先觀察畫面、提出判斷，再閱讀解說與來源，檢查自己的理解。</li>
         <li><strong>開放與可及：</strong>線上展覽免費、不限時間地點，以相對低的成本完成，也能隨研究更新內容。</li>

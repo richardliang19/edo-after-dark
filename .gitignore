@@ -6,3 +6,8 @@ dist/
 class_materials/
 *.docx
 *.pdf
+!docs/期末報告_江戶不打烊_文字精修版.docx
+!docs/期末報告_江戶不打烊_分章修訂稿.docx
+!docs/期末報告_江戶不打烊_分章修訂稿_HTML預覽.pdf
+!docs/期末報告_江戶不打烊_修訂版.docx
+!docs/期末報告_江戶不打烊_修訂版.pdf

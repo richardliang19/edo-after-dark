@@ -1,0 +1,115 @@
+---
+import type { Artwork } from '../lib/data';
+interface Props {
+  artwork: Artwork;
+  focuses: { label: string; x: number; y: number; scale: number }[];
+  description: string;
+}
+const { artwork, focuses, description } = Astro.props;
+const image = artwork.image!;
+---
+<div class="viewer" data-art-viewer>
+  <div class="art-stage" style={'aspect-ratio:' + image.width + '/' + image.height} tabindex="0" role="group" aria-label={artwork.title + '圖像。放大後可拖曳，或用方向鍵移動；Home 鍵還原全圖。'}>
+    <img data-src={image.src} alt={artwork.title + '：' + description} width={image.width} height={image.height} decoding="async" draggable="false" />
+  </div>
+  <p class="image-error" data-image-error hidden>圖像暫時無法載入，可開啟下方圖像來源查看，或略過讀解說。<button type="button" data-image-retry>重新載入</button></p>
+  <div class="viewer-controls" aria-label="圖像觀察位置">
+    <button type="button" data-view-full aria-pressed="true">完整作品</button>
+    {focuses.map((f) => <button type="button" data-view-focus={JSON.stringify(f)} aria-pressed="false">{f.label}</button>)}
+  </div>
+  <div class="viewer-controls" aria-label="圖像縮放">
+    <button type="button" data-view-out aria-label={'縮小' + artwork.title} disabled>−</button>
+    <button type="button" data-view-in aria-label={'放大' + artwork.title}>＋</button>
+    <span class="zoom-status" data-view-status role="status">全圖</span>
+  </div>
+  <p class="viewer-help">放大後可拖曳移動；鍵盤可用方向鍵移動、＋／− 縮放、Home 還原。</p>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-art-viewer]').forEach((viewer) => {
+    const stage = viewer.querySelector<HTMLElement>('.art-stage')!;
+    const img = viewer.querySelector('img')!;
+    const full = viewer.querySelector<HTMLButtonElement>('[data-view-full]')!;
+    const inside = viewer.querySelector<HTMLButtonElement>('[data-view-in]')!;
+    const outside = viewer.querySelector<HTMLButtonElement>('[data-view-out]')!;
+    const focusButtons = [...viewer.querySelectorAll<HTMLButtonElement>('[data-view-focus]')];
+    let scale = 1, x = 0, y = 0;
+    let drag: { id: number; x: number; y: number } | null = null;
+    function render(announce = true, selected?: HTMLButtonElement, glide = true) {
+      x = Math.max(100 - scale * 100, Math.min(0, x));
+      y = Math.max(100 - scale * 100, Math.min(0, y));
+      // Buttons and auto-focus glide like a camera move; dragging and arrow keys follow the hand directly.
+      stage.classList.toggle('gliding', glide);
+      img.style.transform = `translate(${x}%, ${y}%) scale(${scale})`;
+      stage.classList.toggle('zoomed', scale > 1);
+      full.setAttribute('aria-pressed', String(scale === 1));
+      focusButtons.forEach((b) => b.setAttribute('aria-pressed', String(b === selected)));
+      inside.disabled = scale >= 5; outside.disabled = scale <= 1;
+      if (announce) viewer.querySelector('[data-view-status]')!.textContent = scale === 1 ? '全圖' : `放大 ${scale.toFixed(1)} 倍`;
+    }
+    function reset() { scale = 1; x = y = 0; render(); }
+    function zoom(delta: number) {
+      const next = Math.max(1, Math.min(5, Math.round((scale + delta) * 10) / 10));
+      x = 50 - ((50 - x) / scale) * next;
+      y = 50 - ((50 - y) / scale) * next;
+      scale = next; render();
+    }
+    full.addEventListener('click', reset);
+    viewer.addEventListener('viewer-reset', () => { stage.classList.remove('gliding'); scale = 1; x = y = 0; render(true, undefined, false); });
+    viewer.addEventListener('viewer-focus', () => { if (scale === 1) focusButtons[0]?.click(); });
+    inside.addEventListener('click', () => zoom(.5));
+    outside.addEventListener('click', () => zoom(-.5));
+    focusButtons.forEach((b) => b.addEventListener('click', () => {
+      const f = JSON.parse(b.dataset.viewFocus!);
+      scale = f.scale; x = 50 - f.x * scale * 100; y = 50 - f.y * scale * 100;
+      render(true, b);
+    }));
+    stage.addEventListener('pointerdown', (e) => {
+      if (scale <= 1 || e.button !== 0) return;
+      drag = { id: e.pointerId, x: e.clientX, y: e.clientY };
+      stage.setPointerCapture(e.pointerId); stage.classList.add('dragging');
+    });
+    stage.addEventListener('pointermove', (e) => {
+      if (!drag || drag.id !== e.pointerId) return;
+      x += (e.clientX - drag.x) / stage.clientWidth * 100;
+      y += (e.clientY - drag.y) / stage.clientHeight * 100;
+      drag = {id: e.pointerId, x: e.clientX, y: e.clientY};
+      render(false, undefined, false);
+    });
+    const stop = () => { drag = null; stage.classList.remove('dragging'); };
+    stage.addEventListener('pointerup', stop);
+    stage.addEventListener('pointercancel', stop);
+    stage.addEventListener('lostpointercapture', stop);
+    stage.addEventListener('keydown', (e) => {
+      if (e.key === 'Home') { e.preventDefault(); reset(); }
+      else if (e.key === '+' || e.key === '=') { e.preventDefault(); zoom(.5); }
+      else if (e.key === '-') { e.preventDefault(); zoom(-.5); }
+      else if (scale > 1 && e.key.startsWith('Arrow')) {
+        e.preventDefault();
+        if (e.key === 'ArrowLeft') x += 8;
+        if (e.key === 'ArrowRight') x -= 8;
+        if (e.key === 'ArrowUp') y += 8;
+        if (e.key === 'ArrowDown') y -= 8;
+        render(false, undefined, false);
+      }
+    });
+    const error = viewer.querySelector<HTMLElement>('[data-image-error]')!;
+    img.addEventListener('error', () => { error.hidden = false; });
+    img.addEventListener('load', () => { error.hidden = true; });
+    viewer.querySelector('[data-image-retry]')!.addEventListener('click', () => { img.src = img.dataset.src!; });
+  });
+</script>
+
+<style>
+  .art-stage { overflow: hidden; background: var(--ink); width: 100%; }
+  .art-stage img { width: 100%; height: 100%; object-fit: contain; transform-origin: 0 0; display: block; user-select: none; }
+  .art-stage.gliding img { transition: transform 1.1s cubic-bezier(.65, 0, .35, 1); }
+  .art-stage.zoomed { cursor: grab; touch-action: none; }
+  @media (prefers-reduced-motion: reduce) { .art-stage.gliding img { transition: none; } }
+  .art-stage.dragging { cursor: grabbing; }
+  .viewer-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  .viewer-controls button[aria-pressed="true"] { border-color: var(--gold); color: var(--gold); }
+  .zoom-status, .viewer-help { font-size: 12px; color: var(--paper-2); }
+  .viewer-help { margin-top: 10px; line-height: 1.7; }
+  .image-error { padding: 12px; border: 1px solid var(--line); }
+</style>

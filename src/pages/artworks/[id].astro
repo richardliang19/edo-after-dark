@@ -21,14 +21,18 @@ const sectionDefs = [
   { key: 'modern', title: '現代地點對照' },
 ];
 const hasStory = a.image && a.details.length > 0;
-const timeText = a.curatorialTime ?? '序章';
+const timeText = a.curatorialTime ? `${a.curatorialTime}・${a.timeLabel}` : a.timeLabel;
 const sourceIds: Record<string, ObservationSourceId[]> = {
-  A01: ['bridge'], A02: ['manpachi'], A03: ['fireworks', 'fireworksImage'],
-  A04: ['cherryImage', 'yoshiwara'], A05: ['moon', 'moonImage', 'moonSpace'],
-  A06: ['ferry'], A07: ['asakusa'], A08: ['dawn', 'dawnImage', 'yoshiwara'],
-  B01: ['saruwaka'], B02: ['embankment', 'embankmentRoute'], B03: ['suruga'],
+  A01: ['bridge', 'ryogokuLocal', 'bridgesLocal'], A02: ['manpachi', 'yanagibashiLocal'], A03: ['fireworks', 'fireworksImage', 'ryogokuLocal', 'fireworksModern'],
+  A04: ['cherryImage', 'yoshiwara', 'yoshiwaraLocal'], A05: ['moonHeritage', 'moonRutgers', 'moonImage'],
+  A06: ['ferry', 'bridgesLocal'], A07: ['asakusa', 'festivalLocal'], A08: ['dawnImage', 'yoshiwara', 'embankmentRoute'],
+  B01: ['saruwaka'], B02: ['embankment', 'embankmentRoute'], B03: ['suruga', 'mitsuiHistory'],
 };
 const readingSources = sourceIds[a.id] ?? [];
+const seriesCatalog: Record<string, string> = {
+  A03: 'W1032273', A05: 'W1032257', A06: 'W1032280',
+  A07: 'W1032276', A08: 'W1032213', B01: 'W1032265',
+};
 ---
 <Base title={a.title} description={a.summary}>
   {hasStory ? (
@@ -40,7 +44,7 @@ const readingSources = sourceIds[a.id] ?? [];
       <div class="steps">
         <div class="step" data-f="0.5,0.5,1">
           <div class="card">
-            <span class="seal">{timeText}・{a.timeLabel}</span>
+            <span class="seal">{timeText}</span>
             <h1>{a.title}</h1>
             <p>{a.summary}</p>
             <p class="hint">向下捲動，靠近看看。</p><a class="reading-jump" href="#artwork-reading">直接閱讀作品介紹 ↓</a>
@@ -66,7 +70,7 @@ const readingSources = sourceIds[a.id] ?? [];
         {a.image ? <img src={a.image.src} alt={`歌川廣重《${a.title}》`} /> : <div class="noimg">作品圖待補</div>}
       </div>
       <div class="plain-txt">
-        <span class="seal">{timeText}・{a.timeLabel}</span>
+        <span class="seal">{timeText}</span>
         <h1>{a.title}</h1>
         <p>{a.summary}</p>
       </div>
@@ -79,13 +83,13 @@ const readingSources = sourceIds[a.id] ?? [];
     <div class="cols">
       <dl class="meta">
         <div><dt>作者</dt><dd>{a.artist}</dd></div>
-        <div><dt>系列</dt><dd>{a.series ? (a.seriesNo ? `${a.series}・第 ${a.seriesNo} 景` : a.series) : '待查證'}</dd></div>
+        <div><dt>系列</dt><dd>{a.series ? (a.seriesNo ? `${a.series}・第 ${a.seriesNo} 景` : a.series) : '待查證'}{seriesCatalog[a.id] && <small><a href={`https://artplatform.go.jp/ja/collections/${seriesCatalog[a.id]}`} target="_blank" rel="noopener">序號交叉編目（另一印本）↗</a></small>}</dd></div>
         <div><dt>日文原題</dt><dd>{a.titleJa ?? '待查證'}</dd></div>
         <div><dt>英文館藏名</dt><dd>{a.titleEn ?? '待查證'}</dd></div>
         <div><dt>年代</dt><dd>{a.year ?? (a.image ? '不詳' : '待查證')}</dd></div>
         {a.medium && <div><dt>媒材</dt><dd>{a.medium}</dd></div>}
         <div><dt>收藏</dt><dd>{a.image ? `${a.image.collection}${a.image.accession ? `（${a.image.accession}）` : ''}` : '待查證'}</dd></div>
-        <div><dt>策展時間</dt><dd><span class="num">{timeText}　{a.timeLabel}</span><small>導覽的敘事安排，非畫中事件的確切鐘點。</small></dd></div>
+        <div><dt>策展時間</dt><dd><span class="num">{timeText}</span><small>導覽的敘事安排，非畫中事件的確切鐘點。</small></dd></div>
         <div><dt>城市區域</dt><dd>{regionName(a.region)}</dd></div>
         <div><dt>江戶地名</dt><dd>{a.location.historicalName}</dd></div>
         <div><dt>現代位置</dt><dd>{a.location.modernName}</dd></div>
@@ -95,7 +99,6 @@ const readingSources = sourceIds[a.id] ?? [];
 
       <div class="text">
         <h2>作品介紹</h2>
-        <p>{a.summary}</p>
         {sectionDefs.map((s) => (
           <>
             <h2>{s.title}</h2>
@@ -108,9 +111,9 @@ const readingSources = sourceIds[a.id] ?? [];
           const source = observationSources[key as ObservationSourceId];
           return <li><a href={source.url} target="_blank" rel="noopener">{source.institution}｜{source.title} ↗</a><small>{source.record} · {source.scope}</small></li>;
         })}</ul>
-        {a.id === 'A04' && <p class="credit">近現代沿革依據：<a href="https://www.city.taito.lg.jp/library/service/sonota/pathfinder.files/kyodo_no5_yoshiwara4.pdf" target="_blank" rel="noopener">台東區立中央圖書館《吉原を知る》（2024 年改訂第 4 版，第 1 頁）↗</a>；法律施行日期見<a href="https://laws.e-gov.go.jp/law/331AC0000000118" target="_blank" rel="noopener"> e-Gov《売春防止法》附則 ↗</a>。</p>}
+        <p class="credit">本次核對：2026-11-18。畫面觀察以本頁圖像為準；其他印本的館方解讀與地方史各有適用範圍，不用來認定畫中每位人物的經歷。地圖座標是區域參考，並非畫家站立點。</p>
         {apa ? <p class="apa" set:html={apa.replace(/\*(.+?)\*/g, '<em>$1</em>')} /> : <p class="todo">作品來源待查證</p>}
-        {a.image && <p class="credit">圖像：{a.image.collection}{a.image.source !== 'The Met' && `，經 ${a.image.source}`}・<a href={a.image.sourceUrl} target="_blank" rel="noopener">查看原始館藏頁 ↗</a>（{a.image.license}）</p>}
+        {a.image && <p class="credit">圖像：{a.image.collection}{a.image.source !== 'The Met' && `，經 ${a.image.source}`}・<a href={a.image.sourceUrl} target="_blank" rel="noopener">查看圖像來源頁 ↗</a>（{a.image.license}）</p>}
       </div>
     </div>
   </section>

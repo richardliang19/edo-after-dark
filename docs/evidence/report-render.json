@@ -1,0 +1,14 @@
+﻿{
+    "status":  "分章修訂稿輸出；未取得原始 DOCX，並非原稿修訂版",
+    "renderer":  "Microsoft Word 16 COM；開啟、更新目錄／欄位與儲存；未完成 PDF 匯出",
+    "wordVersion":  "16.0",
+    "pages":  "未執行最後 PDF 分頁驗收",
+    "tables":  7,
+    "tableOfContents":  1,
+    "hyperlinks":  81,
+    "splitTableRows":  "OOXML 設定 cantSplit；尚未以 Word PDF 逐頁確認",
+    "docx":  "C:\\Users\\Benini\\Documents\\VSCode_Workspace\\Museum\\edo-after-dark\\docs\\期末報告_江戶不打烊_分章修訂稿.docx",
+    "pdf":  "本機 ExportAsFixedFormat 未返回；未產生 Word PDF",
+    "date":  "2026-11-18",
+    "visualInspection":  "另見逐頁渲染紀錄；此統計本身不等於逐頁目視驗收"
+}

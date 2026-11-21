@@ -1,0 +1,295 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+import { artworks, times, regionName, thumb } from '../../lib/data';
+
+const prologue = artworks.filter((a) => !a.curatorialTime);
+const transitions: Record<string, string> = {
+  '21:00': '花下聚集的人群，也需要沿途的交通與店家的接待。看過街上的熱鬧，接著留意宴席留下的痕跡。',
+  '22:00': '餐具還在，人只露出身影。從宴飲與散戲之後的場景，再把目光移向渡船上前往工作的人。',
+  '23:00': '在另一幅河景裡，乘船不再只是遊賞。接下來，我們從窗內回望城市，尋找祭典如何進入日常空間。',
+  '00:00': '這一站借室內與祭典的關係接續夜行；畫中實為黃昏。下一站轉到黎明，並不補畫兩幅作品之間沒有記錄的夜間經過。',
+  '05:00': '黎明圖的街面比夜櫻圖疏落。把兩幅作品並讀，訪客的遊賞與待客者的工作，能用同一種結尾收束嗎？',
+};
+const seasonNotes: Record<string, string> = {
+  A03: '川開き與納涼背景；非精確畫中日期',
+  A04: '夜櫻；陰曆三月賞花背景',
+  A05: '中秋月見：館方解讀',
+  A07: '陰曆十一月酉日；畫中為黃昏',
+};
+const stations = times.map((t) => ({
+  ...t,
+  main: artworks.find((a) => a.curatorialTime === t.time && !a.parallel),
+  parallel: artworks.filter((a) => a.curatorialTime === t.time && a.parallel),
+}));
+---
+<Base title="夜之時間軸" navOverlay>
+  <div class="sky" id="sky"></div>
+  <div class="stars" id="stars"></div>
+  <div class="moon" id="moon"></div>
+  <div class="hud idle"><div class="now"><strong class="num" id="now">序章</strong><span id="nowLabel">白晝</span></div></div>
+  <div class="ticks" id="ticks" aria-hidden="true">{stations.map(() => <i></i>)}</div>
+
+  <div class="timeline-controls" aria-label="時間軸瀏覽">
+    <button type="button" data-timeline-prev disabled>← 前一站</button>
+    <button type="button" data-timeline-next>下一站 →</button>
+  </div>
+  <div class="wrap" id="wrap" tabindex="0" role="region" aria-label="橫向作品時間軸，可使用左右方向鍵或前後站按鈕瀏覽">
+    <div class="track" id="track">
+      <svg class="river" id="river" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+      <section class="panel intro">
+        <p class="lead">沿著隅田川一路向前<br />從黃昏走到黎明</p>
+        <h1>夜之時間軸</h1>
+        <div class="intro-note"><p>18:00 至隔日 05:00 是本展安排的敘事時刻，並非畫中事件的確切鐘點。八件核心作品也不描繪同一個歷史夜晚；其中《淺草田甫酉之町詣》畫的是黃昏，放在午夜站是為了接續室內與祭典的討論。</p><p class="go" data-scroll-instruction>左右滑動，或按「下一站」沿河前行 →</p></div>
+      </section>
+
+      {prologue.map((a) => (
+        <section class="panel station prologue" data-time="序章" data-label="白晝">
+          <div class="big display">序</div>
+          {a.image ? <figure><img src={thumb(a.image.src, 960)} width={a.image.width} height={a.image.height} alt={a.title} /></figure> : <figure class="empty"><span>作品圖待補</span></figure>}
+          <div class="cap">
+            <span class="loc">{a.location.historicalName}</span>
+            <span class="loc">作品年代：{a.year ?? '館藏未定年'}・白晝序章</span>
+            <h2><a href={u(`artworks/${a.id}/`)}>{a.title}</a></h2>
+            <p>{a.summary}</p>
+            <span class="note">夜晚來臨之前——白天的江戶</span>
+          </div>
+        </section>
+      ))}
+
+      {stations.map((s) => (
+        <section class="panel station" data-time={s.time} data-label={s.label}>
+          <div class="big num">{s.time}</div>
+          {s.main?.image ? <figure class:list={{ land: s.main.image.width > s.main.image.height }}><img src={thumb(s.main.image.src, 960)} width={s.main.image.width} height={s.main.image.height} alt={s.main.title} /></figure> : <figure class="empty"><span>作品圖待補</span></figure>}
+          {s.main && (
+            <div class="cap">
+              <span class="loc">{s.main.location.historicalName}</span>
+              <span class="loc">作品年代：{s.main.year ?? '館藏未定年'}{seasonNotes[s.main.id] && `｜${seasonNotes[s.main.id]}`}</span>
+              <h2><a href={u(`artworks/${s.main.id}/`)}>{s.main.title}</a></h2>
+              <p>{s.main.summary}</p>{transitions[s.time] && <p class="transition">{transitions[s.time]}</p>}
+            </div>
+          )}
+          {s.parallel.length > 0 && (
+            <div class="parallel">
+              <span class="seal">同一導覽站・平行場景</span>
+              {s.parallel.map((p) => (
+                <a class="pcard" href={u(`artworks/${p.id}/`)}>
+                  {p.image && <img src={thumb(p.image.src, 330)} alt="" />}
+                  <div><strong>{p.title}</strong><small>{regionName(p.region)}</small></div>
+                </a>
+              ))}
+            </div>
+          )}
+        </section>
+      ))}
+
+      <section class="panel end" data-time="回望" data-label="天亮以後">
+        <h2>天亮了</h2>
+        <p>煙火與夜櫻留住遊興，船頭、餐具與離去的身影則讓我們回到工作與散場。</p>
+        <p class="small">當一座城市燈火未熄，是誰在玩、誰在工作，又是誰沒有被漂亮的圖像看見？畫面留下的只是片刻；訪客可以結束遊賞，遊女的勞動條件卻不會隨天亮消失。帶著這個差別，再回看你喜歡的夜景。</p>
+        <a class="btn" href={u('explore/')}>到地圖上找這些地方 →</a>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  :global(body) { background: #c79a6a; transition: none; }
+  :global(.site-foot) { z-index: 6; }
+  .sky { position: fixed; inset: 0; background: #c79a6a; z-index: 0; }
+  .stars { position: fixed; inset: 0; z-index: 1; opacity: 0; background-image: radial-gradient(1.2px 1.2px at 12% 18%, #fff 50%, transparent), radial-gradient(1px 1px at 28% 8%, #fff 50%, transparent), radial-gradient(1.4px 1.4px at 46% 22%, #fff 50%, transparent), radial-gradient(1px 1px at 63% 12%, #fff 50%, transparent), radial-gradient(1.3px 1.3px at 78% 26%, #fff 50%, transparent), radial-gradient(1px 1px at 90% 6%, #fff 50%, transparent), radial-gradient(1px 1px at 6% 34%, #fff 50%, transparent), radial-gradient(1.2px 1.2px at 54% 4%, #fff 50%, transparent), radial-gradient(1px 1px at 36% 30%, #fff 50%, transparent), radial-gradient(1px 1px at 84% 38%, #fff 50%, transparent); }
+  .moon { position: fixed; z-index: 1; width: 70px; height: 70px; border-radius: 50%; background: #f3e6bf; box-shadow: 0 0 60px 18px rgba(243, 230, 191, 0.25); left: -10vw; top: 30vh; }
+  .hud { position: fixed; top: calc(var(--nav-h) + 12px); left: 50%; transform: translateX(-50%); z-index: 30; text-align: center; pointer-events: none; background: rgba(7,9,26,.72); padding: 8px 18px; transition: opacity .4s; }
+  .hud.idle { opacity: 0; }
+  .now strong { display: block; font-size: 44px; line-height: 1; color: var(--gold); font-weight: 400; }
+  .now span { font-size: 13px; letter-spacing: 0.2em; color: rgba(239, 230, 210, 0.75); }
+  .ticks { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); z-index: 30; display: flex; gap: 6px; }
+  .ticks i { display: block; width: 30px; height: 2px; background: rgba(239, 230, 210, 0.25); transition: background 0.4s; }
+  .ticks :global(i.on) { background: var(--gold); }
+
+  .wrap { position: relative; z-index: 5; min-height: 100svh; overflow-x: auto; scroll-snap-type: x proximity; background: rgba(7,9,26,.3); }
+  .track { display: flex; min-height: 100svh; width: max-content; position: relative; }
+  .river { position: absolute; left: 0; right: 0; bottom: 0; height: 22vh; pointer-events: none; }
+  .river :global(path) { fill: none; stroke: rgba(239, 230, 210, 0.35); stroke-width: 1.2; }
+  .panel { flex: 0 0 auto; min-height: 100svh; scroll-snap-align: start; position: relative; display: flex; align-items: center; }
+  .intro { width: 100vw; justify-content: center; gap: 6vw; }
+  .intro h1 { writing-mode: vertical-rl; font-size: clamp(48px, min(8vw, 11vh), 110px); letter-spacing: 0.1em; }
+  .intro .lead { writing-mode: vertical-rl; font-size: 17px; letter-spacing: 0.25em; line-height: 2.4; max-height: 62vh; }
+  .intro .go { margin-top: 10px; font-size: 13px; letter-spacing: 0.25em; color: rgba(239, 230, 210, 0.7); }
+  .station { padding: 0 5vw 0 4vw; gap: 3vw; }
+  .big { position: absolute; top: 10vh; left: 2vw; font-size: clamp(90px, 16vw, 230px); line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(239, 230, 210, 0.28); pointer-events: none; }
+  figure { position: relative; height: 64vh; background: #e9dfc8; padding: 14px 14px 40px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6); flex: 0 0 auto; }
+  figure::before { content: ''; position: absolute; left: -12px; right: -12px; top: -10px; height: 10px; background: #3a2a1c; border-radius: 5px; }
+  figure img { height: 100%; width: auto; }
+  figure.land { height: auto; width: min(58vw, 92vh); padding: 14px 14px 34px; }
+  figure.land img { width: 100%; height: auto; }
+  figure.empty { aspect-ratio: 66/100; }
+  figure.empty { display: flex; align-items: center; justify-content: center; background: rgba(239, 230, 210, 0.08); border: 1px dashed rgba(239, 230, 210, 0.45); box-shadow: none; }
+  figure.empty::before { display: none; }
+  figure.empty span { writing-mode: vertical-rl; letter-spacing: 0.3em; font-size: 14px; color: rgba(239, 230, 210, 0.7); }
+  .cap { writing-mode: vertical-rl; display: flex; flex-direction: column; gap: 18px; height: 64vh; }
+  .cap h2 { font-size: clamp(26px, 2.8vw, 36px); }
+  .cap h2 a { text-decoration: none; }
+  .cap h2 a:hover { color: var(--gold); }
+  .cap .loc { font-size: 13px; letter-spacing: 0.2em; color: var(--gold); }
+  .cap p { font-size: 15px; line-height: 2.1; letter-spacing: 0.08em; color: rgba(239, 230, 210, 0.88); max-height: 50vh; }
+  .cap .note { font-size: 13px; color: rgba(239, 230, 210, 0.6); }
+  .parallel { display: flex; flex-direction: column; gap: 12px; align-self: flex-end; margin-bottom: 26vh; width: 240px; }
+  .parallel .seal { align-self: flex-start; }
+  .pcard { display: flex; gap: 12px; align-items: center; text-decoration: none; background: rgba(7, 9, 26, 0.45); padding: 10px; }
+  .pcard img { width: 56px; height: 84px; object-fit: cover; }
+  .pcard strong { display: block; font-family: var(--serif-display); font-weight: 400; font-size: 18px; }
+  .pcard small { color: rgba(239, 230, 210, 0.7); }
+  .end { width: 80vw; justify-content: center; flex-direction: column; text-align: center; gap: 18px; }
+  .end h2 { font-size: clamp(32px, 4vw, 52px); }
+  .end p { max-width: 620px; padding: 0 24px; color: rgba(239, 230, 210, 0.8); }
+  .end .small { font-size: 13px; }
+  @media (max-width: 700px) {
+    .station { padding: 0 8vw; }
+    figure { height: 54vh; }
+    figure.land { height: auto; width: 80vw; }
+    .cap p { display: block; }
+    .parallel { width: 180px; margin-bottom: 24vh; }
+  }
+  .intro-note { order: -1; align-self: center; width: min(320px, 26vw); margin-bottom: 8vh; font-size: 13px; line-height: 1.9; color: var(--paper); background: rgba(7,9,26,.72); padding: 16px 18px; border-left: 2px solid var(--gold); }
+  .intro-note .go { margin-top: 12px; }
+  .cap { background: rgba(7,9,26,.76); padding: 16px; }
+  .end { background: rgba(7,9,26,.8); }
+  .transition { border-right: 1px solid var(--gold); padding-right: 14px; }
+  .timeline-controls { position: fixed; right: var(--gutter); bottom: 54px; z-index: 40; display: flex; gap: 10px; }
+  .timeline-controls button { min-height: 44px; padding: 8px 14px; font: 14px var(--serif); color: var(--paper); background: rgba(7,9,26,.9); border: 1px solid var(--gold); cursor: pointer; }
+  .timeline-controls button:disabled { opacity: .4; cursor: default; }
+  :global([data-timeline-animated]) .wrap { height: 100vh; overflow: hidden; }
+  :global([data-timeline-animated]) .track, :global([data-timeline-animated]) .panel { height: 100%; }
+  @media (max-width: 700px), (prefers-reduced-motion: reduce) {
+    .hud, .ticks, .moon, .stars { display: none; }
+    .sky { background: var(--ink-2); }
+    .wrap { background: var(--ink-2); }
+    .panel { width: 100vw; padding: calc(var(--nav-h) + 32px) 24px 100px; flex-direction: column; gap: 18px; align-items: center; justify-content: flex-start; }
+    .intro { min-height: 100svh; justify-content: center; }
+    .intro h1 { font-size: 48px; }
+    .intro .lead { font-size: 15px; }
+    .intro-note { order: 0; width: auto; margin: 10px 0 0; padding: 16px; }
+    .big { position: static; align-self: flex-start; font-size: 44px; color: var(--gold); -webkit-text-stroke: 0; }
+    figure { height: 34svh; max-width: 100%; padding: 10px 10px 20px; }
+    figure.land { width: 100%; height: auto; }
+    .cap { writing-mode: horizontal-tb; display: block; height: auto; width: 100%; }
+    .cap h2 { font-size: 26px; margin: 6px 0 12px; }
+    .cap p { display: block; max-height: none; font-size: 15px; line-height: 1.9; letter-spacing: .03em; }
+    .cap .transition { margin-top: 14px; padding: 12px 0 0; border-right: 0; border-top: 1px solid var(--gold); font-size: 14px; }
+    .parallel { width: 100%; align-self: auto; margin: 0; }
+    .pcard img { height: 64px; width: 42px; }
+    .parallel .seal { white-space: normal; }
+    .end { justify-content: center; }
+    .end p { padding: 0; }
+    .timeline-controls { bottom: 14px; right: 16px; }
+  }
+</style>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  gsap.registerPlugin(ScrollTrigger);
+  const wrap = document.getElementById('wrap')!, track = document.getElementById('track')!;
+  const panels = [...track.querySelectorAll<HTMLElement>('.panel')];
+  const stations = [...track.querySelectorAll<HTMLElement>('.station')];
+  const previous = document.querySelector<HTMLButtonElement>('[data-timeline-prev]')!;
+  const next = document.querySelector<HTMLButtonElement>('[data-timeline-next]')!;
+  const instruction = document.querySelector('[data-scroll-instruction]')!;
+  const sky = document.getElementById('sky')!, stars = document.getElementById('stars')!, moon = document.getElementById('moon')!;
+  const now = document.getElementById('now')!, label = document.getElementById('nowLabel')!;
+  const hud = document.querySelector('.hud');
+  const ticks = [...document.querySelectorAll('#ticks i')];
+  let pinned: ScrollTrigger | undefined;
+  let shown = -1;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  function current() {
+    let best = 0, distance = Infinity;
+    panels.forEach((panel, i) => {
+      const rect = panel.getBoundingClientRect();
+      const d = Math.abs((rect.left + rect.right) / 2 - innerWidth / 2);
+      if (d < distance) { best = i; distance = d; }
+    });
+    return best;
+  }
+  function update() {
+    const i = current(), panel = panels[i];
+    if (i === shown) return;
+    shown = i;
+    previous.disabled = i === 0; next.disabled = i === panels.length - 1;
+    now.textContent = panel.dataset.time ?? '序章'; label.textContent = panel.dataset.label ?? '白晝';
+    hud?.classList.toggle('idle', i === 0);
+    const nightIndex = stations.filter(s => !s.classList.contains('prologue')).indexOf(panel);
+    ticks.forEach((tick, k) => tick.classList.toggle('on', k <= nightIndex));
+  }
+  function go(i: number, focusTarget?: HTMLElement) {
+    const panel = panels[Math.max(0, Math.min(panels.length - 1, i))];
+    // Read actual offsets so both native scrolling and pinned GSAP reach the same panel.
+    let target = panel.offsetLeft;
+    if (focusTarget) {
+      const box = focusTarget.getBoundingClientRect(), trackBox = track.getBoundingClientRect();
+      target = Math.max(target, box.right - trackBox.left + 24 - wrap.clientWidth);
+    }
+    const left = Math.min(track.scrollWidth - wrap.clientWidth, target);
+    if (pinned) {
+      // Native focus can scroll an overflow-hidden region; avoid adding that to GSAP's movement.
+      wrap.scrollLeft = 0;
+      window.scrollTo({top: pinned.start + left, behavior: 'instant'});
+      pinned.update();
+      pinned.getTween()?.progress(1);
+      pinned.animation?.progress(left / (track.scrollWidth - wrap.clientWidth));
+      update();
+    }
+    else wrap.scrollTo({left, behavior: reduce.matches ? 'instant' : 'smooth'});
+  }
+  previous.addEventListener('click', () => go(current() - 1));
+  next.addEventListener('click', () => go(current() + 1));
+  wrap.addEventListener('keydown', e => {
+    if (e.target !== wrap) return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); go(current() + (e.key === 'ArrowRight' ? 1 : -1)); }
+    if (e.key === 'Home' || e.key === 'End') { e.preventDefault(); go(e.key === 'Home' ? 0 : panels.length - 1); }
+  });
+  wrap.addEventListener('focusin', e => {
+    if (!pinned || e.target === wrap) return;
+    const i = panels.findIndex(panel => panel.contains(e.target as Node));
+    // Focus scrolls its overflow container after focusin; correct the position afterwards.
+    if (i >= 0) queueMicrotask(() => go(i, e.target as HTMLElement));
+  });
+  wrap.addEventListener('scroll', update, {passive: true});
+  const mm = gsap.matchMedia();
+  mm.add('(min-width: 701px) and (prefers-reduced-motion: no-preference)', () => {
+    document.documentElement.dataset.timelineAnimated = '';
+    wrap.scrollLeft = 0;
+    instruction.textContent = '向下捲動，或按「下一站」沿河前行 →';
+    const river = document.getElementById('river')!;
+    const drawRiver = () => {
+      const w = track.scrollWidth, h = river.clientHeight;
+      river.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+      river.innerHTML = Array.from({length: 4}, (_, k) => {
+        const y = h * (.3 + k * .18); let d = 'M0 ' + y;
+        for (let x = 0; x <= w; x += 120) d += ' Q' + (x + 60) + ' ' + (y + (k % 2 ? 10 : -10)) + ' ' + (x + 120) + ' ' + y;
+        return '<path d="' + d + '" style="opacity:' + (1 - k * .2) + '"/>';
+      }).join('');
+    };
+    const skyAt = gsap.utils.interpolate(['#c79a6a', '#c8694a', '#b8604f', '#7a4660', '#3a3666', '#232856', '#171c44', '#0c1030', '#0a0d26', '#4a5677', '#9fb0c6']);
+    const move = gsap.to(track, {x: () => -(track.scrollWidth - wrap.clientWidth), ease: 'none', onUpdate: update, scrollTrigger: {
+      trigger: wrap, pin: true, scrub: .6, end: () => '+=' + (track.scrollWidth - wrap.clientWidth), invalidateOnRefresh: true,
+      onUpdate: s => {
+        sky.style.background = skyAt(s.progress);
+        stars.style.opacity = String(Math.max(0, Math.sin(Math.PI * Math.min(1, Math.max(0, (s.progress - .18) / .72)))));
+        moon.style.left = (s.progress * 110 - 10) + 'vw'; moon.style.top = (40 - Math.sin(s.progress * Math.PI) * 28) + 'vh';
+      },
+    }});
+    pinned = move.scrollTrigger;
+    stations.forEach(st => {
+      gsap.from(st.querySelector('figure'), {y: 80, rotate: -2, opacity: 0, ease: 'none', scrollTrigger: {trigger: st, containerAnimation: move, start: 'left 95%', end: 'left 45%', scrub: true}});
+      gsap.from(st.querySelector('.cap'), {y: -60, opacity: 0, ease: 'none', scrollTrigger: {trigger: st, containerAnimation: move, start: 'left 80%', end: 'left 35%', scrub: true}});
+    });
+    drawRiver(); ScrollTrigger.refresh(); shown = -1; update();
+    const resize = () => {drawRiver(); ScrollTrigger.refresh();};
+    addEventListener('resize', resize);
+    return () => {delete document.documentElement.dataset.timelineAnimated; pinned = undefined; shown = -1; removeEventListener('resize', resize); instruction.textContent = '左右滑動，或按「下一站」沿河前行 →';};
+  });
+  update();
+</script>

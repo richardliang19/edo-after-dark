@@ -1,0 +1,652 @@
+[
+  {
+    "id": "A01",
+    "group": "core",
+    "title": "兩國橋宵月",
+    "titleJa": "両國之宵月",
+    "titleEn": "Twilight Moon at Ryōgoku Bridge",
+    "artist": "歌川廣重",
+    "series": "東都名所",
+    "seriesNo": null,
+    "year": null,
+    "curatorialTime": "18:00",
+    "timeLabel": "黃昏",
+    "parallel": false,
+    "region": "ryogoku",
+    "location": {
+      "historicalName": "兩國橋",
+      "modernName": "兩國橋（東京都中央區／墨田區）",
+      "lat": 35.69356,
+      "lng": 139.78875,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP123224.jpg",
+      "width": 3863,
+      "height": 2475,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1312",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/45294",
+      "license": "公有領域（The Met Open Access）"
+    },
+    "summary": "交叉的橋架占據近景，月亮、雲帶與遊船從橋下的空隙露出。",
+    "sections": {
+      "observe": "畫面近景是兩國橋下交叉成 X 形的粗大橋基，滿月與曲折的雲帶從木架之間的空隙露出，河面上有屋頂的遊船（屋形船）行經橋下。廣重以「一幽齋」落款，顯示這是他較早期的《東都名所》系列作品，但大膽俐落的構圖已有成熟期的風格。",
+      "urban": "兩國橋跨越隅田川，橋名與武藏、下總兩國有關。國立國會圖書館的地方介紹將初次架橋記為 1659 年，並說明明曆大火後的架橋背景，以及兩岸作為火除地的廣小路。The Met 則把畫中的橋樑支撐結構連到江戶的技術發展。這兩類資料分別說明橋的沿革與館方對構圖的理解。",
+      "people": "The Met 指出，中產階層搭乘屋形船遊河是江戶「現代性」的表現之一；從船上看出去，橋墩會把風景切割成意想不到的形狀。本展也採取這個遊河者的視角，從船上看橋與河景。屋形船需要船夫撐篙搖櫓，同一艘船上便有遊賞的人與工作的人。",
+      "modern": "墨田區鄉土文化資料館記載，現今的兩國橋於 1932 年完工；國立國會圖書館也指出，江戶初建的橋位比現橋稍偏下游。本展標記現橋附近的大致區域，不能用它確定廣重畫中的觀看位置。"
+    },
+    "perspectives": [
+      "night-visitors",
+      "night-workers"
+    ],
+    "details": [],
+    "status": "",
+    "apa": "Utagawa, H. (n.d.). *Twilight moon at Ryōgoku Bridge* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/45294",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "A02",
+    "group": "core",
+    "title": "柳橋夜景・萬八",
+    "titleJa": "柳ばし夜景　万八",
+    "titleEn": "The Manpachi at Evening in Yanagibashi",
+    "artist": "歌川廣重",
+    "series": "江戶高名會亭盡",
+    "seriesNo": null,
+    "year": "約 1835–1842",
+    "curatorialTime": "19:00",
+    "timeLabel": "入夜",
+    "parallel": false,
+    "region": "ryogoku",
+    "location": {
+      "historicalName": "柳橋",
+      "modernName": "柳橋（東京都台東區）",
+      "lat": 35.69636,
+      "lng": 139.7864,
+      "confidence": "approximate",
+      "note": "以柳橋橋頭標示；料亭萬八的確切位置未定。"
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP123561.jpg",
+      "width": 1937,
+      "height": 1326,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1158",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/45306",
+      "license": "公有領域（The Met Open Access）"
+    },
+    "summary": "料亭的座敷面向河水，橋上的人物與水面的船接續了店外的景色。",
+    "sections": {
+      "observe": "橫幅構圖中，河岸料亭「萬八」的座敷面向水面，人物在室內外往來。右上角的扇形題籤裡寫有呼應這個場所的雙關短詩，讓圖像與文字一起介紹名店。本作屬於《江戶高名會亭盡》系列，約作於 1835–1842 年。",
+      "urban": "柳橋位於神田川注入隅田川的地方。台東區的史跡介紹記載，江戶時代橋畔有船宿，幕末至明治以後又以花柳界聞名。本展把這段地方史與畫中面水的料亭合讀，思考用餐、待客與水路往來的關係；不能據此逐一認定畫中人物的職業。",
+      "people": "The Met 將這個系列介紹為江戶知名餐飲場所的巡禮，並提到形形色色的城市居民。圖中可見樓上席間人物、橋上行人與河船；他們的具體身分未由這份解說逐一辨明。本展從建築內外的往來，提問一場聚會如何與河岸生活相接。",
+      "modern": "台東區的史跡介紹將柳橋列於柳橋一丁目，並記載現橋在 1929 年完成。本展用柳橋橋頭作為比較古今水路的區域標記；尚未確認料亭萬八在現代街廓中的確切地點。"
+    },
+    "perspectives": [
+      "merchants",
+      "night-visitors"
+    ],
+    "details": [],
+    "status": "",
+    "apa": "Utagawa, H. (ca. 1835–1842). *The Manpachi at evening in Yanagibashi* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/45306",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "A03",
+    "group": "core",
+    "title": "兩國花火",
+    "titleJa": "両国花火",
+    "titleEn": "Fireworks at Ryōgoku Bridge, from the series One Hundred Famous Views of Edo",
+    "artist": "歌川廣重",
+    "series": "名所江戶百景",
+    "seriesNo": 98,
+    "year": "1858",
+    "curatorialTime": "20:00",
+    "timeLabel": "夜間娛樂",
+    "parallel": false,
+    "region": "ryogoku",
+    "location": {
+      "historicalName": "兩國橋",
+      "modernName": "兩國橋（東京都中央區／墨田區）",
+      "lat": 35.69356,
+      "lng": 139.78875,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP121524.jpg",
+      "width": 2617,
+      "height": 3921,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP642",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/37093",
+      "license": "公有領域（The Met Open Access）"
+    },
+    "summary": "煙火在夜空綻開，橋下擠滿遊船，整條河成了看台。",
+    "sections": {
+      "observe": "近景是橋與散布河面的船，橋上可見密集小人影；上方的煙火與細長軌跡被大片深色天空包圍。Cleveland Museum of Art 對同一構圖另一印本（1940.986）的解說指出，夜空占了將近一半畫面。本頁展示的是 The Met JP642，兩館印本的色彩與印製細節不宜混為一談。",
+      "urban": "國立國會圖書館介紹，兩國的川開き與夏季納涼期間有煙火活動。Cleveland 對另一印本的解說列出橋、河岸、茶屋與租用遊船等觀賞位置，並指出 1850 年代沿河餐館與商家常贊助煙火。這些資料提供城市活動的背景，不是本圖每位人物的身分紀錄。",
+      "people": "Cleveland 的解說讓我們看見觀賞位置與商家贊助的關係。回看本頁原圖，船上也可辨認操船的人影。本展將遊賞與載客工作並讀：有人仰望煙火，也有人讓船在河上移動。至於每位人物的職業、付費方式或商家的個別動機，這張畫並未交代。",
+      "modern": "隅田川花火大會的官方沿革記載，活動曾中斷，1978 年以現名復辦，打上地點也移往更上游，設為兩個會場；不能把今日大會與畫中景象視為地點、形式都未改變的連續紀錄。官方介紹沿用 1733 年起源的說法；本展尚未核讀足以裁定其起源爭議的早期史料，因此不以該年推定本圖描繪的活動。"
+    },
+    "perspectives": [
+      "night-visitors",
+      "night-workers"
+    ],
+    "details": [
+      {
+        "x": 0.74,
+        "y": 0.21,
+        "scale": 2.8,
+        "title": "夜空中的煙火",
+        "text": "畫面右上方，煙火像星點一樣散開。"
+      },
+      {
+        "x": 0.42,
+        "y": 0.32,
+        "scale": 2.6,
+        "title": "升空的軌跡",
+        "text": "一道細長的光痕從河面升起。"
+      },
+      {
+        "x": 0.49,
+        "y": 0.84,
+        "scale": 3,
+        "title": "掛著燈籠的遊船",
+        "text": "橋下的屋形船點著燈籠，人們在船上看煙火。"
+      }
+    ],
+    "status": "",
+    "apa": "Utagawa, H. (1858). *Fireworks at Ryōgoku Bridge, from the series One hundred famous views of Edo* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/37093",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "A04",
+    "group": "core",
+    "title": "吉原夜櫻之圖",
+    "titleJa": "吉原夜桜の図",
+    "titleEn": "Yoshiwara Yo Zakura no Zu",
+    "artist": "歌川廣重",
+    "series": "東都名所",
+    "seriesNo": null,
+    "year": "約 1841",
+    "curatorialTime": "21:00",
+    "timeLabel": "吉原夜生活",
+    "parallel": false,
+    "region": "yoshiwara",
+    "location": {
+      "historicalName": "新吉原",
+      "modernName": "千束（東京都台東區）",
+      "lat": 35.72422,
+      "lng": 139.79608,
+      "confidence": "approximate",
+      "note": "暫用新吉原區域座標。"
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP123286.jpg",
+      "width": 3886,
+      "height": 2658,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP608",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/37059",
+      "license": "公有領域（The Met Open Access）"
+    },
+    "summary": "櫻花與燈籠沿街排列，花下與樓上都有人群。",
+    "sections": {
+      "observe": "橫幅畫面描繪新吉原夜晚的櫻花，花木、燈籠、茶屋建築與花下往來的人群，呈現遊里賞櫻時的街景。本作屬於《東都名所》系列，約作於 1841 年。",
+      "urban": "東京藝術大學美術館的吉原展覽概要介紹，仲之町在陰曆三月暫時移植數百株櫻樹，供人賞花。它也列出陰曆七月盂蘭盆期間的玉菊燈籠，以及陰曆八月的俄祭典。這些是理解吉原季節活動的背景，不是本圖逐株樹木的紀錄；陰曆月份也不直接等同今日國曆月份。",
+      "people": "遊客、茶屋與遊女構成了這個熱鬧的春夜。同一份展覽說明也指出：吉原的繁華，建立在遊女因債務受役、無法依自己意願離開的犧牲上。賞花的人與在此工作的人，處境並不相同。 這是遊里制度的背景，不能只靠服飾或站位認定圖中每個人的身分與債務情況。",
+      "modern": "台東區立中央圖書館《吉原を知る》（2024 年改訂第 4 版，第 1 頁）記載，遷移命令先於明曆大火，1657 年大火促使移轉加速，同年遷至淺草千束。該指南也區分戰後公娼制度的廢止指令、改稱特飲街，以及 1958 年《賣春防止法》施行的沿革，不能把這些階段當成未曾改變的制度。"
+    },
+    "perspectives": [
+      "night-visitors",
+      "merchants"
+    ],
+    "details": [
+      {
+        "x": 0.24,
+        "y": 0.5,
+        "scale": 2.2,
+        "title": "沿街的櫻樹與燈籠",
+        "text": "花木與燈籠沿兩側建築排列，花下留出人群往來的街道。東京藝術大學美術館介紹，仲之町在陰曆三月會暫時移植櫻樹供人觀賞。",
+        "note": "這是吉原的季節活動背景，不是對本圖每株樹木的逐項紀錄。"
+      },
+      {
+        "x": 0.52,
+        "y": 0.77,
+        "scale": 2,
+        "title": "花下的人群",
+        "text": "人物在街道兩側與花下聚集。觀看賞花街景時，也可以回到作品介紹，想想訪客與待客者各自參與這場活動的方式。",
+        "note": "遊女的債務服役條件依東京藝術大學美術館的展覽概要整理；不能從服飾或站位逐一辨認人物處境。"
+      }
+    ],
+    "status": "",
+    "apa": "Utagawa, H. (ca. 1841). *Yoshiwara yo zakura no zu* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/37059",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "A05",
+    "group": "core",
+    "title": "月之岬",
+    "titleJa": "月の岬",
+    "titleEn": "Moon-Viewing Location (Tsuki no Misaki), from the series One Hundred Famous Views of Edo (Meisho Edo Hyakkei)",
+    "artist": "歌川廣重",
+    "series": "名所江戶百景",
+    "seriesNo": 82,
+    "year": "1857",
+    "curatorialTime": "22:00",
+    "timeLabel": "宴飲之後",
+    "parallel": false,
+    "region": "shinagawa",
+    "location": {
+      "historicalName": "月之岬（推定）",
+      "modernName": "可眺望品川灣的高地，確切現代位置待考",
+      "lat": null,
+      "lng": null,
+      "confidence": "hypothetical",
+      "note": "館方說明可眺望品川灣；確切街址及座標未完成核實，暫不在地圖定位。"
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP121535.jpg",
+      "width": 2626,
+      "height": 3810,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1185",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/55095",
+      "license": "公有領域（The Met Open Access）"
+    },
+    "summary": "滿月在海灣上方，座敷留下器物與人影；館方將此景解讀為宴席之後。",
+    "sections": {
+      "observe": "榻榻米上可見托盤、杯碟等器物，前景有局部露出的樂器，左側障子映出人影，右邊則露出人物衣裾與腳部。窗外是滿月、船與海面。文化遺產線上收錄的東京國立博物館同構圖印本，將這個尚未收拾的房間解讀為月見宴結束後的妓樓二樓；活動的階段屬於館方解讀。",
+      "urban": "東京國立博物館的解說將月之岬介紹為可眺望品川灣、以中秋賞月聞名的高地。本展未取得足以確認畫中房間與現代街址的證據，也不從題名推定廣重實際作畫或站立的地點。",
+      "people": "東京國立博物館將障子上的影子解讀為離開的遊女。本頁前景也可見三味線的一部分；器物、衣裾與影子使沒有完整出現的人仍可被察覺。本展邀請觀眾比較：這些線索如何把室內活動與開闊海景放在一起？這是構圖提問，並非對畫家動機或演奏結束時間的定論。 Rutgers University 的 Zimmerli Art Museum 署名展覽文章把同構圖讀為月見會中的歌舞，和東京國立博物館的宴後解讀不同。本展保留這項分歧，不把任一活動階段當成畫面唯一可證的事實。",
+      "modern": "「月之岬」的精確地點仍待確認。目前可核讀的館方資料說明品川灣與高地的關係，未提供可直接對應的現代街址。本展暫不放置座標，避免讓原有推定標記被誤認為已核實的位置。"
+    },
+    "perspectives": [
+      "night-visitors",
+      "merchants"
+    ],
+    "details": [
+      {
+        "x": 0.67,
+        "y": 0.53,
+        "scale": 2.5,
+        "title": "留在座敷的器物",
+        "text": "托盤、杯碟等器物留在榻榻米上。東京國立博物館對同構圖印本的解說，將尚未收拾的房間解讀為月見宴結束後的情境。",
+        "note": "解讀來自文化遺產線上所收錄的東京國立博物館印本；本頁展示 The Met JP1185。"
+      },
+      {
+        "x": 0.12,
+        "y": 0.31,
+        "scale": 2.4,
+        "title": "障子上的人影",
+        "text": "左側的人物只以影子出現。館方解讀為離開的遊女；先看這個影子，再把目光移向房間與海面，人物與空間的比重有何不同？",
+        "note": "人物身分與動作依東京國立博物館解讀，不將其作為所有印本都可獨立證明的事實。"
+      },
+      {
+        "x": 0.58,
+        "y": 0.84,
+        "scale": 2.4,
+        "title": "前景的局部樂器",
+        "text": "三味線的一部分在前景露出。把它與座敷上的器物、人影一起看，沒有完整出現的人仍留下了活動線索。",
+        "note": "此處只觀察樂器的位置；不據此判定樂曲、演奏者身分或演奏結束的時刻。"
+      }
+    ],
+    "status": "",
+    "apa": "Utagawa, H. (1857b). *Moon-viewing location (Tsuki no Misaki), from the series One hundred famous views of Edo (Meisho Edo Hyakkei)* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/55095",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "A06",
+    "group": "core",
+    "title": "御廄河岸",
+    "titleJa": "御厩河岸",
+    "titleEn": "Ommayagashi, Sumida River",
+    "artist": "歌川廣重",
+    "series": "名所江戶百景",
+    "seriesNo": 105,
+    "year": "約 1857",
+    "curatorialTime": "23:00",
+    "timeLabel": "深夜交通",
+    "parallel": false,
+    "region": "ryogoku",
+    "location": {
+      "historicalName": "御廄河岸",
+      "modernName": "藏前・廄橋一帶（東京都台東區）",
+      "lat": 35.70367,
+      "lng": 139.79381,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP122113.jpg",
+      "width": 2689,
+      "height": 3939,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1547",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/55712",
+      "license": "公有領域（The Met Open Access）"
+    },
+    "summary": "渡船仍在河上往返，載著夜間工作者過河。",
+    "sections": {
+      "observe": "渡船的船頭從畫面左側伸入，乘客靠近畫邊，右側樹木也占據近景。河水向對岸展開，遠岸與近處人物形成距離。The Met 將部分乘客解讀為被稱作「夜鷹」的街頭性工作者，正搭船前往工作。",
+      "urban": "墨田區鄉土文化資料館介紹，御廄河岸的地名與幕府米倉附屬的御廄有關，此處曾有渡船。The Met 對本作的解說將部分乘客認為是前往工作的夜鷹；同一段文字先談北齋另一幅渡船圖的遊賞經驗，不能把兩幅畫的人物與活動混為一談。",
+      "people": "在《兩國花火》裡，船是看台；在這裡，The Met 將部分乘客解讀為前往工作的夜鷹。兩幅畫都有載客的工作，乘船的人卻未必有相同的目的。把它們放在一起看，隅田川也成了連接遊賞與勞動的水路。",
+      "modern": "墨田區鄉土文化資料館將這一帶的渡船與今日廄橋相連，並記載現橋於 1929 年完成。本展以廄橋附近標示大致區域，並不把現橋橋頭當成已確認的江戶渡口精確位置。"
+    },
+    "perspectives": [
+      "night-workers"
+    ],
+    "details": [
+      {
+        "x": 0.17,
+        "y": 0.59,
+        "scale": 2.6,
+        "title": "左側船頭的乘客",
+        "text": "船頭和人物被左側畫邊截住，讓觀眾靠近乘客，再看向遠岸。The Met 將部分乘客解讀為正搭船前往工作的夜鷹。",
+        "note": "人物解讀依本頁所用印本 The Met JP1547 的館藏說明。"
+      },
+      {
+        "x": 0.5,
+        "y": 0.61,
+        "scale": 1.7,
+        "title": "船與對岸之間",
+        "text": "河面拉開近處船頭與遠岸的距離。與《兩國花火》密集的橋、船相比，這裡的水面更顯開闊；兩幅河景都包含載客工作，乘船目的卻不同。",
+        "note": "比較為本展的策展觀點；遊船背景依 Cleveland Museum of Art，渡船人物依 The Met。"
+      }
+    ],
+    "status": "",
+    "apa": "Utagawa, H. (ca. 1857). *Ommayagashi, Sumida River* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/55712",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "A07",
+    "group": "core",
+    "title": "淺草田甫酉之町詣",
+    "titleJa": "浅草田甫酉の町詣",
+    "titleEn": "Pilgrimage to the Torinomachi Festival across the Ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One Hundred Famous  Views of Edo (Meisho Edo hyakkei)",
+    "artist": "歌川廣重",
+    "series": "名所江戶百景",
+    "seriesNo": 101,
+    "year": "1857（安政四年十一月）",
+    "curatorialTime": "00:00",
+    "timeLabel": "窗內與祭典",
+    "parallel": false,
+    "region": "yoshiwara",
+    "location": {
+      "historicalName": "新吉原（觀察位置）",
+      "modernName": "千束（東京都台東區）",
+      "lat": 35.7225,
+      "lng": 139.79194,
+      "confidence": "approximate",
+      "note": "畫面視角在吉原；參拜目的地鷲神社在畫外，兩者需分開標示。"
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP121510.jpg",
+      "width": 2627,
+      "height": 3905,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP60",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36539",
+      "license": "公有領域（The Met Open Access）"
+    },
+    "summary": "窗邊的貓望向田間，參拜酉之市的人潮正在遠方移動。",
+    "sections": {
+      "observe": "吉原附近一間妓樓的二樓格子窗邊，一隻白貓背對觀眾望向窗外。暮色中，富士山浮在地平線上，田間小路上一列細小的人影正往遠處移動；房間左下角放著熊手形狀的髮簪。",
+      "urban": "「淺草田圃」是淺草寺北方、圍繞新吉原的大片濕地農田。The Met 說明，人群正前往鷲大明神（鷲神社）參加酉之町祭。祭典在陰曆十一月的酉日舉行，攤販販賣裝飾著招福圖樣的小熊手與八頭芋。",
+      "people": "The Met 推測，這些髮簪可能是男客從祭典買給遊女的小禮物。祭典當天，吉原對所有人開放，連平時不能進入的一般女性也可以入內，是遊里最忙碌的日子之一。從貓所在的室內望出去，還能看見遠處前往參拜的人潮。",
+      "modern": "本圖的室內觀看位置與人群前往的祭典目的地不同。The Met 說明前者在新吉原一帶，後者是鷲大明神。今日台東區仍介紹每年十一月酉日於鷲神社與長國寺舉行的酉之市；今日國曆日期不等同畫中江戶時期的陰曆月份。地圖標記僅供比較大致區域。"
+    },
+    "perspectives": [
+      "religious-visitors",
+      "night-visitors"
+    ],
+    "details": [
+      {
+        "x": 0.34,
+        "y": 0.6,
+        "scale": 3.2,
+        "title": "窗台上的白貓",
+        "text": "貓背對觀眾望向窗外。房間裡還有衣物與飾物，卻不見完整人物；僅憑這些物件，不能確定它們各屬於誰。"
+      },
+      {
+        "x": 0.73,
+        "y": 0.47,
+        "scale": 3,
+        "title": "遠方的參拜人潮",
+        "text": "田間小路上，一列細小的人影正前往鷲神社參加酉之市。",
+        "note": "觀察位置在吉原，參拜目的地在畫外——兩者在地圖上要分開標示。"
+      },
+      {
+        "x": 0.37,
+        "y": 0.35,
+        "scale": 3.4,
+        "title": "晚霞中的富士",
+        "text": "地平線上是富士山與橘紅的晚霞。畫中的天色其實是黃昏。",
+        "note": "時間軸是策展導覽，不等於畫中的真實時刻。"
+      },
+      {
+        "x": 0.18,
+        "y": 0.88,
+        "scale": 3.2,
+        "title": "熊手形狀的髮簪",
+        "text": "地上的懷紙裡放著熊手形髮簪，呼應酉之市販售的招福熊手。The Met 推測，它們可能是男客從祭典帶給遊女的小禮物。",
+        "note": "依 The Met 館藏 JP60 解說保留推測語氣；髮簪不能單獨證明遊女曾親自前往祭典。"
+      }
+    ],
+    "status": "",
+    "apa": "Utagawa, H. (1857c). *Pilgrimage to the Torinomachi Festival across the ricefields of Asakusa (Asakusa tanbo Torinomachi mōde), from the series One hundred famous views of Edo (Meisho Edo hyakkei)* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/36539",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "A08",
+    "group": "core",
+    "title": "廓中東雲",
+    "titleJa": "廓中東雲",
+    "titleEn": "The Entrance to the Yoshiwara at Dawn",
+    "artist": "歌川廣重",
+    "series": "名所江戶百景",
+    "seriesNo": 38,
+    "year": "1857",
+    "curatorialTime": "05:00",
+    "timeLabel": "黎明",
+    "parallel": false,
+    "region": "yoshiwara",
+    "location": {
+      "historicalName": "新吉原",
+      "modernName": "千束（東京都台東區）",
+      "lat": 35.72422,
+      "lng": 139.79608,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP122115.jpg",
+      "width": 2610,
+      "height": 3870,
+      "collection": "The Metropolitan Museum of Art",
+      "accession": "JP1024",
+      "source": "The Met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/54931",
+      "license": "公有領域（The Met Open Access）"
+    },
+    "summary": "黎明的街道上只有幾組人物，與夜櫻圖的密集人群形成對照。",
+    "sections": {
+      "observe": "吉原的街道向遠處延伸，幾組人物沿路分布，右側有花木。The Met 的英文題名將場景定位為吉原入口的黎明。本展把它與《吉原夜櫻之圖》比較人物疏密；兩件作品不構成同一夜的連續紀錄，也不藉此逐一指定人物身分。",
+      "urban": "Fitzwilliam Museum 對《吉原日本堤》另一印本的介紹，將堤道、引手茶屋與吉原入口相連。本展以這段交通背景，讓觀眾把吉原的街景放回訪客抵達與離去的路線中；這是跨作品的閱讀，不是本圖每個人的行程紀錄。",
+      "people": "東京藝術大學美術館的展覽概要指出，遊女受到債務服役制度拘束，不能依自己的意願離開。本展以這項制度背景回看黎明街景：遊客的行程可以結束，待客者的勞動處境卻不能由天色推定已經改變。這是展覽的收束提問，並非圖中個別人物契約狀態的證明。",
+      "modern": "Fitzwilliam Museum 在《吉原日本堤》的介紹中提到入口附近的「見返柳」，並轉述離去客人回望的說法。這是地點與命名的敘事背景；本展尚未核實今日柳樹與江戶原樹的連續性，也未據此標定畫中每位人物的移動方向。"
+    },
+    "perspectives": [
+      "night-visitors",
+      "night-workers"
+    ],
+    "details": [
+      {
+        "x": 0.33,
+        "y": 0.69,
+        "scale": 2.5,
+        "title": "街道上的幾組人物",
+        "text": "近處與後方的人影沿街分布。比較《吉原夜櫻之圖》，黎明圖的街面顯得疏落；天色與人物疏密如何影響你對這個地方的感受？",
+        "note": "黎明依 The Met 館藏題名；人物身分不在本次可核讀的館藏資料中逐一辨明。"
+      },
+      {
+        "x": 0.73,
+        "y": 0.55,
+        "scale": 1.8,
+        "title": "花木仍在，人群已疏落",
+        "text": "右側花木對著較空的街面。回看《吉原夜櫻之圖》的花下人群，兩幅畫讓我們看見聚集與散去的不同景象。",
+        "note": "這是兩幅作品的比較，不代表它們描繪同一夜，也不把散場解釋為遊女服役關係的結束。"
+      }
+    ],
+    "status": "",
+    "apa": "Utagawa, H. (1857a). *The entrance to the Yoshiwara at dawn* [Woodblock print]. The Metropolitan Museum of Art. https://www.metmuseum.org/art/collection/search/54931",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "B01",
+    "group": "urban",
+    "title": "猿若町夜之景",
+    "titleJa": "猿わか町よるの景",
+    "titleEn": "Night View of Saruwaka-machi",
+    "artist": "歌川廣重",
+    "series": "名所江戶百景",
+    "seriesNo": 90,
+    "year": "1856",
+    "curatorialTime": "22:00",
+    "timeLabel": "月下劇場街",
+    "parallel": true,
+    "region": "asakusa",
+    "location": {
+      "historicalName": "猿若町",
+      "modernName": "淺草六丁目一帶（東京都台東區）",
+      "lat": 35.7175,
+      "lng": 139.80094,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Hiroshige%2C_Night_View_of_Saruwaka-machi.jpg",
+      "width": 706,
+      "height": 1050,
+      "collection": "原典藏館未標明（圖像取自 Wikimedia Commons）",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hiroshige,_Night_View_of_Saruwaka-machi.jpg",
+      "license": "Commons 標示公有領域（PD-Art）；檔案曾經色彩處理，原典藏未確認"
+    },
+    "summary": "月光照著劇場街，看戲歸來的人們沿街而行。",
+    "sections": {
+      "observe": "劇場街向畫面深處延伸，滿月與人物腳下的影子呼應。慶應義塾大學圖書館對同構圖另一印本的解說指出，夜空刻意保留版木木紋。本頁使用的 Commons 影像經過色彩處理，解析度也較低，不能據此保證木紋與慶應印本同樣清楚。",
+      "urban": "慶應圖書館的解說將猿若町的劇場集中，連到天保改革時的強制遷置：三座劇場沿同一條街排列，遠近法把這段街景收在畫面裡。這是同構圖印本的研究解說，不代表慶應就是本頁數位圖像的典藏來源。",
+      "people": "慶應圖書館將街上的人物介紹為看戲歸來的客人。從這些沿街移動的人回望劇場，夜生活也包含散場與返程；本展把這幅月下街景與宴席後的《月之岬》並置，邀請觀眾比較不同場所留下的活動痕跡。",
+      "modern": "本展標示淺草六丁目一帶的大致區域，尚未逐一核實各劇場舊址與現代街廓的對應。Commons 檔案的來源鏈指向私人整理的廣重網站，原印本的典藏機構未確認；不能以慶應持有同構圖印本來補上本頁圖像的收藏資訊。"
+    },
+    "perspectives": [
+      "night-visitors",
+      "merchants"
+    ],
+    "details": [],
+    "status": "",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "B02",
+    "group": "urban",
+    "title": "吉原日本堤",
+    "titleJa": "よし原日本堤",
+    "titleEn": "Nihon Embankment and Yoshiwara",
+    "artist": "歌川廣重",
+    "series": "名所江戶百景",
+    "seriesNo": 100,
+    "year": "1857",
+    "curatorialTime": "21:00",
+    "timeLabel": "通往吉原",
+    "parallel": true,
+    "region": "yoshiwara",
+    "location": {
+      "historicalName": "日本堤",
+      "modernName": "日本堤（東京都台東區）",
+      "lat": 35.72458,
+      "lng": 139.79728,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/100_views_edo_100.jpg",
+      "width": 789,
+      "height": 1200,
+      "collection": "Brooklyn Museum（依 Commons 檔案記載；原館藏連結本次未能核讀）",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_100.jpg",
+      "license": "Commons 標示公有領域（PD-Art）；原館藏對應仍待確認"
+    },
+    "summary": "通往吉原的堤道上，行人、轎子與茶店集中在田野之間。",
+    "sections": {
+      "observe": "上方可見月亮與斜飛的鳥群，堤道上是行人、轎子與沿路店舖，周圍田野較為空曠。台東區立中央圖書館對同構圖另一印本的解說，將時段介紹為黃昏，並比較堤道的繁忙與田野的安靜。月亮與黃昏並不互斥，也不能只因畫有月亮就推定為深夜。本次核看本頁 Commons 檔案的正式縮圖，細部色彩與印製狀態仍受解析度限制。",
+      "urban": "Fitzwilliam Museum 對同構圖另一印本的解說，把日本堤介紹為穿過淺草田野、通往新吉原的路線；台東區立中央圖書館也將堤道上的往來與周邊田野並讀。本展據此觀察目的地以外的交通空間，不以堤道長度或俗稱推算畫中行程。",
+      "people": "Fitzwilliam Museum 介紹訪客步行、乘轎，以及沿途引手茶屋預先安排遊郭接待的功能。這段背景讓我們把畫中的移動與接待工作一起思考；並不表示已知道每位轎夫、店主的收入來源，或每組人物的確切行程。",
+      "modern": "本展沿用日本堤一帶作為區域對照，尚未核實畫中每段堤道與今日道路的精確重合。古今地圖上的水路、道路與街廓可供比較，但不能把配準後的線條當成未經變動的現代地界。"
+    },
+    "perspectives": [
+      "night-visitors",
+      "night-workers"
+    ],
+    "details": [],
+    "status": "",
+    "medium": "彩色木版畫"
+  },
+  {
+    "id": "B03",
+    "group": "urban",
+    "title": "駿河町之圖",
+    "titleJa": "する賀てふ",
+    "titleEn": "Suruga-chō",
+    "artist": "歌川廣重",
+    "series": "名所江戶百景",
+    "seriesNo": 8,
+    "year": "1856",
+    "curatorialTime": null,
+    "timeLabel": "序章・白晝",
+    "parallel": false,
+    "region": "nihonbashi",
+    "location": {
+      "historicalName": "駿河町",
+      "modernName": "日本橋室町（東京都中央區）",
+      "lat": 35.68625,
+      "lng": 139.77394,
+      "confidence": "approximate",
+      "note": null
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/100_views_edo_008.jpg",
+      "width": 790,
+      "height": 1200,
+      "collection": "Brooklyn Museum（依 Commons 檔案記載；原館藏連結本次未能核讀）",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:100_views_edo_008.jpg",
+      "license": "Commons 標示公有領域（PD-Art）；原館藏對應仍待確認"
+    },
+    "summary": "白天的商業大街，兩側是吳服店，遠方是富士山——夜晚來臨前的江戶。",
+    "sections": {
+      "observe": "接近對稱的街道兩側是成排的商家，遠方的富士山從雲帶之上升起，不規則的雲帶稍微打散了街道的對稱。店舖布簾上有圈住「三」與「井」的標誌，Brooklyn Museum 將它辨認為三井越後屋的商標。",
+      "urban": "Brooklyn Museum 的館方解說辨認出越後屋的三井標誌。三井廣報委員會的沿革另記載，越後屋於 1673 年在江戶本町一丁目開業，1683 年移到駿河町。前者協助辨認圖中商店，後者補充商家的發展；不能只從標誌讀出完整企業史。",
+      "people": "這件作品是本展的白晝序章。街面上有行人與搬運物品的人，先讓觀眾看到商業街的往來。Brooklyn Museum 將雲帶解讀為傳統的分景手法，使視線在上方富士山與下方城市活動之間移動；把白天商街接到夜間消費，則是本展的敘事安排。",
+      "modern": "Brooklyn Museum 的解說將越後屋連到後來的三越百貨。本展以日本橋室町一帶作為區域對照；商家的沿革不等於江戶建築原樣留存，也不據此保證今天能重現畫中的富士山視野。"
+    },
+    "perspectives": [
+      "merchants"
+    ],
+    "details": [],
+    "status": "",
+    "medium": "彩色木版畫"
+  }
+]

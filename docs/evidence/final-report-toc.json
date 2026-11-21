@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-19",
+  "method": "Actual LibreOffice CLI PDF page locations; cached TOC values aligned, fields and bookmark destinations preserved.",
+  "corrections": [
+    {
+      "title": "一、策展理念及主題",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "title": "二、展覽設計",
+      "before": 4,
+      "after": 4
+    },
+    {
+      "title": "三、文物選件",
+      "before": 7,
+      "after": 7
+    },
+    {
+      "title": "四、網頁導覽及特色",
+      "before": 13,
+      "after": 13
+    },
+    {
+      "title": "五、線上博物館是什麼",
+      "before": 16,
+      "after": 15
+    },
+    {
+      "title": "六、分工進度",
+      "before": 17,
+      "after": 16
+    },
+    {
+      "title": "七、參考文獻",
+      "before": 20,
+      "after": 19
+    },
+    {
+      "title": "八、驗證與限制",
+      "before": 25,
+      "after": 24
+    },
+    {
+      "title": "九、結論與後續改善",
+      "before": 26,
+      "after": 25
+    },
+    {
+      "title": "附錄：內部待辦（非已完成資料）",
+      "before": 27,
+      "after": 26
+    }
+  ]
+}

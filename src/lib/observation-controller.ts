@@ -1,5 +1,6 @@
 import { observationQuestions, selectObservationSession, shuffled, type ObservationMode } from '../data/observation';
 import { observationStorageKey, observationVersion, parseObservationSnapshot, type ObservationSnapshot } from './observation-session';
+import { formatObservationNotebook } from './observation-notebook';
 
 export function initObservationChallenge(root: HTMLElement) {
   const setup = root.querySelector<HTMLElement>('[data-observation-setup]')!;
@@ -177,6 +178,15 @@ export function initObservationChallenge(root: HTMLElement) {
   }));
   root.querySelector('[data-observation-restart]')!.addEventListener('click', startSession);
   root.querySelector('[data-notebook-return]')!.addEventListener('click', () => showNotebook());
+  root.querySelector('[data-notebook-download]')!.addEventListener('click', () => {
+    const blob = new Blob(['\uFEFF', formatObservationNotebook({ session, outcomes, notes })], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url; link.download = '江戶夜景觀察手帖.txt';
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    root.querySelector('[data-download-status]')!.textContent = '已產生文字手帖；請查看瀏覽器的下載項目。來源連結與你的記錄一併收錄。';
+  });
   try {
     const raw = localStorage.getItem(observationStorageKey), saved = parseObservationSnapshot(raw);
     if (saved) {

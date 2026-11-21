@@ -1,0 +1,262 @@
+{
+  "date": "2026-11-19",
+  "originalSha256": "96aa19ae7463915002c3381816ee7524e3cda7d47891135fbf93fd41af21ca14",
+  "originalUnchanged": true,
+  "revisionSha256": "e799d4e8a07af3b99b0373b0df211ab338ddb00e1f03979572f28b8ff847ca2a",
+  "pdfSha256": "7fa5f4e141afed1761f79894c6cd0627963715a83c1c9d03b6c4ff4bbeeef60a",
+  "pdfPages": 26,
+  "allOriginalImageBytesPreserved": true,
+  "pictures": 3,
+  "tables": [
+    {
+      "table": 1,
+      "headers": [
+        "學習目標",
+        "可觀察的表現",
+        "評量方式（尚未進行真人研究）"
+      ],
+      "rowCount": 4,
+      "wholeOnPage": [
+        3
+      ],
+      "pass": true
+    },
+    {
+      "table": 2,
+      "headers": [
+        "層次",
+        "以《月之岬》為例"
+      ],
+      "rowCount": 5,
+      "wholeOnPage": [
+        4
+      ],
+      "pass": true
+    },
+    {
+      "table": 3,
+      "headers": [
+        "策展時間",
+        "作品／年代與季節",
+        "敘事（與網站摘要一致）"
+      ],
+      "rowCount": 9,
+      "wholeOnPage": [
+        5
+      ],
+      "pass": true
+    },
+    {
+      "table": 4,
+      "headers": [
+        "功能",
+        "策展目的",
+        "預期學習",
+        "如何驗證"
+      ],
+      "rowCount": 7,
+      "wholeOnPage": [
+        6
+      ],
+      "pass": true
+    },
+    {
+      "table": 5,
+      "headers": [
+        "作品 ID／名稱",
+        "系列",
+        "年代",
+        "本頁圖像來源"
+      ],
+      "rowCount": 12,
+      "wholeOnPage": [
+        7
+      ],
+      "pass": true
+    },
+    {
+      "table": 6,
+      "headers": [
+        "頁面",
+        "內容"
+      ],
+      "rowCount": 8,
+      "wholeOnPage": [
+        13
+      ],
+      "pass": true
+    },
+    {
+      "table": 7,
+      "headers": [
+        "組員",
+        "負責項目（依 contributions.csv）"
+      ],
+      "rowCount": 8,
+      "wholeOnPage": [
+        16
+      ],
+      "pass": true
+    },
+    {
+      "table": 8,
+      "headers": [
+        "工作項目",
+        "11/9",
+        "11/13",
+        "11/15",
+        "11/18",
+        "狀態",
+        "可追溯依據"
+      ],
+      "rowCount": 10,
+      "wholeOnPage": [
+        17
+      ],
+      "pass": true
+    },
+    {
+      "table": 9,
+      "headers": [
+        "日期（2026）",
+        "版本／可核對的內容",
+        "證據範圍"
+      ],
+      "rowCount": 6,
+      "wholeOnPage": [
+        18
+      ],
+      "pass": true
+    },
+    {
+      "table": 10,
+      "headers": [
+        "待確認項目",
+        "目前證據／處理",
+        "下一步"
+      ],
+      "rowCount": 7,
+      "wholeOnPage": [
+        26
+      ],
+      "pass": true
+    }
+  ],
+  "tocRows": [
+    {
+      "title": "一、策展理念及主題",
+      "cachedPage": 3,
+      "actualPage": 3,
+      "pass": true
+    },
+    {
+      "title": "二、展覽設計",
+      "cachedPage": 4,
+      "actualPage": 4,
+      "pass": true
+    },
+    {
+      "title": "三、文物選件",
+      "cachedPage": 7,
+      "actualPage": 7,
+      "pass": true
+    },
+    {
+      "title": "四、網頁導覽及特色",
+      "cachedPage": 13,
+      "actualPage": 13,
+      "pass": true
+    },
+    {
+      "title": "五、線上博物館是什麼",
+      "cachedPage": 15,
+      "actualPage": 15,
+      "pass": true
+    },
+    {
+      "title": "六、分工進度",
+      "cachedPage": 16,
+      "actualPage": 16,
+      "pass": true
+    },
+    {
+      "title": "七、參考文獻",
+      "cachedPage": 19,
+      "actualPage": 19,
+      "pass": true
+    },
+    {
+      "title": "八、驗證與限制",
+      "cachedPage": 24,
+      "actualPage": 24,
+      "pass": true
+    },
+    {
+      "title": "九、結論與後續改善",
+      "cachedPage": 25,
+      "actualPage": 25,
+      "pass": true
+    },
+    {
+      "title": "附錄：內部待辦（非已完成資料）",
+      "cachedPage": 26,
+      "actualPage": 26,
+      "pass": true
+    }
+  ],
+  "tocAnchorTargets": [
+    {
+      "anchor": "__RefHeading___Toc2487_2633232992",
+      "exists": true
+    },
+    {
+      "anchor": "__RefHeading___Toc2505_2633232992",
+      "exists": true
+    },
+    {
+      "anchor": "__RefHeading___Toc2503_2633232992",
+      "exists": true
+    },
+    {
+      "anchor": "__RefHeading___Toc2501_2633232992",
+      "exists": true
+    },
+    {
+      "anchor": "__RefHeading___Toc2499_2633232992",
+      "exists": true
+    },
+    {
+      "anchor": "__RefHeading___Toc2497_2633232992",
+      "exists": true
+    },
+    {
+      "anchor": "__RefHeading___Toc2495_2633232992",
+      "exists": true
+    },
+    {
+      "anchor": "__RefHeading___Toc2493_2633232992",
+      "exists": true
+    },
+    {
+      "anchor": "__RefHeading___Toc2491_2633232992",
+      "exists": true
+    },
+    {
+      "anchor": "__RefHeading___Toc2489_2633232992",
+      "exists": true
+    }
+  ],
+  "expectedTextBlocks": 392,
+  "expectedContentMissing": [],
+  "allNineChapters": true,
+  "highlights": 0,
+  "unfinishedPrompts": [],
+  "overflowCount": 0,
+  "externalUrls": 57,
+  "badUrls": [],
+  "pdfLinks": 65,
+  "pdfInternalLinks": 0,
+  "pdfBadInternalDestinations": [],
+  "scope": "Structural consistency and actual rendered pagination only; history and source limits remain in the evidence register. PDF TOC has printed page numbers; DOCX bookmark targets are checked separately.",
+  "pass": true
+}

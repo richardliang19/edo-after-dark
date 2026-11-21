@@ -1,0 +1,2 @@
+convert C:\Users\Benini\Documents\VSCode_Workspace\Museum\edo-after-dark\docs\�������i_���ᤣ���L_�׭q��.docx as a Writer document -> C:\Users\Benini\Documents\VSCode_Workspace\Museum\edo-after-dark\docs\�������i_���ᤣ���L_�׭q��.pdf using filter : writer_pdf_Export:{"UseLosslessCompression":{"type":"boolean","value":"true"},"ReduceImageResolution":{"type":"boolean","value":"false"}}
+Overwriting: C:\Users\Benini\Documents\VSCode_Workspace\Museum\edo-after-dark\docs\�������i_���ᤣ���L_�׭q��.pdf

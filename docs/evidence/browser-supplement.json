@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-18",
+  "results": [
+    {
+      "name": "desktop GSAP timeline / next stations, keyboard End and Home",
+      "result": "pass",
+      "evidence": {
+        "positions": [
+          {
+            "y": 1440,
+            "x": "matrix(1, 0, 0, 1, -1440, 0)",
+            "label": "白晝"
+          },
+          {
+            "y": 2314,
+            "x": "matrix(1, 0, 0, 1, -2314, 0)",
+            "label": "黃昏"
+          },
+          {
+            "y": 3568,
+            "x": "matrix(1, 0, 0, 1, -3568, 0)",
+            "label": "入夜"
+          },
+          {
+            "y": 4821,
+            "x": "matrix(1, 0, 0, 1, -4821, 0)",
+            "label": "夜間娛樂"
+          }
+        ],
+        "end": {
+          "label": "天亮以後",
+          "y": 10936
+        },
+        "home": 0
+      }
+    },
+    {
+      "name": "artwork image network failure / readable text and source fallback",
+      "result": "pass",
+      "evidence": {
+        "fallback": "圖像暫時無法載入。可以繼續閱讀下方介紹，或開啟圖像來源 ↗。",
+        "source": "https://www.metmuseum.org/art/collection/search/37093",
+        "readable": true,
+        "sectionCount": 6
+      }
+    },
+    {
+      "name": "activity keyboard controls and native mobile touch image pan",
+      "result": "pass",
+      "evidence": {
+        "answerRevealed": true,
+        "before": "translate(-121.5%, -241.667%) scale(3.5)",
+        "after": "translate(-135.741%, -248.009%) scale(3.5)",
+        "scope": "Keyboard controls tested using explicit focus; not a complete Tab-order or screen-reader review. Touch is browser emulation, not a physical handset."
+      }
+    }
+  ],
+  "exceptions": []
+}

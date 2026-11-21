@@ -1,0 +1,115 @@
+---
+import Base from '../../layouts/Base.astro';
+import news from '../../data/news.json';
+import NightwalkerQuiz from '../../components/NightwalkerQuiz.astro';
+import ObservationChallenge from '../../components/ObservationChallenge.astro';
+import '../../styles/activities.css';
+import { u } from '../../lib/url';
+
+const friends = [
+  { name: 'CODH 江戶地圖', url: 'https://codh.rois.ac.jp/edo-maps/', desc: '人文學開放資料共同利用中心的江戶古地圖資料' },
+  { name: '江戶百景古今互動地圖', url: 'https://www.tsunagaru-map.com/edo100/', desc: '名所江戶百景的地點古今對照' },
+  { name: 'The Met Collection', url: 'https://www.metmuseum.org/art/collection', desc: '大都會藝術博物館線上典藏' },
+  { name: '慶應義塾大學浮世繪典藏', url: 'https://dcollections.lib.keio.ac.jp/ja/ukiyoe/', desc: '慶應義塾大學數位典藏' },
+  { name: '東京都立博物館・美術館收藏品', url: 'https://museumcollection.tokyo/', desc: '東京都立博物館與美術館收藏檢索' },
+];
+---
+<Base title="活動與消息">
+  <div class="page">
+    <div class="page-head">
+      <span class="seal">活動與消息</span>
+      <h1>活動與最新消息</h1>
+      <p>線上展覽的互動活動、更新紀錄與相關網站。</p>
+    </div>
+
+    <h2 class="sec reveal">活動</h2>
+    <div class="events" id="activity-menu">
+      <article class="ev">
+        <span class="tag">活動一 · 4 個情境 · 約 2 分鐘</span>
+        <h3>你的江戶夜行，會先看見什麼？</h3>
+        <p>在橋上、料亭與窗邊，你會先注意哪些細節？四個觀展情境，整理你這次較常選擇的觀看方式，再推薦一幅作品。沒有標準答案，也不替你指定歷史人物身分。</p>
+        <button class="event-start" type="button" data-activity-open="quiz" aria-controls="nightwalker-quiz" aria-expanded="false" disabled>開始尋找夜行視角 →</button>
+      </article>
+      <article class="ev">
+        <span class="tag">活動二 · 先看 3 幅、6 題</span>
+        <h3>提燈尋跡：畫裡的江戶夜生活</h3>
+        <p>先看畫，再從器物、人物與觀看位置讀江戶的夜。預設抽選三幅核心作品，每幅兩題；也能專看一幅，或選完整 26 題。需要背景時，可隨時閱讀站內作品介紹；解說附館藏來源，自己的觀察則能收進手帖。</p>
+        <button class="event-start" type="button" data-activity-open="observation" aria-controls="observation-challenge" aria-expanded="false" disabled>提燈出發，尋找細節 →</button>
+      </article>
+    </div>
+    <noscript><p class="activity-fallback">請啟用 JavaScript 參加互動活動；也可以直接<a href={u('artworks/A03/')}>閱讀《兩國花火》</a>、<a href={u('artworks/A07/')}>閱讀《淺草田甫酉之町詣》</a>。</p></noscript>
+    <NightwalkerQuiz />
+    <ObservationChallenge />
+
+    <h2 class="sec reveal">最新消息</h2>
+    <ul class="news">
+      {news.map((n) => (
+        <li class="reveal"><time class="num">{n.date}</time><div><h3>{n.title}</h3><p>{n.body}</p></div></li>
+      ))}
+    </ul>
+
+    <h2 class="sec reveal">友站連結</h2>
+    <ul class="friends">
+      {friends.map((f) => (
+        <li class="reveal"><a href={f.url} target="_blank" rel="noopener"><strong>{f.name} ↗</strong><span>{f.desc}</span></a></li>
+      ))}
+    </ul>
+  </div>
+</Base>
+
+<style>
+  .sec { font-size: 30px; margin: 10vh 0 22px; }
+  .sec:first-of-type { margin-top: 0; }
+  .events { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2px; }
+  .ev { background: var(--ink-2); padding: 30px; }
+  .ev h3 { font-size: 26px; margin: 12px 0 8px; }
+  .ev p { color: var(--paper-2); font-size: 15px; }
+  .ev { display: flex; flex-direction: column; align-items: flex-start; }
+  .ev p { flex: 1; }
+  .event-start { background: none; color: var(--gold); border: 1px solid var(--line); font: 14px var(--serif); text-align: left; padding: 11px 16px; margin-top: 22px; cursor: pointer; }
+  .event-start:hover { border-color: var(--gold); }
+  .event-start:disabled { opacity: .45; cursor: default; }
+  .event-start[aria-expanded="true"] { background: var(--paper); color: var(--ink); }
+  .activity-fallback { padding: 18px 0; color: var(--paper-2); }
+  .news, .friends { list-style: none; }
+  .news li { display: grid; grid-template-columns: 140px 1fr; gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
+  .news time { color: var(--gold); font-size: 18px; }
+  .news h3 { font-size: 20px; }
+  .news p { color: var(--paper-2); font-size: 15px; }
+  .friends li { border-top: 1px solid var(--line); }
+  .friends a { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; text-decoration: none; flex-wrap: wrap; }
+  .friends strong { font-family: var(--serif-display); font-weight: 400; font-size: 20px; }
+  .friends span { color: var(--mute); font-size: 14px; }
+  .friends a:hover strong { color: var(--gold); }
+  @media (max-width: 700px) { .news li { grid-template-columns: 1fr; gap: 4px; } }
+</style>
+
+<script>
+  const panels = {
+    quiz: document.querySelector<HTMLElement>('#nightwalker-quiz')!,
+    observation: document.querySelector<HTMLElement>('#observation-challenge')!,
+  };
+  type Activity = keyof typeof panels;
+  let active: Activity = 'quiz';
+  const openers = [...document.querySelectorAll<HTMLButtonElement>('[data-activity-open]')];
+  function openActivity(key: Activity) {
+    active = key;
+    Object.entries(panels).forEach(([name, panel]) => { panel.hidden = name !== key; });
+    openers.forEach((button) => button.setAttribute('aria-expanded', String(button.dataset.activityOpen === key)));
+    panels[key].scrollIntoView({ behavior: 'instant', block: 'start' });
+    panels[key].querySelector('h3')!.focus({ preventScroll: true });
+  }
+  openers.forEach((button) => {
+    const key = button.dataset.activityOpen as Activity;
+    button.setAttribute('aria-controls', panels[key].id);
+    button.addEventListener('click', () => openActivity(key));
+    button.disabled = false;
+  });
+  document.querySelectorAll<HTMLButtonElement>('[data-activity-close]').forEach((button) => {
+    button.addEventListener('click', () => {
+      Object.values(panels).forEach((panel) => { panel.hidden = true; });
+      openers.forEach((opener) => opener.setAttribute('aria-expanded', 'false'));
+      document.querySelector<HTMLButtonElement>(`.event-start[data-activity-open="${active}"]`)!.focus();
+    });
+  });
+</script>

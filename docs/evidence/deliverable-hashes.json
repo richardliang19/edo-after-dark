@@ -1,0 +1,295 @@
+{
+  "date": "2026-11-19",
+  "files": [
+    {
+      "path": "src/components/ArtworkViewer.astro",
+      "bytes": 6740,
+      "sha256": "9f301f4d08f39576b88348724bb8b2c396ec3e6c33866e78b6712d1062f47539"
+    },
+    {
+      "path": "src/components/MapComparison.astro",
+      "bytes": 18568,
+      "sha256": "aaca9f5825f2273b287879e1d6f9c6fdf2abf99c0ffab0f81077f2d2882313f1"
+    },
+    {
+      "path": "src/components/NightwalkerQuiz.astro",
+      "bytes": 5828,
+      "sha256": "e6d760b2a9aa4eccd0840f212063fb30a98da4bc878d3c858808d815e01bf1e8"
+    },
+    {
+      "path": "src/components/ObservationChallenge.astro",
+      "bytes": 13712,
+      "sha256": "b9354d246226cece8de53f6354a0bc9490d0953213fb6a42eafce16226df62e1"
+    },
+    {
+      "path": "src/data/activities.ts",
+      "bytes": 4871,
+      "sha256": "1f7dd44603203d4f2614a6de574236f9d29172c6aec6d70310685392f811a579"
+    },
+    {
+      "path": "src/data/artworks.json",
+      "bytes": 35986,
+      "sha256": "065553d0c37f888939437c1239ff434eb25bce29255d5422777c3dfdbe3abf76"
+    },
+    {
+      "path": "src/data/meta.json",
+      "bytes": 1457,
+      "sha256": "6655a723d15c800e72344f265d4cdb5bfbe0a29b4eb31897711907f858727d96"
+    },
+    {
+      "path": "src/data/news.json",
+      "bytes": 792,
+      "sha256": "62bbf5ecc0654d290ebbf3e9116bd778206513b0bc8fda7a5a5637c9498e8d14"
+    },
+    {
+      "path": "src/data/observation-legacy.ts",
+      "bytes": 10534,
+      "sha256": "db21d75632bd92442faab98d2fe184d752e2ede4d395b59542a464c84413b881"
+    },
+    {
+      "path": "src/data/observation.ts",
+      "bytes": 48012,
+      "sha256": "2129eb96f4caf0cfb31e625bf52e4c2b0416d60483721e8e51ca68ccb80739bd"
+    },
+    {
+      "path": "src/data/references.json",
+      "bytes": 25992,
+      "sha256": "feaf83db9eac5e1e0e413518c18292aa13bb29da9065b863315a13e33a9ef7dd"
+    },
+    {
+      "path": "src/layouts/Base.astro",
+      "bytes": 7440,
+      "sha256": "fddac90f93206a1ce87d17bf338025ed28a826c71ab72e003a21b24ac5ccf5a2"
+    },
+    {
+      "path": "src/lib/data.ts",
+      "bytes": 3403,
+      "sha256": "99d0d403749baed53dbab69526b6deb98e2212b94a113bcedf4ed48896f33a65"
+    },
+    {
+      "path": "src/lib/maps.ts",
+      "bytes": 1654,
+      "sha256": "c1c5eb147e0016c812b15a44e7b320636ae767099252ed21520691831c54bde3"
+    },
+    {
+      "path": "src/lib/observation-controller.ts",
+      "bytes": 13605,
+      "sha256": "698d28e9243edf553183e118ddb42e6c9f0e20892ee8b8f7095ca69154a59c5f"
+    },
+    {
+      "path": "src/lib/observation-notebook.ts",
+      "bytes": 1339,
+      "sha256": "204a638fa9db7a9c556e102ef4e37e30e15bd4194d14c7aed292d2e5f02c65f0"
+    },
+    {
+      "path": "src/lib/observation-session.ts",
+      "bytes": 4005,
+      "sha256": "cce2f758bba28e9605e741945952ed7ace05b7c5230a02b20bfaa7a27423afad"
+    },
+    {
+      "path": "src/lib/url.ts",
+      "bytes": 259,
+      "sha256": "6183b7459de138d368d7248f0cc6ec92ac1fd908a135984a9ba861f4c9cacf36"
+    },
+    {
+      "path": "src/pages/about/index.astro",
+      "bytes": 5726,
+      "sha256": "0640709520786739d2066f2f07683033c41bc83f7fe2a7e437298554f4e6cc31"
+    },
+    {
+      "path": "src/pages/artworks/index.astro",
+      "bytes": 3220,
+      "sha256": "69bb9155d8ca404ff0aa5a29f3f016c4fe3423b32be0e2e432b73a16dc25cd5f"
+    },
+    {
+      "path": "src/pages/artworks/[id].astro",
+      "bytes": 15413,
+      "sha256": "9afcab9f0c4111fe6fd507315243a6c9c035b77b300d425520ee501924a3caae"
+    },
+    {
+      "path": "src/pages/curation/index.astro",
+      "bytes": 10619,
+      "sha256": "8ab5d7b0ea671f478f93477cafb89a2c563a48bca1aebc0dfcb5ccf3e5c2a2b6"
+    },
+    {
+      "path": "src/pages/events/index.astro",
+      "bytes": 6644,
+      "sha256": "338a56de9f95a527e3183e9496a017ccd0003aae9af90d694ff07e2ab1a35ec6"
+    },
+    {
+      "path": "src/pages/explore/index.astro",
+      "bytes": 8774,
+      "sha256": "e37d528182db433cd88683ffd040e5eb6ccaac82833fcad33056036c60b6cf40"
+    },
+    {
+      "path": "src/pages/index.astro",
+      "bytes": 11917,
+      "sha256": "9772d0dad1325708f4b599dc0b425116197a09813cd56c02308b339128785c97"
+    },
+    {
+      "path": "src/pages/references/index.astro",
+      "bytes": 3098,
+      "sha256": "6121633a722834afaf17dc72f84d984d180aa417992b88bb73220c1fd8b96603"
+    },
+    {
+      "path": "src/pages/timeline/index.astro",
+      "bytes": 20111,
+      "sha256": "0c9a0a96c676175d540e0cacb3055546d12e274eb488e35d4aa1a18a11e0cd87"
+    },
+    {
+      "path": "src/styles/activities.css",
+      "bytes": 3645,
+      "sha256": "d6cedae0af6ba394da5dda6206756a054deeb980c889f111e52506483c071236"
+    },
+    {
+      "path": "src/styles/global.css",
+      "bytes": 3283,
+      "sha256": "a32191c7b07c9332df7ecc43729c0631f357f2250ceaac21b4b3b63097684709"
+    },
+    {
+      "path": "public/concepts/emaki.html",
+      "bytes": 12690,
+      "sha256": "e7ef3844000742841af4effaa4f60c01a7495386942f7e077bf0a680dcaad031"
+    },
+    {
+      "path": "public/concepts/fonts.html",
+      "bytes": 5154,
+      "sha256": "e90f1cfac36d62e4687745e07b6e85bb1940ef09c58552f8d41f1d4e8244857e"
+    },
+    {
+      "path": "public/concepts/index.html",
+      "bytes": 3652,
+      "sha256": "adae2c8c15089db899e76713d4a8506d421235ffb6f4c7a5910a4fb2dc9d3788"
+    },
+    {
+      "path": "public/concepts/lantern.html",
+      "bytes": 10714,
+      "sha256": "3bd658c0cf3576c5da3fd4e4385fdfc6737c4672f084e5aa7e3e78cab94104e3"
+    },
+    {
+      "path": "public/concepts/zoom.html",
+      "bytes": 7567,
+      "sha256": "f220962ec96316134a74d3180c35492009d339207f3071987c7c6d930e8a5cff"
+    },
+    {
+      "path": "tests/history-audit.test.mjs",
+      "bytes": 3206,
+      "sha256": "c24634546dd42d114dc44d2105a80902f47ddc7835306320597d340a8459fedc"
+    },
+    {
+      "path": "tests/observation.test.mjs",
+      "bytes": 7637,
+      "sha256": "150372bbbae122b496acf08bc2172d46910fe59aef0c2fcfc588ccf5fdeab6f0"
+    },
+    {
+      "path": "tests/site-build.test.mjs",
+      "bytes": 2480,
+      "sha256": "b00aebb680260412ac845eafdf2920d1e0befb12bb67b06d24fb09ddec191d62"
+    },
+    {
+      "path": "docs/artwork-catalog.csv",
+      "bytes": 7122,
+      "sha256": "6b249e656fd2e029f7a3549030404c8f47d6554ac1aab47c1b7205d37714d278"
+    },
+    {
+      "path": "docs/audience-test-template.md",
+      "bytes": 2765,
+      "sha256": "ddc56f092bcbeb21512d8c67c68d78563cd709b463d8a213c11aeb32595fe648"
+    },
+    {
+      "path": "docs/before-after.csv",
+      "bytes": 37080,
+      "sha256": "bd47c3b63f14019beaba1e1ba36eab66ad096a54007e19c993970b2f9b75ddf5"
+    },
+    {
+      "path": "docs/change-log.md",
+      "bytes": 7103,
+      "sha256": "36e6c561e2ca23887022537832cecef009999c26307085d6016eb2a5c3377890"
+    },
+    {
+      "path": "docs/evidence-register.csv",
+      "bytes": 1638122,
+      "sha256": "310d45be16c1495d7eec0fcf6622b4e033c6781bbd4b4b9cd6c15c2f9f84138f"
+    },
+    {
+      "path": "docs/evidence-register.md",
+      "bytes": 4627,
+      "sha256": "d1b4e6c55d4b7716f772c28c8ab5f9b9db0efba5c7b0910fbc37b0eecec34bbb"
+    },
+    {
+      "path": "docs/question-audit.csv",
+      "bytes": 28759,
+      "sha256": "74c1f81e7d7e8f06818d08f7593485cfd20578c8288bcf49bd283d0943a9f868"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 4011,
+      "sha256": "d15b676031d2d1936123267559f22499905611753f8da93c246638e0853d1797"
+    },
+    {
+      "path": "docs/report-before-after.csv",
+      "bytes": 68730,
+      "sha256": "64e6ce4ac0d441902dcd45175ac8f4ab68eb4c2c4d0d604103f9d344d240516d"
+    },
+    {
+      "path": "docs/report-draft.html",
+      "bytes": 43815,
+      "sha256": "ca34d18c7b309b1f1171be916f8dfbed16932c8f850da69a95310873c5d2d83a"
+    },
+    {
+      "path": "docs/report-revision.md",
+      "bytes": 9861,
+      "sha256": "c8880bbde42d3147c07a490bdb9ff5dd50435a4c1be9ffa03d9da02e1cd5ff8b"
+    },
+    {
+      "path": "docs/rights-register.csv",
+      "bytes": 7445,
+      "sha256": "eed7fecb067ad33c99a38527e046d2cdff0cbf4d6b2106170c03a381698fcf3d"
+    },
+    {
+      "path": "docs/test-report.md",
+      "bytes": 8013,
+      "sha256": "80e09838994ac48506211f454994c6696b9d195422d581f7385e8d7f893efd69"
+    },
+    {
+      "path": "docs/unresolved-issues.md",
+      "bytes": 4712,
+      "sha256": "1f3570003793819f0ab14782aabe96fdae9577102df06e515cd047f796a47658"
+    },
+    {
+      "path": "docs/~$報告_江戶不打烊_分章修訂稿.docx",
+      "bytes": 162,
+      "sha256": "593beda79e24f5847bee06063094b5e8a7c0bc13624cc792377b46e3260dda2e"
+    },
+    {
+      "path": "docs/期末報告_江戶不打烊_修訂版.docx",
+      "bytes": 1853462,
+      "sha256": "e799d4e8a07af3b99b0373b0df211ab338ddb00e1f03979572f28b8ff847ca2a"
+    },
+    {
+      "path": "docs/期末報告_江戶不打烊_修訂版.pdf",
+      "bytes": 1374803,
+      "sha256": "7fa5f4e141afed1761f79894c6cd0627963715a83c1c9d03b6c4ff4bbeeef60a"
+    },
+    {
+      "path": "docs/期末報告_江戶不打烊_分章修訂稿.docx",
+      "bytes": 42752,
+      "sha256": "2c061c754bf16769068b7712c7f2d914d63d98ee6324661c92ac1e5633582cfc"
+    },
+    {
+      "path": "docs/期末報告_江戶不打烊_分章修訂稿.md",
+      "bytes": 39742,
+      "sha256": "dc8284ba116cc5eae2fb97dc013bbf5d31d5f271b1988f317cbe814cebc1910d"
+    },
+    {
+      "path": "docs/期末報告_江戶不打烊_分章修訂稿_HTML預覽.pdf",
+      "bytes": 752297,
+      "sha256": "4611a33c0a6be3ae5e41ff2d08b4346cb2427718834e128e4ac6bb185ba7a15f"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 310,
+      "sha256": "b9adf6b337bd167d09a21cd6fa0d488904cd42c9ce90f43868fee24cc2ce3d34"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "date": "2026-11-18T17:22:34.980Z",
+  "head": "b61293fab0cdc4de8564d71c2e91016b21ffa53d",
+  "status": " M .gitignore\n M public/concepts/emaki.html\n M public/concepts/fonts.html\n M public/concepts/index.html\n M public/concepts/lantern.html\n M public/concepts/zoom.html\n M src/components/MapComparison.astro\n M src/components/ObservationChallenge.astro\n M src/data/activities.ts\n M src/data/artworks.json\n M src/data/observation.ts\n M src/data/references.json\n M src/lib/data.ts\n M src/lib/maps.ts\n M src/lib/observation-controller.ts\n M src/lib/observation-session.ts\n M src/pages/artworks/[id].astro\n M src/pages/curation/index.astro\n M src/pages/index.astro\n M src/pages/references/index.astro\n M src/pages/timeline/index.astro\n?? docs/\n?? edo-after-dark.zip\n?? scripts/\n?? src/data/observation-legacy.ts\n?? src/lib/observation-notebook.ts\n?? tests/history-audit.test.mjs\n?? tests/site-build.test.mjs\n",
+  "files": [
+    {
+      "file": "src\\styles\\global.css",
+      "sha256": "a32191c7b07c9332df7ecc43729c0631f357f2250ceaac21b4b3b63097684709"
+    },
+    {
+      "file": "src\\styles\\activities.css",
+      "sha256": "d6cedae0af6ba394da5dda6206756a054deeb980c889f111e52506483c071236"
+    },
+    {
+      "file": "src\\pages\\timeline\\index.astro",
+      "sha256": "0c9a0a96c676175d540e0cacb3055546d12e274eb488e35d4aa1a18a11e0cd87"
+    },
+    {
+      "file": "src\\pages\\references\\index.astro",
+      "sha256": "6121633a722834afaf17dc72f84d984d180aa417992b88bb73220c1fd8b96603"
+    },
+    {
+      "file": "src\\pages\\index.astro",
+      "sha256": "9772d0dad1325708f4b599dc0b425116197a09813cd56c02308b339128785c97"
+    },
+    {
+      "file": "src\\pages\\explore\\index.astro",
+      "sha256": "e37d528182db433cd88683ffd040e5eb6ccaac82833fcad33056036c60b6cf40"
+    },
+    {
+      "file": "src\\pages\\curation\\index.astro",
+      "sha256": "8ab5d7b0ea671f478f93477cafb89a2c563a48bca1aebc0dfcb5ccf3e5c2a2b6"
+    },
+    {
+      "file": "src\\lib\\url.ts",
+      "sha256": "6183b7459de138d368d7248f0cc6ec92ac1fd908a135984a9ba861f4c9cacf36"
+    },
+    {
+      "file": "src\\lib\\observation-session.ts",
+      "sha256": "cce2f758bba28e9605e741945952ed7ace05b7c5230a02b20bfaa7a27423afad"
+    },
+    {
+      "file": "src\\lib\\observation-notebook.ts",
+      "sha256": "204a638fa9db7a9c556e102ef4e37e30e15bd4194d14c7aed292d2e5f02c65f0"
+    },
+    {
+      "file": "src\\lib\\observation-controller.ts",
+      "sha256": "698d28e9243edf553183e118ddb42e6c9f0e20892ee8b8f7095ca69154a59c5f"
+    },
+    {
+      "file": "src\\lib\\maps.ts",
+      "sha256": "c1c5eb147e0016c812b15a44e7b320636ae767099252ed21520691831c54bde3"
+    },
+    {
+      "file": "src\\lib\\data.ts",
+      "sha256": "99d0d403749baed53dbab69526b6deb98e2212b94a113bcedf4ed48896f33a65"
+    },
+    {
+      "file": "src\\pages\\about\\index.astro",
+      "sha256": "0640709520786739d2066f2f07683033c41bc83f7fe2a7e437298554f4e6cc31"
+    },
+    {
+      "file": "src\\layouts\\Base.astro",
+      "sha256": "fddac90f93206a1ce87d17bf338025ed28a826c71ab72e003a21b24ac5ccf5a2"
+    },
+    {
+      "file": "src\\pages\\artworks\\[id].astro",
+      "sha256": "9afcab9f0c4111fe6fd507315243a6c9c035b77b300d425520ee501924a3caae"
+    },
+    {
+      "file": "src\\pages\\artworks\\index.astro",
+      "sha256": "69bb9155d8ca404ff0aa5a29f3f016c4fe3423b32be0e2e432b73a16dc25cd5f"
+    },
+    {
+      "file": "src\\pages\\events\\index.astro",
+      "sha256": "338a56de9f95a527e3183e9496a017ccd0003aae9af90d694ff07e2ab1a35ec6"
+    },
+    {
+      "file": "src\\components\\ObservationChallenge.astro",
+      "sha256": "b9354d246226cece8de53f6354a0bc9490d0953213fb6a42eafce16226df62e1"
+    },
+    {
+      "file": "src\\components\\NightwalkerQuiz.astro",
+      "sha256": "e6d760b2a9aa4eccd0840f212063fb30a98da4bc878d3c858808d815e01bf1e8"
+    },
+    {
+      "file": "src\\components\\MapComparison.astro",
+      "sha256": "aaca9f5825f2273b287879e1d6f9c6fdf2abf99c0ffab0f81077f2d2882313f1"
+    },
+    {
+      "file": "src\\components\\ArtworkViewer.astro",
+      "sha256": "9f301f4d08f39576b88348724bb8b2c396ec3e6c33866e78b6712d1062f47539"
+    },
+    {
+      "file": "src\\data\\references.json",
+      "sha256": "feaf83db9eac5e1e0e413518c18292aa13bb29da9065b863315a13e33a9ef7dd"
+    },
+    {
+      "file": "src\\data\\observation.ts",
+      "sha256": "2129eb96f4caf0cfb31e625bf52e4c2b0416d60483721e8e51ca68ccb80739bd"
+    },
+    {
+      "file": "src\\data\\observation-legacy.ts",
+      "sha256": "db21d75632bd92442faab98d2fe184d752e2ede4d395b59542a464c84413b881"
+    },
+    {
+      "file": "src\\data\\news.json",
+      "sha256": "62bbf5ecc0654d290ebbf3e9116bd778206513b0bc8fda7a5a5637c9498e8d14"
+    },
+    {
+      "file": "src\\data\\meta.json",
+      "sha256": "6655a723d15c800e72344f265d4cdb5bfbe0a29b4eb31897711907f858727d96"
+    },
+    {
+      "file": "src\\data\\artworks.json",
+      "sha256": "065553d0c37f888939437c1239ff434eb25bce29255d5422777c3dfdbe3abf76"
+    },
+    {
+      "file": "src\\data\\activities.ts",
+      "sha256": "1f7dd44603203d4f2614a6de574236f9d29172c6aec6d70310685392f811a579"
+    },
+    {
+      "file": "docs/~$報告_江戶不打烊_修訂版.docx",
+      "sha256": "ada6d71f6dd173d6b0f9a647320613a47d56f71e003a4077df069886e034be8b"
+    },
+    {
+      "file": "docs/期末報告_江戶不打烊_修訂版.docx",
+      "sha256": "e799d4e8a07af3b99b0373b0df211ab338ddb00e1f03979572f28b8ff847ca2a"
+    },
+    {
+      "file": "docs/期末報告_江戶不打烊_修訂版.pdf",
+      "sha256": "7fa5f4e141afed1761f79894c6cd0627963715a83c1c9d03b6c4ff4bbeeef60a"
+    }
+  ]
+}
